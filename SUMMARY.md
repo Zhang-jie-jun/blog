@@ -1,14 +1,14 @@
 # Summary
 
-## 勤劳的螺丝工
-* [简介](README.md)
+* [勤劳的螺丝工](README.md)
 
 ## 编程基础
 * [golang](src/golang/README.md)
-    * [切片原理](src/golang/slice.md)
-    * [map原理](src/golang/map.md)
+    * [slice底层原理](src/golang/slice.md)
+    * [map底层原理](src/golang/map.md)
 * [C/C++](src/c++/README.md)
 * [Python](src/python/README.md)
+* [数据结构](src/structure/README.md)
 * [常用算法](src/algorithm/README.md)
     * [排序算法](src/algorithm/sort.md)
 
