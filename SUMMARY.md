@@ -1,6 +1,6 @@
 # Summary
 
-* [勤劳的螺丝工](README.md)
+* [简介](README.md)
 
 ## 编程基础
 * [golang](src/golang/README.md)

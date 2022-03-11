@@ -44,8 +44,8 @@
 		"button": "赞赏支持",
 		"wechatText": "问题联系",
 		"alipayText": "打赏支持",
-		"wechat": "./src/image/QR_code.jpg",
-		"alipay": "./src/image/wechat.jpg"
+		"wechat": "https://github.com/Zhang-jie-jun/blog/blob/main/src/image/QR_code.jpg?raw=true",
+		"alipay": "https://github.com/Zhang-jie-jun/blog/blob/main/src/image/wechat.jpg?raw=true"
 	  },
 	  "prism": {
 		"css": [
