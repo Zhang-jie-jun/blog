@@ -1,3 +1,62 @@
 {
-	"plugins": ["toggle-chapters"]
-}
+	"title": "Jack Zhang的博客",
+	"author": "勤劳的螺丝工",
+	"description": "记录遇到的问题与解决方式，分享我的知识、经历和观点...",
+	"language": "zh-hans",
+	"styles": {
+	  "website": "./css/gitbook-configure.css"
+	},
+	"plugins": [
+	  "theme-comscore",
+	  "prism",
+	  "-highlight",
+	  "copy-code-button",
+	  "search-pro",
+	  "-search",
+	  "-lunr",
+	  "expandable-chapters",
+	  "splitter",
+	  "-sharing",
+	  "github-buttons",
+	  "donate",
+	  "anchor-navigation-ex"
+	],
+	"pluginsConfig": {
+	  "github-buttons": {
+		"buttons": [
+		  {
+			"user": "Zhang-jie-jun",
+			"repo": "blog", 
+			"type": "star",
+			"count": true,
+			"size": "small"
+		  }, 
+		  {
+			"user": "Zhang-jie-jun",
+			"width": "160", 
+			"type": "follow", 
+			"count": true,
+			"size": "small"
+		  }
+		]
+	  },
+	  "donate": {
+		"button": "赞赏支持",
+		"wechatText": "问题联系",
+		"alipayText": "打赏支持",
+		"wechat": "./src/image/QR_code.jpg",
+		"alipay": "./src/image/wechat.jpg"
+	  },
+	  "prism": {
+		"css": [
+		  "prismjs/themes/prism-solarizedlight.css"
+		],
+		"lang": {
+		  "shell": "bash"
+		}
+	  },
+	  "anchor-navigation-ex": {
+		"showLevel": false
+	  }
+	}
+}  
