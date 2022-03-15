@@ -6,6 +6,9 @@
 * [golang](src/golang/README.md)
     * [slice底层原理](src/golang/slice.md)
     * [map底层原理](src/golang/map.md)
+    * [反射机制](src/golang/reflect.md)
+    * [context详解](src/golang/context.md)
+    * [单元测试](src/golang/ut.md)
 * [C/C++](src/c++/README.md)
 * [Python](src/python/README.md)
 * [数据结构](src/structure/README.md)
@@ -33,7 +36,5 @@
     * [VMware备份传输模式](src/vmware/transmitmode.md)
 
 ## 其他
-* [git](src/github/README.md)
-    * [git使用方法](src/github/function.md)
-    * [git常见问题](src/github/question.md)
+* [git的使用方法](src/github/function.md)
 
