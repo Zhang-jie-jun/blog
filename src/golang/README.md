@@ -11,6 +11,10 @@
 
 * [slice底层原理](slice.md)
 * [map底层原理](map.md)
+* [并发与channel](channel.md)
 * [反射机制](reflect.md)
 * [context详解](context.md)
+* [GMP模型](gmp.md)
+* [垃圾回收机制(GC)](gc.md)
+* [module管理](module.md)
 * [单元测试](ut.md)

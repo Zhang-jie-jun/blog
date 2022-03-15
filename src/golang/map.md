@@ -122,7 +122,7 @@ bmap 是存放 k-v 的地方，bmap的存储分布如下：
 在golang的map中，key经过[hash](https://blog.csdn.net/Beyond_2016/article/details/81286360?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522164723974516780269836868%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=164723974516780269836868&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-81286360.first_rank_v2_pc_rank_v29&utm_term=hash&spm=1018.2226.3001.4187)计算后得到哈希值，哈希值是 64 个 bit 位（针对64位机）。**根据hash值的最后B个bit位来确定这个key落在哪个桶。** 如果 B = 5，那么桶的数量，也就是 buckets 数组的长度是 2^5 = 32。  
 
 比如说，现在有一个key经过哈希函数计算后，得到如下的哈希结果：
-```test
+```txt
   10010111 | 000011110110110010001111001010100010010110010101010 │ 01010
 ```
 用最后的 5 个 bit 位，也就是 01010，值为 10，也就是 10 号桶。这个操作实际上就是取余操作，但是取余开销太大，所以代码实现上用的位操作代替。再用哈希值的高 8 位，找到此 key 在 bucket 中的位置，这是在寻找已有的 key。最开始桶内还没有 key，新加入的 key 会找到第一个空位放入。  
