@@ -1,8 +1,7 @@
 # Gitbook个人博客
- 
-个人标签：勤劳的螺丝工，后端资深CV攻城狮，golang深度中毒者...  
+  
+个人博客：https://zhang-jie-jun.github.io/blog/  
 联系邮箱：zhang.jiejun@outlook.com  
-人生目标：每天进步一点点 
 
 ### 学习寄语：
 学而不思则罔，思而不学则殆。  
