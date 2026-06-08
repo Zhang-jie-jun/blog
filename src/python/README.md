@@ -37,22 +37,3 @@ Python 支持函数式编程特性，如 lambda 表达式、高阶函数等。
 | [第三方库](thirdparty.md) | NumPy、Pandas、TensorFlow、Django等 |
 | [设计模式](design_pattern.md) | 常用设计模式的Python实现 |
 | [元编程](metaprogramming.md) | 元类、反射、动态代码生成 |
-
----  
-***  
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-<div id="gitalk-container"></div>
-<script>
-  var gitalk = new Gitalk({
-    "clientID": "44d7c96f948be236a8c9",
-    "clientSecret": "fb9fb3178db6640131c4e3eb69f9449e42bba661",
-    "repo": "blog",
-    "owner": "Zhang-jie-jun",
-    "admin": ["Zhang-jie-jun"],
-    "id": location.pathname,
-    "distractionFreeMode": false
-  });
-  gitalk.render("gitalk-container");
-</script>

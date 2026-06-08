@@ -366,6 +366,7 @@ func NextGreaterElement(nums []int) []int {
 **答案：**
 使用两个栈，一个保存前进历史，一个保存后退历史。
 
+<center>...未完待续...</center>
 ---  
 ***  
 
@@ -379,8 +380,8 @@ func NextGreaterElement(nums []int) []int {
     "repo": "blog",
     "owner": "Zhang-jie-jun",
     "admin": ["Zhang-jie-jun"],
-    "id": location.pathname,
-    "distractionFreeMode": false
+    "id": location.pathname,      
+    "distractionFreeMode": false  
   });
   gitalk.render("gitalk-container");
 </script>

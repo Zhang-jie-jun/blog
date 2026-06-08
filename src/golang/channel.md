@@ -829,6 +829,7 @@ fmt.Println(<-ch) // 3
 fmt.Println(<-ch) // 0（零值）
 ```
 
+<center>...未完待续...</center>
 ---  
 ***  
 

@@ -222,6 +222,7 @@ def infinite_sequence():
 - `permutations()`：排列
 - `combinations()`：组合
 
+<center>...未完待续...</center>
 ---  
 ***  
 
@@ -235,8 +236,8 @@ def infinite_sequence():
     "repo": "blog",
     "owner": "Zhang-jie-jun",
     "admin": ["Zhang-jie-jun"],
-    "id": location.pathname,
-    "distractionFreeMode": false
+    "id": location.pathname,      
+    "distractionFreeMode": false  
   });
   gitalk.render("gitalk-container");
 </script>

@@ -319,6 +319,7 @@ GUI 事件处理、消息订阅系统、发布-订阅模式。
 **答案：**
 运行时切换算法，符合开闭原则，降低耦合。
 
+<center>...未完待续...</center>
 ---  
 ***  
 
@@ -332,8 +333,8 @@ GUI 事件处理、消息订阅系统、发布-订阅模式。
     "repo": "blog",
     "owner": "Zhang-jie-jun",
     "admin": ["Zhang-jie-jun"],
-    "id": location.pathname,
-    "distractionFreeMode": false
+    "id": location.pathname,      
+    "distractionFreeMode": false  
   });
   gitalk.render("gitalk-container");
 </script>

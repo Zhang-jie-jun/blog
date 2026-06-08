@@ -229,6 +229,7 @@ func BSTSearch(root *TreeNode, target int) *TreeNode {
 **答案：**
 当不同的关键字通过哈希函数得到相同的索引时就会产生冲突。解决方法：链地址法、开放地址法、再哈希法。
 
+<center>...未完待续...</center>
 ---  
 ***  
 
@@ -242,8 +243,8 @@ func BSTSearch(root *TreeNode, target int) *TreeNode {
     "repo": "blog",
     "owner": "Zhang-jie-jun",
     "admin": ["Zhang-jie-jun"],
-    "id": location.pathname,
-    "distractionFreeMode": false
+    "id": location.pathname,      
+    "distractionFreeMode": false  
   });
   gitalk.render("gitalk-container");
 </script>

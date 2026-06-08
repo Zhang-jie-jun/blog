@@ -289,6 +289,7 @@ class Right : virtual public Base {};
 class Derived : public Left, public Right {};
 ```
 
+<center>...未完待续...</center>
 ---  
 ***  
 
@@ -302,8 +303,8 @@ class Derived : public Left, public Right {};
     "repo": "blog",
     "owner": "Zhang-jie-jun",
     "admin": ["Zhang-jie-jun"],
-    "id": location.pathname,
-    "distractionFreeMode": false
+    "id": location.pathname,      
+    "distractionFreeMode": false  
   });
   gitalk.render("gitalk-container");
 </script>

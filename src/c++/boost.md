@@ -266,6 +266,7 @@ Boost.Thread 是标准库线程的基础，标准库线程库在 C++11 中引入
 - 如果只需要标准库已有的功能，使用标准库
 - 如果需要标准库没有的功能（如文件系统操作、程序选项），考虑使用 Boost
 
+<center>...未完待续...</center>
 ---  
 ***  
 
@@ -279,8 +280,8 @@ Boost.Thread 是标准库线程的基础，标准库线程库在 C++11 中引入
     "repo": "blog",
     "owner": "Zhang-jie-jun",
     "admin": ["Zhang-jie-jun"],
-    "id": location.pathname,
-    "distractionFreeMode": false
+    "id": location.pathname,      
+    "distractionFreeMode": false  
   });
   gitalk.render("gitalk-container");
 </script>

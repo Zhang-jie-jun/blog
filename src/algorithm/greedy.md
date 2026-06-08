@@ -362,6 +362,7 @@ func Merge(intervals [][]int) [][]int {
 **答案：**
 哈夫曼编码通过每次合并频率最低的节点，保证了带权路径长度最小，是最优前缀编码。
 
+<center>...未完待续...</center>
 ---  
 ***  
 
@@ -375,8 +376,8 @@ func Merge(intervals [][]int) [][]int {
     "repo": "blog",
     "owner": "Zhang-jie-jun",
     "admin": ["Zhang-jie-jun"],
-    "id": location.pathname,
-    "distractionFreeMode": false
+    "id": location.pathname,      
+    "distractionFreeMode": false  
   });
   gitalk.render("gitalk-container");
 </script>

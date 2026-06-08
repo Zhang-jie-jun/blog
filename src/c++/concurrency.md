@@ -340,6 +340,7 @@ int main() {
 - 控制并发数
 - 便于任务管理和调度
 
+<center>...未完待续...</center>
 ---  
 ***  
 
@@ -353,8 +354,8 @@ int main() {
     "repo": "blog",
     "owner": "Zhang-jie-jun",
     "admin": ["Zhang-jie-jun"],
-    "id": location.pathname,
-    "distractionFreeMode": false
+    "id": location.pathname,      
+    "distractionFreeMode": false  
   });
   gitalk.render("gitalk-container");
 </script>

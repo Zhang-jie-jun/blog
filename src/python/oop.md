@@ -256,6 +256,7 @@ person.name = "Bob"   # 设置值
 **答案：**
 @property 装饰器将方法转换为属性，允许通过属性访问语法调用方法，同时可以控制属性的读取和设置。
 
+<center>...未完待续...</center>
 ---  
 ***  
 
@@ -269,8 +270,8 @@ person.name = "Bob"   # 设置值
     "repo": "blog",
     "owner": "Zhang-jie-jun",
     "admin": ["Zhang-jie-jun"],
-    "id": location.pathname,
-    "distractionFreeMode": false
+    "id": location.pathname,      
+    "distractionFreeMode": false  
   });
   gitalk.render("gitalk-container");
 </script>

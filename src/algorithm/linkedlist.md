@@ -503,6 +503,7 @@ func (d *DoublyLinkedList) RemoveLast() (int, bool) {
 | 插入删除 | O(n) | O(1) |
 | 空间 | 固定 | 动态 |
 
+<center>...未完待续...</center>
 ---  
 ***  
 
@@ -516,8 +517,8 @@ func (d *DoublyLinkedList) RemoveLast() (int, bool) {
     "repo": "blog",
     "owner": "Zhang-jie-jun",
     "admin": ["Zhang-jie-jun"],
-    "id": location.pathname,
-    "distractionFreeMode": false
+    "id": location.pathname,      
+    "distractionFreeMode": false  
   });
   gitalk.render("gitalk-container");
 </script>

@@ -275,6 +275,7 @@ print(unpickled)
 - `deque`：双端队列
 - `namedtuple`：命名元组
 
+<center>...未完待续...</center>
 ---  
 ***  
 
@@ -288,8 +289,8 @@ print(unpickled)
     "repo": "blog",
     "owner": "Zhang-jie-jun",
     "admin": ["Zhang-jie-jun"],
-    "id": location.pathname,
-    "distractionFreeMode": false
+    "id": location.pathname,      
+    "distractionFreeMode": false  
   });
   gitalk.render("gitalk-container");
 </script>

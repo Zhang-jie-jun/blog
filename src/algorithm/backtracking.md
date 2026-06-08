@@ -363,6 +363,7 @@ func backtrackPermuteUnique(nums []int, path []int, used []bool, result *[][]int
 **答案：**
 第一行有n种选择，第二行最多有n-2种选择（排除同一列和对角线），第三行最多有n-4种选择，以此类推，总共有约n!种可能的放置方式。
 
+<center>...未完待续...</center>
 ---  
 ***  
 
@@ -376,8 +377,8 @@ func backtrackPermuteUnique(nums []int, path []int, used []bool, result *[][]int
     "repo": "blog",
     "owner": "Zhang-jie-jun",
     "admin": ["Zhang-jie-jun"],
-    "id": location.pathname,
-    "distractionFreeMode": false
+    "id": location.pathname,      
+    "distractionFreeMode": false  
   });
   gitalk.render("gitalk-container");
 </script>

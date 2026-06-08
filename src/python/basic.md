@@ -301,6 +301,7 @@ squares = [x**2 for x in range(10)]
 **答案：**
 Python 使用缩进来表示代码块，替代了其他语言的花括号。
 
+<center>...未完待续...</center>
 ---  
 ***  
 
@@ -314,8 +315,8 @@ Python 使用缩进来表示代码块，替代了其他语言的花括号。
     "repo": "blog",
     "owner": "Zhang-jie-jun",
     "admin": ["Zhang-jie-jun"],
-    "id": location.pathname,
-    "distractionFreeMode": false
+    "id": location.pathname,      
+    "distractionFreeMode": false  
   });
   gitalk.render("gitalk-container");
 </script>

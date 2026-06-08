@@ -400,6 +400,7 @@ func (s *MyStack) Empty() bool {
 - Dijkstra算法（找最短路径）
 - Huffman编码（构建最优二叉树）
 
+<center>...未完待续...</center>
 ---  
 ***  
 
@@ -413,8 +414,8 @@ func (s *MyStack) Empty() bool {
     "repo": "blog",
     "owner": "Zhang-jie-jun",
     "admin": ["Zhang-jie-jun"],
-    "id": location.pathname,
-    "distractionFreeMode": false
+    "id": location.pathname,      
+    "distractionFreeMode": false  
   });
   gitalk.render("gitalk-container");
 </script>

@@ -197,6 +197,7 @@ Python 使用引用计数为主，垃圾回收为辅的内存管理机制。
 **答案：**
 使用 `tracemalloc` 模块或 `objgraph` 库检测内存使用情况。
 
+<center>...未完待续...</center>
 ---  
 ***  
 
@@ -210,8 +211,8 @@ Python 使用引用计数为主，垃圾回收为辅的内存管理机制。
     "repo": "blog",
     "owner": "Zhang-jie-jun",
     "admin": ["Zhang-jie-jun"],
-    "id": location.pathname,
-    "distractionFreeMode": false
+    "id": location.pathname,      
+    "distractionFreeMode": false  
   });
   gitalk.render("gitalk-container");
 </script>

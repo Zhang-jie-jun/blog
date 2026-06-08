@@ -431,6 +431,7 @@ func (c *LRUCache) removeTail() *LRUNode {
 - **LRU**（最近最少使用）：淘汰最长时间未使用的元素
 - **LFU**（最不经常使用）：淘汰使用次数最少的元素
 
+<center>...未完待续...</center>
 ---  
 ***  
 
@@ -444,8 +445,8 @@ func (c *LRUCache) removeTail() *LRUNode {
     "repo": "blog",
     "owner": "Zhang-jie-jun",
     "admin": ["Zhang-jie-jun"],
-    "id": location.pathname,
-    "distractionFreeMode": false
+    "id": location.pathname,      
+    "distractionFreeMode": false  
   });
   gitalk.render("gitalk-container");
 </script>

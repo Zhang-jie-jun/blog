@@ -389,6 +389,7 @@ func quickSelect(nums []int, left, right, k int) int {
 - **优先队列**：维护k个指针，时间O(n log k)
 - **顺序合并**：逐个合并，时间O(kn)
 
+<center>...未完待续...</center>
 ---  
 ***  
 
@@ -402,8 +403,8 @@ func quickSelect(nums []int, left, right, k int) int {
     "repo": "blog",
     "owner": "Zhang-jie-jun",
     "admin": ["Zhang-jie-jun"],
-    "id": location.pathname,
-    "distractionFreeMode": false
+    "id": location.pathname,      
+    "distractionFreeMode": false  
   });
   gitalk.render("gitalk-container");
 </script>

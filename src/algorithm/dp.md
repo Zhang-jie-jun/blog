@@ -397,6 +397,7 @@ func min(a, b, c int) int {
 - **0-1背包**：每种物品只能选一次，内层循环逆序
 - **完全背包**：每种物品可以选多次，内层循环顺序
 
+<center>...未完待续...</center>
 ---  
 ***  
 
@@ -410,8 +411,8 @@ func min(a, b, c int) int {
     "repo": "blog",
     "owner": "Zhang-jie-jun",
     "admin": ["Zhang-jie-jun"],
-    "id": location.pathname,
-    "distractionFreeMode": false
+    "id": location.pathname,      
+    "distractionFreeMode": false  
   });
   gitalk.render("gitalk-container");
 </script>

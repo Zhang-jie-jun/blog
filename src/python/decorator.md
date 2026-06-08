@@ -247,6 +247,7 @@ print(original.__doc__)     # Original docstring（不是 Wrapper docstring）
 **答案：**
 默认会影响。使用 `functools.wraps` 装饰器可以保留原函数的元信息。
 
+<center>...未完待续...</center>
 ---  
 ***  
 
@@ -260,8 +261,8 @@ print(original.__doc__)     # Original docstring（不是 Wrapper docstring）
     "repo": "blog",
     "owner": "Zhang-jie-jun",
     "admin": ["Zhang-jie-jun"],
-    "id": location.pathname,
-    "distractionFreeMode": false
+    "id": location.pathname,      
+    "distractionFreeMode": false  
   });
   gitalk.render("gitalk-container");
 </script>

@@ -275,6 +275,7 @@ person.age = 30
 - 代码生成
 - 装饰器和中间件
 
+<center>...未完待续...</center>
 ---  
 ***  
 
@@ -288,8 +289,8 @@ person.age = 30
     "repo": "blog",
     "owner": "Zhang-jie-jun",
     "admin": ["Zhang-jie-jun"],
-    "id": location.pathname,
-    "distractionFreeMode": false
+    "id": location.pathname,      
+    "distractionFreeMode": false  
   });
   gitalk.render("gitalk-container");
 </script>

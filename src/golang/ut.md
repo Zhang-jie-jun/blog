@@ -855,6 +855,7 @@ go tool cover -html=coverage.out
 **答案：**
 通常放在同一个包中，但测试文件以 `_test.go` 结尾。这样可以访问包内的非导出函数和变量，便于测试。
 
+<center>...未完待续...</center>
 ---  
 ***  
 

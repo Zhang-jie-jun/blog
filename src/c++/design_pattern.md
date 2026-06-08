@@ -326,6 +326,7 @@ protected:
 - 消息队列
 - 发布-订阅系统
 
+<center>...未完待续...</center>
 ---  
 ***  
 
@@ -339,8 +340,8 @@ protected:
     "repo": "blog",
     "owner": "Zhang-jie-jun",
     "admin": ["Zhang-jie-jun"],
-    "id": location.pathname,
-    "distractionFreeMode": false
+    "id": location.pathname,      
+    "distractionFreeMode": false  
   });
   gitalk.render("gitalk-container");
 </script>

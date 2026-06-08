@@ -1251,6 +1251,7 @@ func (c *Codec) deserialize(data string) *TreeNode {
 }
 ```
 
+<center>...未完待续...</center>
 ---  
 ***  
 
@@ -1264,8 +1265,8 @@ func (c *Codec) deserialize(data string) *TreeNode {
     "repo": "blog",
     "owner": "Zhang-jie-jun",
     "admin": ["Zhang-jie-jun"],
-    "id": location.pathname,
-    "distractionFreeMode": false
+    "id": location.pathname,      
+    "distractionFreeMode": false  
   });
   gitalk.render("gitalk-container");
 </script>
