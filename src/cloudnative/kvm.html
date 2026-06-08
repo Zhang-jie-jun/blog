@@ -1,0 +1,2687 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>kvm · Jack Zhang的博客</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        <meta name="author" content="勤劳的螺丝工">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../css/gitbook-configure.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="libvirt.html" />
+    
+    
+    <link rel="prev" href="ceph.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"Zhang-jie-jun","repo":"blog","type":"star","count":true,"size":"small"},{"user":"Zhang-jie-jun","width":"160","type":"follow","count":true,"size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">编程基础</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../golang/">
+            
+                <a href="../golang/">
+            
+                    
+                    golang
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../golang/slice.html">
+            
+                <a href="../golang/slice.html">
+            
+                    
+                    slice底层原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../golang/map.html">
+            
+                <a href="../golang/map.html">
+            
+                    
+                    map底层原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../golang/channel.html">
+            
+                <a href="../golang/channel.html">
+            
+                    
+                    并发与Channel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../golang/reflect.html">
+            
+                <a href="../golang/reflect.html">
+            
+                    
+                    反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../golang/context.html">
+            
+                <a href="../golang/context.html">
+            
+                    
+                    context详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../golang/gmp.html">
+            
+                <a href="../golang/gmp.html">
+            
+                    
+                    GMP模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../golang/gc.html">
+            
+                <a href="../golang/gc.html">
+            
+                    
+                    垃圾回收机制(GC)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../golang/module.html">
+            
+                <a href="../golang/module.html">
+            
+                    
+                    module管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../golang/ut.html">
+            
+                <a href="../golang/ut.html">
+            
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../c++/">
+            
+                <a href="../c++/">
+            
+                    
+                    C/C++
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../c++/boost.html">
+            
+                <a href="../c++/boost.html">
+            
+                    
+                    boost库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../c++/concurrency.html">
+            
+                <a href="../c++/concurrency.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../c++/design_pattern.html">
+            
+                <a href="../c++/design_pattern.html">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../c++/memory.html">
+            
+                <a href="../c++/memory.html">
+            
+                    
+                    内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../c++/oop.html">
+            
+                <a href="../c++/oop.html">
+            
+                    
+                    面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../c++/smart_ptr.html">
+            
+                <a href="../c++/smart_ptr.html">
+            
+                    
+                    智能指针
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../c++/stl.html">
+            
+                <a href="../c++/stl.html">
+            
+                    
+                    STL详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="../c++/template.html">
+            
+                <a href="../c++/template.html">
+            
+                    
+                    模板编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../python/">
+            
+                <a href="../python/">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../python/basic.html">
+            
+                <a href="../python/basic.html">
+            
+                    
+                    基础语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../python/concurrency.html">
+            
+                <a href="../python/concurrency.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../python/decorator.html">
+            
+                <a href="../python/decorator.html">
+            
+                    
+                    装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="../python/design_pattern.html">
+            
+                <a href="../python/design_pattern.html">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="../python/generator.html">
+            
+                <a href="../python/generator.html">
+            
+                    
+                    生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" data-path="../python/memory.html">
+            
+                <a href="../python/memory.html">
+            
+                    
+                    内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.7" data-path="../python/metaprogramming.html">
+            
+                <a href="../python/metaprogramming.html">
+            
+                    
+                    元编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.8" data-path="../python/oop.html">
+            
+                <a href="../python/oop.html">
+            
+                    
+                    面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.9" data-path="../python/stdlib.html">
+            
+                <a href="../python/stdlib.html">
+            
+                    
+                    标准库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.10" data-path="../python/thirdparty.html">
+            
+                <a href="../python/thirdparty.html">
+            
+                    
+                    第三方库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../algorithm/">
+            
+                <a href="../algorithm/">
+            
+                    
+                    常用算法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../algorithm/stack.html">
+            
+                <a href="../algorithm/stack.html">
+            
+                    
+                    栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../algorithm/queue.html">
+            
+                <a href="../algorithm/queue.html">
+            
+                    
+                    队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="../algorithm/linkedlist.html">
+            
+                <a href="../algorithm/linkedlist.html">
+            
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="../algorithm/hash.html">
+            
+                <a href="../algorithm/hash.html">
+            
+                    
+                    哈希表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.5" data-path="../algorithm/tree.html">
+            
+                <a href="../algorithm/tree.html">
+            
+                    
+                    树算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.6" data-path="../algorithm/graph.html">
+            
+                <a href="../algorithm/graph.html">
+            
+                    
+                    图算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.7" data-path="../algorithm/sort.html">
+            
+                <a href="../algorithm/sort.html">
+            
+                    
+                    排序算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8" data-path="../algorithm/search.html">
+            
+                <a href="../algorithm/search.html">
+            
+                    
+                    搜索算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.9" data-path="../algorithm/dp.html">
+            
+                <a href="../algorithm/dp.html">
+            
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.10" data-path="../algorithm/greedy.html">
+            
+                <a href="../algorithm/greedy.html">
+            
+                    
+                    贪心算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.11" data-path="../algorithm/backtracking.html">
+            
+                <a href="../algorithm/backtracking.html">
+            
+                    
+                    回溯算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.12" data-path="../algorithm/divide.html">
+            
+                <a href="../algorithm/divide.html">
+            
+                    
+                    分治算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.13" data-path="../algorithm/string.html">
+            
+                <a href="../algorithm/string.html">
+            
+                    
+                    字符串算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../tools/">
+            
+                <a href="../tools/">
+            
+                    
+                    开发工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../tools/git.html">
+            
+                <a href="../tools/git.html">
+            
+                    
+                    git的使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="../tools/svn.html">
+            
+                <a href="../tools/svn.html">
+            
+                    
+                    svn的使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3" data-path="../tools/makefile.html">
+            
+                <a href="../tools/makefile.html">
+            
+                    
+                    Makefile使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.4" data-path="../tools/cmake.html">
+            
+                <a href="../tools/cmake.html">
+            
+                    
+                    CMake使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.5" data-path="../tools/wireshark.html">
+            
+                <a href="../tools/wireshark.html">
+            
+                    
+                    Wireshark使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.6" data-path="../tools/postman.html">
+            
+                <a href="../tools/postman.html">
+            
+                    
+                    Postman使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.7" data-path="../tools/navicat.html">
+            
+                <a href="../tools/navicat.html">
+            
+                    
+                    Navicat使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.8" data-path="../tools/dbeaver.html">
+            
+                <a href="../tools/dbeaver.html">
+            
+                    
+                    DBeaver使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.9" data-path="../tools/npm.html">
+            
+                <a href="../tools/npm.html">
+            
+                    
+                    npm使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.10" data-path="../tools/pip.html">
+            
+                <a href="../tools/pip.html">
+            
+                    
+                    pip使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Linux基础</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../linux/">
+            
+                <a href="../linux/">
+            
+                    
+                    Linux常用命令
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../linux/grep.html">
+            
+                <a href="../linux/grep.html">
+            
+                    
+                    Linux三剑客
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../linux/iostat.html">
+            
+                <a href="../linux/iostat.html">
+            
+                    
+                    磁盘I/O统计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../linux/mount.html">
+            
+                <a href="../linux/mount.html">
+            
+                    
+                    挂载命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../linux/fstab.html">
+            
+                <a href="../linux/fstab.html">
+            
+                    
+                    fstab配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../linux/lsblk.html">
+            
+                <a href="../linux/lsblk.html">
+            
+                    
+                    磁盘分区信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="../linux/df.html">
+            
+                <a href="../linux/df.html">
+            
+                    
+                    磁盘空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7" data-path="../linux/du.html">
+            
+                <a href="../linux/du.html">
+            
+                    
+                    目录大小
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.8" data-path="../linux/free.html">
+            
+                <a href="../linux/free.html">
+            
+                    
+                    内存使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.9" data-path="../linux/top.html">
+            
+                <a href="../linux/top.html">
+            
+                    
+                    进程监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.10" data-path="../linux/netstat.html">
+            
+                <a href="../linux/netstat.html">
+            
+                    
+                    网络状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.11" data-path="../linux/ps.html">
+            
+                <a href="../linux/ps.html">
+            
+                    
+                    进程状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.12" data-path="../linux/kill.html">
+            
+                <a href="../linux/kill.html">
+            
+                    
+                    进程终止
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.13" data-path="../linux/tar.html">
+            
+                <a href="../linux/tar.html">
+            
+                    
+                    压缩解压
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.14" data-path="../linux/disk.html">
+            
+                <a href="../linux/disk.html">
+            
+                    
+                    磁盘管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.15" data-path="../linux/filehandle.html">
+            
+                <a href="../linux/filehandle.html">
+            
+                    
+                    文件句柄
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.16" data-path="../linux/dd.html">
+            
+                <a href="../linux/dd.html">
+            
+                    
+                    dd命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.17" data-path="../linux/packagemanage.html">
+            
+                <a href="../linux/packagemanage.html">
+            
+                    
+                    包管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.18" data-path="../linux/network.html">
+            
+                <a href="../linux/network.html">
+            
+                    
+                    网络管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.19" data-path="../linux/system.html">
+            
+                <a href="../linux/system.html">
+            
+                    
+                    系统管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.20" data-path="../linux/monitor.html">
+            
+                <a href="../linux/monitor.html">
+            
+                    
+                    系统监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.21" data-path="../linux/file.html">
+            
+                <a href="../linux/file.html">
+            
+                    
+                    文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.22" data-path="../linux/text.html">
+            
+                <a href="../linux/text.html">
+            
+                    
+                    文本处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.23" data-path="../linux/security.html">
+            
+                <a href="../linux/security.html">
+            
+                    
+                    安全相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">网络基础</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../network/model.html">
+            
+                <a href="../network/model.html">
+            
+                    
+                    网络模型详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../network/tcp.html">
+            
+                <a href="../network/tcp.html">
+            
+                    
+                    TCP协议原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../network/http.html">
+            
+                <a href="../network/http.html">
+            
+                    
+                    HTTP/HTTPS原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../network/cdn.html">
+            
+                <a href="../network/cdn.html">
+            
+                    
+                    CDN详细教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../network/rpc.html">
+            
+                <a href="../network/rpc.html">
+            
+                    
+                    RPC原理解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">中间件</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../middleware/mysql.html">
+            
+                <a href="../middleware/mysql.html">
+            
+                    
+                    mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../middleware/redis.html">
+            
+                <a href="../middleware/redis.html">
+            
+                    
+                    redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../middleware/consul.html">
+            
+                <a href="../middleware/consul.html">
+            
+                    
+                    consul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../middleware/etcd.html">
+            
+                <a href="../middleware/etcd.html">
+            
+                    
+                    etcd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../middleware/gin.html">
+            
+                <a href="../middleware/gin.html">
+            
+                    
+                    gin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../middleware/gorm.html">
+            
+                <a href="../middleware/gorm.html">
+            
+                    
+                    gorm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../middleware/grpc.html">
+            
+                <a href="../middleware/grpc.html">
+            
+                    
+                    grpc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="../middleware/thrift.html">
+            
+                <a href="../middleware/thrift.html">
+            
+                    
+                    thrift
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="../middleware/cassandra.html">
+            
+                <a href="../middleware/cassandra.html">
+            
+                    
+                    cassandra
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="../middleware/elasticsearch.html">
+            
+                <a href="../middleware/elasticsearch.html">
+            
+                    
+                    elasticsearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="../middleware/jwt.html">
+            
+                <a href="../middleware/jwt.html">
+            
+                    
+                    jwt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.12" data-path="../middleware/kafka.html">
+            
+                <a href="../middleware/kafka.html">
+            
+                    
+                    kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.13" data-path="../middleware/nats.html">
+            
+                <a href="../middleware/nats.html">
+            
+                    
+                    nats
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.14" data-path="../middleware/nginx.html">
+            
+                <a href="../middleware/nginx.html">
+            
+                    
+                    nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">云原生与虚拟化技术</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="docker.html">
+            
+                <a href="docker.html">
+            
+                    
+                    docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="kubernetes.html">
+            
+                <a href="kubernetes.html">
+            
+                    
+                    kubernetes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="ceph.html">
+            
+                <a href="ceph.html">
+            
+                    
+                    ceph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="6.4" data-path="kvm.html">
+            
+                <a href="kvm.html">
+            
+                    
+                    kvm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="libvirt.html">
+            
+                <a href="libvirt.html">
+            
+                    
+                    libvirt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="qcow2.html">
+            
+                <a href="qcow2.html">
+            
+                    
+                    qcow2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="qemu.html">
+            
+                <a href="qemu.html">
+            
+                    
+                    qemu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="sanlock.html">
+            
+                <a href="sanlock.html">
+            
+                    
+                    sanlock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="openstack.html">
+            
+                <a href="openstack.html">
+            
+                    
+                    openstack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="vmware.html">
+            
+                <a href="vmware.html">
+            
+                    
+                    vmware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="distributed-network.html">
+            
+                <a href="distributed-network.html">
+            
+                    
+                    distributed-network
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">系统架构</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../framework/architecture-evolution.html">
+            
+                <a href="../framework/architecture-evolution.html">
+            
+                    
+                    架构演进
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../framework/cluster-architecture.html">
+            
+                <a href="../framework/cluster-architecture.html">
+            
+                    
+                    集群架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../framework/distributed-architecture.html">
+            
+                <a href="../framework/distributed-architecture.html">
+            
+                    
+                    分布式架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../framework/microservices-architecture.html">
+            
+                <a href="../framework/microservices-architecture.html">
+            
+                    
+                    微服务架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">闲聊杂谈</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../gossip/编程的智慧.html">
+            
+                <a href="../gossip/编程的智慧.html">
+            
+                    
+                    编程的智慧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../gossip/如何阅读别人的代码.html">
+            
+                <a href="../gossip/如何阅读别人的代码.html">
+            
+                    
+                    如何阅读别人的代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >kvm</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#kvm&#x8BE6;&#x89E3;"><b></b>KVM&#x8BE6;&#x89E3;</a></li><ul><li><span class="title-icon "></span><a href="#kvm&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><b></b>KVM&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#kvm&#x7684;&#x7279;&#x70B9;"><b></b>KVM&#x7684;&#x7279;&#x70B9;</a></li><li><span class="title-icon "></span><a href="#&#x4E00;&#x3001;kvm&#x6838;&#x5FC3;&#x539F;&#x7406;"><b></b>&#x4E00;&#x3001;KVM&#x6838;&#x5FC3;&#x539F;&#x7406;</a></li><ul><li><span class="title-icon "></span><a href="#11-kvm&#x67B6;&#x6784;"><b></b>1.1 KVM&#x67B6;&#x6784;</a></li><li><span class="title-icon "></span><a href="#12-kvm&#x6838;&#x5FC3;&#x7EC4;&#x4EF6;"><b></b>1.2 KVM&#x6838;&#x5FC3;&#x7EC4;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#13-cpu&#x865A;&#x62DF;&#x5316;"><b></b>1.3 CPU&#x865A;&#x62DF;&#x5316;</a></li><li><span class="title-icon "></span><a href="#14-&#x5185;&#x5B58;&#x865A;&#x62DF;&#x5316;"><b></b>1.4 &#x5185;&#x5B58;&#x865A;&#x62DF;&#x5316;</a></li><li><span class="title-icon "></span><a href="#15-io&#x865A;&#x62DF;&#x5316;"><b></b>1.5 I/O&#x865A;&#x62DF;&#x5316;</a></li></ul><li><span class="title-icon "></span><a href="#&#x4E8C;&#x3001;kvm&#x5E38;&#x89C1;&#x95EE;&#x9898;&#x5206;&#x6790;&#x4E0E;&#x6392;&#x67E5;"><b></b>&#x4E8C;&#x3001;KVM&#x5E38;&#x89C1;&#x95EE;&#x9898;&#x5206;&#x6790;&#x4E0E;&#x6392;&#x67E5;</a></li><ul><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;1&#xFF1A;kvm&#x6A21;&#x5757;&#x65E0;&#x6CD5;&#x52A0;&#x8F7D;"><b></b>&#x95EE;&#x9898;1&#xFF1A;KVM&#x6A21;&#x5757;&#x65E0;&#x6CD5;&#x52A0;&#x8F7D;</a></li><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;2&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x65E0;&#x6CD5;&#x542F;&#x52A8;"><b></b>&#x95EE;&#x9898;2&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x65E0;&#x6CD5;&#x542F;&#x52A8;</a></li><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;3&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x6027;&#x80FD;&#x5DEE;"><b></b>&#x95EE;&#x9898;3&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x6027;&#x80FD;&#x5DEE;</a></li><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;4&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#x7F51;&#x7EDC;"><b></b>&#x95EE;&#x9898;4&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#x7F51;&#x7EDC;</a></li><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;5&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x4E0D;&#x8DB3;"><b></b>&#x95EE;&#x9898;5&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x4E0D;&#x8DB3;</a></li><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;6&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x65E0;&#x6CD5;&#x70ED;&#x6DFB;&#x52A0;&#x8BBE;&#x5907;"><b></b>&#x95EE;&#x9898;6&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x65E0;&#x6CD5;&#x70ED;&#x6DFB;&#x52A0;&#x8BBE;&#x5907;</a></li><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;7&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x5FEB;&#x7167;&#x5931;&#x8D25;"><b></b>&#x95EE;&#x9898;7&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x5FEB;&#x7167;&#x5931;&#x8D25;</a></li><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;8&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x8FC1;&#x79FB;&#x5931;&#x8D25;"><b></b>&#x95EE;&#x9898;8&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x8FC1;&#x79FB;&#x5931;&#x8D25;</a></li><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;9&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x65F6;&#x95F4;&#x540C;&#x6B65;&#x95EE;&#x9898;"><b></b>&#x95EE;&#x9898;9&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x65F6;&#x95F4;&#x540C;&#x6B65;&#x95EE;&#x9898;</a></li><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;10&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x5D29;&#x6E83;"><b></b>&#x95EE;&#x9898;10&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x5D29;&#x6E83;</a></li></ul><li><span class="title-icon "></span><a href="#&#x4E09;&#x3001;kvm&#x9762;&#x8BD5;&#x9898;"><b></b>&#x4E09;&#x3001;KVM&#x9762;&#x8BD5;&#x9898;</a></li><ul><li><span class="title-icon "></span><a href="#&#x57FA;&#x7840;&#x95EE;&#x9898;"><b></b>&#x57FA;&#x7840;&#x95EE;&#x9898;</a></li><li><span class="title-icon "></span><a href="#&#x590D;&#x6742;&#x573A;&#x666F;&#x95EE;&#x9898;"><b></b>&#x590D;&#x6742;&#x573A;&#x666F;&#x95EE;&#x9898;</a></li></ul></ul><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;host-model&#x6A21;&#x5F0F;"><b></b>&#x4F7F;&#x7528;host-model&#x6A21;&#x5F0F;</a></li><li><span class="title-icon "></span><a href="#&#x6DFB;&#x52A0;-"><b></b>&#x6DFB;&#x52A0; </a></li><li><span class="title-icon "></span><a href="#&#x914D;&#x7F6E;cpu-pinning"><b></b>&#x914D;&#x7F6E;CPU pinning</a></li><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;qcow2&#x683C;&#x5F0F;"><b></b>&#x4F7F;&#x7528;qcow2&#x683C;&#x5F0F;</a></li><li><span class="title-icon "></span><a href="#&#x542F;&#x7528;&#x7F13;&#x5B58;"><b></b>&#x542F;&#x7528;&#x7F13;&#x5B58;</a></li><li><span class="title-icon "></span><a href="#&#x6DFB;&#x52A0;-_1"><b></b>&#x6DFB;&#x52A0; </a></li><li><span class="title-icon "></span><a href="#&#x521B;&#x5EFA;&#x5FEB;&#x7167;"><b></b>&#x521B;&#x5EFA;&#x5FEB;&#x7167;</a></li><li><span class="title-icon "></span><a href="#&#x590D;&#x5236;&#x5FEB;&#x7167;"><b></b>&#x590D;&#x5236;&#x5FEB;&#x7167;</a></li><li><span class="title-icon "></span><a href="#&#x5220;&#x9664;&#x5FEB;&#x7167;"><b></b>&#x5220;&#x9664;&#x5FEB;&#x7167;</a></li><li><span class="title-icon "></span><a href="#&#x521B;&#x5EFA;&#x9694;&#x79BB;&#x7F51;&#x7EDC;"><b></b>&#x521B;&#x5EFA;&#x9694;&#x79BB;&#x7F51;&#x7EDC;</a></li><li><span class="title-icon "></span><a href="#&#x542F;&#x52A8;&#x7F51;&#x7EDC;"><b></b>&#x542F;&#x52A8;&#x7F51;&#x7EDC;</a></li><li><span class="title-icon "></span><a href="#&#x8FDE;&#x63A5;&#x865A;&#x62DF;&#x673A;&#x5230;&#x9694;&#x79BB;&#x7F51;&#x7EDC;"><b></b>&#x8FDE;&#x63A5;&#x865A;&#x62DF;&#x673A;&#x5230;&#x9694;&#x79BB;&#x7F51;&#x7EDC;</a></li><li><span class="title-icon "></span><a href="#&#x505C;&#x6B62;libvirtd"><b></b>&#x505C;&#x6B62;libvirtd</a></li><li><span class="title-icon "></span><a href="#&#x5347;&#x7EA7;qemu&#x548C;libvirt"><b></b>&#x5347;&#x7EA7;QEMU&#x548C;libvirt</a></li><li><span class="title-icon "></span><a href="#&#x91CD;&#x542F;libvirtd"><b></b>&#x91CD;&#x542F;libvirtd</a></li><li><span class="title-icon "></span><a href="#&#x67E5;&#x770B;vm-cpu&#x4F7F;&#x7528;"><b></b>&#x67E5;&#x770B;VM CPU&#x4F7F;&#x7528;</a></li><li><span class="title-icon "></span><a href="#&#x68C0;&#x67E5;&#x5BBF;&#x4E3B;&#x673A;cpu"><b></b>&#x68C0;&#x67E5;&#x5BBF;&#x4E3B;&#x673A;CPU</a></li><li><span class="title-icon "></span><a href="#&#x68C0;&#x67E5;cpu-pinning"><b></b>&#x68C0;&#x67E5;CPU pinning</a></li><li><span class="title-icon "></span><a href="#&#x6D4B;&#x8BD5;&#x78C1;&#x76D8;io"><b></b>&#x6D4B;&#x8BD5;&#x78C1;&#x76D8;I/O</a></li><li><span class="title-icon "></span><a href="#&#x68C0;&#x67E5;&#x7F13;&#x5B58;&#x6A21;&#x5F0F;"><b></b>&#x68C0;&#x67E5;&#x7F13;&#x5B58;&#x6A21;&#x5F0F;</a></li><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;selinux"><b></b>&#x4F7F;&#x7528;SELinux</a></li><li><span class="title-icon "></span><a href="#&#x914D;&#x7F6E;apparmor"><b></b>&#x914D;&#x7F6E;AppArmor</a></li><li><span class="title-icon "></span><a href="#&#x5B9A;&#x671F;&#x66F4;&#x65B0;"><b></b>&#x5B9A;&#x671F;&#x66F4;&#x65B0;</a></li><li><span class="title-icon "></span><a href="#&#x542F;&#x7528;&#x81EA;&#x52A8;&#x66F4;&#x65B0;"><b></b>&#x542F;&#x7528;&#x81EA;&#x52A8;&#x66F4;&#x65B0;</a></li><ul><li><span class="title-icon "></span><a href="#&#x672A;&#x5B8C;&#x5F85;&#x7EED;"><b></b>...&#x672A;&#x5B8C;&#x5F85;&#x7EED;...</a></li></ul></ul></div><a href="#kvm&#x8BE6;&#x89E3;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="kvm&#x8BE6;&#x89E3;"><a name="kvm&#x8BE6;&#x89E3;" class="anchor-navigation-ex-anchor" href="#kvm&#x8BE6;&#x89E3;"><i class="fa fa-link" aria-hidden="true"></i></a>KVM&#x8BE6;&#x89E3;</h1>
+<h2 id="kvm&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><a name="kvm&#x662F;&#x4EC0;&#x4E48;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#kvm&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>KVM&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</h2>
+<p>&#x2003;&#x2003;KVM&#xFF08;Kernel-based Virtual Machine&#xFF09;&#x662F;Linux&#x5185;&#x6838;&#x4E2D;&#x7684;&#x865A;&#x62DF;&#x5316;&#x6A21;&#x5757;&#xFF0C;&#x5141;&#x8BB8;Linux&#x5185;&#x6838;&#x4F5C;&#x4E3A;hypervisor&#x8FD0;&#x884C;&#x865A;&#x62DF;&#x673A;&#x3002;KVM&#x662F;&#x5B8C;&#x5168;&#x5F00;&#x6E90;&#x7684;&#xFF0C;&#x6027;&#x80FD;&#x63A5;&#x8FD1;&#x88F8;&#x673A;&#xFF0C;&#x662F;&#x76EE;&#x524D;&#x6700;&#x6D41;&#x884C;&#x7684;&#x5F00;&#x6E90;&#x865A;&#x62DF;&#x5316;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x4E4B;&#x4E00;&#x3002;</p>
+<h2 id="kvm&#x7684;&#x7279;&#x70B9;"><a name="kvm&#x7684;&#x7279;&#x70B9;" class="anchor-navigation-ex-anchor" href="#kvm&#x7684;&#x7279;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>KVM&#x7684;&#x7279;&#x70B9;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x7279;&#x6027;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>&#x6027;&#x80FD;&#x4F18;&#x5F02;</strong></td>
+<td>&#x786C;&#x4EF6;&#x8F85;&#x52A9;&#x865A;&#x62DF;&#x5316;&#xFF0C;&#x63A5;&#x8FD1;&#x88F8;&#x673A;&#x6027;&#x80FD;</td>
+</tr>
+<tr>
+<td><strong>&#x5B8C;&#x5168;&#x5F00;&#x6E90;</strong></td>
+<td>&#x6838;&#x5FC3;&#x4EE3;&#x7801;&#x5728;Linux&#x5185;&#x6838;&#x4E2D;</td>
+</tr>
+<tr>
+<td><strong>&#x652F;&#x6301;&#x5E7F;&#x6CDB;</strong></td>
+<td>&#x652F;&#x6301;x86&#x3001;ARM&#x7B49;&#x591A;&#x79CD;&#x67B6;&#x6784;</td>
+</tr>
+<tr>
+<td><strong>&#x7075;&#x6D3B;&#x6269;&#x5C55;</strong></td>
+<td>&#x652F;&#x6301;&#x70ED;&#x63D2;&#x62D4;CPU&#x3001;&#x5185;&#x5B58;&#x3001;&#x78C1;&#x76D8;</td>
+</tr>
+<tr>
+<td><strong>&#x5B89;&#x5168;&#x9694;&#x79BB;</strong></td>
+<td>&#x57FA;&#x4E8E;Linux&#x5185;&#x6838;&#x7684;&#x5B89;&#x5168;&#x673A;&#x5236;</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="&#x4E00;&#x3001;kvm&#x6838;&#x5FC3;&#x539F;&#x7406;"><a name="&#x4E00;&#x3001;kvm&#x6838;&#x5FC3;&#x539F;&#x7406;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x3001;kvm&#x6838;&#x5FC3;&#x539F;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x3001;KVM&#x6838;&#x5FC3;&#x539F;&#x7406;</h2>
+<h3 id="11-kvm&#x67B6;&#x6784;"><a name="11-kvm&#x67B6;&#x6784;" class="anchor-navigation-ex-anchor" href="#11-kvm&#x67B6;&#x6784;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1 KVM&#x67B6;&#x6784;</h3>
+<pre class="language-"><code>&#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
+&#x2502;                         &#x786C;&#x4EF6;&#x5C42; (Hardware)                              &#x2502;
+&#x2502;  &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;  &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;  &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;                &#x2502;
+&#x2502;  &#x2502;   CPU        &#x2502;  &#x2502;   Memory     &#x2502;  &#x2502;   I/O&#x8BBE;&#x5907;    &#x2502;                &#x2502;
+&#x2502;  &#x2502; (&#x652F;&#x6301;VT-x/   &#x2502;  &#x2502;              &#x2502;  &#x2502; (&#x7F51;&#x5361;/&#x78C1;&#x76D8;&#x7B49;)&#x2502;                &#x2502;
+&#x2502;  &#x2502;  AMD-V)      &#x2502;  &#x2502;              &#x2502;  &#x2502;              &#x2502;                &#x2502;
+&#x2502;  &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;  &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;  &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;                &#x2502;
+&#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+                          &#x2502;
+                          &#x25BC;
+&#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
+&#x2502;                       KVM Hypervisor                                   &#x2502;
+&#x2502;  &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;  &#x2502;
+&#x2502;  &#x2502;                   Linux Kernel                                  &#x2502;  &#x2502;
+&#x2502;  &#x2502;  &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;  &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;  &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;  &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510; &#x2502;  &#x2502;
+&#x2502;  &#x2502;  &#x2502;  kvm.ko  &#x2502;  &#x2502; kvm-intel&#x2502;  &#x2502; kvm-amd  &#x2502;  &#x2502;  QEMU&#x7528;&#x6237;&#x6001;   &#x2502; &#x2502;  &#x2502;
+&#x2502;  &#x2502;  &#x2502; (&#x6838;&#x5FC3;&#x6A21;  &#x2502;  &#x2502; .ko      &#x2502;  &#x2502; .ko      &#x2502;  &#x2502;  (&#x8BBE;&#x5907;&#x6A21;&#x62DF;)   &#x2502; &#x2502;  &#x2502;
+&#x2502;  &#x2502;  &#x2502; &#x5757;)      &#x2502;  &#x2502; (Intel   &#x2502;  &#x2502; (AMD     &#x2502;  &#x2502;               &#x2502; &#x2502;  &#x2502;
+&#x2502;  &#x2502;  &#x2502;          &#x2502;  &#x2502; VT-x&#x652F;&#x6301;)&#x2502;  &#x2502; AMD-V&#x652F;&#x6301;)&#x2502;  &#x2502;               &#x2502; &#x2502;  &#x2502;
+&#x2502;  &#x2502;  &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;  &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;  &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;  &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518; &#x2502;  &#x2502;
+&#x2502;  &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;  &#x2502;
+&#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+                          &#x2502;
+          &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
+          &#x25BC;               &#x25BC;               &#x25BC;
+&#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510; &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510; &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
+&#x2502;   Guest VM 1   &#x2502; &#x2502;   Guest VM 2   &#x2502; &#x2502;   Guest VM 3   &#x2502;
+&#x2502;  (Linux/Windows)&#x2502; &#x2502;  (Linux/Windows)&#x2502; &#x2502;  (Linux/Windows)&#x2502;
+&#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518; &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518; &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+</code></pre><h3 id="12-kvm&#x6838;&#x5FC3;&#x7EC4;&#x4EF6;"><a name="12-kvm&#x6838;&#x5FC3;&#x7EC4;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#12-kvm&#x6838;&#x5FC3;&#x7EC4;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2 KVM&#x6838;&#x5FC3;&#x7EC4;&#x4EF6;</h3>
+<p><strong>kvm.ko</strong>&#xFF1A;</p>
+<ul>
+<li>KVM&#x7684;&#x6838;&#x5FC3;&#x5185;&#x6838;&#x6A21;&#x5757;</li>
+<li>&#x63D0;&#x4F9B;CPU&#x865A;&#x62DF;&#x5316;&#x529F;&#x80FD;</li>
+<li>&#x7BA1;&#x7406;VM&#x7684;&#x521B;&#x5EFA;&#x548C;&#x8FD0;&#x884C;</li>
+</ul>
+<p><strong>kvm-intel.ko / kvm-amd.ko</strong>&#xFF1A;</p>
+<ul>
+<li>&#x7279;&#x5B9A;&#x4E8E;CPU&#x5382;&#x5546;&#x7684;&#x6A21;&#x5757;</li>
+<li>&#x5229;&#x7528;Intel VT-x&#x6216;AMD-V&#x6269;&#x5C55;</li>
+<li>&#x5B9E;&#x73B0;&#x786C;&#x4EF6;&#x8F85;&#x52A9;&#x865A;&#x62DF;&#x5316;</li>
+</ul>
+<p><strong>QEMU</strong>&#xFF1A;</p>
+<ul>
+<li>&#x7528;&#x6237;&#x6001;&#x8FDB;&#x7A0B;</li>
+<li>&#x6A21;&#x62DF;I/O&#x8BBE;&#x5907;&#xFF08;&#x7F51;&#x5361;&#x3001;&#x78C1;&#x76D8;&#x3001;&#x663E;&#x5361;&#x7B49;&#xFF09;</li>
+<li>&#x63D0;&#x4F9B;&#x865A;&#x62DF;&#x673A;&#x7684;&#x7528;&#x6237;&#x63A5;&#x53E3;</li>
+</ul>
+<p><strong>libvirt</strong>&#xFF1A;</p>
+<ul>
+<li>&#x865A;&#x62DF;&#x5316;&#x7BA1;&#x7406;API</li>
+<li>&#x63D0;&#x4F9B;&#x7EDF;&#x4E00;&#x7684;&#x7BA1;&#x7406;&#x63A5;&#x53E3;</li>
+<li>&#x652F;&#x6301;&#x591A;&#x79CD;hypervisor</li>
+</ul>
+<h3 id="13-cpu&#x865A;&#x62DF;&#x5316;"><a name="13-cpu&#x865A;&#x62DF;&#x5316;" class="anchor-navigation-ex-anchor" href="#13-cpu&#x865A;&#x62DF;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3 CPU&#x865A;&#x62DF;&#x5316;</h3>
+<p><strong>&#x786C;&#x4EF6;&#x8F85;&#x52A9;&#x865A;&#x62DF;&#x5316;</strong>&#xFF1A;</p>
+<pre class="language-"><code>&#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
+&#x2502;                   VMX Root Mode                    &#x2502;
+&#x2502;  (Hypervisor&#x8FD0;&#x884C;&#x6A21;&#x5F0F;)                               &#x2502;
+&#x2502;  &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;   &#x2502;
+&#x2502;  &#x2502;  VMCS (Virtual Machine Control Structure)   &#x2502;   &#x2502;
+&#x2502;  &#x2502;  - &#x5B58;&#x50A8;VM&#x72B6;&#x6001;                               &#x2502;   &#x2502;
+&#x2502;  &#x2502;  - &#x63A7;&#x5236;VM&#x6267;&#x884C;                               &#x2502;   &#x2502;
+&#x2502;  &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;   &#x2502;
+&#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+                          &#x2502; VM Entry
+                          &#x25BC;
+&#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
+&#x2502;                  VMX Non-Root Mode                 &#x2502;
+&#x2502;  (Guest VM&#x8FD0;&#x884C;&#x6A21;&#x5F0F;)                                &#x2502;
+&#x2502;  &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;   &#x2502;
+&#x2502;  &#x2502;  Guest OS                                   &#x2502;   &#x2502;
+&#x2502;  &#x2502;  - &#x6267;&#x884C;&#x666E;&#x901A;&#x6307;&#x4EE4;                             &#x2502;   &#x2502;
+&#x2502;  &#x2502;  - &#x9047;&#x5230;&#x7279;&#x6743;&#x6307;&#x4EE4;&#x89E6;&#x53D1;VM Exit                  &#x2502;   &#x2502;
+&#x2502;  &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;   &#x2502;
+&#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+</code></pre><h3 id="14-&#x5185;&#x5B58;&#x865A;&#x62DF;&#x5316;"><a name="14-&#x5185;&#x5B58;&#x865A;&#x62DF;&#x5316;" class="anchor-navigation-ex-anchor" href="#14-&#x5185;&#x5B58;&#x865A;&#x62DF;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4 &#x5185;&#x5B58;&#x865A;&#x62DF;&#x5316;</h3>
+<p><strong>EPT (Extended Page Tables)</strong>&#xFF1A;</p>
+<pre class="language-"><code>Guest&#x865A;&#x62DF;&#x5730;&#x5740; &#x2192; EPT &#x2192; &#x7269;&#x7406;&#x5730;&#x5740;
+</code></pre><p><strong>&#x5185;&#x5B58;&#x7BA1;&#x7406;&#x5355;&#x5143;</strong>&#xFF1A;</p>
+<ul>
+<li>&#x4E24;&#x7EA7;&#x9875;&#x8868;&#x8F6C;&#x6362;</li>
+<li>&#x51CF;&#x5C11;TLB&#x5237;&#x65B0;&#x5F00;&#x9500;</li>
+<li>&#x652F;&#x6301;&#x5927;&#x9875;&#x5185;&#x5B58;</li>
+</ul>
+<h3 id="15-io&#x865A;&#x62DF;&#x5316;"><a name="15-io&#x865A;&#x62DF;&#x5316;" class="anchor-navigation-ex-anchor" href="#15-io&#x865A;&#x62DF;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5 I/O&#x865A;&#x62DF;&#x5316;</h3>
+<p><strong>&#x8BBE;&#x5907;&#x6A21;&#x62DF;</strong>&#xFF1A;</p>
+<pre class="language-"><code>&#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
+&#x2502;                   QEMU&#x8BBE;&#x5907;&#x6A21;&#x62DF;                      &#x2502;
+&#x2502;  &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510; &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510; &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510; &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510; &#x2502;
+&#x2502;  &#x2502;  IDE     &#x2502; &#x2502;  NIC     &#x2502; &#x2502;  VGA     &#x2502; &#x2502;  USB   &#x2502; &#x2502;
+&#x2502;  &#x2502; (&#x78C1;&#x76D8;)   &#x2502; &#x2502; (&#x7F51;&#x5361;)   &#x2502; &#x2502; (&#x663E;&#x5361;)   &#x2502; &#x2502;        &#x2502; &#x2502;
+&#x2502;  &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518; &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518; &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518; &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518; &#x2502;
+&#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+</code></pre><p><strong>PCI&#x900F;&#x4F20;</strong>&#xFF1A;</p>
+<ul>
+<li>&#x76F4;&#x63A5;&#x5206;&#x914D;&#x7269;&#x7406;&#x8BBE;&#x5907;&#x7ED9;VM</li>
+<li>&#x7ED5;&#x8FC7;QEMU&#x6A21;&#x62DF;&#xFF0C;&#x6027;&#x80FD;&#x66F4;&#x597D;</li>
+<li>&#x9700;&#x8981;IOMMU&#x652F;&#x6301;</li>
+</ul>
+<p><strong>VirtIO</strong>&#xFF1A;</p>
+<ul>
+<li>&#x534A;&#x865A;&#x62DF;&#x5316;I/O</li>
+<li>&#x865A;&#x62DF;&#x673A;&#x5185;&#x5B89;&#x88C5;VirtIO&#x9A71;&#x52A8;</li>
+<li>&#x6BD4;&#x5B8C;&#x5168;&#x6A21;&#x62DF;&#x6027;&#x80FD;&#x66F4;&#x597D;</li>
+</ul>
+<hr>
+<h2 id="&#x4E8C;&#x3001;kvm&#x5E38;&#x89C1;&#x95EE;&#x9898;&#x5206;&#x6790;&#x4E0E;&#x6392;&#x67E5;"><a name="&#x4E8C;&#x3001;kvm&#x5E38;&#x89C1;&#x95EE;&#x9898;&#x5206;&#x6790;&#x4E0E;&#x6392;&#x67E5;" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x3001;kvm&#x5E38;&#x89C1;&#x95EE;&#x9898;&#x5206;&#x6790;&#x4E0E;&#x6392;&#x67E5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8C;&#x3001;KVM&#x5E38;&#x89C1;&#x95EE;&#x9898;&#x5206;&#x6790;&#x4E0E;&#x6392;&#x67E5;</h2>
+<h3 id="&#x95EE;&#x9898;1&#xFF1A;kvm&#x6A21;&#x5757;&#x65E0;&#x6CD5;&#x52A0;&#x8F7D;"><a name="&#x95EE;&#x9898;1&#xFF1A;kvm&#x6A21;&#x5757;&#x65E0;&#x6CD5;&#x52A0;&#x8F7D;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;1&#xFF1A;kvm&#x6A21;&#x5757;&#x65E0;&#x6CD5;&#x52A0;&#x8F7D;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;1&#xFF1A;KVM&#x6A21;&#x5757;&#x65E0;&#x6CD5;&#x52A0;&#x8F7D;</h3>
+<p><strong>&#x73B0;&#x8C61;</strong>&#xFF1A;</p>
+<pre class="language-"><code>modprobe: ERROR: could not insert &apos;kvm_intel&apos;: Operation not supported
+</code></pre><p><strong>&#x6392;&#x67E5;&#x6B65;&#x9AA4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># 1. &#x68C0;&#x67E5;CPU&#x662F;&#x5426;&#x652F;&#x6301;&#x865A;&#x62DF;&#x5316;</span>
+<span class="token function">grep</span> <span class="token parameter variable">-E</span> <span class="token string">&apos;(vmx|svm)&apos;</span> /proc/cpuinfo
+
+<span class="token comment"># 2. &#x68C0;&#x67E5;BIOS&#x8BBE;&#x7F6E;</span>
+<span class="token comment"># &#x9700;&#x8981;&#x5728;BIOS&#x4E2D;&#x5F00;&#x542F;Intel VT-x&#x6216;AMD-V</span>
+
+<span class="token comment"># 3. &#x68C0;&#x67E5;&#x5185;&#x6838;&#x7248;&#x672C;</span>
+<span class="token function">uname</span> <span class="token parameter variable">-r</span>
+
+<span class="token comment"># 4. &#x5C1D;&#x8BD5;&#x52A0;&#x8F7D;&#x6A21;&#x5757;</span>
+modprobe kvm
+modprobe kvm_intel
+</code></pre>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x5728;BIOS&#x4E2D;&#x5F00;&#x542F;&#x865A;&#x62DF;&#x5316;&#x652F;&#x6301;</li>
+<li>&#x5347;&#x7EA7;&#x5185;&#x6838;&#x7248;&#x672C;</li>
+<li>&#x68C0;&#x67E5;CPU&#x662F;&#x5426;&#x652F;&#x6301;&#x865A;&#x62DF;&#x5316;</li>
+</ol>
+<hr>
+<h3 id="&#x95EE;&#x9898;2&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x65E0;&#x6CD5;&#x542F;&#x52A8;"><a name="&#x95EE;&#x9898;2&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x65E0;&#x6CD5;&#x542F;&#x52A8;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;2&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x65E0;&#x6CD5;&#x542F;&#x52A8;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;2&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x65E0;&#x6CD5;&#x542F;&#x52A8;</h3>
+<p><strong>&#x73B0;&#x8C61;</strong>&#xFF1A;</p>
+<pre class="language-"><code>qemu-system-x86_64: failed to initialize KVM: Permission denied
+</code></pre><p><strong>&#x6392;&#x67E5;&#x6B65;&#x9AA4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># 1. &#x68C0;&#x67E5;KVM&#x8BBE;&#x5907;&#x6743;&#x9650;</span>
+<span class="token function">ls</span> <span class="token parameter variable">-la</span> /dev/kvm
+
+<span class="token comment"># 2. &#x68C0;&#x67E5;&#x7528;&#x6237;&#x7EC4;</span>
+<span class="token function">groups</span> <span class="token environment constant">$USER</span>
+
+<span class="token comment"># 3. &#x68C0;&#x67E5;SELinux&#x72B6;&#x6001;</span>
+getenforce
+
+<span class="token comment"># 4. &#x68C0;&#x67E5;libvirtd&#x72B6;&#x6001;</span>
+systemctl status libvirtd
+</code></pre>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x5C06;&#x7528;&#x6237;&#x6DFB;&#x52A0;&#x5230;kvm&#x7EC4;</li>
+<li>&#x8BBE;&#x7F6E;&#x6B63;&#x786E;&#x7684;&#x6743;&#x9650;</li>
+<li>&#x5173;&#x95ED;SELinux&#x6216;&#x914D;&#x7F6E;&#x89C4;&#x5219;</li>
+</ol>
+<hr>
+<h3 id="&#x95EE;&#x9898;3&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x6027;&#x80FD;&#x5DEE;"><a name="&#x95EE;&#x9898;3&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x6027;&#x80FD;&#x5DEE;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;3&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x6027;&#x80FD;&#x5DEE;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;3&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x6027;&#x80FD;&#x5DEE;</h3>
+<p><strong>&#x73B0;&#x8C61;</strong>&#xFF1A;</p>
+<ul>
+<li>CPU&#x4F7F;&#x7528;&#x7387;&#x9AD8;</li>
+<li>&#x78C1;&#x76D8;I/O&#x6162;</li>
+<li>&#x7F51;&#x7EDC;&#x5EF6;&#x8FDF;&#x5927;</li>
+</ul>
+<p><strong>&#x6392;&#x67E5;&#x6B65;&#x9AA4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># 1. &#x68C0;&#x67E5;CPU&#x865A;&#x62DF;&#x5316;</span>
+<span class="token function">cat</span> /proc/cpuinfo <span class="token operator">|</span> <span class="token function">grep</span> vmx
+
+<span class="token comment"># 2. &#x68C0;&#x67E5;&#x5185;&#x5B58;&#x914D;&#x7F6E;</span>
+<span class="token function">free</span> <span class="token parameter variable">-h</span>
+
+<span class="token comment"># 3. &#x68C0;&#x67E5;&#x78C1;&#x76D8;I/O</span>
+iostat <span class="token parameter variable">-x</span> <span class="token number">1</span>
+
+<span class="token comment"># 4. &#x68C0;&#x67E5;&#x7F51;&#x7EDC;&#x72B6;&#x6001;</span>
+iftop
+</code></pre>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x4F7F;&#x7528;VirtIO&#x9A71;&#x52A8;</li>
+<li>&#x914D;&#x7F6E;&#x5927;&#x9875;&#x5185;&#x5B58;</li>
+<li>&#x4F7F;&#x7528;PCI&#x900F;&#x4F20;</li>
+</ol>
+<hr>
+<h3 id="&#x95EE;&#x9898;4&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#x7F51;&#x7EDC;"><a name="&#x95EE;&#x9898;4&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#x7F51;&#x7EDC;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;4&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#x7F51;&#x7EDC;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;4&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#x7F51;&#x7EDC;</h3>
+<p><strong>&#x73B0;&#x8C61;</strong>&#xFF1A;</p>
+<ul>
+<li>&#x865A;&#x62DF;&#x673A;&#x5185;&#x65E0;&#x6CD5;ping&#x901A;&#x7F51;&#x5173;</li>
+<li>&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x8D85;&#x65F6;</li>
+</ul>
+<p><strong>&#x6392;&#x67E5;&#x6B65;&#x9AA4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># 1. &#x68C0;&#x67E5;&#x865A;&#x62DF;&#x7F51;&#x7EDC;&#x914D;&#x7F6E;</span>
+<span class="token function">virsh</span> net-list <span class="token parameter variable">--all</span>
+
+<span class="token comment"># 2. &#x68C0;&#x67E5;&#x6865;&#x63A5;&#x914D;&#x7F6E;</span>
+brctl show
+
+<span class="token comment"># 3. &#x68C0;&#x67E5;&#x9632;&#x706B;&#x5899;&#x89C4;&#x5219;</span>
+iptables <span class="token parameter variable">-L</span>
+
+<span class="token comment"># 4. &#x68C0;&#x67E5;&#x865A;&#x62DF;&#x673A;&#x7F51;&#x7EDC;&#x914D;&#x7F6E;</span>
+<span class="token function">virsh</span> domiflist vm-name
+</code></pre>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x521B;&#x5EFA;&#x865A;&#x62DF;&#x7F51;&#x7EDC;</li>
+<li>&#x914D;&#x7F6E;&#x6865;&#x63A5;&#x63A5;&#x53E3;</li>
+<li>&#x68C0;&#x67E5;&#x9632;&#x706B;&#x5899;&#x89C4;&#x5219;</li>
+</ol>
+<hr>
+<h3 id="&#x95EE;&#x9898;5&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x4E0D;&#x8DB3;"><a name="&#x95EE;&#x9898;5&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x4E0D;&#x8DB3;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;5&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x4E0D;&#x8DB3;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;5&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x4E0D;&#x8DB3;</h3>
+<p><strong>&#x73B0;&#x8C61;</strong>&#xFF1A;</p>
+<pre class="language-"><code>No space left on device
+</code></pre><p><strong>&#x6392;&#x67E5;&#x6B65;&#x9AA4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># 1. &#x68C0;&#x67E5;&#x78C1;&#x76D8;&#x4F7F;&#x7528;</span>
+<span class="token function">df</span> <span class="token parameter variable">-h</span>
+
+<span class="token comment"># 2. &#x68C0;&#x67E5;&#x955C;&#x50CF;&#x6587;&#x4EF6;&#x5927;&#x5C0F;</span>
+<span class="token function">ls</span> <span class="token parameter variable">-la</span> /var/lib/libvirt/images/
+
+<span class="token comment"># 3. &#x68C0;&#x67E5;&#x865A;&#x62DF;&#x673A;&#x78C1;&#x76D8;&#x914D;&#x7F6E;</span>
+<span class="token function">virsh</span> domblklist vm-name
+
+<span class="token comment"># 4. &#x6269;&#x5C55;&#x78C1;&#x76D8;</span>
+qemu-img resize /var/lib/libvirt/images/vm-disk.qcow2 +10G
+</code></pre>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x6269;&#x5C55;&#x865A;&#x62DF;&#x78C1;&#x76D8;</li>
+<li>&#x5728;&#x865A;&#x62DF;&#x673A;&#x5185;&#x6269;&#x5C55;&#x5206;&#x533A;</li>
+<li>&#x6E05;&#x7406;&#x65E0;&#x7528;&#x6587;&#x4EF6;</li>
+</ol>
+<hr>
+<h3 id="&#x95EE;&#x9898;6&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x65E0;&#x6CD5;&#x70ED;&#x6DFB;&#x52A0;&#x8BBE;&#x5907;"><a name="&#x95EE;&#x9898;6&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x65E0;&#x6CD5;&#x70ED;&#x6DFB;&#x52A0;&#x8BBE;&#x5907;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;6&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x65E0;&#x6CD5;&#x70ED;&#x6DFB;&#x52A0;&#x8BBE;&#x5907;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;6&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x65E0;&#x6CD5;&#x70ED;&#x6DFB;&#x52A0;&#x8BBE;&#x5907;</h3>
+<p><strong>&#x73B0;&#x8C61;</strong>&#xFF1A;</p>
+<pre class="language-"><code>error: Failed to attach device
+error: operation failed: unsupported configuration: ...
+</code></pre><p><strong>&#x6392;&#x67E5;&#x6B65;&#x9AA4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># 1. &#x68C0;&#x67E5;&#x865A;&#x62DF;&#x673A;&#x914D;&#x7F6E;</span>
+<span class="token function">virsh</span> dumpxml vm-name <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-A</span> <span class="token number">5</span> <span class="token string">&quot;&lt;cpu&gt;&quot;</span>
+
+<span class="token comment"># 2. &#x68C0;&#x67E5;&#x70ED;&#x63D2;&#x62D4;&#x652F;&#x6301;</span>
+<span class="token function">virsh</span> domcapabilities <span class="token operator">|</span> <span class="token function">grep</span> hotplug
+
+<span class="token comment"># 3. &#x68C0;&#x67E5;QEMU&#x7248;&#x672C;</span>
+qemu-system-x86_64 <span class="token parameter variable">--version</span>
+
+<span class="token comment"># 4. &#x68C0;&#x67E5;libvirt&#x7248;&#x672C;</span>
+<span class="token function">virsh</span> <span class="token parameter variable">--version</span>
+</code></pre>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x66F4;&#x65B0;QEMU&#x548C;libvirt</li>
+<li>&#x914D;&#x7F6E;CPU&#x6A21;&#x5F0F;&#x4E3A;host-model</li>
+<li>&#x542F;&#x7528;&#x70ED;&#x63D2;&#x62D4;&#x652F;&#x6301;</li>
+</ol>
+<hr>
+<h3 id="&#x95EE;&#x9898;7&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x5FEB;&#x7167;&#x5931;&#x8D25;"><a name="&#x95EE;&#x9898;7&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x5FEB;&#x7167;&#x5931;&#x8D25;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;7&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x5FEB;&#x7167;&#x5931;&#x8D25;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;7&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x5FEB;&#x7167;&#x5931;&#x8D25;</h3>
+<p><strong>&#x73B0;&#x8C61;</strong>&#xFF1A;</p>
+<pre class="language-"><code>error: Failed to take snapshot
+error: unsupported configuration: internal snapshot for disk vda unsupported for storage type raw
+</code></pre><p><strong>&#x6392;&#x67E5;&#x6B65;&#x9AA4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># 1. &#x68C0;&#x67E5;&#x78C1;&#x76D8;&#x683C;&#x5F0F;</span>
+qemu-img info /var/lib/libvirt/images/vm-disk.img
+
+<span class="token comment"># 2. &#x68C0;&#x67E5;&#x5FEB;&#x7167;&#x7C7B;&#x578B;</span>
+<span class="token function">virsh</span> snapshot-list vm-name
+
+<span class="token comment"># 3. &#x68C0;&#x67E5;&#x5B58;&#x50A8;&#x6C60;&#x914D;&#x7F6E;</span>
+<span class="token function">virsh</span> pool-list <span class="token parameter variable">--all</span>
+
+<span class="token comment"># 4. &#x8F6C;&#x6362;&#x78C1;&#x76D8;&#x683C;&#x5F0F;</span>
+qemu-img convert <span class="token parameter variable">-f</span> raw <span class="token parameter variable">-O</span> qcow2 vm-disk.img vm-disk.qcow2
+</code></pre>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x5C06;&#x78C1;&#x76D8;&#x8F6C;&#x6362;&#x4E3A;qcow2&#x683C;&#x5F0F;</li>
+<li>&#x4F7F;&#x7528;&#x5916;&#x90E8;&#x5FEB;&#x7167;</li>
+<li>&#x68C0;&#x67E5;&#x5B58;&#x50A8;&#x6C60;&#x914D;&#x7F6E;</li>
+</ol>
+<hr>
+<h3 id="&#x95EE;&#x9898;8&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x8FC1;&#x79FB;&#x5931;&#x8D25;"><a name="&#x95EE;&#x9898;8&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x8FC1;&#x79FB;&#x5931;&#x8D25;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;8&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x8FC1;&#x79FB;&#x5931;&#x8D25;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;8&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x8FC1;&#x79FB;&#x5931;&#x8D25;</h3>
+<p><strong>&#x73B0;&#x8C61;</strong>&#xFF1A;</p>
+<pre class="language-"><code>error: Failed to migrate domain
+error: unable to connect to destination libvirt URI
+</code></pre><p><strong>&#x6392;&#x67E5;&#x6B65;&#x9AA4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># 1. &#x68C0;&#x67E5;&#x7F51;&#x7EDC;&#x8FDE;&#x901A;&#x6027;</span>
+<span class="token function">ping</span> destination-host
+
+<span class="token comment"># 2. &#x68C0;&#x67E5;SSH&#x8FDE;&#x63A5;</span>
+<span class="token function">ssh</span> destination-host
+
+<span class="token comment"># 3. &#x68C0;&#x67E5;libvirt&#x914D;&#x7F6E;</span>
+<span class="token function">cat</span> /etc/libvirt/libvirtd.conf
+
+<span class="token comment"># 4. &#x68C0;&#x67E5;SELinux&#x7B56;&#x7565;</span>
+sestatus
+</code></pre>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x914D;&#x7F6E;SSH&#x514D;&#x5BC6;&#x767B;&#x5F55;</li>
+<li>&#x914D;&#x7F6E;libvirt&#x76D1;&#x542C;</li>
+<li>&#x8C03;&#x6574;SELinux&#x7B56;&#x7565;</li>
+</ol>
+<hr>
+<h3 id="&#x95EE;&#x9898;9&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x65F6;&#x95F4;&#x540C;&#x6B65;&#x95EE;&#x9898;"><a name="&#x95EE;&#x9898;9&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x65F6;&#x95F4;&#x540C;&#x6B65;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;9&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x65F6;&#x95F4;&#x540C;&#x6B65;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;9&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x65F6;&#x95F4;&#x540C;&#x6B65;&#x95EE;&#x9898;</h3>
+<p><strong>&#x73B0;&#x8C61;</strong>&#xFF1A;</p>
+<ul>
+<li>&#x865A;&#x62DF;&#x673A;&#x65F6;&#x95F4;&#x4E0E;&#x5BBF;&#x4E3B;&#x673A;&#x4E0D;&#x540C;&#x6B65;</li>
+<li>&#x65F6;&#x95F4;&#x504F;&#x5DEE;&#x8D8A;&#x6765;&#x8D8A;&#x5927;</li>
+</ul>
+<p><strong>&#x6392;&#x67E5;&#x6B65;&#x9AA4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># 1. &#x68C0;&#x67E5;&#x5BBF;&#x4E3B;&#x673A;&#x65F6;&#x95F4;</span>
+<span class="token function">date</span>
+
+<span class="token comment"># 2. &#x68C0;&#x67E5;&#x865A;&#x62DF;&#x673A;&#x65F6;&#x95F4;</span>
+<span class="token function">virsh</span> domtime vm-name
+
+<span class="token comment"># 3. &#x68C0;&#x67E5;NTP&#x914D;&#x7F6E;</span>
+<span class="token function">cat</span> /etc/chrony.conf
+
+<span class="token comment"># 4. &#x68C0;&#x67E5;&#x65F6;&#x949F;&#x6E90;</span>
+<span class="token function">virsh</span> dumpxml vm-name <span class="token operator">|</span> <span class="token function">grep</span> clock
+</code></pre>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x914D;&#x7F6E;NTP&#x540C;&#x6B65;</li>
+<li>&#x4F7F;&#x7528;virtio-clock</li>
+<li>&#x914D;&#x7F6E;host-time</li>
+</ol>
+<hr>
+<h3 id="&#x95EE;&#x9898;10&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x5D29;&#x6E83;"><a name="&#x95EE;&#x9898;10&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x5D29;&#x6E83;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;10&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x5D29;&#x6E83;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;10&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x5D29;&#x6E83;</h3>
+<p><strong>&#x73B0;&#x8C61;</strong>&#xFF1A;</p>
+<ul>
+<li>&#x865A;&#x62DF;&#x673A;&#x7A81;&#x7136;&#x5173;&#x95ED;</li>
+<li>&#x5185;&#x6838;panic</li>
+</ul>
+<p><strong>&#x6392;&#x67E5;&#x6B65;&#x9AA4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># 1. &#x67E5;&#x770B;&#x865A;&#x62DF;&#x673A;&#x65E5;&#x5FD7;</span>
+<span class="token function">virsh</span> console vm-name
+
+<span class="token comment"># 2. &#x67E5;&#x770B;libvirt&#x65E5;&#x5FD7;</span>
+<span class="token function">cat</span> /var/log/libvirt/qemu/vm-name.log
+
+<span class="token comment"># 3. &#x68C0;&#x67E5;&#x5BBF;&#x4E3B;&#x673A;dmesg</span>
+<span class="token function">dmesg</span> <span class="token operator">|</span> <span class="token function">grep</span> kvm
+
+<span class="token comment"># 4. &#x68C0;&#x67E5;&#x5185;&#x5B58;&#x4F7F;&#x7528;</span>
+<span class="token function">free</span> <span class="token parameter variable">-h</span>
+</code></pre>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x68C0;&#x67E5;&#x8D44;&#x6E90;&#x9650;&#x5236;</li>
+<li>&#x66F4;&#x65B0;QEMU/KVM</li>
+<li>&#x68C0;&#x67E5;&#x786C;&#x4EF6;&#x517C;&#x5BB9;&#x6027;</li>
+</ol>
+<hr>
+<h2 id="&#x4E09;&#x3001;kvm&#x9762;&#x8BD5;&#x9898;"><a name="&#x4E09;&#x3001;kvm&#x9762;&#x8BD5;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x4E09;&#x3001;kvm&#x9762;&#x8BD5;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E09;&#x3001;KVM&#x9762;&#x8BD5;&#x9898;</h2>
+<h3 id="&#x57FA;&#x7840;&#x95EE;&#x9898;"><a name="&#x57FA;&#x7840;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x7840;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x57FA;&#x7840;&#x95EE;&#x9898;</h3>
+<p><strong>Q1&#xFF1A;KVM&#x662F;&#x4EC0;&#x4E48;&#xFF1F;&#x6709;&#x4EC0;&#x4E48;&#x7279;&#x70B9;&#xFF1F;</strong></p>
+<p><strong>A1&#xFF1A;</strong>
+KVM&#x662F;Linux&#x5185;&#x6838;&#x4E2D;&#x7684;&#x865A;&#x62DF;&#x5316;&#x6A21;&#x5757;&#xFF0C;&#x5177;&#x6709;&#x4EE5;&#x4E0B;&#x7279;&#x70B9;&#xFF1A;</p>
+<ul>
+<li>&#x6027;&#x80FD;&#x4F18;&#x5F02;&#xFF1A;&#x786C;&#x4EF6;&#x8F85;&#x52A9;&#x865A;&#x62DF;&#x5316;</li>
+<li>&#x5B8C;&#x5168;&#x5F00;&#x6E90;&#xFF1A;&#x6838;&#x5FC3;&#x4EE3;&#x7801;&#x5728;Linux&#x5185;&#x6838;&#x4E2D;</li>
+<li>&#x652F;&#x6301;&#x5E7F;&#x6CDB;&#xFF1A;&#x652F;&#x6301;x86&#x3001;ARM&#x7B49;&#x67B6;&#x6784;</li>
+<li>&#x7075;&#x6D3B;&#x6269;&#x5C55;&#xFF1A;&#x652F;&#x6301;&#x70ED;&#x63D2;&#x62D4;&#x8BBE;&#x5907;</li>
+<li>&#x5B89;&#x5168;&#x9694;&#x79BB;&#xFF1A;&#x57FA;&#x4E8E;Linux&#x5185;&#x6838;&#x5B89;&#x5168;&#x673A;&#x5236;</li>
+</ul>
+<hr>
+<p><strong>Q2&#xFF1A;KVM&#x7684;&#x6838;&#x5FC3;&#x7EC4;&#x4EF6;&#x6709;&#x54EA;&#x4E9B;&#xFF1F;</strong></p>
+<p><strong>A2&#xFF1A;</strong></p>
+<ul>
+<li><strong>kvm.ko</strong>&#xFF1A;&#x6838;&#x5FC3;&#x5185;&#x6838;&#x6A21;&#x5757;</li>
+<li><strong>kvm-intel.ko/kvm-amd.ko</strong>&#xFF1A;CPU&#x5382;&#x5546;&#x7279;&#x5B9A;&#x6A21;&#x5757;</li>
+<li><strong>QEMU</strong>&#xFF1A;&#x7528;&#x6237;&#x6001;&#x8BBE;&#x5907;&#x6A21;&#x62DF;</li>
+<li><strong>libvirt</strong>&#xFF1A;&#x865A;&#x62DF;&#x5316;&#x7BA1;&#x7406;API</li>
+</ul>
+<hr>
+<p><strong>Q3&#xFF1A;CPU&#x865A;&#x62DF;&#x5316;&#x7684;&#x539F;&#x7406;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</strong></p>
+<p><strong>A3&#xFF1A;</strong></p>
+<ul>
+<li>&#x4F7F;&#x7528;Intel VT-x&#x6216;AMD-V&#x786C;&#x4EF6;&#x6269;&#x5C55;</li>
+<li>&#x5C06;CPU&#x5206;&#x4E3A;Root&#x6A21;&#x5F0F;&#xFF08;Hypervisor&#xFF09;&#x548C;Non-Root&#x6A21;&#x5F0F;&#xFF08;Guest&#xFF09;</li>
+<li>&#x7279;&#x6743;&#x6307;&#x4EE4;&#x89E6;&#x53D1;VM Exit&#xFF0C;&#x7531;Hypervisor&#x5904;&#x7406;</li>
+</ul>
+<hr>
+<p><strong>Q4&#xFF1A;&#x5185;&#x5B58;&#x865A;&#x62DF;&#x5316;&#x7684;&#x65B9;&#x5F0F;&#x6709;&#x54EA;&#x4E9B;&#xFF1F;</strong></p>
+<p><strong>A4&#xFF1A;</strong></p>
+<ul>
+<li><strong>EPT/NPT</strong>&#xFF1A;&#x6269;&#x5C55;&#x9875;&#x8868;&#xFF0C;&#x4E24;&#x7EA7;&#x5730;&#x5740;&#x8F6C;&#x6362;</li>
+<li><strong>&#x5927;&#x9875;&#x5185;&#x5B58;</strong>&#xFF1A;&#x51CF;&#x5C11;&#x9875;&#x8868;&#x5F00;&#x9500;</li>
+<li><strong>&#x5185;&#x5B58;&#x6C14;&#x7403;</strong>&#xFF1A;&#x52A8;&#x6001;&#x8C03;&#x6574;VM&#x5185;&#x5B58;</li>
+</ul>
+<hr>
+<p><strong>Q5&#xFF1A;I/O&#x865A;&#x62DF;&#x5316;&#x7684;&#x65B9;&#x5F0F;&#x6709;&#x54EA;&#x4E9B;&#xFF1F;</strong></p>
+<p><strong>A5&#xFF1A;</strong></p>
+<ul>
+<li><strong>&#x5B8C;&#x5168;&#x6A21;&#x62DF;</strong>&#xFF1A;QEMU&#x6A21;&#x62DF;&#x8BBE;&#x5907;</li>
+<li><strong>&#x534A;&#x865A;&#x62DF;&#x5316;</strong>&#xFF1A;VirtIO&#x9A71;&#x52A8;</li>
+<li><strong>PCI&#x900F;&#x4F20;</strong>&#xFF1A;&#x76F4;&#x63A5;&#x5206;&#x914D;&#x7269;&#x7406;&#x8BBE;&#x5907;</li>
+</ul>
+<hr>
+<p><strong>Q6&#xFF1A;&#x5982;&#x4F55;&#x521B;&#x5EFA;KVM&#x865A;&#x62DF;&#x673A;&#xFF1F;</strong></p>
+<p><strong>A6&#xFF1A;</strong></p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># &#x521B;&#x5EFA;&#x78C1;&#x76D8;&#x955C;&#x50CF;</span>
+qemu-img create <span class="token parameter variable">-f</span> qcow2 vm-disk.qcow2 20G
+
+<span class="token comment"># &#x542F;&#x52A8;&#x865A;&#x62DF;&#x673A;</span>
+qemu-system-x86_64 <span class="token punctuation">\</span>
+  <span class="token parameter variable">-name</span> vm-name <span class="token punctuation">\</span>
+  <span class="token parameter variable">-m</span> <span class="token number">2048</span> <span class="token punctuation">\</span>
+  <span class="token parameter variable">-smp</span> <span class="token number">2</span> <span class="token punctuation">\</span>
+  <span class="token parameter variable">-hda</span> vm-disk.qcow2 <span class="token punctuation">\</span>
+  <span class="token parameter variable">-cdrom</span> centos.iso <span class="token punctuation">\</span>
+  <span class="token parameter variable">-boot</span> d
+</code></pre>
+<hr>
+<p><strong>Q7&#xFF1A;&#x4EC0;&#x4E48;&#x662F;VirtIO&#xFF1F;</strong></p>
+<p><strong>A7&#xFF1A;</strong>
+VirtIO&#x662F;&#x534A;&#x865A;&#x62DF;&#x5316;I/O&#x6280;&#x672F;&#xFF1A;</p>
+<ul>
+<li>&#x865A;&#x62DF;&#x673A;&#x5185;&#x5B89;&#x88C5;VirtIO&#x9A71;&#x52A8;</li>
+<li>&#x6BD4;&#x5B8C;&#x5168;&#x6A21;&#x62DF;&#x6027;&#x80FD;&#x66F4;&#x597D;</li>
+<li>&#x652F;&#x6301;&#x78C1;&#x76D8;&#x3001;&#x7F51;&#x5361;&#x7B49;&#x8BBE;&#x5907;</li>
+</ul>
+<hr>
+<p><strong>Q8&#xFF1A;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x865A;&#x62DF;&#x673A;&#x5FEB;&#x7167;&#xFF1F;</strong></p>
+<p><strong>A8&#xFF1A;</strong></p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># &#x521B;&#x5EFA;&#x5FEB;&#x7167;</span>
+<span class="token function">virsh</span> snapshot-create-as vm-name snap1 <span class="token parameter variable">--description</span> <span class="token string">&quot;Snapshot 1&quot;</span>
+
+<span class="token comment"># &#x67E5;&#x770B;&#x5FEB;&#x7167;</span>
+<span class="token function">virsh</span> snapshot-list vm-name
+
+<span class="token comment"># &#x6062;&#x590D;&#x5FEB;&#x7167;</span>
+<span class="token function">virsh</span> snapshot-revert vm-name snap1
+
+<span class="token comment"># &#x5220;&#x9664;&#x5FEB;&#x7167;</span>
+<span class="token function">virsh</span> snapshot-delete vm-name snap1
+</code></pre>
+<hr>
+<p><strong>Q9&#xFF1A;&#x4EC0;&#x4E48;&#x662F;PCI&#x900F;&#x4F20;&#xFF1F;</strong></p>
+<p><strong>A9&#xFF1A;</strong>
+PCI&#x900F;&#x4F20;&#x662F;&#x76F4;&#x63A5;&#x5C06;&#x7269;&#x7406;&#x8BBE;&#x5907;&#x5206;&#x914D;&#x7ED9;&#x865A;&#x62DF;&#x673A;&#xFF1A;</p>
+<ul>
+<li>&#x9700;&#x8981;IOMMU&#x652F;&#x6301;</li>
+<li>&#x7ED5;&#x8FC7;QEMU&#x6A21;&#x62DF;&#xFF0C;&#x6027;&#x80FD;&#x63A5;&#x8FD1;&#x88F8;&#x673A;</li>
+<li>&#x9002;&#x7528;&#x4E8E;&#x9AD8;&#x6027;&#x80FD;&#x7F51;&#x7EDC;&#x3001;GPU&#x7B49;&#x573A;&#x666F;</li>
+</ul>
+<hr>
+<p><strong>Q10&#xFF1A;KVM&#x548C;QEMU&#x7684;&#x5173;&#x7CFB;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</strong></p>
+<p><strong>A10&#xFF1A;</strong></p>
+<ul>
+<li>KVM&#x662F;&#x5185;&#x6838;&#x6A21;&#x5757;&#xFF0C;&#x63D0;&#x4F9B;CPU&#x865A;&#x62DF;&#x5316;</li>
+<li>QEMU&#x662F;&#x7528;&#x6237;&#x6001;&#x7A0B;&#x5E8F;&#xFF0C;&#x63D0;&#x4F9B;&#x8BBE;&#x5907;&#x6A21;&#x62DF;</li>
+<li>KVM+QEMU&#x7EC4;&#x5408;&#x63D0;&#x4F9B;&#x5B8C;&#x6574;&#x7684;&#x865A;&#x62DF;&#x5316;&#x89E3;&#x51B3;&#x65B9;&#x6848;</li>
+</ul>
+<hr>
+<h3 id="&#x590D;&#x6742;&#x573A;&#x666F;&#x95EE;&#x9898;"><a name="&#x590D;&#x6742;&#x573A;&#x666F;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x590D;&#x6742;&#x573A;&#x666F;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x590D;&#x6742;&#x573A;&#x666F;&#x95EE;&#x9898;</h3>
+<p><strong>Q11&#xFF1A;&#x5982;&#x4F55;&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x9AD8;&#x53EF;&#x7528;&#x7684;KVM&#x96C6;&#x7FA4;&#xFF1F;</strong></p>
+<p><strong>A11&#xFF1A;</strong></p>
+<p><strong>&#x67B6;&#x6784;&#x8BBE;&#x8BA1;&#xFF1A;</strong></p>
+<pre class="language-"><code>                    &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
+                    &#x2502;         &#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x5668;           &#x2502;
+                    &#x2502;     (HAProxy/Keepalived)   &#x2502;
+                    &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+                                  &#x2502;
+        &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
+        &#x25BC;                         &#x25BC;                         &#x25BC;
+&#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;          &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;          &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
+&#x2502;  KVM Node 1  &#x2502;          &#x2502;  KVM Node 2  &#x2502;          &#x2502;  KVM Node 3  &#x2502;
+&#x2502;  (Active)    &#x2502;&#x25C4;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x25BA;&#x2502;  (Standby)  &#x2502;&#x25C4;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x25BA;&#x2502;  (Standby)  &#x2502;
+&#x2502;              &#x2502;          &#x2502;              &#x2502;          &#x2502;              &#x2502;
+&#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;          &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;          &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+        &#x2502;                         &#x2502;                         &#x2502;
+        &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+                                  &#x2502;
+                    &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
+                    &#x2502;           &#x5171;&#x4EAB;&#x5B58;&#x50A8;                  &#x2502;
+                    &#x2502;    (NFS/Ceph/iSCSI)                &#x2502;
+                    &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+</code></pre><p><strong>&#x5173;&#x952E;&#x914D;&#x7F6E;&#xFF1A;</strong></p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># &#x914D;&#x7F6E;&#x5171;&#x4EAB;&#x5B58;&#x50A8;</span>
+<span class="token function">mount</span> <span class="token parameter variable">-t</span> nfs nfs-server:/export /var/lib/libvirt/images
+
+<span class="token comment"># &#x914D;&#x7F6E;&#x8FC1;&#x79FB;</span>
+<span class="token function">virsh</span> migrate <span class="token parameter variable">--live</span> vm-name qemu+ssh://destination-host/system
+</code></pre>
+<p><strong>&#x76D1;&#x63A7;&#x544A;&#x8B66;&#xFF1A;</strong></p>
+<ul>
+<li>&#x76D1;&#x63A7;&#x8282;&#x70B9;&#x72B6;&#x6001;</li>
+<li>&#x76D1;&#x63A7;VM&#x72B6;&#x6001;</li>
+<li>&#x76D1;&#x63A7;&#x8D44;&#x6E90;&#x4F7F;&#x7528;</li>
+</ul>
+<hr>
+<p><strong>Q12&#xFF1A;&#x5982;&#x4F55;&#x4F18;&#x5316;KVM&#x865A;&#x62DF;&#x673A;&#x6027;&#x80FD;&#xFF1F;</strong></p>
+<p><strong>A12&#xFF1A;</strong></p>
+<p><strong>&#x6027;&#x80FD;&#x4F18;&#x5316;&#x7B56;&#x7565;&#xFF1A;</strong></p>
+<ol>
+<li><strong>CPU&#x4F18;&#x5316;</strong>&#xFF1A;
+```bash<h1 id="&#x4F7F;&#x7528;host-model&#x6A21;&#x5F0F;"><a name="&#x4F7F;&#x7528;host-model&#x6A21;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;host-model&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;host-model&#x6A21;&#x5F0F;</h1>
+virsh edit vm-name<h1 id="&#x6DFB;&#x52A0;-"><a name="&#x6DFB;&#x52A0;-" class="anchor-navigation-ex-anchor" href="#&#x6DFB;&#x52A0;-"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6DFB;&#x52A0; <cpu mode="host-model"></cpu></h1>
+</li>
+</ol>
+<h1 id="&#x914D;&#x7F6E;cpu-pinning"><a name="&#x914D;&#x7F6E;cpu-pinning" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;cpu-pinning"><i class="fa fa-link" aria-hidden="true"></i></a>&#x914D;&#x7F6E;CPU pinning</h1>
+<p>virsh vcpupin vm-name 0 0</p>
+<pre class="language-"><code>
+2. **&#x5185;&#x5B58;&#x4F18;&#x5316;**&#xFF1A;
+```bash
+# &#x914D;&#x7F6E;&#x5927;&#x9875;&#x5185;&#x5B58;
+echo 1024 &gt; /proc/sys/vm/nr_hugepages
+mount -t hugetlbfs hugetlbfs /dev/hugepages
+
+# &#x4F7F;&#x7528;&#x5185;&#x5B58;&#x6C14;&#x7403;
+virsh setmem vm-name 2G --live
+</code></pre><ol>
+<li><strong>&#x5B58;&#x50A8;&#x4F18;&#x5316;</strong>&#xFF1A;
+```bash<h1 id="&#x4F7F;&#x7528;qcow2&#x683C;&#x5F0F;"><a name="&#x4F7F;&#x7528;qcow2&#x683C;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;qcow2&#x683C;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;qcow2&#x683C;&#x5F0F;</h1>
+qemu-img create -f qcow2 vm-disk.qcow2 20G</li>
+</ol>
+<h1 id="&#x542F;&#x7528;&#x7F13;&#x5B58;"><a name="&#x542F;&#x7528;&#x7F13;&#x5B58;" class="anchor-navigation-ex-anchor" href="#&#x542F;&#x7528;&#x7F13;&#x5B58;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x542F;&#x7528;&#x7F13;&#x5B58;</h1>
+<p>virsh edit vm-name</p>
+<h1 id="&#x6DFB;&#x52A0;-_1"><a name="&#x6DFB;&#x52A0;-_1" class="anchor-navigation-ex-anchor" href="#&#x6DFB;&#x52A0;-_1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6DFB;&#x52A0; <cache mode="writeback"></cache></h1>
+<pre class="language-"><code>
+---
+
+**Q13&#xFF1A;&#x5982;&#x4F55;&#x5B9E;&#x73B0;KVM&#x865A;&#x62DF;&#x673A;&#x7684;&#x5907;&#x4EFD;&#x548C;&#x6062;&#x590D;&#xFF1F;**
+
+**A13&#xFF1A;**
+
+**&#x5907;&#x4EFD;&#x7B56;&#x7565;&#xFF1A;**
+
+1. **&#x51B7;&#x5907;&#x4EFD;**&#xFF1A;
+```bash
+# &#x5173;&#x95ED;&#x865A;&#x62DF;&#x673A;
+virsh shutdown vm-name
+
+# &#x590D;&#x5236;&#x78C1;&#x76D8;&#x955C;&#x50CF;
+cp /var/lib/libvirt/images/vm-disk.qcow2 /backup/vm-disk.qcow2
+
+# &#x5BFC;&#x51FA;&#x914D;&#x7F6E;
+virsh dumpxml vm-name &gt; /backup/vm-name.xml
+</code></pre><ol>
+<li><strong>&#x70ED;&#x5907;&#x4EFD;</strong>&#xFF1A;
+```bash<h1 id="&#x521B;&#x5EFA;&#x5FEB;&#x7167;"><a name="&#x521B;&#x5EFA;&#x5FEB;&#x7167;" class="anchor-navigation-ex-anchor" href="#&#x521B;&#x5EFA;&#x5FEB;&#x7167;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x521B;&#x5EFA;&#x5FEB;&#x7167;</h1>
+virsh snapshot-create-as vm-name backup-snap --disk-only</li>
+</ol>
+<h1 id="&#x590D;&#x5236;&#x5FEB;&#x7167;"><a name="&#x590D;&#x5236;&#x5FEB;&#x7167;" class="anchor-navigation-ex-anchor" href="#&#x590D;&#x5236;&#x5FEB;&#x7167;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x590D;&#x5236;&#x5FEB;&#x7167;</h1>
+<p>cp /var/lib/libvirt/images/vm-disk.qcow2 /backup/vm-disk.qcow2</p>
+<h1 id="&#x5220;&#x9664;&#x5FEB;&#x7167;"><a name="&#x5220;&#x9664;&#x5FEB;&#x7167;" class="anchor-navigation-ex-anchor" href="#&#x5220;&#x9664;&#x5FEB;&#x7167;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5220;&#x9664;&#x5FEB;&#x7167;</h1>
+<p>virsh snapshot-delete vm-name backup-snap</p>
+<pre class="language-"><code>
+3. **&#x6062;&#x590D;&#x865A;&#x62DF;&#x673A;**&#xFF1A;
+```bash
+# &#x590D;&#x5236;&#x78C1;&#x76D8;&#x955C;&#x50CF;
+cp /backup/vm-disk.qcow2 /var/lib/libvirt/images/
+
+# &#x5BFC;&#x5165;&#x914D;&#x7F6E;
+virsh define /backup/vm-name.xml
+
+# &#x542F;&#x52A8;&#x865A;&#x62DF;&#x673A;
+virsh start vm-name
+</code></pre><hr>
+<p><strong>Q14&#xFF1A;&#x5982;&#x4F55;&#x5904;&#x7406;KVM&#x7684;&#x5B58;&#x50A8;&#x95EE;&#x9898;&#xFF1F;</strong></p>
+<p><strong>A14&#xFF1A;</strong></p>
+<p><strong>&#x5B58;&#x50A8;&#x65B9;&#x6848;&#x5BF9;&#x6BD4;&#xFF1A;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x65B9;&#x6848;</th>
+<th>&#x4F18;&#x70B9;</th>
+<th>&#x7F3A;&#x70B9;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>&#x672C;&#x5730;&#x5B58;&#x50A8;</strong></td>
+<td>&#x6027;&#x80FD;&#x597D;</td>
+<td>&#x4E0D;&#x652F;&#x6301;&#x8FC1;&#x79FB;</td>
+</tr>
+<tr>
+<td><strong>NFS</strong></td>
+<td>&#x7B80;&#x5355;&#x3001;&#x5171;&#x4EAB;</td>
+<td>&#x6027;&#x80FD;&#x6709;&#x9650;</td>
+</tr>
+<tr>
+<td><strong>Ceph RBD</strong></td>
+<td>&#x5206;&#x5E03;&#x5F0F;&#x3001;&#x9AD8;&#x53EF;&#x7528;</td>
+<td>&#x590D;&#x6742;</td>
+</tr>
+<tr>
+<td><strong>iSCSI</strong></td>
+<td>&#x4F01;&#x4E1A;&#x7EA7;</td>
+<td>&#x914D;&#x7F6E;&#x590D;&#x6742;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x914D;&#x7F6E;&#x793A;&#x4F8B;&#xFF1A;</strong></p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># &#x4F7F;&#x7528;Ceph RBD</span>
+rbd create vm-disk <span class="token parameter variable">--size</span> 20G <span class="token parameter variable">--pool</span> rbd
+rbd map vm-disk <span class="token parameter variable">--pool</span> rbd
+
+<span class="token comment"># &#x914D;&#x7F6E;libvirt&#x5B58;&#x50A8;&#x6C60;</span>
+<span class="token function">virsh</span> pool-define-as ceph-rbd <span class="token parameter variable">--type</span> rbd <span class="token punctuation">\</span>
+  --source-name rbd <span class="token punctuation">\</span>
+  --source-host ceph-mon
+</code></pre>
+<hr>
+<p><strong>Q15&#xFF1A;&#x5982;&#x4F55;&#x5B9E;&#x73B0;KVM&#x7684;&#x7F51;&#x7EDC;&#x9694;&#x79BB;&#xFF1F;</strong></p>
+<p><strong>A15&#xFF1A;</strong></p>
+<p><strong>&#x7F51;&#x7EDC;&#x9694;&#x79BB;&#x7B56;&#x7565;&#xFF1A;</strong></p>
+<ol>
+<li><strong>&#x521B;&#x5EFA;&#x9694;&#x79BB;&#x7F51;&#x7EDC;</strong>&#xFF1A;
+```bash<h1 id="&#x521B;&#x5EFA;&#x9694;&#x79BB;&#x7F51;&#x7EDC;"><a name="&#x521B;&#x5EFA;&#x9694;&#x79BB;&#x7F51;&#x7EDC;" class="anchor-navigation-ex-anchor" href="#&#x521B;&#x5EFA;&#x9694;&#x79BB;&#x7F51;&#x7EDC;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x521B;&#x5EFA;&#x9694;&#x79BB;&#x7F51;&#x7EDC;</h1>
+virsh net-define /dev/stdin &lt;<eof <network="">
+<name>isolated-net</name>
+<bridge name="virbr1">
+<ip address="192.168.100.1" netmask="255.255.255.0">
+<forward mode="none">
+&lt;/network&gt;
+EOF</forward></ip></bridge></eof></li>
+</ol>
+<h1 id="&#x542F;&#x52A8;&#x7F51;&#x7EDC;"><a name="&#x542F;&#x52A8;&#x7F51;&#x7EDC;" class="anchor-navigation-ex-anchor" href="#&#x542F;&#x52A8;&#x7F51;&#x7EDC;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x542F;&#x52A8;&#x7F51;&#x7EDC;</h1>
+<p>virsh net-start isolated-net</p>
+<h1 id="&#x8FDE;&#x63A5;&#x865A;&#x62DF;&#x673A;&#x5230;&#x9694;&#x79BB;&#x7F51;&#x7EDC;"><a name="&#x8FDE;&#x63A5;&#x865A;&#x62DF;&#x673A;&#x5230;&#x9694;&#x79BB;&#x7F51;&#x7EDC;" class="anchor-navigation-ex-anchor" href="#&#x8FDE;&#x63A5;&#x865A;&#x62DF;&#x673A;&#x5230;&#x9694;&#x79BB;&#x7F51;&#x7EDC;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FDE;&#x63A5;&#x865A;&#x62DF;&#x673A;&#x5230;&#x9694;&#x79BB;&#x7F51;&#x7EDC;</h1>
+<p>virsh attach-interface vm-name --type bridge --source virbr1 --model virtio</p>
+<pre class="language-"><code>
+2. **&#x914D;&#x7F6E;&#x9632;&#x706B;&#x5899;&#x89C4;&#x5219;**&#xFF1A;
+```bash
+# &#x7981;&#x6B62;&#x5916;&#x90E8;&#x8BBF;&#x95EE;
+iptables -A FORWARD -i virbr1 -j DROP
+
+# &#x5141;&#x8BB8;&#x7279;&#x5B9A;&#x7AEF;&#x53E3;
+iptables -A FORWARD -i virbr1 -p tcp --dport 80 -j ACCEPT
+</code></pre><hr>
+<p><strong>Q16&#xFF1A;&#x5982;&#x4F55;&#x8FDB;&#x884C;KVM&#x96C6;&#x7FA4;&#x7684;&#x5347;&#x7EA7;&#xFF1F;</strong></p>
+<p><strong>A16&#xFF1A;</strong></p>
+<p><strong>&#x5347;&#x7EA7;&#x6D41;&#x7A0B;&#xFF1A;</strong></p>
+<ol>
+<li><p><strong>&#x8FC1;&#x79FB;&#x865A;&#x62DF;&#x673A;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># &#x8FC1;&#x79FB;&#x5230;&#x5176;&#x4ED6;&#x8282;&#x70B9;</span>
+<span class="token function">virsh</span> migrate <span class="token parameter variable">--live</span> vm-name qemu+ssh://node2/system
+</code></pre>
+</li>
+<li><p><strong>&#x5347;&#x7EA7;&#x8282;&#x70B9;</strong>&#xFF1A;
+```bash</p>
+<h1 id="&#x505C;&#x6B62;libvirtd"><a name="&#x505C;&#x6B62;libvirtd" class="anchor-navigation-ex-anchor" href="#&#x505C;&#x6B62;libvirtd"><i class="fa fa-link" aria-hidden="true"></i></a>&#x505C;&#x6B62;libvirtd</h1>
+<p>systemctl stop libvirtd</p>
+</li>
+</ol>
+<h1 id="&#x5347;&#x7EA7;qemu&#x548C;libvirt"><a name="&#x5347;&#x7EA7;qemu&#x548C;libvirt" class="anchor-navigation-ex-anchor" href="#&#x5347;&#x7EA7;qemu&#x548C;libvirt"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5347;&#x7EA7;QEMU&#x548C;libvirt</h1>
+<p>yum upgrade qemu-kvm libvirt</p>
+<h1 id="&#x91CD;&#x542F;libvirtd"><a name="&#x91CD;&#x542F;libvirtd" class="anchor-navigation-ex-anchor" href="#&#x91CD;&#x542F;libvirtd"><i class="fa fa-link" aria-hidden="true"></i></a>&#x91CD;&#x542F;libvirtd</h1>
+<p>systemctl start libvirtd</p>
+<pre class="language-"><code>
+3. **&#x8FC1;&#x79FB;&#x56DE;&#x865A;&#x62DF;&#x673A;**&#xFF1A;
+```bash
+# &#x8FC1;&#x79FB;&#x56DE;&#x5347;&#x7EA7;&#x540E;&#x7684;&#x8282;&#x70B9;
+virsh migrate --live vm-name qemu+ssh://node1/system
+</code></pre><hr>
+<p><strong>Q17&#xFF1A;&#x5982;&#x4F55;&#x8BBE;&#x8BA1;KVM&#x7684;&#x76D1;&#x63A7;&#x4F53;&#x7CFB;&#xFF1F;</strong></p>
+<p><strong>A17&#xFF1A;</strong></p>
+<p><strong>&#x76D1;&#x63A7;&#x67B6;&#x6784;&#xFF1A;</strong></p>
+<pre class="language-"><code>Metrics &#x2192; Prometheus &#x2192; Alertmanager &#x2192; Grafana
+</code></pre><p><strong>&#x914D;&#x7F6E;&#x793A;&#x4F8B;&#xFF1A;</strong></p>
+<ol>
+<li><p><strong>Prometheus&#x914D;&#x7F6E;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-yaml"><span class="token key atrule">scrape_configs</span><span class="token punctuation">:</span>
+<span class="token punctuation">-</span> <span class="token key atrule">job_name</span><span class="token punctuation">:</span> <span class="token string">&apos;libvirt&apos;</span>
+ <span class="token key atrule">static_configs</span><span class="token punctuation">:</span>
+   <span class="token punctuation">-</span> <span class="token key atrule">targets</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&apos;localhost:9177&apos;</span><span class="token punctuation">]</span>
+</code></pre>
+</li>
+<li><p><strong>Grafana&#x4EEA;&#x8868;&#x76D8;</strong>&#xFF1A;</p>
+</li>
+<li>VM&#x72B6;&#x6001;&#x9762;&#x677F;</li>
+<li>&#x8D44;&#x6E90;&#x4F7F;&#x7528;&#x9762;&#x677F;</li>
+<li><p>&#x6027;&#x80FD;&#x6307;&#x6807;&#x9762;&#x677F;</p>
+</li>
+<li><p><strong>&#x544A;&#x8B66;&#x89C4;&#x5219;</strong>&#xFF1A;
+```yaml
+groups:</p>
+</li>
+<li>name: kvm.rules
+rules:<ul>
+<li>alert: VMDown
+expr: libvirt_domain_state{state=&quot;running&quot;} == 0
+for: 5m
+labels:
+  severity: critical
+```</li>
+</ul>
+</li>
+</ol>
+<hr>
+<p><strong>Q18&#xFF1A;&#x5982;&#x4F55;&#x5904;&#x7406;KVM&#x7684;&#x6027;&#x80FD;&#x74F6;&#x9888;&#xFF1F;</strong></p>
+<p><strong>A18&#xFF1A;</strong></p>
+<p><strong>&#x6027;&#x80FD;&#x8BCA;&#x65AD;&#x5DE5;&#x5177;&#xFF1A;</strong></p>
+<ol>
+<li><strong>&#x68C0;&#x67E5;CPU&#x6027;&#x80FD;</strong>&#xFF1A;
+```bash<h1 id="&#x67E5;&#x770B;vm-cpu&#x4F7F;&#x7528;"><a name="&#x67E5;&#x770B;vm-cpu&#x4F7F;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;vm-cpu&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x770B;VM CPU&#x4F7F;&#x7528;</h1>
+virsh cpu-stats vm-name</li>
+</ol>
+<h1 id="&#x68C0;&#x67E5;&#x5BBF;&#x4E3B;&#x673A;cpu"><a name="&#x68C0;&#x67E5;&#x5BBF;&#x4E3B;&#x673A;cpu" class="anchor-navigation-ex-anchor" href="#&#x68C0;&#x67E5;&#x5BBF;&#x4E3B;&#x673A;cpu"><i class="fa fa-link" aria-hidden="true"></i></a>&#x68C0;&#x67E5;&#x5BBF;&#x4E3B;&#x673A;CPU</h1>
+<p>top</p>
+<h1 id="&#x68C0;&#x67E5;cpu-pinning"><a name="&#x68C0;&#x67E5;cpu-pinning" class="anchor-navigation-ex-anchor" href="#&#x68C0;&#x67E5;cpu-pinning"><i class="fa fa-link" aria-hidden="true"></i></a>&#x68C0;&#x67E5;CPU pinning</h1>
+<p>virsh vcpupin vm-name</p>
+<pre class="language-"><code>
+2. **&#x68C0;&#x67E5;&#x5185;&#x5B58;&#x6027;&#x80FD;**&#xFF1A;
+```bash
+# &#x67E5;&#x770B;VM&#x5185;&#x5B58;&#x4F7F;&#x7528;
+virsh memstats vm-name
+
+# &#x68C0;&#x67E5;&#x5185;&#x5B58;&#x6C14;&#x7403;
+virsh dommemstat vm-name
+
+# &#x68C0;&#x67E5;&#x5927;&#x9875;&#x4F7F;&#x7528;
+cat /proc/meminfo | grep HugePages
+</code></pre><ol>
+<li><strong>&#x68C0;&#x67E5;&#x5B58;&#x50A8;&#x6027;&#x80FD;</strong>&#xFF1A;
+```bash<h1 id="&#x6D4B;&#x8BD5;&#x78C1;&#x76D8;io"><a name="&#x6D4B;&#x8BD5;&#x78C1;&#x76D8;io" class="anchor-navigation-ex-anchor" href="#&#x6D4B;&#x8BD5;&#x78C1;&#x76D8;io"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6D4B;&#x8BD5;&#x78C1;&#x76D8;I/O</h1>
+dd if=/dev/zero of=/var/lib/libvirt/images/test.img bs=1G count=1 oflag=direct</li>
+</ol>
+<h1 id="&#x68C0;&#x67E5;&#x7F13;&#x5B58;&#x6A21;&#x5F0F;"><a name="&#x68C0;&#x67E5;&#x7F13;&#x5B58;&#x6A21;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x68C0;&#x67E5;&#x7F13;&#x5B58;&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x68C0;&#x67E5;&#x7F13;&#x5B58;&#x6A21;&#x5F0F;</h1>
+<p>virsh dumpxml vm-name | grep cache</p>
+<pre class="language-"><code>
+---
+
+**Q19&#xFF1A;&#x5982;&#x4F55;&#x5B9E;&#x73B0;KVM&#x7684;&#x81EA;&#x52A8;&#x5316;&#x90E8;&#x7F72;&#xFF1F;**
+
+**A19&#xFF1A;**
+
+**&#x81EA;&#x52A8;&#x5316;&#x65B9;&#x6848;&#xFF1A;**
+
+1. **&#x4F7F;&#x7528;virt-install**&#xFF1A;
+```bash
+virt-install \
+  --name vm-name \
+  --ram 2048 \
+  --vcpus 2 \
+  --disk path=/var/lib/libvirt/images/vm-disk.qcow2,size=20 \
+  --location http://mirror.centos.org/centos/7/os/x86_64/ \
+  --extra-args &quot;ks=http://example.com/ks.cfg&quot; \
+  --network bridge=virbr0 \
+  --graphics none \
+  --noautoconsole
+</code></pre><ol>
+<li><p><strong>&#x4F7F;&#x7528;Terraform</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-yaml">resource &quot;libvirt_domain&quot; &quot;vm&quot; <span class="token punctuation">{</span>
+name   = &quot;vm<span class="token punctuation">-</span>name&quot;
+memory = &quot;2048&quot;
+vcpu   = 2
+
+disk <span class="token punctuation">{</span>
+ volume_id = libvirt_volume.disk.id
+<span class="token punctuation">}</span>
+
+network_interface <span class="token punctuation">{</span>
+ network_name = &quot;default&quot;
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+</ol>
+<hr>
+<p><strong>Q20&#xFF1A;&#x5982;&#x4F55;&#x5904;&#x7406;KVM&#x7684;&#x5B89;&#x5168;&#x95EE;&#x9898;&#xFF1F;</strong></p>
+<p><strong>A20&#xFF1A;</strong></p>
+<p><strong>&#x5B89;&#x5168;&#x7B56;&#x7565;&#xFF1A;</strong></p>
+<ol>
+<li><strong>&#x9694;&#x79BB;&#x865A;&#x62DF;&#x673A;</strong>&#xFF1A;
+```bash<h1 id="&#x4F7F;&#x7528;selinux"><a name="&#x4F7F;&#x7528;selinux" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;selinux"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;SELinux</h1>
+setsebool -P virt_use_nfs on</li>
+</ol>
+<h1 id="&#x914D;&#x7F6E;apparmor"><a name="&#x914D;&#x7F6E;apparmor" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;apparmor"><i class="fa fa-link" aria-hidden="true"></i></a>&#x914D;&#x7F6E;AppArmor</h1>
+<p>aa-enforce /etc/apparmor.d/libvirt/libvirt-*.files</p>
+<pre class="language-"><code>
+2. **&#x9650;&#x5236;&#x865A;&#x62DF;&#x673A;&#x6743;&#x9650;**&#xFF1A;
+```bash
+# &#x4F7F;&#x7528;&#x975E;&#x7279;&#x6743;&#x7528;&#x6237;&#x8FD0;&#x884C;
+virsh edit vm-name
+# &#x6DFB;&#x52A0; <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>seclabel</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&apos;</span>dynamic<span class="token punctuation">&apos;</span></span> <span class="token attr-name">model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&apos;</span>selinux<span class="token punctuation">&apos;</span></span><span class="token punctuation">/&gt;</span></span>
+</code></pre><ol>
+<li><strong>&#x66F4;&#x65B0;&#x5B89;&#x5168;&#x8865;&#x4E01;</strong>&#xFF1A;
+```bash<h1 id="&#x5B9A;&#x671F;&#x66F4;&#x65B0;"><a name="&#x5B9A;&#x671F;&#x66F4;&#x65B0;" class="anchor-navigation-ex-anchor" href="#&#x5B9A;&#x671F;&#x66F4;&#x65B0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B9A;&#x671F;&#x66F4;&#x65B0;</h1>
+yum update qemu-kvm libvirt</li>
+</ol>
+<h1 id="&#x542F;&#x7528;&#x81EA;&#x52A8;&#x66F4;&#x65B0;"><a name="&#x542F;&#x7528;&#x81EA;&#x52A8;&#x66F4;&#x65B0;" class="anchor-navigation-ex-anchor" href="#&#x542F;&#x7528;&#x81EA;&#x52A8;&#x66F4;&#x65B0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x542F;&#x7528;&#x81EA;&#x52A8;&#x66F4;&#x65B0;</h1>
+<p>systemctl enable dnf-automatic
+```</p>
+<h2 id="&#x672A;&#x5B8C;&#x5F85;&#x7EED;"><a name="&#x672A;&#x5B8C;&#x5F85;&#x7EED;" class="anchor-navigation-ex-anchor" href="#&#x672A;&#x5B8C;&#x5F85;&#x7EED;"><i class="fa fa-link" aria-hidden="true"></i></a><center>...&#x672A;&#x5B8C;&#x5F85;&#x7EED;...</center></h2>
+<hr>
+<p><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"></p>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<div id="gitalk-container"></div>
+<script>
+  var gitalk = new Gitalk({
+    "clientID": "44d7c96f948be236a8c9",
+    "clientSecret": "fb9fb3178db6640131c4e3eb69f9449e42bba661",
+    "repo": "blog",
+    "owner": "Zhang-jie-jun",
+    "admin": ["Zhang-jie-jun"],
+    "id": location.pathname,      
+    "distractionFreeMode": false  
+  });
+  gitalk.render("gitalk-container");
+</script>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ceph.html" class="navigation navigation-prev " aria-label="Previous page: ceph">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="libvirt.html" class="navigation navigation-next " aria-label="Next page: libvirt">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"kvm","level":"6.4","depth":1,"next":{"title":"libvirt","level":"6.5","depth":1,"path":"src/cloudnative/libvirt.md","ref":"src/cloudnative/libvirt.md","articles":[]},"previous":{"title":"ceph","level":"6.3","depth":1,"path":"src/cloudnative/ceph.md","ref":"src/cloudnative/ceph.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-comscore","prism","-highlight","copy-code-button","search-pro","-search","-lunr","expandable-chapters","splitter","-sharing","github-buttons","donate","anchor-navigation-ex"],"styles":{"website":"./css/gitbook-configure.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"shell":"bash"}},"splitter":{},"search-pro":{},"donate":{"button":"赞赏支持","wechatText":"问题联系","alipayText":"打赏支持","wechat":"https://github.com/Zhang-jie-jun/blog/blob/main/src/image/QR_code.jpg?raw=true","alipay":"https://github.com/Zhang-jie-jun/blog/blob/main/src/image/wechat.jpg?raw=true","title":""},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":false,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true},"theme-comscore":{},"github-buttons":{"buttons":[{"user":"Zhang-jie-jun","repo":"blog","type":"star","count":true,"size":"small"},{"user":"Zhang-jie-jun","width":"160","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"勤劳的螺丝工","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Jack Zhang的博客","language":"zh-hans","gitbook":"*","description":"记录遇到的问题与解决方式，分享我的知识、经历和观点..."},"file":{"path":"src/cloudnative/kvm.md","mtime":"2026-06-08T14:10:00.865Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2026-06-08T14:40:12.589Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+

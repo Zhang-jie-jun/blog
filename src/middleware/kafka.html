@@ -1,0 +1,2702 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>kafka · Jack Zhang的博客</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        <meta name="author" content="勤劳的螺丝工">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../css/gitbook-configure.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="nats.html" />
+    
+    
+    <link rel="prev" href="jwt.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"Zhang-jie-jun","repo":"blog","type":"star","count":true,"size":"small"},{"user":"Zhang-jie-jun","width":"160","type":"follow","count":true,"size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">编程基础</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../golang/">
+            
+                <a href="../golang/">
+            
+                    
+                    golang
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../golang/slice.html">
+            
+                <a href="../golang/slice.html">
+            
+                    
+                    slice底层原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../golang/map.html">
+            
+                <a href="../golang/map.html">
+            
+                    
+                    map底层原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../golang/channel.html">
+            
+                <a href="../golang/channel.html">
+            
+                    
+                    并发与Channel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../golang/reflect.html">
+            
+                <a href="../golang/reflect.html">
+            
+                    
+                    反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../golang/context.html">
+            
+                <a href="../golang/context.html">
+            
+                    
+                    context详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../golang/gmp.html">
+            
+                <a href="../golang/gmp.html">
+            
+                    
+                    GMP模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../golang/gc.html">
+            
+                <a href="../golang/gc.html">
+            
+                    
+                    垃圾回收机制(GC)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../golang/module.html">
+            
+                <a href="../golang/module.html">
+            
+                    
+                    module管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../golang/ut.html">
+            
+                <a href="../golang/ut.html">
+            
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../c++/">
+            
+                <a href="../c++/">
+            
+                    
+                    C/C++
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../c++/boost.html">
+            
+                <a href="../c++/boost.html">
+            
+                    
+                    boost库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../c++/concurrency.html">
+            
+                <a href="../c++/concurrency.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../c++/design_pattern.html">
+            
+                <a href="../c++/design_pattern.html">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../c++/memory.html">
+            
+                <a href="../c++/memory.html">
+            
+                    
+                    内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../c++/oop.html">
+            
+                <a href="../c++/oop.html">
+            
+                    
+                    面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../c++/smart_ptr.html">
+            
+                <a href="../c++/smart_ptr.html">
+            
+                    
+                    智能指针
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../c++/stl.html">
+            
+                <a href="../c++/stl.html">
+            
+                    
+                    STL详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="../c++/template.html">
+            
+                <a href="../c++/template.html">
+            
+                    
+                    模板编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../python/">
+            
+                <a href="../python/">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../python/basic.html">
+            
+                <a href="../python/basic.html">
+            
+                    
+                    基础语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../python/concurrency.html">
+            
+                <a href="../python/concurrency.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../python/decorator.html">
+            
+                <a href="../python/decorator.html">
+            
+                    
+                    装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="../python/design_pattern.html">
+            
+                <a href="../python/design_pattern.html">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="../python/generator.html">
+            
+                <a href="../python/generator.html">
+            
+                    
+                    生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" data-path="../python/memory.html">
+            
+                <a href="../python/memory.html">
+            
+                    
+                    内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.7" data-path="../python/metaprogramming.html">
+            
+                <a href="../python/metaprogramming.html">
+            
+                    
+                    元编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.8" data-path="../python/oop.html">
+            
+                <a href="../python/oop.html">
+            
+                    
+                    面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.9" data-path="../python/stdlib.html">
+            
+                <a href="../python/stdlib.html">
+            
+                    
+                    标准库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.10" data-path="../python/thirdparty.html">
+            
+                <a href="../python/thirdparty.html">
+            
+                    
+                    第三方库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../algorithm/">
+            
+                <a href="../algorithm/">
+            
+                    
+                    常用算法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../algorithm/stack.html">
+            
+                <a href="../algorithm/stack.html">
+            
+                    
+                    栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../algorithm/queue.html">
+            
+                <a href="../algorithm/queue.html">
+            
+                    
+                    队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="../algorithm/linkedlist.html">
+            
+                <a href="../algorithm/linkedlist.html">
+            
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="../algorithm/hash.html">
+            
+                <a href="../algorithm/hash.html">
+            
+                    
+                    哈希表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.5" data-path="../algorithm/tree.html">
+            
+                <a href="../algorithm/tree.html">
+            
+                    
+                    树算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.6" data-path="../algorithm/graph.html">
+            
+                <a href="../algorithm/graph.html">
+            
+                    
+                    图算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.7" data-path="../algorithm/sort.html">
+            
+                <a href="../algorithm/sort.html">
+            
+                    
+                    排序算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8" data-path="../algorithm/search.html">
+            
+                <a href="../algorithm/search.html">
+            
+                    
+                    搜索算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.9" data-path="../algorithm/dp.html">
+            
+                <a href="../algorithm/dp.html">
+            
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.10" data-path="../algorithm/greedy.html">
+            
+                <a href="../algorithm/greedy.html">
+            
+                    
+                    贪心算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.11" data-path="../algorithm/backtracking.html">
+            
+                <a href="../algorithm/backtracking.html">
+            
+                    
+                    回溯算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.12" data-path="../algorithm/divide.html">
+            
+                <a href="../algorithm/divide.html">
+            
+                    
+                    分治算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.13" data-path="../algorithm/string.html">
+            
+                <a href="../algorithm/string.html">
+            
+                    
+                    字符串算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../tools/">
+            
+                <a href="../tools/">
+            
+                    
+                    开发工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../tools/git.html">
+            
+                <a href="../tools/git.html">
+            
+                    
+                    git的使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="../tools/svn.html">
+            
+                <a href="../tools/svn.html">
+            
+                    
+                    svn的使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3" data-path="../tools/makefile.html">
+            
+                <a href="../tools/makefile.html">
+            
+                    
+                    Makefile使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.4" data-path="../tools/cmake.html">
+            
+                <a href="../tools/cmake.html">
+            
+                    
+                    CMake使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.5" data-path="../tools/wireshark.html">
+            
+                <a href="../tools/wireshark.html">
+            
+                    
+                    Wireshark使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.6" data-path="../tools/postman.html">
+            
+                <a href="../tools/postman.html">
+            
+                    
+                    Postman使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.7" data-path="../tools/navicat.html">
+            
+                <a href="../tools/navicat.html">
+            
+                    
+                    Navicat使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.8" data-path="../tools/dbeaver.html">
+            
+                <a href="../tools/dbeaver.html">
+            
+                    
+                    DBeaver使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.9" data-path="../tools/npm.html">
+            
+                <a href="../tools/npm.html">
+            
+                    
+                    npm使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.10" data-path="../tools/pip.html">
+            
+                <a href="../tools/pip.html">
+            
+                    
+                    pip使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Linux基础</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../linux/">
+            
+                <a href="../linux/">
+            
+                    
+                    Linux常用命令
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../linux/grep.html">
+            
+                <a href="../linux/grep.html">
+            
+                    
+                    Linux三剑客
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../linux/iostat.html">
+            
+                <a href="../linux/iostat.html">
+            
+                    
+                    磁盘I/O统计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../linux/mount.html">
+            
+                <a href="../linux/mount.html">
+            
+                    
+                    挂载命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../linux/fstab.html">
+            
+                <a href="../linux/fstab.html">
+            
+                    
+                    fstab配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../linux/lsblk.html">
+            
+                <a href="../linux/lsblk.html">
+            
+                    
+                    磁盘分区信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="../linux/df.html">
+            
+                <a href="../linux/df.html">
+            
+                    
+                    磁盘空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7" data-path="../linux/du.html">
+            
+                <a href="../linux/du.html">
+            
+                    
+                    目录大小
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.8" data-path="../linux/free.html">
+            
+                <a href="../linux/free.html">
+            
+                    
+                    内存使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.9" data-path="../linux/top.html">
+            
+                <a href="../linux/top.html">
+            
+                    
+                    进程监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.10" data-path="../linux/netstat.html">
+            
+                <a href="../linux/netstat.html">
+            
+                    
+                    网络状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.11" data-path="../linux/ps.html">
+            
+                <a href="../linux/ps.html">
+            
+                    
+                    进程状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.12" data-path="../linux/kill.html">
+            
+                <a href="../linux/kill.html">
+            
+                    
+                    进程终止
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.13" data-path="../linux/tar.html">
+            
+                <a href="../linux/tar.html">
+            
+                    
+                    压缩解压
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.14" data-path="../linux/disk.html">
+            
+                <a href="../linux/disk.html">
+            
+                    
+                    磁盘管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.15" data-path="../linux/filehandle.html">
+            
+                <a href="../linux/filehandle.html">
+            
+                    
+                    文件句柄
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.16" data-path="../linux/dd.html">
+            
+                <a href="../linux/dd.html">
+            
+                    
+                    dd命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.17" data-path="../linux/packagemanage.html">
+            
+                <a href="../linux/packagemanage.html">
+            
+                    
+                    包管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.18" data-path="../linux/network.html">
+            
+                <a href="../linux/network.html">
+            
+                    
+                    网络管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.19" data-path="../linux/system.html">
+            
+                <a href="../linux/system.html">
+            
+                    
+                    系统管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.20" data-path="../linux/monitor.html">
+            
+                <a href="../linux/monitor.html">
+            
+                    
+                    系统监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.21" data-path="../linux/file.html">
+            
+                <a href="../linux/file.html">
+            
+                    
+                    文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.22" data-path="../linux/text.html">
+            
+                <a href="../linux/text.html">
+            
+                    
+                    文本处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.23" data-path="../linux/security.html">
+            
+                <a href="../linux/security.html">
+            
+                    
+                    安全相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">网络基础</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../network/model.html">
+            
+                <a href="../network/model.html">
+            
+                    
+                    网络模型详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../network/tcp.html">
+            
+                <a href="../network/tcp.html">
+            
+                    
+                    TCP协议原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../network/http.html">
+            
+                <a href="../network/http.html">
+            
+                    
+                    HTTP/HTTPS原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../network/cdn.html">
+            
+                <a href="../network/cdn.html">
+            
+                    
+                    CDN详细教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../network/rpc.html">
+            
+                <a href="../network/rpc.html">
+            
+                    
+                    RPC原理解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">中间件</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="mysql.html">
+            
+                <a href="mysql.html">
+            
+                    
+                    mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="redis.html">
+            
+                <a href="redis.html">
+            
+                    
+                    redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="consul.html">
+            
+                <a href="consul.html">
+            
+                    
+                    consul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="etcd.html">
+            
+                <a href="etcd.html">
+            
+                    
+                    etcd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="gin.html">
+            
+                <a href="gin.html">
+            
+                    
+                    gin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="gorm.html">
+            
+                <a href="gorm.html">
+            
+                    
+                    gorm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="grpc.html">
+            
+                <a href="grpc.html">
+            
+                    
+                    grpc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="thrift.html">
+            
+                <a href="thrift.html">
+            
+                    
+                    thrift
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="cassandra.html">
+            
+                <a href="cassandra.html">
+            
+                    
+                    cassandra
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="elasticsearch.html">
+            
+                <a href="elasticsearch.html">
+            
+                    
+                    elasticsearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="jwt.html">
+            
+                <a href="jwt.html">
+            
+                    
+                    jwt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.12" data-path="kafka.html">
+            
+                <a href="kafka.html">
+            
+                    
+                    kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.13" data-path="nats.html">
+            
+                <a href="nats.html">
+            
+                    
+                    nats
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.14" data-path="nginx.html">
+            
+                <a href="nginx.html">
+            
+                    
+                    nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">云原生与虚拟化技术</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../cloudnative/docker.html">
+            
+                <a href="../cloudnative/docker.html">
+            
+                    
+                    docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../cloudnative/kubernetes.html">
+            
+                <a href="../cloudnative/kubernetes.html">
+            
+                    
+                    kubernetes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../cloudnative/ceph.html">
+            
+                <a href="../cloudnative/ceph.html">
+            
+                    
+                    ceph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../cloudnative/kvm.html">
+            
+                <a href="../cloudnative/kvm.html">
+            
+                    
+                    kvm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../cloudnative/libvirt.html">
+            
+                <a href="../cloudnative/libvirt.html">
+            
+                    
+                    libvirt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../cloudnative/qcow2.html">
+            
+                <a href="../cloudnative/qcow2.html">
+            
+                    
+                    qcow2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="../cloudnative/qemu.html">
+            
+                <a href="../cloudnative/qemu.html">
+            
+                    
+                    qemu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="../cloudnative/sanlock.html">
+            
+                <a href="../cloudnative/sanlock.html">
+            
+                    
+                    sanlock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="../cloudnative/openstack.html">
+            
+                <a href="../cloudnative/openstack.html">
+            
+                    
+                    openstack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="../cloudnative/vmware.html">
+            
+                <a href="../cloudnative/vmware.html">
+            
+                    
+                    vmware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="../cloudnative/distributed-network.html">
+            
+                <a href="../cloudnative/distributed-network.html">
+            
+                    
+                    distributed-network
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">系统架构</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../framework/architecture-evolution.html">
+            
+                <a href="../framework/architecture-evolution.html">
+            
+                    
+                    架构演进
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../framework/cluster-architecture.html">
+            
+                <a href="../framework/cluster-architecture.html">
+            
+                    
+                    集群架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../framework/distributed-architecture.html">
+            
+                <a href="../framework/distributed-architecture.html">
+            
+                    
+                    分布式架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../framework/microservices-architecture.html">
+            
+                <a href="../framework/microservices-architecture.html">
+            
+                    
+                    微服务架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">闲聊杂谈</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../gossip/编程的智慧.html">
+            
+                <a href="../gossip/编程的智慧.html">
+            
+                    
+                    编程的智慧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../gossip/如何阅读别人的代码.html">
+            
+                <a href="../gossip/如何阅读别人的代码.html">
+            
+                    
+                    如何阅读别人的代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >kafka</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#kafka&#x8BE6;&#x89E3;"><b></b>Kafka&#x8BE6;&#x89E3;</a></li><ul><li><span class="title-icon "></span><a href="#kafka&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><b></b>Kafka&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#kafka&#x7684;&#x7279;&#x70B9;"><b></b>Kafka&#x7684;&#x7279;&#x70B9;</a></li><li><span class="title-icon "></span><a href="#&#x4E00;&#x3001;kafka&#x6838;&#x5FC3;&#x539F;&#x7406;"><b></b>&#x4E00;&#x3001;Kafka&#x6838;&#x5FC3;&#x539F;&#x7406;</a></li><ul><li><span class="title-icon "></span><a href="#11-kafka&#x67B6;&#x6784;"><b></b>1.1 Kafka&#x67B6;&#x6784;</a></li><li><span class="title-icon "></span><a href="#12-topic&#x548C;partition"><b></b>1.2 Topic&#x548C;Partition</a></li><li><span class="title-icon "></span><a href="#13-&#x526F;&#x672C;&#x673A;&#x5236;"><b></b>1.3 &#x526F;&#x672C;&#x673A;&#x5236;</a></li><li><span class="title-icon "></span><a href="#14-&#x751F;&#x4EA7;&#x8005;&#x539F;&#x7406;"><b></b>1.4 &#x751F;&#x4EA7;&#x8005;&#x539F;&#x7406;</a></li><li><span class="title-icon "></span><a href="#15-&#x6D88;&#x8D39;&#x8005;&#x539F;&#x7406;"><b></b>1.5 &#x6D88;&#x8D39;&#x8005;&#x539F;&#x7406;</a></li></ul><li><span class="title-icon "></span><a href="#&#x4E8C;&#x3001;kafka&#x5E38;&#x89C1;&#x95EE;&#x9898;&#x5206;&#x6790;&#x4E0E;&#x6392;&#x67E5;"><b></b>&#x4E8C;&#x3001;Kafka&#x5E38;&#x89C1;&#x95EE;&#x9898;&#x5206;&#x6790;&#x4E0E;&#x6392;&#x67E5;</a></li><ul><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;1&#xFF1A;&#x6D88;&#x606F;&#x4E22;&#x5931;"><b></b>&#x95EE;&#x9898;1&#xFF1A;&#x6D88;&#x606F;&#x4E22;&#x5931;</a></li><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;2&#xFF1A;&#x6D88;&#x606F;&#x91CD;&#x590D;&#x6D88;&#x8D39;"><b></b>&#x95EE;&#x9898;2&#xFF1A;&#x6D88;&#x606F;&#x91CD;&#x590D;&#x6D88;&#x8D39;</a></li><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;3&#xFF1A;&#x6D88;&#x8D39;&#x8005;rebalance&#x9891;&#x7E41;"><b></b>&#x95EE;&#x9898;3&#xFF1A;&#x6D88;&#x8D39;&#x8005;Rebalance&#x9891;&#x7E41;</a></li><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;4&#xFF1A;&#x6D88;&#x606F;&#x79EF;&#x538B;"><b></b>&#x95EE;&#x9898;4&#xFF1A;&#x6D88;&#x606F;&#x79EF;&#x538B;</a></li><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;5&#xFF1A;broker&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x4E0D;&#x8DB3;"><b></b>&#x95EE;&#x9898;5&#xFF1A;Broker&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x4E0D;&#x8DB3;</a></li><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;6&#xFF1A;leader&#x9009;&#x4E3E;&#x9891;&#x7E41;"><b></b>&#x95EE;&#x9898;6&#xFF1A;Leader&#x9009;&#x4E3E;&#x9891;&#x7E41;</a></li><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;7&#xFF1A;&#x7F51;&#x7EDC;&#x5206;&#x533A;&#x5BFC;&#x81F4;&#x8111;&#x88C2;"><b></b>&#x95EE;&#x9898;7&#xFF1A;&#x7F51;&#x7EDC;&#x5206;&#x533A;&#x5BFC;&#x81F4;&#x8111;&#x88C2;</a></li><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;8&#xFF1A;&#x751F;&#x4EA7;&#x8005;&#x541E;&#x5410;&#x91CF;&#x4E0D;&#x8DB3;"><b></b>&#x95EE;&#x9898;8&#xFF1A;&#x751F;&#x4EA7;&#x8005;&#x541E;&#x5410;&#x91CF;&#x4E0D;&#x8DB3;</a></li><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;9&#xFF1A;&#x6D88;&#x8D39;&#x8005;offset&#x8D8A;&#x754C;"><b></b>&#x95EE;&#x9898;9&#xFF1A;&#x6D88;&#x8D39;&#x8005;Offset&#x8D8A;&#x754C;</a></li><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;10&#xFF1A;&#x8DE8;&#x6570;&#x636E;&#x4E2D;&#x5FC3;&#x590D;&#x5236;&#x5EF6;&#x8FDF;"><b></b>&#x95EE;&#x9898;10&#xFF1A;&#x8DE8;&#x6570;&#x636E;&#x4E2D;&#x5FC3;&#x590D;&#x5236;&#x5EF6;&#x8FDF;</a></li></ul><li><span class="title-icon "></span><a href="#&#x4E09;&#x3001;kafka&#x9762;&#x8BD5;&#x9898;"><b></b>&#x4E09;&#x3001;Kafka&#x9762;&#x8BD5;&#x9898;</a></li><ul><li><span class="title-icon "></span><a href="#&#x57FA;&#x7840;&#x95EE;&#x9898;"><b></b>&#x57FA;&#x7840;&#x95EE;&#x9898;</a></li><li><span class="title-icon "></span><a href="#&#x590D;&#x6742;&#x573A;&#x666F;&#x95EE;&#x9898;"><b></b>&#x590D;&#x6742;&#x573A;&#x666F;&#x95EE;&#x9898;</a></li></ul></ul><li><span class="title-icon "></span><a href="#&#x521B;&#x5EFA;&#x91CD;&#x65B0;&#x5206;&#x914D;&#x8BA1;&#x5212;"><b></b>&#x521B;&#x5EFA;&#x91CD;&#x65B0;&#x5206;&#x914D;&#x8BA1;&#x5212;</a></li><li><span class="title-icon "></span><a href="#&#x6267;&#x884C;&#x91CD;&#x65B0;&#x5206;&#x914D;"><b></b>&#x6267;&#x884C;&#x91CD;&#x65B0;&#x5206;&#x914D;</a></li><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;&#x9759;&#x6001;&#x6210;&#x5458;"><b></b>&#x4F7F;&#x7528;&#x9759;&#x6001;&#x6210;&#x5458;</a></li><li><span class="title-icon "></span><a href="#&#x589E;&#x52A0;session&#x8D85;&#x65F6;"><b></b>&#x589E;&#x52A0;session&#x8D85;&#x65F6;</a></li><li><span class="title-icon "></span><a href="#broker&#x7AEF;"><b></b>Broker&#x7AEF;</a></li><li><span class="title-icon "></span><a href="#producer&#x7AEF;"><b></b>Producer&#x7AEF;</a></li><li><span class="title-icon "></span><a href="#consumer&#x7AEF;"><b></b>Consumer&#x7AEF;</a></li><ul><li><span class="title-icon "></span><a href="#&#x672A;&#x5B8C;&#x5F85;&#x7EED;"><b></b>...&#x672A;&#x5B8C;&#x5F85;&#x7EED;...</a></li></ul></ul></div><a href="#kafka&#x8BE6;&#x89E3;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="kafka&#x8BE6;&#x89E3;"><a name="kafka&#x8BE6;&#x89E3;" class="anchor-navigation-ex-anchor" href="#kafka&#x8BE6;&#x89E3;"><i class="fa fa-link" aria-hidden="true"></i></a>Kafka&#x8BE6;&#x89E3;</h1>
+<h2 id="kafka&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><a name="kafka&#x662F;&#x4EC0;&#x4E48;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#kafka&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>Kafka&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</h2>
+<p>&#x2003;&#x2003;Kafka&#x662F;&#x4E00;&#x4E2A;&#x5206;&#x5E03;&#x5F0F;&#x6D41;&#x5904;&#x7406;&#x5E73;&#x53F0;&#xFF0C;&#x7531;LinkedIn&#x5F00;&#x53D1;&#x5E76;&#x5F00;&#x6E90;&#x3002;&#x5B83;&#x5177;&#x6709;&#x9AD8;&#x541E;&#x5410;&#x91CF;&#x3001;&#x4F4E;&#x5EF6;&#x8FDF;&#x3001;&#x53EF;&#x6269;&#x5C55;&#x6027;&#x5F3A;&#x7B49;&#x7279;&#x70B9;&#xFF0C;&#x5E7F;&#x6CDB;&#x5E94;&#x7528;&#x4E8E;&#x65E5;&#x5FD7;&#x6536;&#x96C6;&#x3001;&#x5B9E;&#x65F6;&#x6570;&#x636E;&#x5904;&#x7406;&#x3001;&#x6D88;&#x606F;&#x961F;&#x5217;&#x7B49;&#x573A;&#x666F;&#x3002;</p>
+<h2 id="kafka&#x7684;&#x7279;&#x70B9;"><a name="kafka&#x7684;&#x7279;&#x70B9;" class="anchor-navigation-ex-anchor" href="#kafka&#x7684;&#x7279;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>Kafka&#x7684;&#x7279;&#x70B9;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x7279;&#x6027;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>&#x9AD8;&#x541E;&#x5410;&#x91CF;</strong></td>
+<td>&#x6BCF;&#x79D2;&#x53EF;&#x5904;&#x7406;&#x767E;&#x4E07;&#x7EA7;&#x6D88;&#x606F;</td>
+</tr>
+<tr>
+<td><strong>&#x4F4E;&#x5EF6;&#x8FDF;</strong></td>
+<td>&#x6BEB;&#x79D2;&#x7EA7;&#x5EF6;&#x8FDF;</td>
+</tr>
+<tr>
+<td><strong>&#x5206;&#x5E03;&#x5F0F;</strong></td>
+<td>&#x652F;&#x6301;&#x6C34;&#x5E73;&#x6269;&#x5C55;</td>
+</tr>
+<tr>
+<td><strong>&#x6301;&#x4E45;&#x5316;</strong></td>
+<td>&#x6D88;&#x606F;&#x6301;&#x4E45;&#x5316;&#x5230;&#x78C1;&#x76D8;</td>
+</tr>
+<tr>
+<td><strong>&#x591A;&#x526F;&#x672C;</strong></td>
+<td>&#x652F;&#x6301;&#x6570;&#x636E;&#x5197;&#x4F59;&#x5907;&#x4EFD;</td>
+</tr>
+<tr>
+<td><strong>&#x6D41;&#x5F0F;&#x5904;&#x7406;</strong></td>
+<td>&#x539F;&#x751F;&#x652F;&#x6301;&#x6D41;&#x5904;&#x7406;</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="&#x4E00;&#x3001;kafka&#x6838;&#x5FC3;&#x539F;&#x7406;"><a name="&#x4E00;&#x3001;kafka&#x6838;&#x5FC3;&#x539F;&#x7406;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x3001;kafka&#x6838;&#x5FC3;&#x539F;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x3001;Kafka&#x6838;&#x5FC3;&#x539F;&#x7406;</h2>
+<h3 id="11-kafka&#x67B6;&#x6784;"><a name="11-kafka&#x67B6;&#x6784;" class="anchor-navigation-ex-anchor" href="#11-kafka&#x67B6;&#x6784;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1 Kafka&#x67B6;&#x6784;</h3>
+<pre class="language-"><code>                    &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
+                    &#x2502;                    &#x751F;&#x4EA7;&#x8005; (Producers)                    &#x2502;
+                    &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+                                                &#x2502; &#x53D1;&#x9001;&#x6D88;&#x606F;
+                                                &#x25BC;
+&#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
+&#x2502;                              Kafka Cluster                                 &#x2502;
+&#x2502;  &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;    &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;    &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;                  &#x2502;
+&#x2502;  &#x2502;   Broker 1   &#x2502;    &#x2502;   Broker 2   &#x2502;    &#x2502;   Broker 3   &#x2502;                  &#x2502;
+&#x2502;  &#x2502;  &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;  &#x2502;    &#x2502;  &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;  &#x2502;    &#x2502;  &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;  &#x2502;                  &#x2502;
+&#x2502;  &#x2502;  &#x2502; Topic  &#x2502;  &#x2502;    &#x2502;  &#x2502; Topic  &#x2502;  &#x2502;    &#x2502;  &#x2502; Topic  &#x2502;  &#x2502;                  &#x2502;
+&#x2502;  &#x2502;  &#x2502;  Part0 &#x2502;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2502;  &#x2502;  Part0 &#x2502;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2502;  &#x2502;  Part0 &#x2502;  &#x2502;  Leader          &#x2502;
+&#x2502;  &#x2502;  &#x2502;  Part1 &#x2502;  &#x2502;    &#x2502;  &#x2502;  Part1 &#x2502;  &#x2502;    &#x2502;  &#x2502;  Part1 &#x2502;  &#x2502;  Replicas        &#x2502;
+&#x2502;  &#x2502;  &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;  &#x2502;    &#x2502;  &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;  &#x2502;    &#x2502;  &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;  &#x2502;                  &#x2502;
+&#x2502;  &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;    &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;    &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;                  &#x2502;
+&#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+                                                &#x2502; &#x6D88;&#x8D39;&#x6D88;&#x606F;
+                                                &#x25BC;
+                    &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
+                    &#x2502;                    &#x6D88;&#x8D39;&#x8005; (Consumers)                    &#x2502;
+                    &#x2502;           &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;  &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;           &#x2502;
+                    &#x2502;           &#x2502;  Consumer    &#x2502;  &#x2502;  Consumer    &#x2502;           &#x2502;
+                    &#x2502;           &#x2502;    Group 1   &#x2502;  &#x2502;    Group 2   &#x2502;           &#x2502;
+                    &#x2502;           &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;  &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;           &#x2502;
+                    &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+</code></pre><h3 id="12-topic&#x548C;partition"><a name="12-topic&#x548C;partition" class="anchor-navigation-ex-anchor" href="#12-topic&#x548C;partition"><i class="fa fa-link" aria-hidden="true"></i></a>1.2 Topic&#x548C;Partition</h3>
+<p><strong>Topic</strong>&#xFF1A;&#x903B;&#x8F91;&#x4E0A;&#x7684;&#x6D88;&#x606F;&#x4E3B;&#x9898;&#xFF0C;&#x7C7B;&#x4F3C;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x8868;</p>
+<p><strong>Partition</strong>&#xFF1A;Topic&#x7684;&#x7269;&#x7406;&#x5206;&#x533A;&#xFF0C;&#x6BCF;&#x4E2A;Topic&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x591A;&#x4E2A;Partition</p>
+<pre class="language-"><code>Topic: logs
+&#x251C;&#x2500;&#x2500; Partition 0: [msg1, msg3, msg5]
+&#x251C;&#x2500;&#x2500; Partition 1: [msg2, msg4, msg6]
+&#x2514;&#x2500;&#x2500; Partition 2: [msg7, msg8, msg9]
+</code></pre><h3 id="13-&#x526F;&#x672C;&#x673A;&#x5236;"><a name="13-&#x526F;&#x672C;&#x673A;&#x5236;" class="anchor-navigation-ex-anchor" href="#13-&#x526F;&#x672C;&#x673A;&#x5236;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3 &#x526F;&#x672C;&#x673A;&#x5236;</h3>
+<pre class="language-"><code>Partition 0:
+&#x251C;&#x2500;&#x2500; Leader (Broker 1)  &#x2192; &#x5904;&#x7406;&#x8BFB;&#x5199;&#x8BF7;&#x6C42;
+&#x251C;&#x2500;&#x2500; Replica 1 (Broker 2) &#x2192; &#x540C;&#x6B65;&#x590D;&#x5236;
+&#x2514;&#x2500;&#x2500; Replica 2 (Broker 3) &#x2192; &#x540C;&#x6B65;&#x590D;&#x5236;
+</code></pre><p><strong>ISR&#xFF08;In-Sync Replicas&#xFF09;</strong>&#xFF1A;&#x4E0E;Leader&#x4FDD;&#x6301;&#x540C;&#x6B65;&#x7684;&#x526F;&#x672C;&#x96C6;&#x5408;</p>
+<h3 id="14-&#x751F;&#x4EA7;&#x8005;&#x539F;&#x7406;"><a name="14-&#x751F;&#x4EA7;&#x8005;&#x539F;&#x7406;" class="anchor-navigation-ex-anchor" href="#14-&#x751F;&#x4EA7;&#x8005;&#x539F;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4 &#x751F;&#x4EA7;&#x8005;&#x539F;&#x7406;</h3>
+<p><strong>&#x6D88;&#x606F;&#x53D1;&#x9001;&#x6D41;&#x7A0B;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x751F;&#x4EA7;&#x8005;&#x9009;&#x62E9;Partition&#xFF08;&#x901A;&#x8FC7;&#x5206;&#x533A;&#x5668;&#xFF09;</li>
+<li>&#x53D1;&#x9001;&#x5230;Leader</li>
+<li>Leader&#x5199;&#x5165;&#x672C;&#x5730;&#x65E5;&#x5FD7;</li>
+<li>Follower&#x540C;&#x6B65;&#x6570;&#x636E;</li>
+<li>&#x8FD4;&#x56DE;&#x786E;&#x8BA4;</li>
+</ol>
+<pre class="language-"><code class="lang-go"><span class="token comment">// &#x751F;&#x4EA7;&#x8005;&#x914D;&#x7F6E;</span>
+config <span class="token operator">:=</span> sarama<span class="token punctuation">.</span><span class="token function">NewConfig</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+config<span class="token punctuation">.</span>Producer<span class="token punctuation">.</span>RequiredAcks <span class="token operator">=</span> sarama<span class="token punctuation">.</span>WaitForAll
+config<span class="token punctuation">.</span>Producer<span class="token punctuation">.</span>Partitioner <span class="token operator">=</span> sarama<span class="token punctuation">.</span>NewRandomPartitioner
+config<span class="token punctuation">.</span>Producer<span class="token punctuation">.</span>Return<span class="token punctuation">.</span>Successes <span class="token operator">=</span> <span class="token boolean">true</span>
+
+producer<span class="token punctuation">,</span> <span class="token boolean">_</span> <span class="token operator">:=</span> sarama<span class="token punctuation">.</span><span class="token function">NewSyncProducer</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">{</span><span class="token string">&quot;localhost:9092&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span> config<span class="token punctuation">)</span>
+<span class="token keyword">defer</span> producer<span class="token punctuation">.</span><span class="token function">Close</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">// &#x53D1;&#x9001;&#x6D88;&#x606F;</span>
+msg <span class="token operator">:=</span> <span class="token operator">&amp;</span>sarama<span class="token punctuation">.</span>ProducerMessage<span class="token punctuation">{</span>
+    Topic<span class="token punctuation">:</span> <span class="token string">&quot;test&quot;</span><span class="token punctuation">,</span>
+    Value<span class="token punctuation">:</span> sarama<span class="token punctuation">.</span><span class="token function">StringEncoder</span><span class="token punctuation">(</span><span class="token string">&quot;hello kafka&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+partition<span class="token punctuation">,</span> offset<span class="token punctuation">,</span> <span class="token boolean">_</span> <span class="token operator">:=</span> producer<span class="token punctuation">.</span><span class="token function">SendMessage</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span>
+</code></pre>
+<h3 id="15-&#x6D88;&#x8D39;&#x8005;&#x539F;&#x7406;"><a name="15-&#x6D88;&#x8D39;&#x8005;&#x539F;&#x7406;" class="anchor-navigation-ex-anchor" href="#15-&#x6D88;&#x8D39;&#x8005;&#x539F;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5 &#x6D88;&#x8D39;&#x8005;&#x539F;&#x7406;</h3>
+<p><strong>&#x6D88;&#x8D39;&#x8005;&#x7EC4;</strong>&#xFF1A;&#x591A;&#x4E2A;&#x6D88;&#x8D39;&#x8005;&#x7EC4;&#x6210;&#x4E00;&#x4E2A;&#x7EC4;&#xFF0C;&#x5171;&#x540C;&#x6D88;&#x8D39;&#x4E00;&#x4E2A;Topic</p>
+<p><strong>Offset&#x7BA1;&#x7406;</strong>&#xFF1A;</p>
+<ul>
+<li>&#x81EA;&#x52A8;&#x63D0;&#x4EA4;&#xFF1A;&#x5B9A;&#x671F;&#x81EA;&#x52A8;&#x63D0;&#x4EA4;offset</li>
+<li>&#x624B;&#x52A8;&#x63D0;&#x4EA4;&#xFF1A;&#x4E1A;&#x52A1;&#x5904;&#x7406;&#x5B8C;&#x6210;&#x540E;&#x624B;&#x52A8;&#x63D0;&#x4EA4;</li>
+</ul>
+<pre class="language-"><code class="lang-go"><span class="token comment">// &#x6D88;&#x8D39;&#x8005;&#x914D;&#x7F6E;</span>
+config <span class="token operator">:=</span> sarama<span class="token punctuation">.</span><span class="token function">NewConfig</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+config<span class="token punctuation">.</span>Consumer<span class="token punctuation">.</span>Group<span class="token punctuation">.</span>Rebalance<span class="token punctuation">.</span>Strategy <span class="token operator">=</span> sarama<span class="token punctuation">.</span>BalanceStrategyRoundRobin
+config<span class="token punctuation">.</span>Consumer<span class="token punctuation">.</span>Offsets<span class="token punctuation">.</span>Initial <span class="token operator">=</span> sarama<span class="token punctuation">.</span>OffsetOldest
+
+consumer <span class="token operator">:=</span> sarama<span class="token punctuation">.</span><span class="token function">NewConsumer</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">{</span><span class="token string">&quot;localhost:9092&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span> config<span class="token punctuation">)</span>
+<span class="token keyword">defer</span> consumer<span class="token punctuation">.</span><span class="token function">Close</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+partitionConsumer<span class="token punctuation">,</span> <span class="token boolean">_</span> <span class="token operator">:=</span> consumer<span class="token punctuation">.</span><span class="token function">ConsumePartition</span><span class="token punctuation">(</span><span class="token string">&quot;test&quot;</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> sarama<span class="token punctuation">.</span>OffsetNewest<span class="token punctuation">)</span>
+<span class="token keyword">defer</span> partitionConsumer<span class="token punctuation">.</span><span class="token function">Close</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">for</span> msg <span class="token operator">:=</span> <span class="token keyword">range</span> partitionConsumer<span class="token punctuation">.</span><span class="token function">Messages</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;Message: %s\n&quot;</span><span class="token punctuation">,</span> <span class="token function">string</span><span class="token punctuation">(</span>msg<span class="token punctuation">.</span>Value<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<hr>
+<h2 id="&#x4E8C;&#x3001;kafka&#x5E38;&#x89C1;&#x95EE;&#x9898;&#x5206;&#x6790;&#x4E0E;&#x6392;&#x67E5;"><a name="&#x4E8C;&#x3001;kafka&#x5E38;&#x89C1;&#x95EE;&#x9898;&#x5206;&#x6790;&#x4E0E;&#x6392;&#x67E5;" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x3001;kafka&#x5E38;&#x89C1;&#x95EE;&#x9898;&#x5206;&#x6790;&#x4E0E;&#x6392;&#x67E5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8C;&#x3001;Kafka&#x5E38;&#x89C1;&#x95EE;&#x9898;&#x5206;&#x6790;&#x4E0E;&#x6392;&#x67E5;</h2>
+<h3 id="&#x95EE;&#x9898;1&#xFF1A;&#x6D88;&#x606F;&#x4E22;&#x5931;"><a name="&#x95EE;&#x9898;1&#xFF1A;&#x6D88;&#x606F;&#x4E22;&#x5931;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;1&#xFF1A;&#x6D88;&#x606F;&#x4E22;&#x5931;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;1&#xFF1A;&#x6D88;&#x606F;&#x4E22;&#x5931;</h3>
+<p><strong>&#x73B0;&#x8C61;</strong>&#xFF1A;</p>
+<ul>
+<li>&#x751F;&#x4EA7;&#x8005;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x540E;&#xFF0C;&#x6D88;&#x8D39;&#x8005;&#x65E0;&#x6CD5;&#x63A5;&#x6536;&#x5230;</li>
+<li>&#x6D88;&#x606F;&#x6570;&#x91CF;&#x4E0D;&#x5339;&#x914D;</li>
+</ul>
+<p><strong>&#x6392;&#x67E5;&#x6B65;&#x9AA4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># 1. &#x68C0;&#x67E5;&#x751F;&#x4EA7;&#x8005;&#x914D;&#x7F6E;</span>
+<span class="token comment"># RequiredAcks&#x8BBE;&#x7F6E;&#x662F;&#x5426;&#x6B63;&#x786E;</span>
+<span class="token comment"># &#x5EFA;&#x8BAE;&#x8BBE;&#x7F6E;&#x4E3A;WaitForAll</span>
+
+<span class="token comment"># 2. &#x68C0;&#x67E5;Broker&#x65E5;&#x5FD7;</span>
+<span class="token function">cat</span> /var/log/kafka/server.log <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-i</span> <span class="token string">&quot;error&quot;</span>
+
+<span class="token comment"># 3. &#x68C0;&#x67E5;Partition&#x72B6;&#x6001;</span>
+kafka-topics.sh <span class="token parameter variable">--describe</span> <span class="token parameter variable">--topic</span> <span class="token builtin class-name">test</span> <span class="token parameter variable">--zookeeper</span> localhost:2181
+
+<span class="token comment"># 4. &#x68C0;&#x67E5;ISR&#x72B6;&#x6001;</span>
+kafka-topics.sh <span class="token parameter variable">--describe</span> <span class="token parameter variable">--topic</span> <span class="token builtin class-name">test</span> <span class="token parameter variable">--zookeeper</span> localhost:2181 <span class="token operator">|</span> <span class="token function">grep</span> ISR
+</code></pre>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x8BBE;&#x7F6E;<code>acks=all</code>&#x786E;&#x4FDD;&#x6240;&#x6709;&#x526F;&#x672C;&#x90FD;&#x786E;&#x8BA4;</li>
+<li>&#x542F;&#x7528;<code>min.insync.replicas</code>&#x914D;&#x7F6E;</li>
+<li>&#x786E;&#x4FDD;Producer&#x6709;&#x8DB3;&#x591F;&#x7684;&#x91CD;&#x8BD5;&#x6B21;&#x6570;</li>
+<li>&#x4F7F;&#x7528;&#x4E8B;&#x52A1;&#x4FDD;&#x8BC1;Exactly-Once&#x8BED;&#x4E49;</li>
+</ol>
+<hr>
+<h3 id="&#x95EE;&#x9898;2&#xFF1A;&#x6D88;&#x606F;&#x91CD;&#x590D;&#x6D88;&#x8D39;"><a name="&#x95EE;&#x9898;2&#xFF1A;&#x6D88;&#x606F;&#x91CD;&#x590D;&#x6D88;&#x8D39;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;2&#xFF1A;&#x6D88;&#x606F;&#x91CD;&#x590D;&#x6D88;&#x8D39;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;2&#xFF1A;&#x6D88;&#x606F;&#x91CD;&#x590D;&#x6D88;&#x8D39;</h3>
+<p><strong>&#x73B0;&#x8C61;</strong>&#xFF1A;</p>
+<ul>
+<li>&#x540C;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x88AB;&#x6D88;&#x8D39;&#x591A;&#x6B21;</li>
+<li>&#x6570;&#x636E;&#x51FA;&#x73B0;&#x91CD;&#x590D;</li>
+</ul>
+<p><strong>&#x6392;&#x67E5;&#x6B65;&#x9AA4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># 1. &#x68C0;&#x67E5;&#x6D88;&#x8D39;&#x8005;offset&#x63D0;&#x4EA4;&#x7B56;&#x7565;</span>
+<span class="token comment"># &#x662F;&#x5426;&#x4F7F;&#x7528;&#x4E86;&#x81EA;&#x52A8;&#x63D0;&#x4EA4;</span>
+<span class="token comment"># &#x81EA;&#x52A8;&#x63D0;&#x4EA4;&#x53EF;&#x80FD;&#x5728;&#x5904;&#x7406;&#x5B8C;&#x6210;&#x524D;&#x63D0;&#x4EA4;</span>
+
+<span class="token comment"># 2. &#x68C0;&#x67E5;&#x662F;&#x5426;&#x53D1;&#x751F;&#x4E86;Rebalance</span>
+<span class="token function">cat</span> /var/log/kafka/server.log <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-i</span> rebalance
+
+<span class="token comment"># 3. &#x68C0;&#x67E5;&#x6D88;&#x8D39;&#x8005;&#x662F;&#x5426;&#x5F02;&#x5E38;&#x9000;&#x51FA;</span>
+</code></pre>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x4F7F;&#x7528;&#x624B;&#x52A8;&#x63D0;&#x4EA4;offset</li>
+<li>&#x5728;&#x4E1A;&#x52A1;&#x5C42;&#x5B9E;&#x73B0;&#x5E42;&#x7B49;&#x6027;</li>
+<li>&#x4F7F;&#x7528;&#x552F;&#x4E00;&#x6D88;&#x606F;ID&#x53BB;&#x91CD;</li>
+<li>&#x8BBE;&#x7F6E;&#x5408;&#x7406;&#x7684;<code>session.timeout.ms</code></li>
+</ol>
+<hr>
+<h3 id="&#x95EE;&#x9898;3&#xFF1A;&#x6D88;&#x8D39;&#x8005;rebalance&#x9891;&#x7E41;"><a name="&#x95EE;&#x9898;3&#xFF1A;&#x6D88;&#x8D39;&#x8005;rebalance&#x9891;&#x7E41;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;3&#xFF1A;&#x6D88;&#x8D39;&#x8005;rebalance&#x9891;&#x7E41;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;3&#xFF1A;&#x6D88;&#x8D39;&#x8005;Rebalance&#x9891;&#x7E41;</h3>
+<p><strong>&#x73B0;&#x8C61;</strong>&#xFF1A;</p>
+<ul>
+<li>&#x6D88;&#x8D39;&#x8005;&#x7EC4;&#x9891;&#x7E41;&#x89E6;&#x53D1;Rebalance</li>
+<li>&#x6D88;&#x8D39;&#x5EF6;&#x8FDF;&#x589E;&#x52A0;</li>
+</ul>
+<p><strong>&#x6392;&#x67E5;&#x6B65;&#x9AA4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># 1. &#x67E5;&#x770B;&#x6D88;&#x8D39;&#x8005;&#x7EC4;&#x72B6;&#x6001;</span>
+kafka-consumer-groups.sh <span class="token parameter variable">--describe</span> <span class="token parameter variable">--group</span> my-group --bootstrap-server localhost:9092
+
+<span class="token comment"># 2. &#x68C0;&#x67E5;&#x5FC3;&#x8DF3;&#x8D85;&#x65F6;&#x914D;&#x7F6E;</span>
+<span class="token comment"># session.timeout.ms &#x548C; heartbeat.interval.ms</span>
+
+<span class="token comment"># 3. &#x68C0;&#x67E5;&#x662F;&#x5426;&#x6709;&#x6D88;&#x8D39;&#x8005;&#x957F;&#x65F6;&#x95F4;&#x672A;&#x54CD;&#x5E94;</span>
+</code></pre>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x8C03;&#x6574;<code>session.timeout.ms</code>&#x548C;<code>heartbeat.interval.ms</code></li>
+<li>&#x907F;&#x514D;&#x5728;&#x6D88;&#x8D39;&#x903B;&#x8F91;&#x4E2D;&#x6267;&#x884C;&#x8017;&#x65F6;&#x64CD;&#x4F5C;</li>
+<li>&#x589E;&#x52A0;<code>max.poll.interval.ms</code></li>
+<li>&#x4F7F;&#x7528;&#x9759;&#x6001;&#x6210;&#x5458;&#xFF08;Static Membership&#xFF09;</li>
+</ol>
+<hr>
+<h3 id="&#x95EE;&#x9898;4&#xFF1A;&#x6D88;&#x606F;&#x79EF;&#x538B;"><a name="&#x95EE;&#x9898;4&#xFF1A;&#x6D88;&#x606F;&#x79EF;&#x538B;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;4&#xFF1A;&#x6D88;&#x606F;&#x79EF;&#x538B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;4&#xFF1A;&#x6D88;&#x606F;&#x79EF;&#x538B;</h3>
+<p><strong>&#x73B0;&#x8C61;</strong>&#xFF1A;</p>
+<ul>
+<li>&#x6D88;&#x8D39;&#x8005;&#x6D88;&#x8D39;&#x901F;&#x5EA6;&#x8DDF;&#x4E0D;&#x4E0A;&#x751F;&#x4EA7;&#x8005;</li>
+<li>Lag&#x6301;&#x7EED;&#x589E;&#x52A0;</li>
+</ul>
+<p><strong>&#x6392;&#x67E5;&#x6B65;&#x9AA4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># 1. &#x67E5;&#x770B;&#x6D88;&#x8D39;&#x8005;Lag</span>
+kafka-consumer-groups.sh <span class="token parameter variable">--describe</span> <span class="token parameter variable">--group</span> my-group --bootstrap-server localhost:9092
+
+<span class="token comment"># 2. &#x68C0;&#x67E5;&#x6D88;&#x8D39;&#x8005;&#x6570;&#x91CF;</span>
+<span class="token comment"># &#x662F;&#x5426;&#x9700;&#x8981;&#x589E;&#x52A0;&#x6D88;&#x8D39;&#x8005;</span>
+
+<span class="token comment"># 3. &#x68C0;&#x67E5;&#x5206;&#x533A;&#x6570;&#x91CF;</span>
+<span class="token comment"># &#x5206;&#x533A;&#x6570;&#x9650;&#x5236;&#x4E86;&#x6700;&#x5927;&#x5E76;&#x53D1;&#x6D88;&#x8D39;&#x8005;&#x6570;</span>
+
+<span class="token comment"># 4. &#x68C0;&#x67E5;&#x6D88;&#x8D39;&#x903B;&#x8F91;&#x6027;&#x80FD;</span>
+</code></pre>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x589E;&#x52A0;&#x6D88;&#x8D39;&#x8005;&#x6570;&#x91CF;&#xFF08;&#x4E0D;&#x8D85;&#x8FC7;&#x5206;&#x533A;&#x6570;&#xFF09;</li>
+<li>&#x589E;&#x52A0;&#x5206;&#x533A;&#x6570;&#x91CF;</li>
+<li>&#x4F18;&#x5316;&#x6D88;&#x8D39;&#x903B;&#x8F91;</li>
+<li>&#x4F7F;&#x7528;&#x6279;&#x91CF;&#x6D88;&#x8D39;</li>
+</ol>
+<hr>
+<h3 id="&#x95EE;&#x9898;5&#xFF1A;broker&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x4E0D;&#x8DB3;"><a name="&#x95EE;&#x9898;5&#xFF1A;broker&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x4E0D;&#x8DB3;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;5&#xFF1A;broker&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x4E0D;&#x8DB3;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;5&#xFF1A;Broker&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x4E0D;&#x8DB3;</h3>
+<p><strong>&#x73B0;&#x8C61;</strong>&#xFF1A;</p>
+<ul>
+<li>Broker&#x65E0;&#x6CD5;&#x5199;&#x5165;&#x6D88;&#x606F;</li>
+<li>&#x65E5;&#x5FD7;&#x663E;&#x793A;&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x4E0D;&#x8DB3;</li>
+</ul>
+<p><strong>&#x6392;&#x67E5;&#x6B65;&#x9AA4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># 1. &#x68C0;&#x67E5;&#x78C1;&#x76D8;&#x7A7A;&#x95F4;</span>
+<span class="token function">df</span> <span class="token parameter variable">-h</span>
+
+<span class="token comment"># 2. &#x67E5;&#x770B;&#x65E5;&#x5FD7;&#x76EE;&#x5F55;&#x5927;&#x5C0F;</span>
+<span class="token function">du</span> <span class="token parameter variable">-sh</span> /var/lib/kafka
+
+<span class="token comment"># 3. &#x68C0;&#x67E5;&#x65E5;&#x5FD7;&#x4FDD;&#x7559;&#x7B56;&#x7565;</span>
+<span class="token function">cat</span> config/server.properties <span class="token operator">|</span> <span class="token function">grep</span> retention
+</code></pre>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x8BBE;&#x7F6E;&#x5408;&#x7406;&#x7684;&#x65E5;&#x5FD7;&#x4FDD;&#x7559;&#x65F6;&#x95F4;</li>
+<li>&#x914D;&#x7F6E;&#x78C1;&#x76D8;&#x914D;&#x989D;</li>
+<li>&#x4F7F;&#x7528;&#x65E5;&#x5FD7;&#x538B;&#x7F29;&#xFF08;Log Compaction&#xFF09;</li>
+<li>&#x5B9A;&#x671F;&#x6E05;&#x7406;&#x8FC7;&#x671F;&#x65E5;&#x5FD7;</li>
+</ol>
+<hr>
+<h3 id="&#x95EE;&#x9898;6&#xFF1A;leader&#x9009;&#x4E3E;&#x9891;&#x7E41;"><a name="&#x95EE;&#x9898;6&#xFF1A;leader&#x9009;&#x4E3E;&#x9891;&#x7E41;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;6&#xFF1A;leader&#x9009;&#x4E3E;&#x9891;&#x7E41;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;6&#xFF1A;Leader&#x9009;&#x4E3E;&#x9891;&#x7E41;</h3>
+<p><strong>&#x73B0;&#x8C61;</strong>&#xFF1A;</p>
+<ul>
+<li>Broker&#x9891;&#x7E41;&#x5207;&#x6362;Leader</li>
+<li>&#x5BA2;&#x6237;&#x7AEF;&#x8FDE;&#x63A5;&#x4E0D;&#x7A33;&#x5B9A;</li>
+</ul>
+<p><strong>&#x6392;&#x67E5;&#x6B65;&#x9AA4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># 1. &#x68C0;&#x67E5;Broker&#x72B6;&#x6001;</span>
+kafka-topics.sh <span class="token parameter variable">--describe</span> <span class="token parameter variable">--topic</span> <span class="token builtin class-name">test</span> <span class="token parameter variable">--zookeeper</span> localhost:2181
+
+<span class="token comment"># 2. &#x68C0;&#x67E5;&#x7F51;&#x7EDC;&#x72B6;&#x51B5;</span>
+<span class="token function">ping</span> broker1
+<span class="token function">ping</span> broker2
+
+<span class="token comment"># 3. &#x68C0;&#x67E5;Zookeeper&#x72B6;&#x6001;</span>
+zkServer.sh status
+</code></pre>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x786E;&#x4FDD;&#x7F51;&#x7EDC;&#x7A33;&#x5B9A;</li>
+<li>&#x589E;&#x52A0;<code>unclean.leader.election.enable=false</code></li>
+<li>&#x914D;&#x7F6E;&#x5408;&#x7406;&#x7684;<code>min.insync.replicas</code></li>
+<li>&#x76D1;&#x63A7;Broker&#x5065;&#x5EB7;&#x72B6;&#x6001;</li>
+</ol>
+<hr>
+<h3 id="&#x95EE;&#x9898;7&#xFF1A;&#x7F51;&#x7EDC;&#x5206;&#x533A;&#x5BFC;&#x81F4;&#x8111;&#x88C2;"><a name="&#x95EE;&#x9898;7&#xFF1A;&#x7F51;&#x7EDC;&#x5206;&#x533A;&#x5BFC;&#x81F4;&#x8111;&#x88C2;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;7&#xFF1A;&#x7F51;&#x7EDC;&#x5206;&#x533A;&#x5BFC;&#x81F4;&#x8111;&#x88C2;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;7&#xFF1A;&#x7F51;&#x7EDC;&#x5206;&#x533A;&#x5BFC;&#x81F4;&#x8111;&#x88C2;</h3>
+<p><strong>&#x73B0;&#x8C61;</strong>&#xFF1A;</p>
+<ul>
+<li>&#x591A;&#x4E2A;Broker&#x8BA4;&#x4E3A;&#x81EA;&#x5DF1;&#x662F;Leader</li>
+<li>&#x6570;&#x636E;&#x4E0D;&#x4E00;&#x81F4;</li>
+</ul>
+<p><strong>&#x6392;&#x67E5;&#x6B65;&#x9AA4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># 1. &#x68C0;&#x67E5;Zookeeper&#x8282;&#x70B9;</span>
+zkCli.sh
+<span class="token function">ls</span> /brokers/topics/test/partitions/0/state
+
+<span class="token comment"># 2. &#x68C0;&#x67E5;ISR&#x72B6;&#x6001;</span>
+kafka-topics.sh <span class="token parameter variable">--describe</span> <span class="token parameter variable">--topic</span> <span class="token builtin class-name">test</span> <span class="token parameter variable">--zookeeper</span> localhost:2181
+</code></pre>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x914D;&#x7F6E;<code>unclean.leader.election.enable=false</code></li>
+<li>&#x4F7F;&#x7528;Quorum&#x673A;&#x5236;</li>
+<li>&#x786E;&#x4FDD;&#x7F51;&#x7EDC;&#x7A33;&#x5B9A;&#x6027;</li>
+<li>&#x76D1;&#x63A7;&#x5206;&#x533A;&#x60C5;&#x51B5;</li>
+</ol>
+<hr>
+<h3 id="&#x95EE;&#x9898;8&#xFF1A;&#x751F;&#x4EA7;&#x8005;&#x541E;&#x5410;&#x91CF;&#x4E0D;&#x8DB3;"><a name="&#x95EE;&#x9898;8&#xFF1A;&#x751F;&#x4EA7;&#x8005;&#x541E;&#x5410;&#x91CF;&#x4E0D;&#x8DB3;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;8&#xFF1A;&#x751F;&#x4EA7;&#x8005;&#x541E;&#x5410;&#x91CF;&#x4E0D;&#x8DB3;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;8&#xFF1A;&#x751F;&#x4EA7;&#x8005;&#x541E;&#x5410;&#x91CF;&#x4E0D;&#x8DB3;</h3>
+<p><strong>&#x73B0;&#x8C61;</strong>&#xFF1A;</p>
+<ul>
+<li>&#x751F;&#x4EA7;&#x8005;&#x53D1;&#x9001;&#x901F;&#x5EA6;&#x6162;</li>
+<li>&#x65E0;&#x6CD5;&#x8FBE;&#x5230;&#x9884;&#x671F;&#x541E;&#x5410;&#x91CF;</li>
+</ul>
+<p><strong>&#x6392;&#x67E5;&#x6B65;&#x9AA4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># 1. &#x68C0;&#x67E5;&#x751F;&#x4EA7;&#x8005;&#x914D;&#x7F6E;</span>
+<span class="token comment"># batch.size, linger.ms, compression.type</span>
+
+<span class="token comment"># 2. &#x68C0;&#x67E5;&#x7F51;&#x7EDC;&#x5E26;&#x5BBD;</span>
+iftop
+
+<span class="token comment"># 3. &#x68C0;&#x67E5;Broker&#x5904;&#x7406;&#x80FD;&#x529B;</span>
+kafka-topics.sh <span class="token parameter variable">--describe</span> <span class="token parameter variable">--topic</span> <span class="token builtin class-name">test</span> <span class="token parameter variable">--zookeeper</span> localhost:2181
+</code></pre>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x8C03;&#x6574;<code>batch.size</code>&#x548C;<code>linger.ms</code></li>
+<li>&#x542F;&#x7528;&#x538B;&#x7F29;<code>compression.type=gzip</code></li>
+<li>&#x589E;&#x52A0;Broker&#x6570;&#x91CF;</li>
+<li>&#x4F7F;&#x7528;&#x5F02;&#x6B65;&#x53D1;&#x9001;</li>
+</ol>
+<hr>
+<h3 id="&#x95EE;&#x9898;9&#xFF1A;&#x6D88;&#x8D39;&#x8005;offset&#x8D8A;&#x754C;"><a name="&#x95EE;&#x9898;9&#xFF1A;&#x6D88;&#x8D39;&#x8005;offset&#x8D8A;&#x754C;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;9&#xFF1A;&#x6D88;&#x8D39;&#x8005;offset&#x8D8A;&#x754C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;9&#xFF1A;&#x6D88;&#x8D39;&#x8005;Offset&#x8D8A;&#x754C;</h3>
+<p><strong>&#x73B0;&#x8C61;</strong>&#xFF1A;</p>
+<pre class="language-"><code>OffsetOutOfRangeException
+</code></pre><p><strong>&#x6392;&#x67E5;&#x6B65;&#x9AA4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># 1. &#x68C0;&#x67E5;&#x5F53;&#x524D;offset&#x8303;&#x56F4;</span>
+kafka-run-class.sh kafka.tools.GetOffsetShell --broker-list localhost:9092 <span class="token parameter variable">--topic</span> <span class="token builtin class-name">test</span> <span class="token parameter variable">--time</span> <span class="token parameter variable">-1</span>
+
+<span class="token comment"># 2. &#x68C0;&#x67E5;&#x6D88;&#x8D39;&#x8005;offset</span>
+kafka-consumer-groups.sh <span class="token parameter variable">--describe</span> <span class="token parameter variable">--group</span> my-group --bootstrap-server localhost:9092
+</code></pre>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x8BBE;&#x7F6E;<code>auto.offset.reset=earliest/latest</code></li>
+<li>&#x624B;&#x52A8;&#x91CD;&#x7F6E;offset</li>
+<li>&#x5B9A;&#x671F;&#x68C0;&#x67E5;offset&#x8303;&#x56F4;</li>
+</ol>
+<hr>
+<h3 id="&#x95EE;&#x9898;10&#xFF1A;&#x8DE8;&#x6570;&#x636E;&#x4E2D;&#x5FC3;&#x590D;&#x5236;&#x5EF6;&#x8FDF;"><a name="&#x95EE;&#x9898;10&#xFF1A;&#x8DE8;&#x6570;&#x636E;&#x4E2D;&#x5FC3;&#x590D;&#x5236;&#x5EF6;&#x8FDF;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;10&#xFF1A;&#x8DE8;&#x6570;&#x636E;&#x4E2D;&#x5FC3;&#x590D;&#x5236;&#x5EF6;&#x8FDF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;10&#xFF1A;&#x8DE8;&#x6570;&#x636E;&#x4E2D;&#x5FC3;&#x590D;&#x5236;&#x5EF6;&#x8FDF;</h3>
+<p><strong>&#x73B0;&#x8C61;</strong>&#xFF1A;</p>
+<ul>
+<li>&#x5F02;&#x5730;&#x526F;&#x672C;&#x540C;&#x6B65;&#x5EF6;&#x8FDF;&#x5927;</li>
+<li>&#x707E;&#x5907;&#x6570;&#x636E;&#x4E0D;&#x4E00;&#x81F4;</li>
+</ul>
+<p><strong>&#x6392;&#x67E5;&#x6B65;&#x9AA4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># 1. &#x68C0;&#x67E5;MirrorMaker&#x72B6;&#x6001;</span>
+<span class="token comment"># &#x67E5;&#x770B;&#x590D;&#x5236;&#x5EF6;&#x8FDF;</span>
+
+<span class="token comment"># 2. &#x68C0;&#x67E5;&#x7F51;&#x7EDC;&#x5EF6;&#x8FDF;</span>
+<span class="token function">ping</span> remote-broker
+
+<span class="token comment"># 3. &#x68C0;&#x67E5;&#x5E26;&#x5BBD;&#x4F7F;&#x7528;</span>
+iftop
+</code></pre>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x589E;&#x52A0;&#x7F51;&#x7EDC;&#x5E26;&#x5BBD;</li>
+<li>&#x4F7F;&#x7528;&#x5F02;&#x6B65;&#x590D;&#x5236;&#x6A21;&#x5F0F;</li>
+<li>&#x8C03;&#x6574;<code>replica.lag.time.max.ms</code></li>
+<li>&#x90E8;&#x7F72;&#x672C;&#x5730;MirrorMaker</li>
+</ol>
+<hr>
+<h2 id="&#x4E09;&#x3001;kafka&#x9762;&#x8BD5;&#x9898;"><a name="&#x4E09;&#x3001;kafka&#x9762;&#x8BD5;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x4E09;&#x3001;kafka&#x9762;&#x8BD5;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E09;&#x3001;Kafka&#x9762;&#x8BD5;&#x9898;</h2>
+<h3 id="&#x57FA;&#x7840;&#x95EE;&#x9898;"><a name="&#x57FA;&#x7840;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x7840;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x57FA;&#x7840;&#x95EE;&#x9898;</h3>
+<p><strong>Q1&#xFF1A;Kafka&#x662F;&#x4EC0;&#x4E48;&#xFF1F;&#x6709;&#x4EC0;&#x4E48;&#x7279;&#x70B9;&#xFF1F;</strong></p>
+<p><strong>A1&#xFF1A;</strong>
+Kafka&#x662F;&#x4E00;&#x4E2A;&#x5206;&#x5E03;&#x5F0F;&#x6D41;&#x5904;&#x7406;&#x5E73;&#x53F0;&#xFF0C;&#x5177;&#x6709;&#x4EE5;&#x4E0B;&#x7279;&#x70B9;&#xFF1A;</p>
+<ul>
+<li>&#x9AD8;&#x541E;&#x5410;&#x91CF;&#xFF1A;&#x6BCF;&#x79D2;&#x767E;&#x4E07;&#x7EA7;&#x6D88;&#x606F;&#x5904;&#x7406;</li>
+<li>&#x4F4E;&#x5EF6;&#x8FDF;&#xFF1A;&#x6BEB;&#x79D2;&#x7EA7;&#x5EF6;&#x8FDF;</li>
+<li>&#x5206;&#x5E03;&#x5F0F;&#xFF1A;&#x652F;&#x6301;&#x6C34;&#x5E73;&#x6269;&#x5C55;</li>
+<li>&#x6301;&#x4E45;&#x5316;&#xFF1A;&#x6D88;&#x606F;&#x6301;&#x4E45;&#x5316;&#x5230;&#x78C1;&#x76D8;</li>
+<li>&#x591A;&#x526F;&#x672C;&#xFF1A;&#x6570;&#x636E;&#x5197;&#x4F59;&#x5907;&#x4EFD;</li>
+<li>&#x6D41;&#x5F0F;&#x5904;&#x7406;&#xFF1A;&#x539F;&#x751F;&#x652F;&#x6301;&#x6D41;&#x5904;&#x7406;</li>
+</ul>
+<hr>
+<p><strong>Q2&#xFF1A;Kafka&#x7684;&#x67B6;&#x6784;&#x7531;&#x54EA;&#x4E9B;&#x7EC4;&#x4EF6;&#x7EC4;&#x6210;&#xFF1F;</strong></p>
+<p><strong>A2&#xFF1A;</strong></p>
+<ul>
+<li><strong>Producer</strong>&#xFF1A;&#x6D88;&#x606F;&#x751F;&#x4EA7;&#x8005;</li>
+<li><strong>Broker</strong>&#xFF1A;&#x6D88;&#x606F;&#x4EE3;&#x7406;&#xFF0C;&#x5B58;&#x50A8;&#x6D88;&#x606F;</li>
+<li><strong>Consumer</strong>&#xFF1A;&#x6D88;&#x606F;&#x6D88;&#x8D39;&#x8005;</li>
+<li><strong>Consumer Group</strong>&#xFF1A;&#x6D88;&#x8D39;&#x8005;&#x7EC4;</li>
+<li><strong>Topic</strong>&#xFF1A;&#x6D88;&#x606F;&#x4E3B;&#x9898;</li>
+<li><strong>Partition</strong>&#xFF1A;&#x5206;&#x533A;</li>
+<li><strong>Zookeeper</strong>&#xFF1A;&#x534F;&#x8C03;&#x670D;&#x52A1;&#xFF08;Kafka 2.8+&#x53EF;&#x4F7F;&#x7528;KRaft&#xFF09;</li>
+</ul>
+<hr>
+<p><strong>Q3&#xFF1A;Topic&#x548C;Partition&#x7684;&#x5173;&#x7CFB;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</strong></p>
+<p><strong>A3&#xFF1A;</strong></p>
+<ul>
+<li>Topic&#x662F;&#x903B;&#x8F91;&#x4E0A;&#x7684;&#x6D88;&#x606F;&#x4E3B;&#x9898;</li>
+<li>Partition&#x662F;Topic&#x7684;&#x7269;&#x7406;&#x5206;&#x533A;</li>
+<li>&#x6BCF;&#x4E2A;Topic&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x591A;&#x4E2A;Partition</li>
+<li>Partition&#x53EF;&#x4EE5;&#x5206;&#x5E03;&#x5728;&#x4E0D;&#x540C;&#x7684;Broker&#x4E0A;</li>
+<li>&#x540C;&#x4E00;Partition&#x5185;&#x7684;&#x6D88;&#x606F;&#x662F;&#x6709;&#x5E8F;&#x7684;</li>
+</ul>
+<hr>
+<p><strong>Q4&#xFF1A;Kafka&#x7684;&#x526F;&#x672C;&#x673A;&#x5236;&#x662F;&#x600E;&#x6837;&#x7684;&#xFF1F;</strong></p>
+<p><strong>A4&#xFF1A;</strong></p>
+<ul>
+<li>&#x6BCF;&#x4E2A;Partition&#x6709;&#x4E00;&#x4E2A;Leader&#x548C;&#x591A;&#x4E2A;Follower</li>
+<li>Leader&#x8D1F;&#x8D23;&#x5904;&#x7406;&#x8BFB;&#x5199;&#x8BF7;&#x6C42;</li>
+<li>Follower&#x540C;&#x6B65;Leader&#x7684;&#x6570;&#x636E;</li>
+<li>ISR&#xFF08;In-Sync Replicas&#xFF09;&#x662F;&#x4E0E;Leader&#x4FDD;&#x6301;&#x540C;&#x6B65;&#x7684;&#x526F;&#x672C;&#x96C6;&#x5408;</li>
+<li>&#x53EA;&#x6709;ISR&#x4E2D;&#x7684;&#x526F;&#x672C;&#x624D;&#x80FD;&#x88AB;&#x9009;&#x4E3E;&#x4E3A;Leader</li>
+</ul>
+<hr>
+<p><strong>Q5&#xFF1A;Kafka&#x5982;&#x4F55;&#x4FDD;&#x8BC1;&#x6D88;&#x606F;&#x7684;&#x53EF;&#x9760;&#x6027;&#xFF1F;</strong></p>
+<p><strong>A5&#xFF1A;</strong></p>
+<ul>
+<li><strong>&#x526F;&#x672C;&#x673A;&#x5236;</strong>&#xFF1A;&#x591A;&#x526F;&#x672C;&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x5197;&#x4F59;</li>
+<li><strong>ACK&#x673A;&#x5236;</strong>&#xFF1A;&#x751F;&#x4EA7;&#x8005;&#x53EF;&#x914D;&#x7F6E;ack&#x7EA7;&#x522B;</li>
+<li><strong>ISR&#x673A;&#x5236;</strong>&#xFF1A;&#x786E;&#x4FDD;&#x6570;&#x636E;&#x540C;&#x6B65;&#x5230;&#x591A;&#x4E2A;&#x526F;&#x672C;</li>
+<li><strong>&#x6D88;&#x606F;&#x6301;&#x4E45;&#x5316;</strong>&#xFF1A;&#x6D88;&#x606F;&#x5199;&#x5165;&#x78C1;&#x76D8;</li>
+</ul>
+<hr>
+<p><strong>Q6&#xFF1A;&#x4EC0;&#x4E48;&#x662F;ISR&#xFF1F;</strong></p>
+<p><strong>A6&#xFF1A;</strong>
+ISR&#xFF08;In-Sync Replicas&#xFF09;&#x662F;&#x4E0E;Leader&#x4FDD;&#x6301;&#x540C;&#x6B65;&#x7684;&#x526F;&#x672C;&#x96C6;&#x5408;&#x3002;&#x53EA;&#x6709;ISR&#x4E2D;&#x7684;&#x526F;&#x672C;&#x624D;&#x80FD;&#x88AB;&#x9009;&#x4E3E;&#x4E3A;Leader&#xFF0C;&#x786E;&#x4FDD;&#x6570;&#x636E;&#x4E00;&#x81F4;&#x6027;&#x3002;</p>
+<hr>
+<p><strong>Q7&#xFF1A;Kafka&#x7684;&#x6D88;&#x8D39;&#x8005;&#x7EC4;&#x662F;&#x5982;&#x4F55;&#x5DE5;&#x4F5C;&#x7684;&#xFF1F;</strong></p>
+<p><strong>A7&#xFF1A;</strong></p>
+<ul>
+<li>&#x591A;&#x4E2A;&#x6D88;&#x8D39;&#x8005;&#x7EC4;&#x6210;&#x4E00;&#x4E2A;&#x6D88;&#x8D39;&#x8005;&#x7EC4;</li>
+<li>&#x540C;&#x4E00;&#x4E2A;&#x6D88;&#x8D39;&#x8005;&#x7EC4;&#x7684;&#x6D88;&#x8D39;&#x8005;&#x5171;&#x540C;&#x6D88;&#x8D39;&#x4E00;&#x4E2A;Topic</li>
+<li>&#x6BCF;&#x4E2A;Partition&#x53EA;&#x80FD;&#x88AB;&#x7EC4;&#x5185;&#x4E00;&#x4E2A;&#x6D88;&#x8D39;&#x8005;&#x6D88;&#x8D39;</li>
+<li>&#x6D88;&#x8D39;&#x8005;&#x7EC4;&#x901A;&#x8FC7;Rebalance&#x5206;&#x914D;Partition</li>
+</ul>
+<hr>
+<p><strong>Q8&#xFF1A;Kafka&#x7684;Offset&#x662F;&#x5982;&#x4F55;&#x7BA1;&#x7406;&#x7684;&#xFF1F;</strong></p>
+<p><strong>A8&#xFF1A;</strong></p>
+<ul>
+<li>Offset&#x8868;&#x793A;&#x6D88;&#x8D39;&#x8005;&#x5728;Partition&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;</li>
+<li>&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x63D0;&#x4EA4;&#x6216;&#x624B;&#x52A8;&#x63D0;&#x4EA4;</li>
+<li>&#x81EA;&#x52A8;&#x63D0;&#x4EA4;&#xFF1A;&#x5B9A;&#x671F;&#x81EA;&#x52A8;&#x63D0;&#x4EA4;offset</li>
+<li>&#x624B;&#x52A8;&#x63D0;&#x4EA4;&#xFF1A;&#x4E1A;&#x52A1;&#x5904;&#x7406;&#x5B8C;&#x6210;&#x540E;&#x624B;&#x52A8;&#x63D0;&#x4EA4;</li>
+</ul>
+<hr>
+<p><strong>Q9&#xFF1A;Kafka&#x652F;&#x6301;&#x54EA;&#x4E9B;&#x6D88;&#x606F;&#x8BED;&#x4E49;&#xFF1F;</strong></p>
+<p><strong>A9&#xFF1A;</strong></p>
+<ul>
+<li><strong>At Most Once</strong>&#xFF1A;&#x6700;&#x591A;&#x4E00;&#x6B21;&#xFF0C;&#x6D88;&#x606F;&#x53EF;&#x80FD;&#x4E22;&#x5931;</li>
+<li><strong>At Least Once</strong>&#xFF1A;&#x81F3;&#x5C11;&#x4E00;&#x6B21;&#xFF0C;&#x6D88;&#x606F;&#x53EF;&#x80FD;&#x91CD;&#x590D;</li>
+<li><strong>Exactly Once</strong>&#xFF1A;&#x6070;&#x597D;&#x4E00;&#x6B21;&#xFF0C;&#x6D88;&#x606F;&#x4E0D;&#x4E22;&#x5931;&#x4E0D;&#x91CD;&#x590D;</li>
+</ul>
+<hr>
+<p><strong>Q10&#xFF1A;Kafka&#x548C;&#x5176;&#x4ED6;&#x6D88;&#x606F;&#x961F;&#x5217;&#xFF08;&#x5982;RabbitMQ&#xFF09;&#x6709;&#x4EC0;&#x4E48;&#x533A;&#x522B;&#xFF1F;</strong></p>
+<p><strong>A10&#xFF1A;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x7279;&#x6027;</th>
+<th>Kafka</th>
+<th>RabbitMQ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x541E;&#x5410;&#x91CF;</td>
+<td>&#x9AD8;</td>
+<td>&#x4E2D;&#x7B49;</td>
+</tr>
+<tr>
+<td>&#x5EF6;&#x8FDF;</td>
+<td>&#x4F4E;</td>
+<td>&#x4F4E;</td>
+</tr>
+<tr>
+<td>&#x6301;&#x4E45;&#x5316;</td>
+<td>&#x78C1;&#x76D8;</td>
+<td>&#x78C1;&#x76D8;/&#x5185;&#x5B58;</td>
+</tr>
+<tr>
+<td>&#x6269;&#x5C55;&#x6027;</td>
+<td>&#x5F3A;</td>
+<td>&#x4E2D;&#x7B49;</td>
+</tr>
+<tr>
+<td>&#x4F7F;&#x7528;&#x573A;&#x666F;</td>
+<td>&#x5927;&#x6570;&#x636E;&#x3001;&#x5B9E;&#x65F6;&#x6D41;</td>
+<td>&#x4F01;&#x4E1A;&#x6D88;&#x606F;&#x961F;&#x5217;</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="&#x590D;&#x6742;&#x573A;&#x666F;&#x95EE;&#x9898;"><a name="&#x590D;&#x6742;&#x573A;&#x666F;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x590D;&#x6742;&#x573A;&#x666F;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x590D;&#x6742;&#x573A;&#x666F;&#x95EE;&#x9898;</h3>
+<p><strong>Q11&#xFF1A;&#x5982;&#x4F55;&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x9AD8;&#x53EF;&#x7528;&#x7684;Kafka&#x96C6;&#x7FA4;&#xFF1F;</strong></p>
+<p><strong>A11&#xFF1A;</strong></p>
+<p><strong>&#x65B9;&#x6848;&#x8BBE;&#x8BA1;&#xFF1A;</strong></p>
+<pre class="language-"><code>                    &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
+                    &#x2502;              VIP                    &#x2502;
+                    &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+                                      &#x2502;
+        &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
+        &#x25BC;                             &#x25BC;                             &#x25BC;
+&#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;              &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;              &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
+&#x2502;   Broker 1   &#x2502;              &#x2502;   Broker 2   &#x2502;              &#x2502;   Broker 3   &#x2502;
+&#x2502;  (Controller)&#x2502;&#x25C4;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x25BA;&#x2502;              &#x2502;&#x25C4;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x25BA;&#x2502;              &#x2502;
+&#x2502;  Leader: P0  &#x2502;              &#x2502;  Leader: P1  &#x2502;              &#x2502;  Leader: P2  &#x2502;
+&#x2502;  Follower: P1&#x2502;              &#x2502;  Follower: P2&#x2502;              &#x2502;  Follower: P0&#x2502;
+&#x2502;  Follower: P2&#x2502;              &#x2502;  Follower: P0&#x2502;              &#x2502;  Follower: P1&#x2502;
+&#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;              &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;              &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+</code></pre><p><strong>&#x5173;&#x952E;&#x914D;&#x7F6E;&#xFF1A;</strong></p>
+<pre class="language-"><code class="lang-properties"><span class="token comment"># &#x526F;&#x672C;&#x6570;</span>
+<span class="token key attr-name">default.replication.factor</span><span class="token punctuation">=</span><span class="token value attr-value">3</span>
+
+<span class="token comment"># ISR&#x6700;&#x5C0F;&#x526F;&#x672C;&#x6570;</span>
+<span class="token key attr-name">min.insync.replicas</span><span class="token punctuation">=</span><span class="token value attr-value">2</span>
+
+<span class="token comment"># &#x7981;&#x6B62;&#x975E;ISR&#x526F;&#x672C;&#x6210;&#x4E3A;Leader</span>
+<span class="token key attr-name">unclean.leader.election.enable</span><span class="token punctuation">=</span><span class="token value attr-value">false</span>
+
+<span class="token comment"># &#x63A7;&#x5236;&#x5668;&#x6570;&#x91CF;</span>
+<span class="token key attr-name">controller.quorum.voters</span><span class="token punctuation">=</span><span class="token value attr-value">broker1:9093,broker2:9093,broker3:9093</span>
+</code></pre>
+<p><strong>&#x76D1;&#x63A7;&#x544A;&#x8B66;&#xFF1A;</strong></p>
+<ul>
+<li>&#x76D1;&#x63A7;ISR&#x72B6;&#x6001;</li>
+<li>&#x76D1;&#x63A7;Leader&#x5206;&#x5E03;</li>
+<li>&#x76D1;&#x63A7;&#x78C1;&#x76D8;&#x4F7F;&#x7528;</li>
+<li>&#x76D1;&#x63A7;&#x7F51;&#x7EDC;&#x5EF6;&#x8FDF;</li>
+</ul>
+<hr>
+<p><strong>Q12&#xFF1A;&#x5982;&#x4F55;&#x5904;&#x7406;Kafka&#x7684;&#x6D88;&#x606F;&#x79EF;&#x538B;&#x95EE;&#x9898;&#xFF1F;</strong></p>
+<p><strong>A12&#xFF1A;</strong></p>
+<p><strong>&#x95EE;&#x9898;&#x5206;&#x6790;&#xFF1A;</strong></p>
+<ul>
+<li>&#x6D88;&#x8D39;&#x8005;&#x6D88;&#x8D39;&#x901F;&#x5EA6;&#x8DDF;&#x4E0D;&#x4E0A;&#x751F;&#x4EA7;&#x8005;</li>
+<li>&#x5206;&#x533A;&#x6570;&#x91CF;&#x9650;&#x5236;&#x4E86;&#x5E76;&#x53D1;&#x5EA6;</li>
+<li>&#x6D88;&#x8D39;&#x903B;&#x8F91;&#x6027;&#x80FD;&#x74F6;&#x9888;</li>
+</ul>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;</strong></p>
+<ol>
+<li><p><strong>&#x589E;&#x52A0;&#x6D88;&#x8D39;&#x8005;&#x6570;&#x91CF;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># &#x6D88;&#x8D39;&#x8005;&#x6570;&#x91CF;&#x4E0D;&#x80FD;&#x8D85;&#x8FC7;&#x5206;&#x533A;&#x6570;</span>
+kafka-consumer-groups.sh <span class="token parameter variable">--describe</span> <span class="token parameter variable">--group</span> my-group --bootstrap-server localhost:9092
+</code></pre>
+</li>
+<li><p><strong>&#x589E;&#x52A0;&#x5206;&#x533A;&#x6570;&#x91CF;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash">kafka-topics.sh <span class="token parameter variable">--alter</span> <span class="token parameter variable">--topic</span> <span class="token builtin class-name">test</span> <span class="token parameter variable">--partitions</span> <span class="token number">10</span> --bootstrap-server localhost:9092
+</code></pre>
+</li>
+<li><p><strong>&#x4F18;&#x5316;&#x6D88;&#x8D39;&#x903B;&#x8F91;</strong>&#xFF1A;
+```go
+// &#x4F7F;&#x7528;&#x6279;&#x91CF;&#x6D88;&#x8D39;
+config := sarama.NewConfig()
+config.Consumer.Fetch.Min = 1024
+config.Consumer.Fetch.Max = 1048576</p>
+</li>
+</ol>
+<p>// &#x5F02;&#x6B65;&#x5904;&#x7406;&#x6D88;&#x606F;
+go func() {
+    for msg := range messages {
+        processMessageAsync(msg)
+    }
+}()</p>
+<pre class="language-"><code>
+4. **&#x4F7F;&#x7528;&#x6D41;&#x5F0F;&#x5904;&#x7406;&#x6846;&#x67B6;**&#xFF1A;
+</code></pre><p>Kafka &#x2192; Flink/Spark Streaming &#x2192; &#x4E0B;&#x6E38;&#x7CFB;&#x7EDF;</p>
+<pre class="language-"><code>
+---
+
+**Q13&#xFF1A;&#x5982;&#x4F55;&#x4FDD;&#x8BC1;Kafka&#x6D88;&#x606F;&#x7684;Exactly-Once&#x8BED;&#x4E49;&#xFF1F;**
+
+**A13&#xFF1A;**
+
+**&#x65B9;&#x6848;&#x4E00;&#xFF1A;&#x5E42;&#x7B49;&#x6027;Producer**
+```go
+config := sarama.NewConfig()
+config.Producer.Idempotent = true
+config.Producer.TransactionalId = &quot;my-transactional-id&quot;
+
+producer, _ := sarama.NewTransactionalProducer([]string{&quot;localhost:9092&quot;}, config)
+defer producer.Close()
+
+producer.BeginTxn()
+producer.SendMessage(&amp;sarama.ProducerMessage{Topic: &quot;topic1&quot;, Value: sarama.StringEncoder(&quot;msg1&quot;)})
+producer.SendMessage(&amp;sarama.ProducerMessage{Topic: &quot;topic2&quot;, Value: sarama.StringEncoder(&quot;msg2&quot;)})
+producer.CommitTxn()
+</code></pre><p><strong>&#x65B9;&#x6848;&#x4E8C;&#xFF1A;&#x6D88;&#x8D39;&#x8005;&#x4E8B;&#x52A1;</strong></p>
+<pre class="language-"><code class="lang-go"><span class="token comment">// &#x8BFB;&#x53D6;&#x6D88;&#x606F; &#x2192; &#x5904;&#x7406;&#x4E1A;&#x52A1; &#x2192; &#x5199;&#x5165;&#x4E0B;&#x6E38; &#x2192; &#x63D0;&#x4EA4;offset</span>
+<span class="token comment">// &#x5168;&#x90E8;&#x6210;&#x529F;&#x624D;&#x63D0;&#x4EA4;&#xFF0C;&#x5931;&#x8D25;&#x5219;&#x56DE;&#x6EDA;</span>
+</code></pre>
+<p><strong>&#x65B9;&#x6848;&#x4E09;&#xFF1A;&#x7AEF;&#x5230;&#x7AEF;Exactly-Once</strong></p>
+<pre class="language-"><code>Producer &#x2192; Kafka &#x2192; Consumer &#x2192; Database
+    &#x2502;              &#x2502;              &#x2502;
+    &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+            &#x4E8B;&#x52A1;&#x8FB9;&#x754C;
+</code></pre><hr>
+<p><strong>Q14&#xFF1A;&#x5982;&#x4F55;&#x8BBE;&#x8BA1;Kafka&#x7684;&#x76D1;&#x63A7;&#x4F53;&#x7CFB;&#xFF1F;</strong></p>
+<p><strong>A14&#xFF1A;</strong></p>
+<p><strong>&#x76D1;&#x63A7;&#x6307;&#x6807;&#x5206;&#x7C7B;&#xFF1A;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x7C7B;&#x522B;</th>
+<th>&#x6307;&#x6807;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Producer</strong></td>
+<td>&#x53D1;&#x9001;&#x901F;&#x7387;&#x3001;&#x6210;&#x529F;&#x7387;&#x3001;&#x5EF6;&#x8FDF;</td>
+</tr>
+<tr>
+<td><strong>Consumer</strong></td>
+<td>&#x6D88;&#x8D39;&#x901F;&#x7387;&#x3001;Lag&#x3001;Rebalance&#x6B21;&#x6570;</td>
+</tr>
+<tr>
+<td><strong>Broker</strong></td>
+<td>CPU&#x3001;&#x5185;&#x5B58;&#x3001;&#x78C1;&#x76D8;&#x3001;&#x7F51;&#x7EDC;</td>
+</tr>
+<tr>
+<td><strong>Topic</strong></td>
+<td>&#x6D88;&#x606F;&#x6570;&#x3001;&#x5206;&#x533A;&#x6570;&#x3001;&#x526F;&#x672C;&#x72B6;&#x6001;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x76D1;&#x63A7;&#x5DE5;&#x5177;&#xFF1A;</strong></p>
+<ul>
+<li><strong>Prometheus + Grafana</strong>&#xFF1A;&#x6307;&#x6807;&#x91C7;&#x96C6;&#x548C;&#x53EF;&#x89C6;&#x5316;</li>
+<li><strong>Kafka Exporter</strong>&#xFF1A;Kafka&#x6307;&#x6807;&#x5BFC;&#x51FA;</li>
+<li><strong>Zabbix/Nagios</strong>&#xFF1A;&#x544A;&#x8B66;&#x76D1;&#x63A7;</li>
+<li><strong>ELK</strong>&#xFF1A;&#x65E5;&#x5FD7;&#x5206;&#x6790;</li>
+</ul>
+<p><strong>&#x544A;&#x8B66;&#x89C4;&#x5219;&#xFF1A;</strong></p>
+<pre class="language-"><code class="lang-yaml"><span class="token comment"># Consumer Lag&#x8D85;&#x8FC7;10000&#x6761;</span>
+<span class="token punctuation">-</span> <span class="token key atrule">alert</span><span class="token punctuation">:</span> HighConsumerLag
+  <span class="token key atrule">expr</span><span class="token punctuation">:</span> sum(kafka_consumer_group_lag) <span class="token punctuation">&gt;</span> 10000
+  <span class="token key atrule">for</span><span class="token punctuation">:</span> 5m
+  <span class="token key atrule">labels</span><span class="token punctuation">:</span>
+    <span class="token key atrule">severity</span><span class="token punctuation">:</span> critical
+
+<span class="token comment"># Broker&#x78C1;&#x76D8;&#x4F7F;&#x7528;&#x7387;&#x8D85;&#x8FC7;80%</span>
+<span class="token punctuation">-</span> <span class="token key atrule">alert</span><span class="token punctuation">:</span> HighDiskUsage
+  <span class="token key atrule">expr</span><span class="token punctuation">:</span> node_filesystem_usage<span class="token punctuation">{</span>mountpoint=&quot;/var/lib/kafka&quot;<span class="token punctuation">}</span> <span class="token punctuation">&gt;</span> 0.8
+  <span class="token key atrule">for</span><span class="token punctuation">:</span> 10m
+  <span class="token key atrule">labels</span><span class="token punctuation">:</span>
+    <span class="token key atrule">severity</span><span class="token punctuation">:</span> warning
+</code></pre>
+<hr>
+<p><strong>Q15&#xFF1A;&#x5982;&#x4F55;&#x8FDB;&#x884C;Kafka&#x96C6;&#x7FA4;&#x7684;&#x6269;&#x5BB9;&#xFF1F;</strong></p>
+<p><strong>A15&#xFF1A;</strong></p>
+<p><strong>&#x6269;&#x5BB9;&#x6B65;&#x9AA4;&#xFF1A;</strong></p>
+<ol>
+<li><p><strong>&#x6DFB;&#x52A0;&#x65B0;Broker</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># &#x4FEE;&#x6539;server.properties</span>
+<span class="token assign-left variable">broker.id</span><span class="token operator">=</span><span class="token number">4</span>
+<span class="token assign-left variable">listeners</span><span class="token operator">=</span>PLAINTEXT://broker4:9092
+</code></pre>
+</li>
+<li><p><strong>&#x542F;&#x52A8;&#x65B0;Broker</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash">kafka-server-start.sh config/server.properties
+</code></pre>
+</li>
+<li><p><strong>&#x91CD;&#x65B0;&#x5206;&#x914D;&#x5206;&#x533A;</strong>&#xFF1A;
+```bash</p>
+<h1 id="&#x521B;&#x5EFA;&#x91CD;&#x65B0;&#x5206;&#x914D;&#x8BA1;&#x5212;"><a name="&#x521B;&#x5EFA;&#x91CD;&#x65B0;&#x5206;&#x914D;&#x8BA1;&#x5212;" class="anchor-navigation-ex-anchor" href="#&#x521B;&#x5EFA;&#x91CD;&#x65B0;&#x5206;&#x914D;&#x8BA1;&#x5212;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x521B;&#x5EFA;&#x91CD;&#x65B0;&#x5206;&#x914D;&#x8BA1;&#x5212;</h1>
+<p>kafka-reassign-partitions.sh --generate --topics-to-move-json-file topics.json --broker-list &quot;1,2,3,4&quot;</p>
+</li>
+</ol>
+<h1 id="&#x6267;&#x884C;&#x91CD;&#x65B0;&#x5206;&#x914D;"><a name="&#x6267;&#x884C;&#x91CD;&#x65B0;&#x5206;&#x914D;" class="anchor-navigation-ex-anchor" href="#&#x6267;&#x884C;&#x91CD;&#x65B0;&#x5206;&#x914D;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6267;&#x884C;&#x91CD;&#x65B0;&#x5206;&#x914D;</h1>
+<p>kafka-reassign-partitions.sh --execute --reassignment-json-file reassignment.json</p>
+<pre class="language-"><code>
+4. **&#x9A8C;&#x8BC1;&#x6269;&#x5BB9;&#x7ED3;&#x679C;**&#xFF1A;
+```bash
+kafka-topics.sh --describe --topic test --bootstrap-server localhost:9092
+</code></pre><p><strong>&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#xFF1A;</strong></p>
+<ul>
+<li>&#x6269;&#x5BB9;&#x671F;&#x95F4;&#x76D1;&#x63A7;&#x96C6;&#x7FA4;&#x72B6;&#x6001;</li>
+<li>&#x907F;&#x514D;&#x5728;&#x4E1A;&#x52A1;&#x9AD8;&#x5CF0;&#x671F;&#x8FDB;&#x884C;</li>
+<li>&#x9010;&#x6B65;&#x8FC1;&#x79FB;&#x5206;&#x533A;&#xFF0C;&#x907F;&#x514D;&#x5F71;&#x54CD;&#x6027;&#x80FD;</li>
+</ul>
+<hr>
+<p><strong>Q16&#xFF1A;&#x5982;&#x4F55;&#x5904;&#x7406;Kafka&#x7684;&#x6D88;&#x606F;&#x987A;&#x5E8F;&#x95EE;&#x9898;&#xFF1F;</strong></p>
+<p><strong>A16&#xFF1A;</strong></p>
+<p><strong>&#x95EE;&#x9898;&#x5206;&#x6790;&#xFF1A;</strong></p>
+<ul>
+<li>&#x540C;&#x4E00;Partition&#x5185;&#x7684;&#x6D88;&#x606F;&#x662F;&#x6709;&#x5E8F;&#x7684;</li>
+<li>&#x8DE8;Partition&#x65E0;&#x6CD5;&#x4FDD;&#x8BC1;&#x5168;&#x5C40;&#x6709;&#x5E8F;</li>
+<li>&#x6D88;&#x8D39;&#x8005;Rebalance&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x4E71;&#x5E8F;</li>
+</ul>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;</strong></p>
+<ol>
+<li><p><strong>&#x5355;Partition&#x4FDD;&#x8BC1;&#x987A;&#x5E8F;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-go"><span class="token comment">// &#x4F7F;&#x7528;Key&#x4FDD;&#x8BC1;&#x76F8;&#x540C;Key&#x7684;&#x6D88;&#x606F;&#x8FDB;&#x5165;&#x540C;&#x4E00;&#x4E2A;Partition</span>
+msg <span class="token operator">:=</span> <span class="token operator">&amp;</span>sarama<span class="token punctuation">.</span>ProducerMessage<span class="token punctuation">{</span>
+ Topic<span class="token punctuation">:</span> <span class="token string">&quot;test&quot;</span><span class="token punctuation">,</span>
+ Key<span class="token punctuation">:</span>   sarama<span class="token punctuation">.</span><span class="token function">StringEncoder</span><span class="token punctuation">(</span><span class="token string">&quot;user123&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>  <span class="token comment">// &#x76F8;&#x540C;Key&#x8FDB;&#x5165;&#x540C;&#x4E00;Partition</span>
+ Value<span class="token punctuation">:</span> sarama<span class="token punctuation">.</span><span class="token function">StringEncoder</span><span class="token punctuation">(</span><span class="token string">&quot;order1&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p><strong>&#x907F;&#x514D;Rebalance</strong>&#xFF1A;
+```properties</p>
+<h1 id="&#x4F7F;&#x7528;&#x9759;&#x6001;&#x6210;&#x5458;"><a name="&#x4F7F;&#x7528;&#x9759;&#x6001;&#x6210;&#x5458;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;&#x9759;&#x6001;&#x6210;&#x5458;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;&#x9759;&#x6001;&#x6210;&#x5458;</h1>
+<p>group.instance.id=consumer-1</p>
+</li>
+</ol>
+<h1 id="&#x589E;&#x52A0;session&#x8D85;&#x65F6;"><a name="&#x589E;&#x52A0;session&#x8D85;&#x65F6;" class="anchor-navigation-ex-anchor" href="#&#x589E;&#x52A0;session&#x8D85;&#x65F6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x589E;&#x52A0;session&#x8D85;&#x65F6;</h1>
+<p>session.timeout.ms=30000
+heartbeat.interval.ms=3000</p>
+<pre class="language-"><code>
+3. **&#x4E1A;&#x52A1;&#x5C42;&#x6392;&#x5E8F;**&#xFF1A;
+```go
+// &#x5728;&#x6D88;&#x8D39;&#x7AEF;&#x6309;&#x65F6;&#x95F4;&#x6233;&#x6392;&#x5E8F;
+type Message struct {
+    Timestamp time.Time
+    Data      []byte
+}
+
+func sortMessages(messages []Message) []Message {
+    sort.Slice(messages, func(i, j int) bool {
+        return messages[i].Timestamp.Before(messages[j].Timestamp)
+    })
+    return messages
+}
+</code></pre><hr>
+<p><strong>Q17&#xFF1A;&#x5982;&#x4F55;&#x8BBE;&#x8BA1;Kafka&#x7684;&#x591A;&#x6570;&#x636E;&#x4E2D;&#x5FC3;&#x90E8;&#x7F72;&#x65B9;&#x6848;&#xFF1F;</strong></p>
+<p><strong>A17&#xFF1A;</strong></p>
+<p><strong>&#x65B9;&#x6848;&#x4E00;&#xFF1A;MirrorMaker&#xFF08;&#x5355;&#x5411;&#x590D;&#x5236;&#xFF09;</strong></p>
+<pre class="language-"><code>DC1: Kafka Cluster 1 &#x2500;&#x2500;&#x25BA; MirrorMaker &#x2500;&#x2500;&#x25BA; DC2: Kafka Cluster 2
+</code></pre><p><strong>&#x65B9;&#x6848;&#x4E8C;&#xFF1A;&#x53CC;&#x5411;&#x590D;&#x5236;</strong></p>
+<pre class="language-"><code>DC1: Kafka Cluster 1 &#x25C4;&#x2500;&#x2500; MirrorMaker &#x2500;&#x2500;&#x25BA; DC2: Kafka Cluster 2
+</code></pre><p><strong>&#x65B9;&#x6848;&#x4E09;&#xFF1A;Active-Active</strong></p>
+<pre class="language-"><code>DC1: Kafka Cluster 1          DC2: Kafka Cluster 2
+       &#x2502;                              &#x2502;
+       &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500; VIP &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+</code></pre><p><strong>&#x5173;&#x952E;&#x914D;&#x7F6E;&#xFF1A;</strong></p>
+<pre class="language-"><code class="lang-properties"><span class="token comment"># MirrorMaker&#x914D;&#x7F6E;</span>
+<span class="token key attr-name">producer.bootstrap.servers</span><span class="token punctuation">=</span><span class="token value attr-value">dc2-broker:9092</span>
+<span class="token key attr-name">consumer.bootstrap.servers</span><span class="token punctuation">=</span><span class="token value attr-value">dc1-broker:9092</span>
+</code></pre>
+<p><strong>&#x6545;&#x969C;&#x5207;&#x6362;&#x6D41;&#x7A0B;&#xFF1A;</strong></p>
+<ol>
+<li>&#x76D1;&#x63A7;&#x68C0;&#x6D4B;DC&#x6545;&#x969C;</li>
+<li>DNS/VIP&#x5207;&#x6362;&#x5230;&#x5907;&#x7528;DC</li>
+<li>&#x6D88;&#x8D39;&#x8005;&#x5207;&#x6362;&#x5230;&#x5907;&#x7528;&#x96C6;&#x7FA4;</li>
+<li>&#x6570;&#x636E;&#x540C;&#x6B65;&#x6062;&#x590D;</li>
+</ol>
+<hr>
+<p><strong>Q18&#xFF1A;&#x5982;&#x4F55;&#x5904;&#x7406;Kafka&#x7684;&#x5927;&#x6D88;&#x606F;&#x95EE;&#x9898;&#xFF1F;</strong></p>
+<p><strong>A18&#xFF1A;</strong></p>
+<p><strong>&#x95EE;&#x9898;&#x5206;&#x6790;&#xFF1A;</strong></p>
+<ul>
+<li>&#x6D88;&#x606F;&#x8D85;&#x8FC7;<code>message.max.bytes</code>&#x9650;&#x5236;</li>
+<li>&#x5927;&#x6D88;&#x606F;&#x5F71;&#x54CD;&#x541E;&#x5410;&#x91CF;</li>
+<li>&#x7F51;&#x7EDC;&#x4F20;&#x8F93;&#x8017;&#x65F6;&#x589E;&#x52A0;</li>
+</ul>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;</strong></p>
+<ol>
+<li><strong>&#x8C03;&#x6574;&#x6D88;&#x606F;&#x5927;&#x5C0F;&#x9650;&#x5236;</strong>&#xFF1A;
+```properties<h1 id="broker&#x7AEF;"><a name="broker&#x7AEF;" class="anchor-navigation-ex-anchor" href="#broker&#x7AEF;"><i class="fa fa-link" aria-hidden="true"></i></a>Broker&#x7AEF;</h1>
+message.max.bytes=10485760  # 10MB</li>
+</ol>
+<h1 id="producer&#x7AEF;"><a name="producer&#x7AEF;" class="anchor-navigation-ex-anchor" href="#producer&#x7AEF;"><i class="fa fa-link" aria-hidden="true"></i></a>Producer&#x7AEF;</h1>
+<p>max.request.size=10485760</p>
+<h1 id="consumer&#x7AEF;"><a name="consumer&#x7AEF;" class="anchor-navigation-ex-anchor" href="#consumer&#x7AEF;"><i class="fa fa-link" aria-hidden="true"></i></a>Consumer&#x7AEF;</h1>
+<p>fetch.message.max.bytes=10485760</p>
+<pre class="language-"><code>
+2. **&#x6D88;&#x606F;&#x5206;&#x7247;**&#xFF1A;
+```go
+// &#x5C06;&#x5927;&#x6D88;&#x606F;&#x62C6;&#x5206;&#x4E3A;&#x591A;&#x4E2A;&#x5C0F;&#x6D88;&#x606F;
+func splitMessage(data []byte, chunkSize int) [][]byte {
+    var chunks [][]byte
+    for i := 0; i &lt; len(data); i += chunkSize {
+        end := i + chunkSize
+        if end &gt; len(data) {
+            end = len(data)
+        }
+        chunks = append(chunks, data[i:end])
+    }
+    return chunks
+}
+</code></pre><ol>
+<li><strong>&#x5916;&#x90E8;&#x5B58;&#x50A8;</strong>&#xFF1A;<pre class="language-"><code>&#x6D88;&#x606F;&#x4F53;&#x5B58;&#x50A8;&#x5230;&#x5BF9;&#x8C61;&#x5B58;&#x50A8;&#xFF08;&#x5982;S3&#xFF09;&#xFF0C;Kafka&#x53EA;&#x5B58;&#x50A8;&#x5F15;&#x7528;
+</code></pre></li>
+</ol>
+<hr>
+<p><strong>Q19&#xFF1A;&#x5982;&#x4F55;&#x5B9E;&#x73B0;Kafka&#x7684;&#x6D88;&#x606F;&#x8FC7;&#x6EE4;&#xFF1F;</strong></p>
+<p><strong>A19&#xFF1A;</strong></p>
+<p><strong>&#x65B9;&#x6848;&#x4E00;&#xFF1A;&#x6D88;&#x8D39;&#x8005;&#x7AEF;&#x8FC7;&#x6EE4;</strong></p>
+<pre class="language-"><code class="lang-go"><span class="token keyword">for</span> msg <span class="token operator">:=</span> <span class="token keyword">range</span> partitionConsumer<span class="token punctuation">.</span><span class="token function">Messages</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// &#x6839;&#x636E;&#x6761;&#x4EF6;&#x8FC7;&#x6EE4;</span>
+    <span class="token keyword">if</span> <span class="token function">shouldProcess</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">process</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>&#x65B9;&#x6848;&#x4E8C;&#xFF1A;&#x4F7F;&#x7528;Kafka Streams&#x8FC7;&#x6EE4;</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token class-name">KStream</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">,</span> <span class="token class-name">String</span><span class="token punctuation">&gt;</span></span> stream <span class="token operator">=</span> builder<span class="token punctuation">.</span><span class="token function">stream</span><span class="token punctuation">(</span><span class="token string">&quot;input-topic&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+stream<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> value<span class="token punctuation">)</span> <span class="token operator">-&gt;</span> value<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span><span class="token string">&quot;important&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token keyword">to</span><span class="token punctuation">(</span><span class="token string">&quot;output-topic&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><strong>&#x65B9;&#x6848;&#x4E09;&#xFF1A;&#x4F7F;&#x7528;Topic&#x5206;&#x533A;&#x7B56;&#x7565;</strong></p>
+<pre class="language-"><code class="lang-go"><span class="token comment">// &#x6839;&#x636E;&#x6D88;&#x606F;&#x7C7B;&#x578B;&#x53D1;&#x9001;&#x5230;&#x4E0D;&#x540C;Topic</span>
+<span class="token keyword">if</span> <span class="token function">isImportant</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    producer<span class="token punctuation">.</span><span class="token function">SendMessage</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>sarama<span class="token punctuation">.</span>ProducerMessage<span class="token punctuation">{</span>Topic<span class="token punctuation">:</span> <span class="token string">&quot;important&quot;</span><span class="token punctuation">,</span> Value<span class="token punctuation">:</span> <span class="token operator">...</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    producer<span class="token punctuation">.</span><span class="token function">SendMessage</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>sarama<span class="token punctuation">.</span>ProducerMessage<span class="token punctuation">{</span>Topic<span class="token punctuation">:</span> <span class="token string">&quot;normal&quot;</span><span class="token punctuation">,</span> Value<span class="token punctuation">:</span> <span class="token operator">...</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<hr>
+<p><strong>Q20&#xFF1A;&#x5982;&#x4F55;&#x8FDB;&#x884C;Kafka&#x7684;&#x6570;&#x636E;&#x8FC1;&#x79FB;&#xFF1F;</strong></p>
+<p><strong>A20&#xFF1A;</strong></p>
+<p><strong>&#x8FC1;&#x79FB;&#x6B65;&#x9AA4;&#xFF1A;</strong></p>
+<ol>
+<li><p><strong>&#x53CC;&#x5199;&#x9636;&#x6BB5;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-go"><span class="token comment">// &#x540C;&#x65F6;&#x5199;&#x5165;&#x65E7;&#x96C6;&#x7FA4;&#x548C;&#x65B0;&#x96C6;&#x7FA4;</span>
+producerOld<span class="token punctuation">.</span><span class="token function">SendMessage</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span>
+producerNew<span class="token punctuation">.</span><span class="token function">SendMessage</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span>
+</code></pre>
+</li>
+<li><p><strong>&#x540C;&#x6B65;&#x6D88;&#x8D39;&#x8005;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-go"><span class="token comment">// &#x540C;&#x65F6;&#x6D88;&#x8D39;&#x4E24;&#x4E2A;&#x96C6;&#x7FA4;&#xFF0C;&#x786E;&#x4FDD;&#x6570;&#x636E;&#x4E00;&#x81F4;</span>
+<span class="token keyword">go</span> <span class="token function">consumeOld</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">go</span> <span class="token function">consumeNew</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+</li>
+<li><p><strong>&#x9A8C;&#x8BC1;&#x6570;&#x636E;&#x4E00;&#x81F4;&#x6027;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># &#x5BF9;&#x6BD4;&#x4E24;&#x4E2A;&#x96C6;&#x7FA4;&#x7684;&#x6D88;&#x606F;&#x6570;&#x91CF;</span>
+kafka-run-class.sh kafka.tools.GetOffsetShell --broker-list old-broker:9092 <span class="token parameter variable">--topic</span> <span class="token builtin class-name">test</span> <span class="token parameter variable">--time</span> <span class="token parameter variable">-1</span>
+kafka-run-class.sh kafka.tools.GetOffsetShell --broker-list new-broker:9092 <span class="token parameter variable">--topic</span> <span class="token builtin class-name">test</span> <span class="token parameter variable">--time</span> <span class="token parameter variable">-1</span>
+</code></pre>
+</li>
+<li><p><strong>&#x5207;&#x6362;&#x9636;&#x6BB5;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-go"><span class="token comment">// &#x505C;&#x6B62;&#x5199;&#x5165;&#x65E7;&#x96C6;&#x7FA4;</span>
+producer <span class="token operator">=</span> producerNew
+</code></pre>
+</li>
+<li><p><strong>&#x76D1;&#x63A7;&#x9A8C;&#x8BC1;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># &#x786E;&#x4FDD;&#x65B0;&#x96C6;&#x7FA4;&#x6B63;&#x5E38;&#x8FD0;&#x884C;</span>
+kafka-consumer-groups.sh <span class="token parameter variable">--describe</span> <span class="token parameter variable">--group</span> my-group --bootstrap-server new-broker:9092
+</code></pre>
+</li>
+</ol>
+<h2 id="&#x672A;&#x5B8C;&#x5F85;&#x7EED;"><a name="&#x672A;&#x5B8C;&#x5F85;&#x7EED;" class="anchor-navigation-ex-anchor" href="#&#x672A;&#x5B8C;&#x5F85;&#x7EED;"><i class="fa fa-link" aria-hidden="true"></i></a><center>...&#x672A;&#x5B8C;&#x5F85;&#x7EED;...</center></h2>
+<hr>
+<p><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"></p>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<div id="gitalk-container"></div>
+<script>
+  var gitalk = new Gitalk({
+    "clientID": "44d7c96f948be236a8c9",
+    "clientSecret": "fb9fb3178db6640131c4e3eb69f9449e42bba661",
+    "repo": "blog",
+    "owner": "Zhang-jie-jun",
+    "admin": ["Zhang-jie-jun"],
+    "id": location.pathname,      
+    "distractionFreeMode": false  
+  });
+  gitalk.render("gitalk-container");
+</script>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="jwt.html" class="navigation navigation-prev " aria-label="Previous page: jwt">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="nats.html" class="navigation navigation-next " aria-label="Next page: nats">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"kafka","level":"5.12","depth":1,"next":{"title":"nats","level":"5.13","depth":1,"path":"src/middleware/nats.md","ref":"src/middleware/nats.md","articles":[]},"previous":{"title":"jwt","level":"5.11","depth":1,"path":"src/middleware/jwt.md","ref":"src/middleware/jwt.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-comscore","prism","-highlight","copy-code-button","search-pro","-search","-lunr","expandable-chapters","splitter","-sharing","github-buttons","donate","anchor-navigation-ex"],"styles":{"website":"./css/gitbook-configure.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"shell":"bash"}},"splitter":{},"search-pro":{},"donate":{"button":"赞赏支持","wechatText":"问题联系","alipayText":"打赏支持","wechat":"https://github.com/Zhang-jie-jun/blog/blob/main/src/image/QR_code.jpg?raw=true","alipay":"https://github.com/Zhang-jie-jun/blog/blob/main/src/image/wechat.jpg?raw=true","title":""},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":false,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true},"theme-comscore":{},"github-buttons":{"buttons":[{"user":"Zhang-jie-jun","repo":"blog","type":"star","count":true,"size":"small"},{"user":"Zhang-jie-jun","width":"160","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"勤劳的螺丝工","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Jack Zhang的博客","language":"zh-hans","gitbook":"*","description":"记录遇到的问题与解决方式，分享我的知识、经历和观点..."},"file":{"path":"src/middleware/kafka.md","mtime":"2026-06-08T14:10:00.319Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2026-06-08T14:40:12.589Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+

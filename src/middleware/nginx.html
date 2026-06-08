@@ -1,0 +1,2770 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>nginx · Jack Zhang的博客</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        <meta name="author" content="勤劳的螺丝工">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../css/gitbook-configure.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../cloudnative/docker.html" />
+    
+    
+    <link rel="prev" href="nats.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"Zhang-jie-jun","repo":"blog","type":"star","count":true,"size":"small"},{"user":"Zhang-jie-jun","width":"160","type":"follow","count":true,"size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">编程基础</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../golang/">
+            
+                <a href="../golang/">
+            
+                    
+                    golang
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../golang/slice.html">
+            
+                <a href="../golang/slice.html">
+            
+                    
+                    slice底层原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../golang/map.html">
+            
+                <a href="../golang/map.html">
+            
+                    
+                    map底层原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../golang/channel.html">
+            
+                <a href="../golang/channel.html">
+            
+                    
+                    并发与Channel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../golang/reflect.html">
+            
+                <a href="../golang/reflect.html">
+            
+                    
+                    反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../golang/context.html">
+            
+                <a href="../golang/context.html">
+            
+                    
+                    context详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../golang/gmp.html">
+            
+                <a href="../golang/gmp.html">
+            
+                    
+                    GMP模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../golang/gc.html">
+            
+                <a href="../golang/gc.html">
+            
+                    
+                    垃圾回收机制(GC)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../golang/module.html">
+            
+                <a href="../golang/module.html">
+            
+                    
+                    module管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../golang/ut.html">
+            
+                <a href="../golang/ut.html">
+            
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../c++/">
+            
+                <a href="../c++/">
+            
+                    
+                    C/C++
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../c++/boost.html">
+            
+                <a href="../c++/boost.html">
+            
+                    
+                    boost库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../c++/concurrency.html">
+            
+                <a href="../c++/concurrency.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../c++/design_pattern.html">
+            
+                <a href="../c++/design_pattern.html">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../c++/memory.html">
+            
+                <a href="../c++/memory.html">
+            
+                    
+                    内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../c++/oop.html">
+            
+                <a href="../c++/oop.html">
+            
+                    
+                    面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../c++/smart_ptr.html">
+            
+                <a href="../c++/smart_ptr.html">
+            
+                    
+                    智能指针
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../c++/stl.html">
+            
+                <a href="../c++/stl.html">
+            
+                    
+                    STL详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="../c++/template.html">
+            
+                <a href="../c++/template.html">
+            
+                    
+                    模板编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../python/">
+            
+                <a href="../python/">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../python/basic.html">
+            
+                <a href="../python/basic.html">
+            
+                    
+                    基础语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../python/concurrency.html">
+            
+                <a href="../python/concurrency.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../python/decorator.html">
+            
+                <a href="../python/decorator.html">
+            
+                    
+                    装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="../python/design_pattern.html">
+            
+                <a href="../python/design_pattern.html">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="../python/generator.html">
+            
+                <a href="../python/generator.html">
+            
+                    
+                    生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" data-path="../python/memory.html">
+            
+                <a href="../python/memory.html">
+            
+                    
+                    内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.7" data-path="../python/metaprogramming.html">
+            
+                <a href="../python/metaprogramming.html">
+            
+                    
+                    元编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.8" data-path="../python/oop.html">
+            
+                <a href="../python/oop.html">
+            
+                    
+                    面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.9" data-path="../python/stdlib.html">
+            
+                <a href="../python/stdlib.html">
+            
+                    
+                    标准库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.10" data-path="../python/thirdparty.html">
+            
+                <a href="../python/thirdparty.html">
+            
+                    
+                    第三方库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../algorithm/">
+            
+                <a href="../algorithm/">
+            
+                    
+                    常用算法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../algorithm/stack.html">
+            
+                <a href="../algorithm/stack.html">
+            
+                    
+                    栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../algorithm/queue.html">
+            
+                <a href="../algorithm/queue.html">
+            
+                    
+                    队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="../algorithm/linkedlist.html">
+            
+                <a href="../algorithm/linkedlist.html">
+            
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="../algorithm/hash.html">
+            
+                <a href="../algorithm/hash.html">
+            
+                    
+                    哈希表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.5" data-path="../algorithm/tree.html">
+            
+                <a href="../algorithm/tree.html">
+            
+                    
+                    树算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.6" data-path="../algorithm/graph.html">
+            
+                <a href="../algorithm/graph.html">
+            
+                    
+                    图算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.7" data-path="../algorithm/sort.html">
+            
+                <a href="../algorithm/sort.html">
+            
+                    
+                    排序算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8" data-path="../algorithm/search.html">
+            
+                <a href="../algorithm/search.html">
+            
+                    
+                    搜索算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.9" data-path="../algorithm/dp.html">
+            
+                <a href="../algorithm/dp.html">
+            
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.10" data-path="../algorithm/greedy.html">
+            
+                <a href="../algorithm/greedy.html">
+            
+                    
+                    贪心算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.11" data-path="../algorithm/backtracking.html">
+            
+                <a href="../algorithm/backtracking.html">
+            
+                    
+                    回溯算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.12" data-path="../algorithm/divide.html">
+            
+                <a href="../algorithm/divide.html">
+            
+                    
+                    分治算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.13" data-path="../algorithm/string.html">
+            
+                <a href="../algorithm/string.html">
+            
+                    
+                    字符串算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../tools/">
+            
+                <a href="../tools/">
+            
+                    
+                    开发工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../tools/git.html">
+            
+                <a href="../tools/git.html">
+            
+                    
+                    git的使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="../tools/svn.html">
+            
+                <a href="../tools/svn.html">
+            
+                    
+                    svn的使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3" data-path="../tools/makefile.html">
+            
+                <a href="../tools/makefile.html">
+            
+                    
+                    Makefile使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.4" data-path="../tools/cmake.html">
+            
+                <a href="../tools/cmake.html">
+            
+                    
+                    CMake使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.5" data-path="../tools/wireshark.html">
+            
+                <a href="../tools/wireshark.html">
+            
+                    
+                    Wireshark使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.6" data-path="../tools/postman.html">
+            
+                <a href="../tools/postman.html">
+            
+                    
+                    Postman使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.7" data-path="../tools/navicat.html">
+            
+                <a href="../tools/navicat.html">
+            
+                    
+                    Navicat使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.8" data-path="../tools/dbeaver.html">
+            
+                <a href="../tools/dbeaver.html">
+            
+                    
+                    DBeaver使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.9" data-path="../tools/npm.html">
+            
+                <a href="../tools/npm.html">
+            
+                    
+                    npm使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.10" data-path="../tools/pip.html">
+            
+                <a href="../tools/pip.html">
+            
+                    
+                    pip使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Linux基础</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../linux/">
+            
+                <a href="../linux/">
+            
+                    
+                    Linux常用命令
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../linux/grep.html">
+            
+                <a href="../linux/grep.html">
+            
+                    
+                    Linux三剑客
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../linux/iostat.html">
+            
+                <a href="../linux/iostat.html">
+            
+                    
+                    磁盘I/O统计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../linux/mount.html">
+            
+                <a href="../linux/mount.html">
+            
+                    
+                    挂载命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../linux/fstab.html">
+            
+                <a href="../linux/fstab.html">
+            
+                    
+                    fstab配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../linux/lsblk.html">
+            
+                <a href="../linux/lsblk.html">
+            
+                    
+                    磁盘分区信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="../linux/df.html">
+            
+                <a href="../linux/df.html">
+            
+                    
+                    磁盘空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7" data-path="../linux/du.html">
+            
+                <a href="../linux/du.html">
+            
+                    
+                    目录大小
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.8" data-path="../linux/free.html">
+            
+                <a href="../linux/free.html">
+            
+                    
+                    内存使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.9" data-path="../linux/top.html">
+            
+                <a href="../linux/top.html">
+            
+                    
+                    进程监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.10" data-path="../linux/netstat.html">
+            
+                <a href="../linux/netstat.html">
+            
+                    
+                    网络状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.11" data-path="../linux/ps.html">
+            
+                <a href="../linux/ps.html">
+            
+                    
+                    进程状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.12" data-path="../linux/kill.html">
+            
+                <a href="../linux/kill.html">
+            
+                    
+                    进程终止
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.13" data-path="../linux/tar.html">
+            
+                <a href="../linux/tar.html">
+            
+                    
+                    压缩解压
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.14" data-path="../linux/disk.html">
+            
+                <a href="../linux/disk.html">
+            
+                    
+                    磁盘管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.15" data-path="../linux/filehandle.html">
+            
+                <a href="../linux/filehandle.html">
+            
+                    
+                    文件句柄
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.16" data-path="../linux/dd.html">
+            
+                <a href="../linux/dd.html">
+            
+                    
+                    dd命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.17" data-path="../linux/packagemanage.html">
+            
+                <a href="../linux/packagemanage.html">
+            
+                    
+                    包管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.18" data-path="../linux/network.html">
+            
+                <a href="../linux/network.html">
+            
+                    
+                    网络管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.19" data-path="../linux/system.html">
+            
+                <a href="../linux/system.html">
+            
+                    
+                    系统管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.20" data-path="../linux/monitor.html">
+            
+                <a href="../linux/monitor.html">
+            
+                    
+                    系统监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.21" data-path="../linux/file.html">
+            
+                <a href="../linux/file.html">
+            
+                    
+                    文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.22" data-path="../linux/text.html">
+            
+                <a href="../linux/text.html">
+            
+                    
+                    文本处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.23" data-path="../linux/security.html">
+            
+                <a href="../linux/security.html">
+            
+                    
+                    安全相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">网络基础</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../network/model.html">
+            
+                <a href="../network/model.html">
+            
+                    
+                    网络模型详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../network/tcp.html">
+            
+                <a href="../network/tcp.html">
+            
+                    
+                    TCP协议原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../network/http.html">
+            
+                <a href="../network/http.html">
+            
+                    
+                    HTTP/HTTPS原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../network/cdn.html">
+            
+                <a href="../network/cdn.html">
+            
+                    
+                    CDN详细教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../network/rpc.html">
+            
+                <a href="../network/rpc.html">
+            
+                    
+                    RPC原理解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">中间件</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="mysql.html">
+            
+                <a href="mysql.html">
+            
+                    
+                    mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="redis.html">
+            
+                <a href="redis.html">
+            
+                    
+                    redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="consul.html">
+            
+                <a href="consul.html">
+            
+                    
+                    consul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="etcd.html">
+            
+                <a href="etcd.html">
+            
+                    
+                    etcd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="gin.html">
+            
+                <a href="gin.html">
+            
+                    
+                    gin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="gorm.html">
+            
+                <a href="gorm.html">
+            
+                    
+                    gorm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="grpc.html">
+            
+                <a href="grpc.html">
+            
+                    
+                    grpc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="thrift.html">
+            
+                <a href="thrift.html">
+            
+                    
+                    thrift
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="cassandra.html">
+            
+                <a href="cassandra.html">
+            
+                    
+                    cassandra
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="elasticsearch.html">
+            
+                <a href="elasticsearch.html">
+            
+                    
+                    elasticsearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="jwt.html">
+            
+                <a href="jwt.html">
+            
+                    
+                    jwt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.12" data-path="kafka.html">
+            
+                <a href="kafka.html">
+            
+                    
+                    kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.13" data-path="nats.html">
+            
+                <a href="nats.html">
+            
+                    
+                    nats
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.14" data-path="nginx.html">
+            
+                <a href="nginx.html">
+            
+                    
+                    nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">云原生与虚拟化技术</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../cloudnative/docker.html">
+            
+                <a href="../cloudnative/docker.html">
+            
+                    
+                    docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../cloudnative/kubernetes.html">
+            
+                <a href="../cloudnative/kubernetes.html">
+            
+                    
+                    kubernetes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../cloudnative/ceph.html">
+            
+                <a href="../cloudnative/ceph.html">
+            
+                    
+                    ceph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../cloudnative/kvm.html">
+            
+                <a href="../cloudnative/kvm.html">
+            
+                    
+                    kvm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../cloudnative/libvirt.html">
+            
+                <a href="../cloudnative/libvirt.html">
+            
+                    
+                    libvirt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../cloudnative/qcow2.html">
+            
+                <a href="../cloudnative/qcow2.html">
+            
+                    
+                    qcow2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="../cloudnative/qemu.html">
+            
+                <a href="../cloudnative/qemu.html">
+            
+                    
+                    qemu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="../cloudnative/sanlock.html">
+            
+                <a href="../cloudnative/sanlock.html">
+            
+                    
+                    sanlock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="../cloudnative/openstack.html">
+            
+                <a href="../cloudnative/openstack.html">
+            
+                    
+                    openstack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="../cloudnative/vmware.html">
+            
+                <a href="../cloudnative/vmware.html">
+            
+                    
+                    vmware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="../cloudnative/distributed-network.html">
+            
+                <a href="../cloudnative/distributed-network.html">
+            
+                    
+                    distributed-network
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">系统架构</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../framework/architecture-evolution.html">
+            
+                <a href="../framework/architecture-evolution.html">
+            
+                    
+                    架构演进
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../framework/cluster-architecture.html">
+            
+                <a href="../framework/cluster-architecture.html">
+            
+                    
+                    集群架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../framework/distributed-architecture.html">
+            
+                <a href="../framework/distributed-architecture.html">
+            
+                    
+                    分布式架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../framework/microservices-architecture.html">
+            
+                <a href="../framework/microservices-architecture.html">
+            
+                    
+                    微服务架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">闲聊杂谈</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../gossip/编程的智慧.html">
+            
+                <a href="../gossip/编程的智慧.html">
+            
+                    
+                    编程的智慧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../gossip/如何阅读别人的代码.html">
+            
+                <a href="../gossip/如何阅读别人的代码.html">
+            
+                    
+                    如何阅读别人的代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >nginx</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#nginx&#x8BE6;&#x89E3;"><b></b>Nginx&#x8BE6;&#x89E3;</a></li><ul><li><span class="title-icon "></span><a href="#nginx&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><b></b>Nginx&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#nginx&#x7684;&#x7279;&#x70B9;"><b></b>Nginx&#x7684;&#x7279;&#x70B9;</a></li><li><span class="title-icon "></span><a href="#&#x4E00;&#x3001;nginx&#x6838;&#x5FC3;&#x539F;&#x7406;"><b></b>&#x4E00;&#x3001;Nginx&#x6838;&#x5FC3;&#x539F;&#x7406;</a></li><ul><li><span class="title-icon "></span><a href="#11-nginx&#x67B6;&#x6784;"><b></b>1.1 Nginx&#x67B6;&#x6784;</a></li><li><span class="title-icon "></span><a href="#12-nginx&#x8FDB;&#x7A0B;&#x6A21;&#x578B;"><b></b>1.2 Nginx&#x8FDB;&#x7A0B;&#x6A21;&#x578B;</a></li><li><span class="title-icon "></span><a href="#13-&#x4E8B;&#x4EF6;&#x9A71;&#x52A8;&#x6A21;&#x578B;"><b></b>1.3 &#x4E8B;&#x4EF6;&#x9A71;&#x52A8;&#x6A21;&#x578B;</a></li><li><span class="title-icon "></span><a href="#14-http&#x8BF7;&#x6C42;&#x5904;&#x7406;&#x6D41;&#x7A0B;"><b></b>1.4 HTTP&#x8BF7;&#x6C42;&#x5904;&#x7406;&#x6D41;&#x7A0B;</a></li></ul><li><span class="title-icon "></span><a href="#&#x4E8C;&#x3001;nginx&#x5E38;&#x89C1;&#x95EE;&#x9898;&#x5206;&#x6790;&#x4E0E;&#x6392;&#x67E5;"><b></b>&#x4E8C;&#x3001;Nginx&#x5E38;&#x89C1;&#x95EE;&#x9898;&#x5206;&#x6790;&#x4E0E;&#x6392;&#x67E5;</a></li><ul><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;1&#xFF1A;nginx&#x65E0;&#x6CD5;&#x542F;&#x52A8;"><b></b>&#x95EE;&#x9898;1&#xFF1A;Nginx&#x65E0;&#x6CD5;&#x542F;&#x52A8;</a></li><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;2&#xFF1A;404&#x9519;&#x8BEF;"><b></b>&#x95EE;&#x9898;2&#xFF1A;404&#x9519;&#x8BEF;</a></li><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;3&#xFF1A;502-bad-gateway"><b></b>&#x95EE;&#x9898;3&#xFF1A;502 Bad Gateway</a></li><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;4&#xFF1A;&#x6027;&#x80FD;&#x95EE;&#x9898;"><b></b>&#x95EE;&#x9898;4&#xFF1A;&#x6027;&#x80FD;&#x95EE;&#x9898;</a></li><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;5&#xFF1A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x9519;&#x8BEF;"><b></b>&#x95EE;&#x9898;5&#xFF1A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x9519;&#x8BEF;</a></li><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;6&#xFF1A;ssl&#x8BC1;&#x4E66;&#x95EE;&#x9898;"><b></b>&#x95EE;&#x9898;6&#xFF1A;SSL&#x8BC1;&#x4E66;&#x95EE;&#x9898;</a></li><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;7&#xFF1A;&#x8FDE;&#x63A5;&#x8D85;&#x65F6;"><b></b>&#x95EE;&#x9898;7&#xFF1A;&#x8FDE;&#x63A5;&#x8D85;&#x65F6;</a></li><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;8&#xFF1A;&#x7F13;&#x5B58;&#x95EE;&#x9898;"><b></b>&#x95EE;&#x9898;8&#xFF1A;&#x7F13;&#x5B58;&#x95EE;&#x9898;</a></li><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;9&#xFF1A;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x95EE;&#x9898;"><b></b>&#x95EE;&#x9898;9&#xFF1A;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x95EE;&#x9898;</a></li><li><span class="title-icon "></span><a href="#&#x95EE;&#x9898;10&#xFF1A;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x95EE;&#x9898;"><b></b>&#x95EE;&#x9898;10&#xFF1A;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x95EE;&#x9898;</a></li></ul><li><span class="title-icon "></span><a href="#&#x4E09;&#x3001;nginx&#x9762;&#x8BD5;&#x9898;"><b></b>&#x4E09;&#x3001;Nginx&#x9762;&#x8BD5;&#x9898;</a></li><ul><li><span class="title-icon "></span><a href="#&#x57FA;&#x7840;&#x95EE;&#x9898;"><b></b>&#x57FA;&#x7840;&#x95EE;&#x9898;</a></li><li><span class="title-icon "></span><a href="#&#x590D;&#x6742;&#x573A;&#x666F;&#x95EE;&#x9898;"><b></b>&#x590D;&#x6742;&#x573A;&#x666F;&#x95EE;&#x9898;</a></li></ul></ul><li><span class="title-icon "></span><a href="#&#x5728;&#x5E94;&#x7528;&#x524D;&#x6D4B;&#x8BD5;&#x914D;&#x7F6E;"><b></b>&#x5728;&#x5E94;&#x7528;&#x524D;&#x6D4B;&#x8BD5;&#x914D;&#x7F6E;</a></li><li><span class="title-icon "></span><a href="#&#x70ED;&#x66F4;&#x65B0;&#x914D;&#x7F6E;"><b></b>&#x70ED;&#x66F4;&#x65B0;&#x914D;&#x7F6E;</a></li><ul><li><span class="title-icon "></span><a href="#&#x672A;&#x5B8C;&#x5F85;&#x7EED;"><b></b>...&#x672A;&#x5B8C;&#x5F85;&#x7EED;...</a></li></ul></ul></div><a href="#nginx&#x8BE6;&#x89E3;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="nginx&#x8BE6;&#x89E3;"><a name="nginx&#x8BE6;&#x89E3;" class="anchor-navigation-ex-anchor" href="#nginx&#x8BE6;&#x89E3;"><i class="fa fa-link" aria-hidden="true"></i></a>Nginx&#x8BE6;&#x89E3;</h1>
+<h2 id="nginx&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><a name="nginx&#x662F;&#x4EC0;&#x4E48;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#nginx&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>Nginx&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</h2>
+<p>&#x2003;&#x2003;Nginx&#x662F;&#x4E00;&#x4E2A;&#x9AD8;&#x6027;&#x80FD;&#x7684;HTTP&#x548C;&#x53CD;&#x5411;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x7531;Igor Sysoev&#x5F00;&#x53D1;&#x3002;&#x5B83;&#x4EE5;&#x9AD8;&#x5E76;&#x53D1;&#x3001;&#x4F4E;&#x5185;&#x5B58;&#x6D88;&#x8017;&#x3001;&#x7A33;&#x5B9A;&#x6027;&#x5F3A;&#x8457;&#x79F0;&#xFF0C;&#x5E7F;&#x6CDB;&#x5E94;&#x7528;&#x4E8E;Web&#x670D;&#x52A1;&#x5668;&#x3001;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x3001;&#x53CD;&#x5411;&#x4EE3;&#x7406;&#x7B49;&#x573A;&#x666F;&#x3002;</p>
+<h2 id="nginx&#x7684;&#x7279;&#x70B9;"><a name="nginx&#x7684;&#x7279;&#x70B9;" class="anchor-navigation-ex-anchor" href="#nginx&#x7684;&#x7279;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>Nginx&#x7684;&#x7279;&#x70B9;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x7279;&#x6027;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>&#x9AD8;&#x6027;&#x80FD;</strong></td>
+<td>&#x652F;&#x6301;&#x6570;&#x4E07;&#x7EA7;&#x5E76;&#x53D1;&#x8FDE;&#x63A5;</td>
+</tr>
+<tr>
+<td><strong>&#x4F4E;&#x5185;&#x5B58;</strong></td>
+<td>&#x5185;&#x5B58;&#x5360;&#x7528;&#x4F4E;</td>
+</tr>
+<tr>
+<td><strong>&#x7A33;&#x5B9A;&#x6027;</strong></td>
+<td>&#x9AD8;&#x53EF;&#x9760;&#x8FD0;&#x884C;</td>
+</tr>
+<tr>
+<td><strong>&#x6A21;&#x5757;&#x5316;</strong></td>
+<td>&#x4E30;&#x5BCC;&#x7684;&#x6A21;&#x5757;&#x652F;&#x6301;</td>
+</tr>
+<tr>
+<td><strong>&#x70ED;&#x90E8;&#x7F72;</strong></td>
+<td>&#x652F;&#x6301;&#x914D;&#x7F6E;&#x70ED;&#x66F4;&#x65B0;</td>
+</tr>
+<tr>
+<td><strong>&#x8D1F;&#x8F7D;&#x5747;&#x8861;</strong></td>
+<td>&#x5185;&#x7F6E;&#x591A;&#x79CD;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x7B56;&#x7565;</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="&#x4E00;&#x3001;nginx&#x6838;&#x5FC3;&#x539F;&#x7406;"><a name="&#x4E00;&#x3001;nginx&#x6838;&#x5FC3;&#x539F;&#x7406;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x3001;nginx&#x6838;&#x5FC3;&#x539F;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x3001;Nginx&#x6838;&#x5FC3;&#x539F;&#x7406;</h2>
+<h3 id="11-nginx&#x67B6;&#x6784;"><a name="11-nginx&#x67B6;&#x6784;" class="anchor-navigation-ex-anchor" href="#11-nginx&#x67B6;&#x6784;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1 Nginx&#x67B6;&#x6784;</h3>
+<pre class="language-"><code>                    &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
+                    &#x2502;                    &#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;                            &#x2502;
+                    &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+                                                &#x2502;
+                                                &#x25BC;
+&#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
+&#x2502;                          Nginx Server                                     &#x2502;
+&#x2502;  &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;    &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;    &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;                  &#x2502;
+&#x2502;  &#x2502;   Master     &#x2502;    &#x2502;   Worker 1   &#x2502;    &#x2502;   Worker N   &#x2502;                  &#x2502;
+&#x2502;  &#x2502;  (&#x7BA1;&#x7406;&#x8FDB;&#x7A0B;)  &#x2502;    &#x2502;  (&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;)  &#x2502;    &#x2502;  (&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;)  &#x2502;                  &#x2502;
+&#x2502;  &#x2502;  &#x914D;&#x7F6E;&#x52A0;&#x8F7D;    &#x2502;    &#x2502;  &#x5904;&#x7406;&#x8BF7;&#x6C42;    &#x2502;    &#x2502;  &#x5904;&#x7406;&#x8BF7;&#x6C42;    &#x2502;                  &#x2502;
+&#x2502;  &#x2502;  &#x4FE1;&#x53F7;&#x7BA1;&#x7406;    &#x2502;    &#x2502;  &#x8FDE;&#x63A5;&#x5904;&#x7406;    &#x2502;    &#x2502;  &#x8FDE;&#x63A5;&#x5904;&#x7406;    &#x2502;                  &#x2502;
+&#x2502;  &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;    &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;    &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;                  &#x2502;
+&#x2502;         &#x2502;                   &#x2502;                   &#x2502;                          &#x2502;
+&#x2502;         &#x2502; &#x4FE1;&#x53F7;              &#x2502; &#x5171;&#x4EAB;&#x5185;&#x5B58;          &#x2502; &#x5171;&#x4EAB;&#x5185;&#x5B58;                   &#x2502;
+&#x2502;         &#x25BC;                   &#x25BC;                   &#x25BC;                          &#x2502;
+&#x2502;  &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;    &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;    &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;                  &#x2502;
+&#x2502;  &#x2502;   &#x914D;&#x7F6E;&#x6587;&#x4EF6;    &#x2502;    &#x2502;   &#x8FDE;&#x63A5;&#x6C60;     &#x2502;    &#x2502;   &#x7F13;&#x5B58;       &#x2502;                  &#x2502;
+&#x2502;  &#x2502;   nginx.conf &#x2502;    &#x2502;              &#x2502;    &#x2502;              &#x2502;                  &#x2502;
+&#x2502;  &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;    &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;    &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;                  &#x2502;
+&#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+                                                &#x2502;
+                                                &#x25BC;
+                    &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
+                    &#x2502;                   &#x540E;&#x7AEF;&#x670D;&#x52A1;&#x5668;                            &#x2502;
+                    &#x2502;  &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;  &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;  &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;              &#x2502;
+                    &#x2502;  &#x2502;  Server1 &#x2502;  &#x2502;  Server2 &#x2502;  &#x2502;  Server3 &#x2502;              &#x2502;
+                    &#x2502;  &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;  &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;  &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;              &#x2502;
+                    &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+</code></pre><h3 id="12-nginx&#x8FDB;&#x7A0B;&#x6A21;&#x578B;"><a name="12-nginx&#x8FDB;&#x7A0B;&#x6A21;&#x578B;" class="anchor-navigation-ex-anchor" href="#12-nginx&#x8FDB;&#x7A0B;&#x6A21;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2 Nginx&#x8FDB;&#x7A0B;&#x6A21;&#x578B;</h3>
+<p><strong>Master&#x8FDB;&#x7A0B;</strong>&#xFF1A;</p>
+<ul>
+<li>&#x8BFB;&#x53D6;&#x548C;&#x9A8C;&#x8BC1;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</li>
+<li>&#x7BA1;&#x7406;Worker&#x8FDB;&#x7A0B;</li>
+<li>&#x5904;&#x7406;&#x4FE1;&#x53F7;</li>
+<li>&#x4E0D;&#x5904;&#x7406;&#x8BF7;&#x6C42;</li>
+</ul>
+<p><strong>Worker&#x8FDB;&#x7A0B;</strong>&#xFF1A;</p>
+<ul>
+<li>&#x5904;&#x7406;&#x5B9E;&#x9645;&#x7684;&#x8BF7;&#x6C42;</li>
+<li>&#x591A;&#x4E2A;Worker&#x8FDB;&#x7A0B;&#x5B9E;&#x73B0;&#x5E76;&#x53D1;</li>
+<li>&#x901A;&#x8FC7;&#x5171;&#x4EAB;&#x5185;&#x5B58;&#x5171;&#x4EAB;&#x6570;&#x636E;</li>
+</ul>
+<p><strong>&#x914D;&#x7F6E;&#x793A;&#x4F8B;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-nginx"><span class="token directive"><span class="token keyword">worker_processes</span> <span class="token number">4</span></span><span class="token punctuation">;</span>  <span class="token comment"># Worker&#x8FDB;&#x7A0B;&#x6570;&#xFF0C;&#x901A;&#x5E38;&#x7B49;&#x4E8E;CPU&#x6838;&#x5FC3;&#x6570;</span>
+
+<span class="token directive"><span class="token keyword">events</span></span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">worker_connections</span> <span class="token number">1024</span></span><span class="token punctuation">;</span>  <span class="token comment"># &#x6BCF;&#x4E2A;Worker&#x6700;&#x5927;&#x8FDE;&#x63A5;&#x6570;</span>
+    <span class="token directive"><span class="token keyword">use</span> epoll</span><span class="token punctuation">;</span>  <span class="token comment"># &#x4F7F;&#x7528;epoll&#x4E8B;&#x4EF6;&#x6A21;&#x578B;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="13-&#x4E8B;&#x4EF6;&#x9A71;&#x52A8;&#x6A21;&#x578B;"><a name="13-&#x4E8B;&#x4EF6;&#x9A71;&#x52A8;&#x6A21;&#x578B;" class="anchor-navigation-ex-anchor" href="#13-&#x4E8B;&#x4EF6;&#x9A71;&#x52A8;&#x6A21;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3 &#x4E8B;&#x4EF6;&#x9A71;&#x52A8;&#x6A21;&#x578B;</h3>
+<p><strong>&#x4E8B;&#x4EF6;&#x6A21;&#x578B;&#x5BF9;&#x6BD4;</strong>&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x6A21;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+<th>&#x9002;&#x7528;&#x573A;&#x666F;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>select</strong></td>
+<td>&#x8F6E;&#x8BE2;&#x6240;&#x6709;&#x8FDE;&#x63A5;</td>
+<td>&#x8FDE;&#x63A5;&#x6570;&#x5C11;</td>
+</tr>
+<tr>
+<td><strong>poll</strong></td>
+<td>&#x8F6E;&#x8BE2;&#x6240;&#x6709;&#x8FDE;&#x63A5;</td>
+<td>&#x8FDE;&#x63A5;&#x6570;&#x5C11;</td>
+</tr>
+<tr>
+<td><strong>epoll</strong></td>
+<td>&#x4E8B;&#x4EF6;&#x901A;&#x77E5;</td>
+<td>&#x9AD8;&#x5E76;&#x53D1;</td>
+</tr>
+<tr>
+<td><strong>kqueue</strong></td>
+<td>&#x4E8B;&#x4EF6;&#x901A;&#x77E5;</td>
+<td>BSD&#x7CFB;&#x7EDF;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>epoll&#x5DE5;&#x4F5C;&#x539F;&#x7406;</strong>&#xFF1A;</p>
+<pre class="language-"><code>&#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;    &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;    &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
+&#x2502;   epoll_create  &#x2502;&#x2500;&#x2500;&#x2500;&#x25BA;&#x2502;   epoll_ctl     &#x2502;&#x2500;&#x2500;&#x2500;&#x25BA;&#x2502;   epoll_wait    &#x2502;
+&#x2502;   (&#x521B;&#x5EFA;&#x5B9E;&#x4F8B;)     &#x2502;    &#x2502;   (&#x6CE8;&#x518C;&#x4E8B;&#x4EF6;)     &#x2502;    &#x2502;   (&#x7B49;&#x5F85;&#x4E8B;&#x4EF6;)     &#x2502;
+&#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;    &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;    &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+</code></pre><h3 id="14-http&#x8BF7;&#x6C42;&#x5904;&#x7406;&#x6D41;&#x7A0B;"><a name="14-http&#x8BF7;&#x6C42;&#x5904;&#x7406;&#x6D41;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#14-http&#x8BF7;&#x6C42;&#x5904;&#x7406;&#x6D41;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4 HTTP&#x8BF7;&#x6C42;&#x5904;&#x7406;&#x6D41;&#x7A0B;</h3>
+<pre class="language-"><code>&#x8BF7;&#x6C42; &#x2500;&#x2500;&#x25BA; &#x63A5;&#x6536;&#x8FDE;&#x63A5; &#x2500;&#x2500;&#x25BA; &#x89E3;&#x6790;&#x8BF7;&#x6C42; &#x2500;&#x2500;&#x25BA; &#x67E5;&#x627E;&#x914D;&#x7F6E; &#x2500;&#x2500;&#x25BA; &#x5904;&#x7406;&#x8BF7;&#x6C42; &#x2500;&#x2500;&#x25BA; &#x54CD;&#x5E94;&#x5BA2;&#x6237;&#x7AEF;
+                                              &#x2502;
+                                              &#x25BC;
+                                        &#x53CD;&#x5411;&#x4EE3;&#x7406;/&#x9759;&#x6001;&#x6587;&#x4EF6;/&#x52A8;&#x6001;&#x5185;&#x5BB9;
+</code></pre><p><strong>&#x914D;&#x7F6E;&#x793A;&#x4F8B;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-nginx"><span class="token directive"><span class="token keyword">http</span></span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">server</span></span> <span class="token punctuation">{</span>
+        <span class="token directive"><span class="token keyword">listen</span> <span class="token number">80</span></span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">server_name</span> example.com</span><span class="token punctuation">;</span>
+
+        <span class="token directive"><span class="token keyword">location</span> /</span> <span class="token punctuation">{</span>
+            <span class="token directive"><span class="token keyword">root</span> /var/www/html</span><span class="token punctuation">;</span>
+            <span class="token directive"><span class="token keyword">index</span> index.html</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token directive"><span class="token keyword">location</span> /api</span> <span class="token punctuation">{</span>
+            <span class="token directive"><span class="token keyword">proxy_pass</span> http://backend</span><span class="token punctuation">;</span>
+            <span class="token directive"><span class="token keyword">proxy_set_header</span> Host <span class="token variable">$host</span></span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<hr>
+<h2 id="&#x4E8C;&#x3001;nginx&#x5E38;&#x89C1;&#x95EE;&#x9898;&#x5206;&#x6790;&#x4E0E;&#x6392;&#x67E5;"><a name="&#x4E8C;&#x3001;nginx&#x5E38;&#x89C1;&#x95EE;&#x9898;&#x5206;&#x6790;&#x4E0E;&#x6392;&#x67E5;" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x3001;nginx&#x5E38;&#x89C1;&#x95EE;&#x9898;&#x5206;&#x6790;&#x4E0E;&#x6392;&#x67E5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8C;&#x3001;Nginx&#x5E38;&#x89C1;&#x95EE;&#x9898;&#x5206;&#x6790;&#x4E0E;&#x6392;&#x67E5;</h2>
+<h3 id="&#x95EE;&#x9898;1&#xFF1A;nginx&#x65E0;&#x6CD5;&#x542F;&#x52A8;"><a name="&#x95EE;&#x9898;1&#xFF1A;nginx&#x65E0;&#x6CD5;&#x542F;&#x52A8;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;1&#xFF1A;nginx&#x65E0;&#x6CD5;&#x542F;&#x52A8;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;1&#xFF1A;Nginx&#x65E0;&#x6CD5;&#x542F;&#x52A8;</h3>
+<p><strong>&#x73B0;&#x8C61;</strong>&#xFF1A;</p>
+<pre class="language-"><code>nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Address already in use)
+</code></pre><p><strong>&#x6392;&#x67E5;&#x6B65;&#x9AA4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># 1. &#x68C0;&#x67E5;&#x7AEF;&#x53E3;&#x5360;&#x7528;</span>
+<span class="token function">netstat</span> <span class="token parameter variable">-tlnp</span> <span class="token operator">|</span> <span class="token function">grep</span> :80
+
+<span class="token comment"># 2. &#x68C0;&#x67E5;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</span>
+nginx <span class="token parameter variable">-t</span>
+
+<span class="token comment"># 3. &#x68C0;&#x67E5;&#x65E5;&#x5FD7;</span>
+<span class="token function">cat</span> /var/log/nginx/error.log
+</code></pre>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x91CA;&#x653E;&#x5360;&#x7528;&#x7AEF;&#x53E3;&#x7684;&#x8FDB;&#x7A0B;</li>
+<li>&#x4FEE;&#x6539;&#x76D1;&#x542C;&#x7AEF;&#x53E3;</li>
+<li>&#x4FEE;&#x590D;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x9519;&#x8BEF;</li>
+</ol>
+<hr>
+<h3 id="&#x95EE;&#x9898;2&#xFF1A;404&#x9519;&#x8BEF;"><a name="&#x95EE;&#x9898;2&#xFF1A;404&#x9519;&#x8BEF;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;2&#xFF1A;404&#x9519;&#x8BEF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;2&#xFF1A;404&#x9519;&#x8BEF;</h3>
+<p><strong>&#x73B0;&#x8C61;</strong>&#xFF1A;</p>
+<pre class="language-"><code>404 Not Found
+</code></pre><p><strong>&#x6392;&#x67E5;&#x6B65;&#x9AA4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># 1. &#x68C0;&#x67E5;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</span>
+<span class="token function">cat</span> /etc/nginx/nginx.conf
+
+<span class="token comment"># 2. &#x68C0;&#x67E5;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</span>
+<span class="token function">ls</span> <span class="token parameter variable">-la</span> /var/www/html
+
+<span class="token comment"># 3. &#x68C0;&#x67E5;&#x8BBF;&#x95EE;&#x65E5;&#x5FD7;</span>
+<span class="token function">cat</span> /var/log/nginx/access.log <span class="token operator">|</span> <span class="token function">grep</span> <span class="token number">404</span>
+</code></pre>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x68C0;&#x67E5;root&#x548C;index&#x914D;&#x7F6E;</li>
+<li>&#x786E;&#x8BA4;&#x6587;&#x4EF6;&#x5B58;&#x5728;</li>
+<li>&#x68C0;&#x67E5;location&#x5339;&#x914D;&#x89C4;&#x5219;</li>
+</ol>
+<hr>
+<h3 id="&#x95EE;&#x9898;3&#xFF1A;502-bad-gateway"><a name="&#x95EE;&#x9898;3&#xFF1A;502-bad-gateway" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;3&#xFF1A;502-bad-gateway"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;3&#xFF1A;502 Bad Gateway</h3>
+<p><strong>&#x73B0;&#x8C61;</strong>&#xFF1A;</p>
+<pre class="language-"><code>502 Bad Gateway
+</code></pre><p><strong>&#x6392;&#x67E5;&#x6B65;&#x9AA4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># 1. &#x68C0;&#x67E5;&#x540E;&#x7AEF;&#x670D;&#x52A1;&#x5668;&#x72B6;&#x6001;</span>
+<span class="token function">curl</span> http://backend:8080
+
+<span class="token comment"># 2. &#x68C0;&#x67E5;&#x4EE3;&#x7406;&#x914D;&#x7F6E;</span>
+<span class="token function">cat</span> /etc/nginx/nginx.conf <span class="token operator">|</span> <span class="token function">grep</span> proxy_pass
+
+<span class="token comment"># 3. &#x68C0;&#x67E5;&#x9519;&#x8BEF;&#x65E5;&#x5FD7;</span>
+<span class="token function">cat</span> /var/log/nginx/error.log <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-i</span> error
+</code></pre>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x786E;&#x4FDD;&#x540E;&#x7AEF;&#x670D;&#x52A1;&#x5668;&#x6B63;&#x5E38;&#x8FD0;&#x884C;</li>
+<li>&#x68C0;&#x67E5;&#x4EE3;&#x7406;&#x914D;&#x7F6E;&#x6B63;&#x786E;</li>
+<li>&#x589E;&#x52A0;&#x8D85;&#x65F6;&#x65F6;&#x95F4;</li>
+</ol>
+<hr>
+<h3 id="&#x95EE;&#x9898;4&#xFF1A;&#x6027;&#x80FD;&#x95EE;&#x9898;"><a name="&#x95EE;&#x9898;4&#xFF1A;&#x6027;&#x80FD;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;4&#xFF1A;&#x6027;&#x80FD;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;4&#xFF1A;&#x6027;&#x80FD;&#x95EE;&#x9898;</h3>
+<p><strong>&#x73B0;&#x8C61;</strong>&#xFF1A;</p>
+<ul>
+<li>&#x54CD;&#x5E94;&#x6162;</li>
+<li>CPU&#x4F7F;&#x7528;&#x7387;&#x9AD8;</li>
+<li>&#x5185;&#x5B58;&#x5360;&#x7528;&#x9AD8;</li>
+</ul>
+<p><strong>&#x6392;&#x67E5;&#x6B65;&#x9AA4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># 1. &#x68C0;&#x67E5;&#x8FDB;&#x7A0B;&#x72B6;&#x6001;</span>
+<span class="token function">top</span> <span class="token parameter variable">-p</span> <span class="token variable"><span class="token variable">$(</span>pgrep nginx<span class="token variable">)</span></span>
+
+<span class="token comment"># 2. &#x68C0;&#x67E5;&#x8FDE;&#x63A5;&#x6570;</span>
+<span class="token function">netstat</span> <span class="token parameter variable">-tlnp</span> <span class="token operator">|</span> <span class="token function">grep</span> nginx <span class="token operator">|</span> <span class="token function">wc</span> <span class="token parameter variable">-l</span>
+
+<span class="token comment"># 3. &#x68C0;&#x67E5;&#x65E5;&#x5FD7;</span>
+<span class="token function">cat</span> /var/log/nginx/access.log <span class="token operator">|</span> <span class="token function">tail</span> <span class="token parameter variable">-100</span>
+</code></pre>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x589E;&#x52A0;Worker&#x8FDB;&#x7A0B;&#x6570;</li>
+<li>&#x4F18;&#x5316;&#x4E8B;&#x4EF6;&#x6A21;&#x578B;</li>
+<li>&#x542F;&#x7528;&#x7F13;&#x5B58;</li>
+</ol>
+<hr>
+<h3 id="&#x95EE;&#x9898;5&#xFF1A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x9519;&#x8BEF;"><a name="&#x95EE;&#x9898;5&#xFF1A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x9519;&#x8BEF;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;5&#xFF1A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x9519;&#x8BEF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;5&#xFF1A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x9519;&#x8BEF;</h3>
+<p><strong>&#x73B0;&#x8C61;</strong>&#xFF1A;</p>
+<pre class="language-"><code>nginx: [emerg] invalid parameter &quot;xxx&quot; in /etc/nginx/nginx.conf:xx
+</code></pre><p><strong>&#x6392;&#x67E5;&#x6B65;&#x9AA4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># 1. &#x9A8C;&#x8BC1;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</span>
+nginx <span class="token parameter variable">-t</span>
+
+<span class="token comment"># 2. &#x68C0;&#x67E5;&#x8BED;&#x6CD5;&#x9519;&#x8BEF;</span>
+nginx <span class="token parameter variable">-t</span> <span class="token parameter variable">-c</span> /etc/nginx/nginx.conf
+
+<span class="token comment"># 3. &#x67E5;&#x770B;&#x9519;&#x8BEF;&#x8BE6;&#x60C5;</span>
+<span class="token function">cat</span> /var/log/nginx/error.log
+</code></pre>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x4FEE;&#x590D;&#x8BED;&#x6CD5;&#x9519;&#x8BEF;</li>
+<li>&#x68C0;&#x67E5;&#x6A21;&#x5757;&#x662F;&#x5426;&#x52A0;&#x8F7D;</li>
+<li>&#x67E5;&#x770B;&#x5B98;&#x65B9;&#x6587;&#x6863;</li>
+</ol>
+<hr>
+<h3 id="&#x95EE;&#x9898;6&#xFF1A;ssl&#x8BC1;&#x4E66;&#x95EE;&#x9898;"><a name="&#x95EE;&#x9898;6&#xFF1A;ssl&#x8BC1;&#x4E66;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;6&#xFF1A;ssl&#x8BC1;&#x4E66;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;6&#xFF1A;SSL&#x8BC1;&#x4E66;&#x95EE;&#x9898;</h3>
+<p><strong>&#x73B0;&#x8C61;</strong>&#xFF1A;</p>
+<pre class="language-"><code>SSL certificate error
+</code></pre><p><strong>&#x6392;&#x67E5;&#x6B65;&#x9AA4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># 1. &#x68C0;&#x67E5;&#x8BC1;&#x4E66;&#x6587;&#x4EF6;</span>
+openssl x509 <span class="token parameter variable">-in</span> /etc/nginx/cert.crt <span class="token parameter variable">-text</span> <span class="token parameter variable">-noout</span>
+
+<span class="token comment"># 2. &#x68C0;&#x67E5;&#x914D;&#x7F6E;</span>
+<span class="token function">cat</span> /etc/nginx/nginx.conf <span class="token operator">|</span> <span class="token function">grep</span> ssl
+
+<span class="token comment"># 3. &#x6D4B;&#x8BD5;SSL&#x8FDE;&#x63A5;</span>
+openssl s_client <span class="token parameter variable">-connect</span> example.com:443
+</code></pre>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x786E;&#x4FDD;&#x8BC1;&#x4E66;&#x6587;&#x4EF6;&#x6B63;&#x786E;</li>
+<li>&#x914D;&#x7F6E;&#x6B63;&#x786E;&#x7684;SSL&#x53C2;&#x6570;</li>
+<li>&#x66F4;&#x65B0;&#x8FC7;&#x671F;&#x8BC1;&#x4E66;</li>
+</ol>
+<hr>
+<h3 id="&#x95EE;&#x9898;7&#xFF1A;&#x8FDE;&#x63A5;&#x8D85;&#x65F6;"><a name="&#x95EE;&#x9898;7&#xFF1A;&#x8FDE;&#x63A5;&#x8D85;&#x65F6;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;7&#xFF1A;&#x8FDE;&#x63A5;&#x8D85;&#x65F6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;7&#xFF1A;&#x8FDE;&#x63A5;&#x8D85;&#x65F6;</h3>
+<p><strong>&#x73B0;&#x8C61;</strong>&#xFF1A;</p>
+<pre class="language-"><code>504 Gateway Timeout
+</code></pre><p><strong>&#x6392;&#x67E5;&#x6B65;&#x9AA4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># 1. &#x68C0;&#x67E5;&#x8D85;&#x65F6;&#x914D;&#x7F6E;</span>
+<span class="token function">cat</span> /etc/nginx/nginx.conf <span class="token operator">|</span> <span class="token function">grep</span> <span class="token function">timeout</span>
+
+<span class="token comment"># 2. &#x68C0;&#x67E5;&#x540E;&#x7AEF;&#x54CD;&#x5E94;&#x65F6;&#x95F4;</span>
+<span class="token function">curl</span> <span class="token parameter variable">-w</span> <span class="token string">&quot;%{time_total}<span class="token entity" title="\n">\n</span>&quot;</span> http://backend:8080
+
+<span class="token comment"># 3. &#x68C0;&#x67E5;&#x9519;&#x8BEF;&#x65E5;&#x5FD7;</span>
+<span class="token function">cat</span> /var/log/nginx/error.log <span class="token operator">|</span> <span class="token function">grep</span> <span class="token function">timeout</span>
+</code></pre>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x589E;&#x52A0;&#x8D85;&#x65F6;&#x65F6;&#x95F4;&#x914D;&#x7F6E;</li>
+<li>&#x4F18;&#x5316;&#x540E;&#x7AEF;&#x54CD;&#x5E94;</li>
+<li>&#x4F7F;&#x7528;&#x5F02;&#x6B65;&#x5904;&#x7406;</li>
+</ol>
+<hr>
+<h3 id="&#x95EE;&#x9898;8&#xFF1A;&#x7F13;&#x5B58;&#x95EE;&#x9898;"><a name="&#x95EE;&#x9898;8&#xFF1A;&#x7F13;&#x5B58;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;8&#xFF1A;&#x7F13;&#x5B58;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;8&#xFF1A;&#x7F13;&#x5B58;&#x95EE;&#x9898;</h3>
+<p><strong>&#x73B0;&#x8C61;</strong>&#xFF1A;</p>
+<ul>
+<li>&#x9875;&#x9762;&#x4E0D;&#x66F4;&#x65B0;</li>
+<li>&#x7F13;&#x5B58;&#x4E0D;&#x751F;&#x6548;</li>
+</ul>
+<p><strong>&#x6392;&#x67E5;&#x6B65;&#x9AA4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># 1. &#x68C0;&#x67E5;&#x7F13;&#x5B58;&#x914D;&#x7F6E;</span>
+<span class="token function">cat</span> /etc/nginx/nginx.conf <span class="token operator">|</span> <span class="token function">grep</span> cache
+
+<span class="token comment"># 2. &#x68C0;&#x67E5;&#x7F13;&#x5B58;&#x76EE;&#x5F55;</span>
+<span class="token function">ls</span> <span class="token parameter variable">-la</span> /var/cache/nginx
+
+<span class="token comment"># 3. &#x6D4B;&#x8BD5;&#x7F13;&#x5B58;&#x6548;&#x679C;</span>
+<span class="token function">curl</span> <span class="token parameter variable">-I</span> http://example.com/static/js/app.js
+</code></pre>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x914D;&#x7F6E;&#x6B63;&#x786E;&#x7684;&#x7F13;&#x5B58;&#x89C4;&#x5219;</li>
+<li>&#x68C0;&#x67E5;&#x7F13;&#x5B58;&#x76EE;&#x5F55;&#x6743;&#x9650;</li>
+<li>&#x8BBE;&#x7F6E;&#x5408;&#x9002;&#x7684;&#x7F13;&#x5B58;&#x65F6;&#x95F4;</li>
+</ol>
+<hr>
+<h3 id="&#x95EE;&#x9898;9&#xFF1A;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x95EE;&#x9898;"><a name="&#x95EE;&#x9898;9&#xFF1A;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;9&#xFF1A;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;9&#xFF1A;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x95EE;&#x9898;</h3>
+<p><strong>&#x73B0;&#x8C61;</strong>&#xFF1A;</p>
+<ul>
+<li>&#x8BF7;&#x6C42;&#x5206;&#x5E03;&#x4E0D;&#x5747;</li>
+<li>&#x90E8;&#x5206;&#x670D;&#x52A1;&#x5668;&#x8D1F;&#x8F7D;&#x9AD8;</li>
+</ul>
+<p><strong>&#x6392;&#x67E5;&#x6B65;&#x9AA4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># 1. &#x68C0;&#x67E5;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x914D;&#x7F6E;</span>
+<span class="token function">cat</span> /etc/nginx/nginx.conf <span class="token operator">|</span> <span class="token function">grep</span> upstream
+
+<span class="token comment"># 2. &#x68C0;&#x67E5;&#x540E;&#x7AEF;&#x670D;&#x52A1;&#x5668;&#x72B6;&#x6001;</span>
+<span class="token function">curl</span> http://example.com/health
+
+<span class="token comment"># 3. &#x67E5;&#x770B;&#x8BBF;&#x95EE;&#x65E5;&#x5FD7;&#x7EDF;&#x8BA1;</span>
+<span class="token function">awk</span> <span class="token string">&apos;{print $1}&apos;</span> /var/log/nginx/access.log <span class="token operator">|</span> <span class="token function">sort</span> <span class="token operator">|</span> <span class="token function">uniq</span> <span class="token parameter variable">-c</span>
+</code></pre>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x9009;&#x62E9;&#x5408;&#x9002;&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x7B56;&#x7565;</li>
+<li>&#x914D;&#x7F6E;&#x5065;&#x5EB7;&#x68C0;&#x67E5;</li>
+<li>&#x8C03;&#x6574;&#x6743;&#x91CD;</li>
+</ol>
+<hr>
+<h3 id="&#x95EE;&#x9898;10&#xFF1A;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x95EE;&#x9898;"><a name="&#x95EE;&#x9898;10&#xFF1A;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x95EE;&#x9898;10&#xFF1A;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95EE;&#x9898;10&#xFF1A;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x95EE;&#x9898;</h3>
+<p><strong>&#x73B0;&#x8C61;</strong>&#xFF1A;</p>
+<ul>
+<li>&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x5931;&#x8D25;</li>
+<li>413 Request Entity Too Large</li>
+</ul>
+<p><strong>&#x6392;&#x67E5;&#x6B65;&#x9AA4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># 1. &#x68C0;&#x67E5;&#x4E0A;&#x4F20;&#x5927;&#x5C0F;&#x9650;&#x5236;</span>
+<span class="token function">cat</span> /etc/nginx/nginx.conf <span class="token operator">|</span> <span class="token function">grep</span> client_max_body_size
+
+<span class="token comment"># 2. &#x68C0;&#x67E5;&#x540E;&#x7AEF;&#x914D;&#x7F6E;</span>
+<span class="token function">cat</span> /etc/php/php.ini <span class="token operator">|</span> <span class="token function">grep</span> upload_max_filesize
+
+<span class="token comment"># 3. &#x68C0;&#x67E5;&#x9519;&#x8BEF;&#x65E5;&#x5FD7;</span>
+<span class="token function">cat</span> /var/log/nginx/error.log <span class="token operator">|</span> <span class="token function">grep</span> <span class="token number">413</span>
+</code></pre>
+<p><strong>&#x89E3;&#x51B3;&#x65B9;&#x6848;</strong>&#xFF1A;</p>
+<ol>
+<li>&#x589E;&#x52A0;<code>client_max_body_size</code></li>
+<li>&#x8C03;&#x6574;&#x540E;&#x7AEF;&#x4E0A;&#x4F20;&#x9650;&#x5236;</li>
+<li>&#x914D;&#x7F6E;&#x4E34;&#x65F6;&#x6587;&#x4EF6;&#x76EE;&#x5F55;</li>
+</ol>
+<hr>
+<h2 id="&#x4E09;&#x3001;nginx&#x9762;&#x8BD5;&#x9898;"><a name="&#x4E09;&#x3001;nginx&#x9762;&#x8BD5;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x4E09;&#x3001;nginx&#x9762;&#x8BD5;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E09;&#x3001;Nginx&#x9762;&#x8BD5;&#x9898;</h2>
+<h3 id="&#x57FA;&#x7840;&#x95EE;&#x9898;"><a name="&#x57FA;&#x7840;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x7840;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x57FA;&#x7840;&#x95EE;&#x9898;</h3>
+<p><strong>Q1&#xFF1A;Nginx&#x662F;&#x4EC0;&#x4E48;&#xFF1F;&#x6709;&#x4EC0;&#x4E48;&#x7279;&#x70B9;&#xFF1F;</strong></p>
+<p><strong>A1&#xFF1A;</strong>
+Nginx&#x662F;&#x4E00;&#x4E2A;&#x9AD8;&#x6027;&#x80FD;&#x7684;HTTP&#x548C;&#x53CD;&#x5411;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5177;&#x6709;&#x4EE5;&#x4E0B;&#x7279;&#x70B9;&#xFF1A;</p>
+<ul>
+<li>&#x9AD8;&#x6027;&#x80FD;&#xFF1A;&#x652F;&#x6301;&#x6570;&#x4E07;&#x7EA7;&#x5E76;&#x53D1;&#x8FDE;&#x63A5;</li>
+<li>&#x4F4E;&#x5185;&#x5B58;&#xFF1A;&#x5185;&#x5B58;&#x5360;&#x7528;&#x4F4E;</li>
+<li>&#x7A33;&#x5B9A;&#x6027;&#xFF1A;&#x9AD8;&#x53EF;&#x9760;&#x8FD0;&#x884C;</li>
+<li>&#x6A21;&#x5757;&#x5316;&#xFF1A;&#x4E30;&#x5BCC;&#x7684;&#x6A21;&#x5757;&#x652F;&#x6301;</li>
+<li>&#x70ED;&#x90E8;&#x7F72;&#xFF1A;&#x652F;&#x6301;&#x914D;&#x7F6E;&#x70ED;&#x66F4;&#x65B0;</li>
+<li>&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#xFF1A;&#x5185;&#x7F6E;&#x591A;&#x79CD;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x7B56;&#x7565;</li>
+</ul>
+<hr>
+<p><strong>Q2&#xFF1A;Nginx&#x7684;&#x8FDB;&#x7A0B;&#x6A21;&#x578B;&#x662F;&#x600E;&#x6837;&#x7684;&#xFF1F;</strong></p>
+<p><strong>A2&#xFF1A;</strong></p>
+<ul>
+<li><strong>Master&#x8FDB;&#x7A0B;</strong>&#xFF1A;&#x7BA1;&#x7406;&#x914D;&#x7F6E;&#x548C;Worker&#x8FDB;&#x7A0B;&#xFF0C;&#x4E0D;&#x5904;&#x7406;&#x8BF7;&#x6C42;</li>
+<li><strong>Worker&#x8FDB;&#x7A0B;</strong>&#xFF1A;&#x5904;&#x7406;&#x5B9E;&#x9645;&#x8BF7;&#x6C42;&#xFF0C;&#x591A;&#x4E2A;Worker&#x5B9E;&#x73B0;&#x5E76;&#x53D1;</li>
+<li>&#x901A;&#x8FC7;&#x5171;&#x4EAB;&#x5185;&#x5B58;&#x5171;&#x4EAB;&#x6570;&#x636E;</li>
+</ul>
+<hr>
+<p><strong>Q3&#xFF1A;Nginx&#x652F;&#x6301;&#x54EA;&#x4E9B;&#x4E8B;&#x4EF6;&#x6A21;&#x578B;&#xFF1F;</strong></p>
+<p><strong>A3&#xFF1A;</strong></p>
+<ul>
+<li><strong>select</strong>&#xFF1A;&#x8F6E;&#x8BE2;&#x6A21;&#x578B;&#xFF0C;&#x9002;&#x7528;&#x4E8E;&#x8FDE;&#x63A5;&#x6570;&#x5C11;&#x7684;&#x573A;&#x666F;</li>
+<li><strong>poll</strong>&#xFF1A;&#x8F6E;&#x8BE2;&#x6A21;&#x578B;&#xFF0C;&#x6BD4;select&#x7A0D;&#x597D;</li>
+<li><strong>epoll</strong>&#xFF1A;&#x4E8B;&#x4EF6;&#x901A;&#x77E5;&#x6A21;&#x578B;&#xFF0C;&#x9002;&#x7528;&#x4E8E;&#x9AD8;&#x5E76;&#x53D1;&#x573A;&#x666F;</li>
+<li><strong>kqueue</strong>&#xFF1A;BSD&#x7CFB;&#x7EDF;&#x7684;&#x4E8B;&#x4EF6;&#x901A;&#x77E5;&#x6A21;&#x578B;</li>
+</ul>
+<hr>
+<p><strong>Q4&#xFF1A;Nginx&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x7B56;&#x7565;&#x6709;&#x54EA;&#x4E9B;&#xFF1F;</strong></p>
+<p><strong>A4&#xFF1A;</strong></p>
+<ul>
+<li><strong>round_robin</strong>&#xFF1A;&#x8F6E;&#x8BE2;&#xFF08;&#x9ED8;&#x8BA4;&#xFF09;</li>
+<li><strong>least_conn</strong>&#xFF1A;&#x6700;&#x5C11;&#x8FDE;&#x63A5;</li>
+<li><strong>ip_hash</strong>&#xFF1A;&#x57FA;&#x4E8E;IP&#x54C8;&#x5E0C;</li>
+<li><strong>fair</strong>&#xFF1A;&#x57FA;&#x4E8E;&#x54CD;&#x5E94;&#x65F6;&#x95F4;</li>
+<li><strong>url_hash</strong>&#xFF1A;&#x57FA;&#x4E8E;URL&#x54C8;&#x5E0C;</li>
+</ul>
+<hr>
+<p><strong>Q5&#xFF1A;Nginx&#x548C;Apache&#x6709;&#x4EC0;&#x4E48;&#x533A;&#x522B;&#xFF1F;</strong></p>
+<p><strong>A5&#xFF1A;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x7279;&#x6027;</th>
+<th>Nginx</th>
+<th>Apache</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5E76;&#x53D1;&#x6027;&#x80FD;</td>
+<td>&#x9AD8;</td>
+<td>&#x4E2D;&#x7B49;</td>
+</tr>
+<tr>
+<td>&#x5185;&#x5B58;&#x5360;&#x7528;</td>
+<td>&#x4F4E;</td>
+<td>&#x9AD8;</td>
+</tr>
+<tr>
+<td>&#x914D;&#x7F6E;&#x590D;&#x6742;&#x5EA6;</td>
+<td>&#x4E2D;&#x7B49;</td>
+<td>&#x590D;&#x6742;</td>
+</tr>
+<tr>
+<td>&#x6A21;&#x5757;&#x6269;&#x5C55;</td>
+<td>&#x9759;&#x6001;&#x7F16;&#x8BD1;</td>
+<td>&#x52A8;&#x6001;&#x52A0;&#x8F7D;</td>
+</tr>
+<tr>
+<td>&#x9002;&#x7528;&#x573A;&#x666F;</td>
+<td>&#x9AD8;&#x5E76;&#x53D1;&#x3001;&#x53CD;&#x5411;&#x4EE3;&#x7406;</td>
+<td>&#x52A8;&#x6001;&#x5185;&#x5BB9;&#x3001;.htaccess</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>Q6&#xFF1A;&#x4EC0;&#x4E48;&#x662F;&#x53CD;&#x5411;&#x4EE3;&#x7406;&#xFF1F;Nginx&#x5982;&#x4F55;&#x914D;&#x7F6E;&#x53CD;&#x5411;&#x4EE3;&#x7406;&#xFF1F;</strong></p>
+<p><strong>A6&#xFF1A;</strong>
+&#x53CD;&#x5411;&#x4EE3;&#x7406;&#x662F;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5668;&#x63A5;&#x6536;&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;&#xFF0C;&#x8F6C;&#x53D1;&#x7ED9;&#x540E;&#x7AEF;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x54CD;&#x5E94;&#x8FD4;&#x56DE;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x3002;</p>
+<pre class="language-"><code class="lang-nginx"><span class="token directive"><span class="token keyword">location</span> /api</span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">proxy_pass</span> http://backend</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">proxy_set_header</span> Host <span class="token variable">$host</span></span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">proxy_set_header</span> X-Real-IP <span class="token variable">$remote_addr</span></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<hr>
+<p><strong>Q7&#xFF1A;Nginx&#x5982;&#x4F55;&#x5B9E;&#x73B0;HTTPS&#xFF1F;</strong></p>
+<p><strong>A7&#xFF1A;</strong></p>
+<pre class="language-"><code class="lang-nginx"><span class="token directive"><span class="token keyword">server</span></span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">listen</span> <span class="token number">443</span> ssl</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">server_name</span> example.com</span><span class="token punctuation">;</span>
+
+    <span class="token directive"><span class="token keyword">ssl_certificate</span> /etc/nginx/cert.crt</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">ssl_certificate_key</span> /etc/nginx/cert.key</span><span class="token punctuation">;</span>
+
+    <span class="token directive"><span class="token keyword">ssl_protocols</span> TLSv1.2 TLSv1.3</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">ssl_ciphers</span> HIGH:!aNULL:!MD5</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<hr>
+<p><strong>Q8&#xFF1A;Nginx&#x7684;&#x7F13;&#x5B58;&#x673A;&#x5236;&#x662F;&#x600E;&#x6837;&#x7684;&#xFF1F;</strong></p>
+<p><strong>A8&#xFF1A;</strong>
+Nginx&#x652F;&#x6301;&#x591A;&#x7EA7;&#x7F13;&#x5B58;&#xFF1A;</p>
+<ul>
+<li>&#x6D4F;&#x89C8;&#x5668;&#x7F13;&#x5B58;&#xFF1A;&#x901A;&#x8FC7;<code>expires</code>&#x548C;<code>Cache-Control</code>&#x5934;&#x63A7;&#x5236;</li>
+<li>&#x4EE3;&#x7406;&#x7F13;&#x5B58;&#xFF1A;&#x901A;&#x8FC7;<code>proxy_cache</code>&#x914D;&#x7F6E;</li>
+<li>FastCGI&#x7F13;&#x5B58;&#xFF1A;&#x901A;&#x8FC7;<code>fastcgi_cache</code>&#x914D;&#x7F6E;</li>
+</ul>
+<hr>
+<p><strong>Q9&#xFF1A;Nginx&#x5982;&#x4F55;&#x5904;&#x7406;&#x9759;&#x6001;&#x6587;&#x4EF6;&#xFF1F;</strong></p>
+<p><strong>A9&#xFF1A;</strong></p>
+<pre class="language-"><code class="lang-nginx"><span class="token directive"><span class="token keyword">location</span> /static</span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">root</span> /var/www/html</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">expires</span> <span class="token number">30d</span></span><span class="token punctuation">;</span>  <span class="token comment"># &#x8BBE;&#x7F6E;&#x7F13;&#x5B58;&#x65F6;&#x95F4;</span>
+    <span class="token directive"><span class="token keyword">add_header</span> Cache-Control <span class="token string">&quot;public, immutable&quot;</span></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<hr>
+<p><strong>Q10&#xFF1A;Nginx&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x9650;&#x6D41;&#xFF1F;</strong></p>
+<p><strong>A10&#xFF1A;</strong></p>
+<pre class="language-"><code class="lang-nginx"><span class="token directive"><span class="token keyword">limit_req_zone</span> <span class="token variable">$binary_remote_addr</span> zone=one:10m rate=1r/s</span><span class="token punctuation">;</span>
+
+<span class="token directive"><span class="token keyword">server</span></span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">location</span> /api</span> <span class="token punctuation">{</span>
+        <span class="token directive"><span class="token keyword">limit_req</span> zone=one burst=5</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<hr>
+<h3 id="&#x590D;&#x6742;&#x573A;&#x666F;&#x95EE;&#x9898;"><a name="&#x590D;&#x6742;&#x573A;&#x666F;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x590D;&#x6742;&#x573A;&#x666F;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x590D;&#x6742;&#x573A;&#x666F;&#x95EE;&#x9898;</h3>
+<p><strong>Q11&#xFF1A;&#x5982;&#x4F55;&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x9AD8;&#x53EF;&#x7528;&#x7684;Nginx&#x67B6;&#x6784;&#xFF1F;</strong></p>
+<p><strong>A11&#xFF1A;</strong></p>
+<p><strong>&#x67B6;&#x6784;&#x8BBE;&#x8BA1;&#xFF1A;</strong></p>
+<pre class="language-"><code>                    &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
+                    &#x2502;           VIP               &#x2502;
+                    &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+                                  &#x2502;
+        &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
+        &#x25BC;                         &#x25BC;                         &#x25BC;
+&#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;          &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;          &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
+&#x2502;   Nginx 1    &#x2502;          &#x2502;   Nginx 2    &#x2502;          &#x2502;   Nginx 3    &#x2502;
+&#x2502;  (Active)    &#x2502;&#x25C4;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x25BA;&#x2502;  (Standby)  &#x2502;&#x25C4;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x25BA;&#x2502;  (Standby)  &#x2502;
+&#x2502;  Keepalived  &#x2502;          &#x2502;  Keepalived  &#x2502;          &#x2502;  Keepalived  &#x2502;
+&#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;          &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;          &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+        &#x2502;                         &#x2502;                         &#x2502;
+        &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+                                  &#x2502;
+                                  &#x25BC;
+                    &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
+                    &#x2502;        &#x540E;&#x7AEF;&#x670D;&#x52A1;&#x5668;&#x96C6;&#x7FA4;         &#x2502;
+                    &#x2502;  &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;  &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510; &#x2502;
+                    &#x2502;  &#x2502; Server1  &#x2502;  &#x2502; Server2  &#x2502; &#x2502;
+                    &#x2502;  &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;  &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518; &#x2502;
+                    &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+</code></pre><p><strong>&#x5173;&#x952E;&#x914D;&#x7F6E;&#xFF1A;</strong></p>
+<pre class="language-"><code class="lang-nginx"><span class="token directive"><span class="token keyword">upstream</span> backend</span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">server</span> server1:8080 weight=3</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">server</span> server2:8080 weight=2</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">server</span> server3:8080 backup</span><span class="token punctuation">;</span>
+
+    <span class="token directive"><span class="token keyword">ip_hash</span></span><span class="token punctuation">;</span>  <span class="token comment"># &#x4FDD;&#x6301;&#x4F1A;&#x8BDD;&#x4E00;&#x81F4;&#x6027;</span>
+    <span class="token directive"><span class="token keyword">keepalive</span> <span class="token number">100</span></span><span class="token punctuation">;</span>  <span class="token comment"># &#x8FDE;&#x63A5;&#x590D;&#x7528;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>&#x6545;&#x969C;&#x5207;&#x6362;&#x6D41;&#x7A0B;&#xFF1A;</strong></p>
+<ol>
+<li>Keepalived&#x68C0;&#x6D4B;Nginx&#x72B6;&#x6001;</li>
+<li>&#x4E3B;Nginx&#x6545;&#x969C;&#x65F6;&#xFF0C;VIP&#x5207;&#x6362;&#x5230;&#x5907;&#x7528;&#x8282;&#x70B9;</li>
+<li>&#x5907;&#x7528;&#x8282;&#x70B9;&#x63A5;&#x7BA1;&#x6D41;&#x91CF;</li>
+<li>&#x901A;&#x77E5;&#x8FD0;&#x7EF4;&#x4EBA;&#x5458;&#x5904;&#x7406;</li>
+</ol>
+<hr>
+<p><strong>Q12&#xFF1A;&#x5982;&#x4F55;&#x5904;&#x7406;Nginx&#x7684;&#x6027;&#x80FD;&#x74F6;&#x9888;&#xFF1F;</strong></p>
+<p><strong>A12&#xFF1A;</strong></p>
+<p><strong>&#x6027;&#x80FD;&#x5206;&#x6790;&#xFF1A;</strong></p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># &#x67E5;&#x770B;&#x8FDE;&#x63A5;&#x6570;</span>
+<span class="token function">netstat</span> <span class="token parameter variable">-tlnp</span> <span class="token operator">|</span> <span class="token function">grep</span> nginx <span class="token operator">|</span> <span class="token function">wc</span> <span class="token parameter variable">-l</span>
+
+<span class="token comment"># &#x67E5;&#x770B;Worker&#x72B6;&#x6001;</span>
+<span class="token function">ps</span> aux <span class="token operator">|</span> <span class="token function">grep</span> nginx
+
+<span class="token comment"># &#x67E5;&#x770B;&#x8BF7;&#x6C42;&#x54CD;&#x5E94;&#x65F6;&#x95F4;</span>
+<span class="token function">curl</span> <span class="token parameter variable">-w</span> <span class="token string">&quot;%{time_total}<span class="token entity" title="\n">\n</span>&quot;</span> http://example.com
+</code></pre>
+<p><strong>&#x4F18;&#x5316;&#x65B9;&#x6848;&#xFF1A;</strong></p>
+<ol>
+<li><p><strong>&#x8C03;&#x6574;Worker&#x8FDB;&#x7A0B;&#x6570;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-nginx"><span class="token directive"><span class="token keyword">worker_processes</span> auto</span><span class="token punctuation">;</span>  <span class="token comment"># &#x81EA;&#x52A8;&#x8BBE;&#x7F6E;&#x4E3A;CPU&#x6838;&#x5FC3;&#x6570;</span>
+</code></pre>
+</li>
+<li><p><strong>&#x4F18;&#x5316;&#x4E8B;&#x4EF6;&#x6A21;&#x578B;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-nginx"><span class="token directive"><span class="token keyword">events</span></span> <span class="token punctuation">{</span>
+ <span class="token directive"><span class="token keyword">worker_connections</span> <span class="token number">10240</span></span><span class="token punctuation">;</span>
+ <span class="token directive"><span class="token keyword">use</span> epoll</span><span class="token punctuation">;</span>
+ <span class="token directive"><span class="token keyword">multi_accept</span> <span class="token boolean">on</span></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p><strong>&#x542F;&#x7528;&#x538B;&#x7F29;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-nginx"><span class="token directive"><span class="token keyword">gzip</span> <span class="token boolean">on</span></span><span class="token punctuation">;</span>
+<span class="token directive"><span class="token keyword">gzip_types</span> text/html text/css application/json</span><span class="token punctuation">;</span>
+<span class="token directive"><span class="token keyword">gzip_comp_level</span> <span class="token number">6</span></span><span class="token punctuation">;</span>
+</code></pre>
+</li>
+<li><p><strong>&#x542F;&#x7528;&#x7F13;&#x5B58;</strong>&#xFF1A;
+```nginx
+proxy_cache_path /var/cache/nginx levels=1:2 keys_zone=my_cache:10m max_size=10g inactive=60m;</p>
+</li>
+</ol>
+<p>location /api {
+    proxy_cache my_cache;
+    proxy_cache_valid 200 30m;
+}</p>
+<pre class="language-"><code>
+---
+
+**Q13&#xFF1A;&#x5982;&#x4F55;&#x5B9E;&#x73B0;Nginx&#x7684;WAF&#xFF08;Web&#x5E94;&#x7528;&#x9632;&#x706B;&#x5899;&#xFF09;&#xFF1F;**
+
+**A13&#xFF1A;**
+
+**&#x65B9;&#x6848;&#x4E00;&#xFF1A;&#x4F7F;&#x7528;ngx_http_limit_req_module&#x9650;&#x6D41;**
+```nginx
+limit_req_zone $binary_remote_addr zone=rate_limit:10m rate=10r/s;
+
+location /api {
+    limit_req zone=rate_limit burst=20 nodelay;
+}
+</code></pre><p><strong>&#x65B9;&#x6848;&#x4E8C;&#xFF1A;&#x4F7F;&#x7528;ngx_http_secure_link_module&#x9632;&#x76D7;&#x94FE;</strong></p>
+<pre class="language-"><code class="lang-nginx"><span class="token directive"><span class="token keyword">location</span> /download</span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">secure_link</span> <span class="token variable">$arg_md5,</span><span class="token variable">$arg_expires</span></span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">secure_link_md5</span> <span class="token string">&quot;<span class="token variable">$secure_link_expires</span><span class="token variable">$uri</span><span class="token variable">$remote_addr</span> secret&quot;</span></span><span class="token punctuation">;</span>
+
+    <span class="token directive"><span class="token keyword">if</span> (<span class="token variable">$secure_link</span> = <span class="token string">&quot;&quot;</span>)</span> <span class="token punctuation">{</span>
+        <span class="token directive"><span class="token keyword">return</span> <span class="token number">403</span></span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token directive"><span class="token keyword">if</span> (<span class="token variable">$secure_link</span> = <span class="token string">&quot;0&quot;</span>)</span> <span class="token punctuation">{</span>
+        <span class="token directive"><span class="token keyword">return</span> <span class="token number">410</span></span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>&#x65B9;&#x6848;&#x4E09;&#xFF1A;&#x4F7F;&#x7528;ModSecurity&#x6A21;&#x5757;</strong></p>
+<pre class="language-"><code class="lang-nginx"><span class="token directive"><span class="token keyword">location</span> /</span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">modsecurity</span> <span class="token boolean">on</span></span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">modsecurity_rules_file</span> /etc/nginx/modsecurity.conf</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>&#x65B9;&#x6848;&#x56DB;&#xFF1A;&#x81EA;&#x5B9A;&#x4E49;&#x89C4;&#x5219;</strong></p>
+<pre class="language-"><code class="lang-nginx"><span class="token comment"># &#x963B;&#x6B62;SQL&#x6CE8;&#x5165;</span>
+<span class="token directive"><span class="token keyword">if</span> (<span class="token variable">$request_uri</span> ~* <span class="token string">&quot;(select|union|insert|delete|update|drop)&quot;</span>)</span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">return</span> <span class="token number">403</span></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># &#x963B;&#x6B62;XSS&#x653B;&#x51FB;</span>
+<span class="token directive"><span class="token keyword">if</span> (<span class="token variable">$request_body</span> ~* <span class="token string">&quot;&lt;script.*&gt;&quot;</span>)</span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">return</span> <span class="token number">403</span></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<hr>
+<p><strong>Q14&#xFF1A;&#x5982;&#x4F55;&#x8BBE;&#x8BA1;Nginx&#x7684;&#x76D1;&#x63A7;&#x4F53;&#x7CFB;&#xFF1F;</strong></p>
+<p><strong>A14&#xFF1A;</strong></p>
+<p><strong>&#x76D1;&#x63A7;&#x6307;&#x6807;&#xFF1A;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x7C7B;&#x522B;</th>
+<th>&#x6307;&#x6807;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>&#x8FDE;&#x63A5;</strong></td>
+<td>&#x6D3B;&#x8DC3;&#x8FDE;&#x63A5;&#x6570;&#x3001;&#x8BF7;&#x6C42;&#x6570;</td>
+</tr>
+<tr>
+<td><strong>&#x6027;&#x80FD;</strong></td>
+<td>&#x8BF7;&#x6C42;&#x54CD;&#x5E94;&#x65F6;&#x95F4;&#x3001;&#x541E;&#x5410;&#x91CF;</td>
+</tr>
+<tr>
+<td><strong>&#x9519;&#x8BEF;</strong></td>
+<td>&#x9519;&#x8BEF;&#x7387;&#x3001;5xx&#x9519;&#x8BEF;&#x6570;</td>
+</tr>
+<tr>
+<td><strong>&#x8D44;&#x6E90;</strong></td>
+<td>CPU&#x3001;&#x5185;&#x5B58;&#x3001;&#x78C1;&#x76D8;I/O</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x76D1;&#x63A7;&#x5DE5;&#x5177;&#xFF1A;</strong></p>
+<ul>
+<li><strong>Prometheus + Grafana</strong>&#xFF1A;&#x6307;&#x6807;&#x91C7;&#x96C6;&#x548C;&#x53EF;&#x89C6;&#x5316;</li>
+<li><strong>nginx-exporter</strong>&#xFF1A;Nginx&#x6307;&#x6807;&#x5BFC;&#x51FA;</li>
+<li><strong>ELK</strong>&#xFF1A;&#x65E5;&#x5FD7;&#x5206;&#x6790;</li>
+<li><strong>Zabbix/Nagios</strong>&#xFF1A;&#x544A;&#x8B66;&#x76D1;&#x63A7;</li>
+</ul>
+<p><strong>&#x914D;&#x7F6E;&#x793A;&#x4F8B;&#xFF1A;</strong></p>
+<pre class="language-"><code class="lang-nginx"><span class="token directive"><span class="token keyword">server</span></span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">location</span> /metrics</span> <span class="token punctuation">{</span>
+        <span class="token directive"><span class="token keyword">stub_status</span> <span class="token boolean">on</span></span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">access_log</span> <span class="token boolean">off</span></span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">allow</span> 127.0.0.1</span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">deny</span> all</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>&#x544A;&#x8B66;&#x89C4;&#x5219;&#xFF1A;</strong></p>
+<pre class="language-"><code class="lang-yaml"><span class="token punctuation">-</span> <span class="token key atrule">alert</span><span class="token punctuation">:</span> HighErrorRate
+  <span class="token key atrule">expr</span><span class="token punctuation">:</span> sum(rate(nginx_http_requests_total<span class="token punctuation">{</span>status=~&quot;5..&quot;<span class="token punctuation">}</span><span class="token punctuation">[</span>5m<span class="token punctuation">]</span>)) / sum(rate(nginx_http_requests_total<span class="token punctuation">[</span>5m<span class="token punctuation">]</span>)) <span class="token punctuation">&gt;</span> 0.05
+  <span class="token key atrule">for</span><span class="token punctuation">:</span> 5m
+  <span class="token key atrule">labels</span><span class="token punctuation">:</span>
+    <span class="token key atrule">severity</span><span class="token punctuation">:</span> critical
+</code></pre>
+<hr>
+<p><strong>Q15&#xFF1A;&#x5982;&#x4F55;&#x5B9E;&#x73B0;Nginx&#x7684;&#x7070;&#x5EA6;&#x53D1;&#x5E03;&#xFF1F;</strong></p>
+<p><strong>A15&#xFF1A;</strong></p>
+<p><strong>&#x65B9;&#x6848;&#x4E00;&#xFF1A;&#x57FA;&#x4E8E;IP&#x7684;&#x7070;&#x5EA6;&#x53D1;&#x5E03;</strong></p>
+<pre class="language-"><code class="lang-nginx"><span class="token directive"><span class="token keyword">map</span> <span class="token variable">$remote_addr</span> <span class="token variable">$group</span></span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">default</span> normal</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">192.168.1.0/24</span> canary</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token directive"><span class="token keyword">upstream</span> normal</span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">server</span> server1:8080</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token directive"><span class="token keyword">upstream</span> canary</span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">server</span> server2:8080</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token directive"><span class="token keyword">server</span></span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">location</span> /</span> <span class="token punctuation">{</span>
+        <span class="token directive"><span class="token keyword">proxy_pass</span> http://<span class="token variable">$group</span></span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>&#x65B9;&#x6848;&#x4E8C;&#xFF1A;&#x57FA;&#x4E8E;Cookie&#x7684;&#x7070;&#x5EA6;&#x53D1;&#x5E03;</strong></p>
+<pre class="language-"><code class="lang-nginx"><span class="token directive"><span class="token keyword">map</span> <span class="token variable">$cookie_canary</span> <span class="token variable">$group</span></span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">default</span> normal</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">1</span> canary</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token directive"><span class="token keyword">server</span></span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">location</span> /</span> <span class="token punctuation">{</span>
+        <span class="token directive"><span class="token keyword">proxy_pass</span> http://<span class="token variable">$group</span></span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>&#x65B9;&#x6848;&#x4E09;&#xFF1A;&#x57FA;&#x4E8E;Header&#x7684;&#x7070;&#x5EA6;&#x53D1;&#x5E03;</strong></p>
+<pre class="language-"><code class="lang-nginx"><span class="token directive"><span class="token keyword">map</span> <span class="token variable">$http_x_canary</span> <span class="token variable">$group</span></span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">default</span> normal</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">true</span> canary</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token directive"><span class="token keyword">server</span></span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">location</span> /</span> <span class="token punctuation">{</span>
+        <span class="token directive"><span class="token keyword">proxy_pass</span> http://<span class="token variable">$group</span></span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>&#x65B9;&#x6848;&#x56DB;&#xFF1A;&#x57FA;&#x4E8E;&#x6743;&#x91CD;&#x7684;&#x7070;&#x5EA6;&#x53D1;&#x5E03;</strong></p>
+<pre class="language-"><code class="lang-nginx"><span class="token directive"><span class="token keyword">upstream</span> backend</span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">server</span> server1:8080 weight=9</span><span class="token punctuation">;</span>  <span class="token comment"># 90%&#x6D41;&#x91CF;</span>
+    <span class="token directive"><span class="token keyword">server</span> server2:8080 weight=1</span><span class="token punctuation">;</span>  <span class="token comment"># 10%&#x6D41;&#x91CF;</span>
+<span class="token punctuation">}</span>
+
+<span class="token directive"><span class="token keyword">server</span></span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">location</span> /</span> <span class="token punctuation">{</span>
+        <span class="token directive"><span class="token keyword">proxy_pass</span> http://backend</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<hr>
+<p><strong>Q16&#xFF1A;&#x5982;&#x4F55;&#x5904;&#x7406;Nginx&#x7684;&#x65E5;&#x5FD7;&#x7BA1;&#x7406;&#xFF1F;</strong></p>
+<p><strong>A16&#xFF1A;</strong></p>
+<p><strong>&#x65E5;&#x5FD7;&#x914D;&#x7F6E;&#xFF1A;</strong></p>
+<pre class="language-"><code class="lang-nginx"><span class="token directive"><span class="token keyword">http</span></span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">log_format</span> main <span class="token string">&apos;<span class="token variable">$remote_addr</span> - <span class="token variable">$remote_user</span> [<span class="token variable">$time_local]</span> &quot;<span class="token variable">$request</span>&quot; &apos;</span>
+                    <span class="token string">&apos;<span class="token variable">$status</span> <span class="token variable">$body_bytes_sent</span> &quot;<span class="token variable">$http_referer</span>&quot; &apos;</span>
+                    <span class="token string">&apos;&quot;<span class="token variable">$http_user_agent</span>&quot; &quot;<span class="token variable">$http_x_forwarded_for</span>&quot;&apos;</span></span><span class="token punctuation">;</span>
+
+    <span class="token directive"><span class="token keyword">access_log</span> /var/log/nginx/access.log main</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">error_log</span> /var/log/nginx/error.log warn</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>&#x65E5;&#x5FD7;&#x8F6E;&#x8F6C;&#xFF1A;</strong></p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># /etc/logrotate.d/nginx</span>
+/var/log/nginx/*.log <span class="token punctuation">{</span>
+    daily
+    missingok
+    rotate <span class="token number">52</span>
+    compress
+    delaycompress
+    notifempty
+    create 0640 www-data adm
+    sharedscripts
+    postrotate
+        <span class="token punctuation">[</span> <span class="token parameter variable">-f</span> /var/run/nginx.pid <span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> <span class="token function">kill</span> <span class="token parameter variable">-USR1</span> <span class="token variable"><span class="token variable">`</span><span class="token function">cat</span> /var/run/nginx.pid<span class="token variable">`</span></span>
+    endscript
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>&#x65E5;&#x5FD7;&#x5206;&#x6790;&#xFF1A;</strong></p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># &#x7EDF;&#x8BA1;&#x8BBF;&#x95EE;&#x91CF;</span>
+<span class="token function">awk</span> <span class="token string">&apos;{print $1}&apos;</span> /var/log/nginx/access.log <span class="token operator">|</span> <span class="token function">sort</span> <span class="token operator">|</span> <span class="token function">uniq</span> <span class="token parameter variable">-c</span> <span class="token operator">|</span> <span class="token function">sort</span> <span class="token parameter variable">-nr</span> <span class="token operator">|</span> <span class="token function">head</span> <span class="token parameter variable">-10</span>
+
+<span class="token comment"># &#x7EDF;&#x8BA1;&#x72B6;&#x6001;&#x7801;</span>
+<span class="token function">awk</span> <span class="token string">&apos;{print $9}&apos;</span> /var/log/nginx/access.log <span class="token operator">|</span> <span class="token function">sort</span> <span class="token operator">|</span> <span class="token function">uniq</span> <span class="token parameter variable">-c</span>
+
+<span class="token comment"># &#x67E5;&#x627E;&#x6162;&#x8BF7;&#x6C42;</span>
+<span class="token function">awk</span> <span class="token string">&apos;$NF &gt; 10&apos;</span> /var/log/nginx/access.log
+</code></pre>
+<hr>
+<p><strong>Q17&#xFF1A;&#x5982;&#x4F55;&#x5B9E;&#x73B0;Nginx&#x7684;HTTPS&#x4F18;&#x5316;&#xFF1F;</strong></p>
+<p><strong>A17&#xFF1A;</strong></p>
+<p><strong>&#x914D;&#x7F6E;&#x4F18;&#x5316;&#xFF1A;</strong></p>
+<ol>
+<li><p><strong>&#x542F;&#x7528;TLS 1.2+</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-nginx"><span class="token directive"><span class="token keyword">ssl_protocols</span> TLSv1.2 TLSv1.3</span><span class="token punctuation">;</span>
+<span class="token directive"><span class="token keyword">ssl_prefer_server_ciphers</span> <span class="token boolean">on</span></span><span class="token punctuation">;</span>
+<span class="token directive"><span class="token keyword">ssl_ciphers</span> <span class="token string">&quot;EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH&quot;</span></span><span class="token punctuation">;</span>
+</code></pre>
+</li>
+<li><p><strong>&#x542F;&#x7528;OCSP Stapling</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-nginx"><span class="token directive"><span class="token keyword">ssl_stapling</span> <span class="token boolean">on</span></span><span class="token punctuation">;</span>
+<span class="token directive"><span class="token keyword">ssl_stapling_verify</span> <span class="token boolean">on</span></span><span class="token punctuation">;</span>
+<span class="token directive"><span class="token keyword">ssl_trusted_certificate</span> /etc/nginx/ca-bundle.crt</span><span class="token punctuation">;</span>
+</code></pre>
+</li>
+<li><p><strong>&#x542F;&#x7528;HTTP/2</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-nginx"><span class="token directive"><span class="token keyword">listen</span> <span class="token number">443</span> ssl http2</span><span class="token punctuation">;</span>
+</code></pre>
+</li>
+<li><p><strong>&#x542F;&#x7528;HSTS</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-nginx"><span class="token directive"><span class="token keyword">add_header</span> Strict-Transport-Security <span class="token string">&quot;max-age=31536000; includeSubDomains&quot;</span> always</span><span class="token punctuation">;</span>
+</code></pre>
+</li>
+<li><p><strong>&#x542F;&#x7528;&#x7F13;&#x5B58;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-nginx"><span class="token directive"><span class="token keyword">ssl_session_cache</span> shared:SSL:10m</span><span class="token punctuation">;</span>
+<span class="token directive"><span class="token keyword">ssl_session_timeout</span> <span class="token number">10m</span></span><span class="token punctuation">;</span>
+</code></pre>
+</li>
+</ol>
+<hr>
+<p><strong>Q18&#xFF1A;&#x5982;&#x4F55;&#x5904;&#x7406;Nginx&#x7684;&#x5927;&#x6587;&#x4EF6;&#x4E0B;&#x8F7D;&#xFF1F;</strong></p>
+<p><strong>A18&#xFF1A;</strong></p>
+<p><strong>&#x914D;&#x7F6E;&#x4F18;&#x5316;&#xFF1A;</strong></p>
+<ol>
+<li><p><strong>&#x589E;&#x52A0;&#x8D85;&#x65F6;&#x65F6;&#x95F4;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-nginx"><span class="token directive"><span class="token keyword">proxy_connect_timeout</span> <span class="token number">60s</span></span><span class="token punctuation">;</span>
+<span class="token directive"><span class="token keyword">proxy_send_timeout</span> <span class="token number">60s</span></span><span class="token punctuation">;</span>
+<span class="token directive"><span class="token keyword">proxy_read_timeout</span> <span class="token number">60s</span></span><span class="token punctuation">;</span>
+</code></pre>
+</li>
+<li><p><strong>&#x542F;&#x7528;&#x5206;&#x5757;&#x4F20;&#x8F93;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-nginx"><span class="token directive"><span class="token keyword">proxy_buffering</span> <span class="token boolean">off</span></span><span class="token punctuation">;</span>
+<span class="token directive"><span class="token keyword">chunked_transfer_encoding</span> <span class="token boolean">on</span></span><span class="token punctuation">;</span>
+</code></pre>
+</li>
+<li><p><strong>&#x914D;&#x7F6E;sendfile</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-nginx"><span class="token directive"><span class="token keyword">sendfile</span> <span class="token boolean">on</span></span><span class="token punctuation">;</span>
+<span class="token directive"><span class="token keyword">tcp_nopush</span> <span class="token boolean">on</span></span><span class="token punctuation">;</span>
+<span class="token directive"><span class="token keyword">tcp_nodelay</span> <span class="token boolean">on</span></span><span class="token punctuation">;</span>
+</code></pre>
+</li>
+<li><p><strong>&#x8BBE;&#x7F6E;&#x5408;&#x9002;&#x7684;&#x7F13;&#x51B2;&#x533A;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-nginx"><span class="token directive"><span class="token keyword">proxy_buffer_size</span> <span class="token number">128k</span></span><span class="token punctuation">;</span>
+<span class="token directive"><span class="token keyword">proxy_buffers</span> <span class="token number">4</span> <span class="token number">256k</span></span><span class="token punctuation">;</span>
+<span class="token directive"><span class="token keyword">proxy_busy_buffers_size</span> <span class="token number">256k</span></span><span class="token punctuation">;</span>
+</code></pre>
+</li>
+</ol>
+<hr>
+<p><strong>Q19&#xFF1A;&#x5982;&#x4F55;&#x5B9E;&#x73B0;Nginx&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x5065;&#x5EB7;&#x68C0;&#x67E5;&#xFF1F;</strong></p>
+<p><strong>A19&#xFF1A;</strong></p>
+<p><strong>&#x65B9;&#x6848;&#x4E00;&#xFF1A;&#x4F7F;&#x7528;ngx_http_proxy_module</strong></p>
+<pre class="language-"><code class="lang-nginx"><span class="token directive"><span class="token keyword">upstream</span> backend</span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">server</span> server1:8080 max_fails=3 fail_timeout=30s</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">server</span> server2:8080 max_fails=3 fail_timeout=30s</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token directive"><span class="token keyword">server</span></span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">location</span> /</span> <span class="token punctuation">{</span>
+        <span class="token directive"><span class="token keyword">proxy_pass</span> http://backend</span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">proxy_next_upstream</span> error timeout invalid_header http_500 http_502 http_503 http_504</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>&#x65B9;&#x6848;&#x4E8C;&#xFF1A;&#x4F7F;&#x7528;ngx_http_upstream_check_module</strong></p>
+<pre class="language-"><code class="lang-nginx"><span class="token directive"><span class="token keyword">upstream</span> backend</span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">server</span> server1:8080</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">server</span> server2:8080</span><span class="token punctuation">;</span>
+
+    <span class="token directive"><span class="token keyword">check</span> interval=3000 rise=2 fall=3 timeout=1000</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">check_http_send</span> <span class="token string">&quot;HEAD /health HTTP/1.0<span class="token escape entity">\r</span><span class="token escape entity">\n</span><span class="token escape entity">\r</span><span class="token escape entity">\n</span>&quot;</span></span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">check_http_expect_alive</span> http_2xx http_3xx</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>&#x65B9;&#x6848;&#x4E09;&#xFF1A;&#x4F7F;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x5065;&#x5EB7;&#x68C0;&#x67E5;</strong></p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># &#x4F7F;&#x7528;keepalived&#x6216;haproxy&#x8FDB;&#x884C;&#x5065;&#x5EB7;&#x68C0;&#x67E5;</span>
+</code></pre>
+<hr>
+<p><strong>Q20&#xFF1A;&#x5982;&#x4F55;&#x8FDB;&#x884C;Nginx&#x7684;&#x914D;&#x7F6E;&#x7BA1;&#x7406;&#x548C;&#x7248;&#x672C;&#x63A7;&#x5236;&#xFF1F;</strong></p>
+<p><strong>A20&#xFF1A;</strong></p>
+<p><strong>&#x914D;&#x7F6E;&#x7BA1;&#x7406;&#x7B56;&#x7565;&#xFF1A;</strong></p>
+<ol>
+<li><p><strong>&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7ED3;&#x6784;</strong>&#xFF1A;</p>
+<pre class="language-"><code>/etc/nginx/
+&#x251C;&#x2500;&#x2500; nginx.conf          # &#x4E3B;&#x914D;&#x7F6E;&#x6587;&#x4EF6;
+&#x251C;&#x2500;&#x2500; conf.d/             # &#x7AD9;&#x70B9;&#x914D;&#x7F6E;
+&#x2502;   &#x251C;&#x2500;&#x2500; example.com.conf
+&#x2502;   &#x2514;&#x2500;&#x2500; api.example.com.conf
+&#x251C;&#x2500;&#x2500; ssl/                # SSL&#x8BC1;&#x4E66;
+&#x2502;   &#x251C;&#x2500;&#x2500; cert.crt
+&#x2502;   &#x2514;&#x2500;&#x2500; cert.key
+&#x2514;&#x2500;&#x2500; snippets/           # &#x53EF;&#x590D;&#x7528;&#x914D;&#x7F6E;
+ &#x251C;&#x2500;&#x2500; ssl.conf
+ &#x2514;&#x2500;&#x2500; proxy.conf
+</code></pre></li>
+<li><p><strong>&#x7248;&#x672C;&#x63A7;&#x5236;</strong>&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># &#x4F7F;&#x7528;Git&#x7BA1;&#x7406;&#x914D;&#x7F6E;</span>
+<span class="token function">git</span> init /etc/nginx
+<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+<span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">&quot;Initial commit&quot;</span>
+</code></pre>
+</li>
+<li><p><strong>&#x914D;&#x7F6E;&#x6D4B;&#x8BD5;</strong>&#xFF1A;
+```bash</p>
+<h1 id="&#x5728;&#x5E94;&#x7528;&#x524D;&#x6D4B;&#x8BD5;&#x914D;&#x7F6E;"><a name="&#x5728;&#x5E94;&#x7528;&#x524D;&#x6D4B;&#x8BD5;&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x5728;&#x5E94;&#x7528;&#x524D;&#x6D4B;&#x8BD5;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5728;&#x5E94;&#x7528;&#x524D;&#x6D4B;&#x8BD5;&#x914D;&#x7F6E;</h1>
+<p>nginx -t</p>
+</li>
+</ol>
+<h1 id="&#x70ED;&#x66F4;&#x65B0;&#x914D;&#x7F6E;"><a name="&#x70ED;&#x66F4;&#x65B0;&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x70ED;&#x66F4;&#x65B0;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x70ED;&#x66F4;&#x65B0;&#x914D;&#x7F6E;</h1>
+<p>nginx -s reload</p>
+<pre class="language-"><code>
+4. **&#x914D;&#x7F6E;&#x5907;&#x4EFD;**&#xFF1A;
+```bash
+# &#x5B9A;&#x671F;&#x5907;&#x4EFD;&#x914D;&#x7F6E;
+tar -czf nginx-config-$(date +%Y%m%d).tar.gz /etc/nginx
+</code></pre><h2 id="&#x672A;&#x5B8C;&#x5F85;&#x7EED;"><a name="&#x672A;&#x5B8C;&#x5F85;&#x7EED;" class="anchor-navigation-ex-anchor" href="#&#x672A;&#x5B8C;&#x5F85;&#x7EED;"><i class="fa fa-link" aria-hidden="true"></i></a><center>...&#x672A;&#x5B8C;&#x5F85;&#x7EED;...</center></h2>
+<hr>
+<p><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"></p>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<div id="gitalk-container"></div>
+<script>
+  var gitalk = new Gitalk({
+    "clientID": "44d7c96f948be236a8c9",
+    "clientSecret": "fb9fb3178db6640131c4e3eb69f9449e42bba661",
+    "repo": "blog",
+    "owner": "Zhang-jie-jun",
+    "admin": ["Zhang-jie-jun"],
+    "id": location.pathname,      
+    "distractionFreeMode": false  
+  });
+  gitalk.render("gitalk-container");
+</script>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="nats.html" class="navigation navigation-prev " aria-label="Previous page: nats">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../cloudnative/docker.html" class="navigation navigation-next " aria-label="Next page: docker">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"nginx","level":"5.14","depth":1,"next":{"title":"docker","level":"6.1","depth":1,"path":"src/cloudnative/docker.md","ref":"src/cloudnative/docker.md","articles":[]},"previous":{"title":"nats","level":"5.13","depth":1,"path":"src/middleware/nats.md","ref":"src/middleware/nats.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-comscore","prism","-highlight","copy-code-button","search-pro","-search","-lunr","expandable-chapters","splitter","-sharing","github-buttons","donate","anchor-navigation-ex"],"styles":{"website":"./css/gitbook-configure.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"shell":"bash"}},"splitter":{},"search-pro":{},"donate":{"button":"赞赏支持","wechatText":"问题联系","alipayText":"打赏支持","wechat":"https://github.com/Zhang-jie-jun/blog/blob/main/src/image/QR_code.jpg?raw=true","alipay":"https://github.com/Zhang-jie-jun/blog/blob/main/src/image/wechat.jpg?raw=true","title":""},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":false,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true},"theme-comscore":{},"github-buttons":{"buttons":[{"user":"Zhang-jie-jun","repo":"blog","type":"star","count":true,"size":"small"},{"user":"Zhang-jie-jun","width":"160","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"勤劳的螺丝工","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Jack Zhang的博客","language":"zh-hans","gitbook":"*","description":"记录遇到的问题与解决方式，分享我的知识、经历和观点..."},"file":{"path":"src/middleware/nginx.md","mtime":"2026-06-08T14:10:00.398Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2026-06-08T14:40:12.589Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+

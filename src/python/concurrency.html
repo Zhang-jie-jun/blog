@@ -1,0 +1,2061 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>并发编程 · Jack Zhang的博客</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        <meta name="author" content="勤劳的螺丝工">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../css/gitbook-configure.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="decorator.html" />
+    
+    
+    <link rel="prev" href="basic.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"Zhang-jie-jun","repo":"blog","type":"star","count":true,"size":"small"},{"user":"Zhang-jie-jun","width":"160","type":"follow","count":true,"size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">编程基础</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../golang/">
+            
+                <a href="../golang/">
+            
+                    
+                    golang
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../golang/slice.html">
+            
+                <a href="../golang/slice.html">
+            
+                    
+                    slice底层原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../golang/map.html">
+            
+                <a href="../golang/map.html">
+            
+                    
+                    map底层原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../golang/channel.html">
+            
+                <a href="../golang/channel.html">
+            
+                    
+                    并发与Channel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../golang/reflect.html">
+            
+                <a href="../golang/reflect.html">
+            
+                    
+                    反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../golang/context.html">
+            
+                <a href="../golang/context.html">
+            
+                    
+                    context详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../golang/gmp.html">
+            
+                <a href="../golang/gmp.html">
+            
+                    
+                    GMP模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../golang/gc.html">
+            
+                <a href="../golang/gc.html">
+            
+                    
+                    垃圾回收机制(GC)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../golang/module.html">
+            
+                <a href="../golang/module.html">
+            
+                    
+                    module管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../golang/ut.html">
+            
+                <a href="../golang/ut.html">
+            
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../c++/">
+            
+                <a href="../c++/">
+            
+                    
+                    C/C++
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../c++/boost.html">
+            
+                <a href="../c++/boost.html">
+            
+                    
+                    boost库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../c++/concurrency.html">
+            
+                <a href="../c++/concurrency.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../c++/design_pattern.html">
+            
+                <a href="../c++/design_pattern.html">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../c++/memory.html">
+            
+                <a href="../c++/memory.html">
+            
+                    
+                    内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../c++/oop.html">
+            
+                <a href="../c++/oop.html">
+            
+                    
+                    面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../c++/smart_ptr.html">
+            
+                <a href="../c++/smart_ptr.html">
+            
+                    
+                    智能指针
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../c++/stl.html">
+            
+                <a href="../c++/stl.html">
+            
+                    
+                    STL详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="../c++/template.html">
+            
+                <a href="../c++/template.html">
+            
+                    
+                    模板编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="basic.html">
+            
+                <a href="basic.html">
+            
+                    
+                    基础语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3.2" data-path="concurrency.html">
+            
+                <a href="concurrency.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="decorator.html">
+            
+                <a href="decorator.html">
+            
+                    
+                    装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="design_pattern.html">
+            
+                <a href="design_pattern.html">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="generator.html">
+            
+                <a href="generator.html">
+            
+                    
+                    生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" data-path="memory.html">
+            
+                <a href="memory.html">
+            
+                    
+                    内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.7" data-path="metaprogramming.html">
+            
+                <a href="metaprogramming.html">
+            
+                    
+                    元编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.8" data-path="oop.html">
+            
+                <a href="oop.html">
+            
+                    
+                    面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.9" data-path="stdlib.html">
+            
+                <a href="stdlib.html">
+            
+                    
+                    标准库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.10" data-path="thirdparty.html">
+            
+                <a href="thirdparty.html">
+            
+                    
+                    第三方库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../algorithm/">
+            
+                <a href="../algorithm/">
+            
+                    
+                    常用算法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../algorithm/stack.html">
+            
+                <a href="../algorithm/stack.html">
+            
+                    
+                    栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../algorithm/queue.html">
+            
+                <a href="../algorithm/queue.html">
+            
+                    
+                    队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="../algorithm/linkedlist.html">
+            
+                <a href="../algorithm/linkedlist.html">
+            
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="../algorithm/hash.html">
+            
+                <a href="../algorithm/hash.html">
+            
+                    
+                    哈希表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.5" data-path="../algorithm/tree.html">
+            
+                <a href="../algorithm/tree.html">
+            
+                    
+                    树算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.6" data-path="../algorithm/graph.html">
+            
+                <a href="../algorithm/graph.html">
+            
+                    
+                    图算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.7" data-path="../algorithm/sort.html">
+            
+                <a href="../algorithm/sort.html">
+            
+                    
+                    排序算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8" data-path="../algorithm/search.html">
+            
+                <a href="../algorithm/search.html">
+            
+                    
+                    搜索算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.9" data-path="../algorithm/dp.html">
+            
+                <a href="../algorithm/dp.html">
+            
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.10" data-path="../algorithm/greedy.html">
+            
+                <a href="../algorithm/greedy.html">
+            
+                    
+                    贪心算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.11" data-path="../algorithm/backtracking.html">
+            
+                <a href="../algorithm/backtracking.html">
+            
+                    
+                    回溯算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.12" data-path="../algorithm/divide.html">
+            
+                <a href="../algorithm/divide.html">
+            
+                    
+                    分治算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.13" data-path="../algorithm/string.html">
+            
+                <a href="../algorithm/string.html">
+            
+                    
+                    字符串算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../tools/">
+            
+                <a href="../tools/">
+            
+                    
+                    开发工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../tools/git.html">
+            
+                <a href="../tools/git.html">
+            
+                    
+                    git的使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="../tools/svn.html">
+            
+                <a href="../tools/svn.html">
+            
+                    
+                    svn的使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3" data-path="../tools/makefile.html">
+            
+                <a href="../tools/makefile.html">
+            
+                    
+                    Makefile使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.4" data-path="../tools/cmake.html">
+            
+                <a href="../tools/cmake.html">
+            
+                    
+                    CMake使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.5" data-path="../tools/wireshark.html">
+            
+                <a href="../tools/wireshark.html">
+            
+                    
+                    Wireshark使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.6" data-path="../tools/postman.html">
+            
+                <a href="../tools/postman.html">
+            
+                    
+                    Postman使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.7" data-path="../tools/navicat.html">
+            
+                <a href="../tools/navicat.html">
+            
+                    
+                    Navicat使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.8" data-path="../tools/dbeaver.html">
+            
+                <a href="../tools/dbeaver.html">
+            
+                    
+                    DBeaver使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.9" data-path="../tools/npm.html">
+            
+                <a href="../tools/npm.html">
+            
+                    
+                    npm使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.10" data-path="../tools/pip.html">
+            
+                <a href="../tools/pip.html">
+            
+                    
+                    pip使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Linux基础</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../linux/">
+            
+                <a href="../linux/">
+            
+                    
+                    Linux常用命令
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../linux/grep.html">
+            
+                <a href="../linux/grep.html">
+            
+                    
+                    Linux三剑客
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../linux/iostat.html">
+            
+                <a href="../linux/iostat.html">
+            
+                    
+                    磁盘I/O统计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../linux/mount.html">
+            
+                <a href="../linux/mount.html">
+            
+                    
+                    挂载命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../linux/fstab.html">
+            
+                <a href="../linux/fstab.html">
+            
+                    
+                    fstab配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../linux/lsblk.html">
+            
+                <a href="../linux/lsblk.html">
+            
+                    
+                    磁盘分区信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="../linux/df.html">
+            
+                <a href="../linux/df.html">
+            
+                    
+                    磁盘空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7" data-path="../linux/du.html">
+            
+                <a href="../linux/du.html">
+            
+                    
+                    目录大小
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.8" data-path="../linux/free.html">
+            
+                <a href="../linux/free.html">
+            
+                    
+                    内存使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.9" data-path="../linux/top.html">
+            
+                <a href="../linux/top.html">
+            
+                    
+                    进程监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.10" data-path="../linux/netstat.html">
+            
+                <a href="../linux/netstat.html">
+            
+                    
+                    网络状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.11" data-path="../linux/ps.html">
+            
+                <a href="../linux/ps.html">
+            
+                    
+                    进程状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.12" data-path="../linux/kill.html">
+            
+                <a href="../linux/kill.html">
+            
+                    
+                    进程终止
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.13" data-path="../linux/tar.html">
+            
+                <a href="../linux/tar.html">
+            
+                    
+                    压缩解压
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.14" data-path="../linux/disk.html">
+            
+                <a href="../linux/disk.html">
+            
+                    
+                    磁盘管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.15" data-path="../linux/filehandle.html">
+            
+                <a href="../linux/filehandle.html">
+            
+                    
+                    文件句柄
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.16" data-path="../linux/dd.html">
+            
+                <a href="../linux/dd.html">
+            
+                    
+                    dd命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.17" data-path="../linux/packagemanage.html">
+            
+                <a href="../linux/packagemanage.html">
+            
+                    
+                    包管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.18" data-path="../linux/network.html">
+            
+                <a href="../linux/network.html">
+            
+                    
+                    网络管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.19" data-path="../linux/system.html">
+            
+                <a href="../linux/system.html">
+            
+                    
+                    系统管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.20" data-path="../linux/monitor.html">
+            
+                <a href="../linux/monitor.html">
+            
+                    
+                    系统监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.21" data-path="../linux/file.html">
+            
+                <a href="../linux/file.html">
+            
+                    
+                    文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.22" data-path="../linux/text.html">
+            
+                <a href="../linux/text.html">
+            
+                    
+                    文本处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.23" data-path="../linux/security.html">
+            
+                <a href="../linux/security.html">
+            
+                    
+                    安全相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">网络基础</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../network/model.html">
+            
+                <a href="../network/model.html">
+            
+                    
+                    网络模型详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../network/tcp.html">
+            
+                <a href="../network/tcp.html">
+            
+                    
+                    TCP协议原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../network/http.html">
+            
+                <a href="../network/http.html">
+            
+                    
+                    HTTP/HTTPS原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../network/cdn.html">
+            
+                <a href="../network/cdn.html">
+            
+                    
+                    CDN详细教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../network/rpc.html">
+            
+                <a href="../network/rpc.html">
+            
+                    
+                    RPC原理解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">中间件</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../middleware/mysql.html">
+            
+                <a href="../middleware/mysql.html">
+            
+                    
+                    mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../middleware/redis.html">
+            
+                <a href="../middleware/redis.html">
+            
+                    
+                    redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../middleware/consul.html">
+            
+                <a href="../middleware/consul.html">
+            
+                    
+                    consul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../middleware/etcd.html">
+            
+                <a href="../middleware/etcd.html">
+            
+                    
+                    etcd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../middleware/gin.html">
+            
+                <a href="../middleware/gin.html">
+            
+                    
+                    gin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../middleware/gorm.html">
+            
+                <a href="../middleware/gorm.html">
+            
+                    
+                    gorm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../middleware/grpc.html">
+            
+                <a href="../middleware/grpc.html">
+            
+                    
+                    grpc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="../middleware/thrift.html">
+            
+                <a href="../middleware/thrift.html">
+            
+                    
+                    thrift
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="../middleware/cassandra.html">
+            
+                <a href="../middleware/cassandra.html">
+            
+                    
+                    cassandra
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="../middleware/elasticsearch.html">
+            
+                <a href="../middleware/elasticsearch.html">
+            
+                    
+                    elasticsearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="../middleware/jwt.html">
+            
+                <a href="../middleware/jwt.html">
+            
+                    
+                    jwt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.12" data-path="../middleware/kafka.html">
+            
+                <a href="../middleware/kafka.html">
+            
+                    
+                    kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.13" data-path="../middleware/nats.html">
+            
+                <a href="../middleware/nats.html">
+            
+                    
+                    nats
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.14" data-path="../middleware/nginx.html">
+            
+                <a href="../middleware/nginx.html">
+            
+                    
+                    nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">云原生与虚拟化技术</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../cloudnative/docker.html">
+            
+                <a href="../cloudnative/docker.html">
+            
+                    
+                    docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../cloudnative/kubernetes.html">
+            
+                <a href="../cloudnative/kubernetes.html">
+            
+                    
+                    kubernetes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../cloudnative/ceph.html">
+            
+                <a href="../cloudnative/ceph.html">
+            
+                    
+                    ceph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../cloudnative/kvm.html">
+            
+                <a href="../cloudnative/kvm.html">
+            
+                    
+                    kvm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../cloudnative/libvirt.html">
+            
+                <a href="../cloudnative/libvirt.html">
+            
+                    
+                    libvirt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../cloudnative/qcow2.html">
+            
+                <a href="../cloudnative/qcow2.html">
+            
+                    
+                    qcow2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="../cloudnative/qemu.html">
+            
+                <a href="../cloudnative/qemu.html">
+            
+                    
+                    qemu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="../cloudnative/sanlock.html">
+            
+                <a href="../cloudnative/sanlock.html">
+            
+                    
+                    sanlock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="../cloudnative/openstack.html">
+            
+                <a href="../cloudnative/openstack.html">
+            
+                    
+                    openstack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="../cloudnative/vmware.html">
+            
+                <a href="../cloudnative/vmware.html">
+            
+                    
+                    vmware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="../cloudnative/distributed-network.html">
+            
+                <a href="../cloudnative/distributed-network.html">
+            
+                    
+                    distributed-network
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">系统架构</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../framework/architecture-evolution.html">
+            
+                <a href="../framework/architecture-evolution.html">
+            
+                    
+                    架构演进
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../framework/cluster-architecture.html">
+            
+                <a href="../framework/cluster-architecture.html">
+            
+                    
+                    集群架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../framework/distributed-architecture.html">
+            
+                <a href="../framework/distributed-architecture.html">
+            
+                    
+                    分布式架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../framework/microservices-architecture.html">
+            
+                <a href="../framework/microservices-architecture.html">
+            
+                    
+                    微服务架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">闲聊杂谈</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../gossip/编程的智慧.html">
+            
+                <a href="../gossip/编程的智慧.html">
+            
+                    
+                    编程的智慧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../gossip/如何阅读别人的代码.html">
+            
+                <a href="../gossip/如何阅读别人的代码.html">
+            
+                    
+                    如何阅读别人的代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >并发编程</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#python-&#x5E76;&#x53D1;&#x7F16;&#x7A0B;"><b></b>Python &#x5E76;&#x53D1;&#x7F16;&#x7A0B;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5E76;&#x53D1;&#x7F16;&#x7A0B;&#x7B80;&#x4ECB;"><b></b>&#x5E76;&#x53D1;&#x7F16;&#x7A0B;&#x7B80;&#x4ECB;</a></li><li><span class="title-icon "></span><a href="#1-&#x591A;&#x7EBF;&#x7A0B;"><b></b>1. &#x591A;&#x7EBF;&#x7A0B;</a></li><ul><li><span class="title-icon "></span><a href="#threading-&#x6A21;&#x5757;"><b></b>threading &#x6A21;&#x5757;</a></li><li><span class="title-icon "></span><a href="#&#x7EBF;&#x7A0B;&#x540C;&#x6B65;"><b></b>&#x7EBF;&#x7A0B;&#x540C;&#x6B65;</a></li></ul><li><span class="title-icon "></span><a href="#2-&#x591A;&#x8FDB;&#x7A0B;"><b></b>2. &#x591A;&#x8FDB;&#x7A0B;</a></li><ul><li><span class="title-icon "></span><a href="#multiprocessing-&#x6A21;&#x5757;"><b></b>multiprocessing &#x6A21;&#x5757;</a></li><li><span class="title-icon "></span><a href="#&#x8FDB;&#x7A0B;&#x6C60;"><b></b>&#x8FDB;&#x7A0B;&#x6C60;</a></li></ul><li><span class="title-icon "></span><a href="#3-&#x534F;&#x7A0B;"><b></b>3. &#x534F;&#x7A0B;</a></li><ul><li><span class="title-icon "></span><a href="#asyncio-&#x6A21;&#x5757;"><b></b>asyncio &#x6A21;&#x5757;</a></li><li><span class="title-icon "></span><a href="#&#x5F02;&#x6B65;io"><b></b>&#x5F02;&#x6B65;IO</a></li></ul><li><span class="title-icon "></span><a href="#4-gil-&#x5168;&#x5C40;&#x89E3;&#x91CA;&#x5668;&#x9501;"><b></b>4. GIL &#x5168;&#x5C40;&#x89E3;&#x91CA;&#x5668;&#x9501;</a></li><ul><li><span class="title-icon "></span><a href="#gil-&#x7684;&#x5F71;&#x54CD;"><b></b>GIL &#x7684;&#x5F71;&#x54CD;</a></li><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;&#x591A;&#x8FDB;&#x7A0B;&#x7ED5;&#x8FC7;-gil"><b></b>&#x4F7F;&#x7528;&#x591A;&#x8FDB;&#x7A0B;&#x7ED5;&#x8FC7; GIL</a></li></ul><li><span class="title-icon "></span><a href="#5-&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;"><b></b>5. &#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;</a></li><li><span class="title-icon "></span><a href="#&#x5E38;&#x89C1;&#x9762;&#x8BD5;&#x9898;"><b></b>&#x5E38;&#x89C1;&#x9762;&#x8BD5;&#x9898;</a></li><ul><li><span class="title-icon "></span><a href="#1-gil-&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><b></b>1. GIL &#x662F;&#x4EC0;&#x4E48;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#2-&#x591A;&#x7EBF;&#x7A0B;&#x548C;&#x591A;&#x8FDB;&#x7A0B;&#x7684;&#x533A;&#x522B;&#xFF1F;"><b></b>2. &#x591A;&#x7EBF;&#x7A0B;&#x548C;&#x591A;&#x8FDB;&#x7A0B;&#x7684;&#x533A;&#x522B;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#3-&#x534F;&#x7A0B;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><b></b>3. &#x534F;&#x7A0B;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#4-asyncawait-&#x7684;&#x4F5C;&#x7528;&#xFF1F;"><b></b>4. async/await &#x7684;&#x4F5C;&#x7528;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#5-&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x4F7F;&#x7528;&#x591A;&#x8FDB;&#x7A0B;&#xFF1F;"><b></b>5. &#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x4F7F;&#x7528;&#x591A;&#x8FDB;&#x7A0B;&#xFF1F;</a></li></ul><li><span class="title-icon "></span><a href="#&#x672A;&#x5B8C;&#x5F85;&#x7EED;"><b></b>...&#x672A;&#x5B8C;&#x5F85;&#x7EED;...</a></li></ul></ul></div><a href="#python-&#x5E76;&#x53D1;&#x7F16;&#x7A0B;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="python-&#x5E76;&#x53D1;&#x7F16;&#x7A0B;"><a name="python-&#x5E76;&#x53D1;&#x7F16;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#python-&#x5E76;&#x53D1;&#x7F16;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>Python &#x5E76;&#x53D1;&#x7F16;&#x7A0B;</h1>
+<h2 id="&#x5E76;&#x53D1;&#x7F16;&#x7A0B;&#x7B80;&#x4ECB;"><a name="&#x5E76;&#x53D1;&#x7F16;&#x7A0B;&#x7B80;&#x4ECB;" class="anchor-navigation-ex-anchor" href="#&#x5E76;&#x53D1;&#x7F16;&#x7A0B;&#x7B80;&#x4ECB;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E76;&#x53D1;&#x7F16;&#x7A0B;&#x7B80;&#x4ECB;</h2>
+<p>Python &#x63D0;&#x4F9B;&#x4E86;&#x591A;&#x79CD;&#x5E76;&#x53D1;&#x7F16;&#x7A0B;&#x65B9;&#x5F0F;&#xFF0C;&#x5305;&#x62EC;&#x591A;&#x7EBF;&#x7A0B;&#x3001;&#x591A;&#x8FDB;&#x7A0B;&#x548C;&#x534F;&#x7A0B;&#x3002;</p>
+<hr>
+<h2 id="1-&#x591A;&#x7EBF;&#x7A0B;"><a name="1-&#x591A;&#x7EBF;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#1-&#x591A;&#x7EBF;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x591A;&#x7EBF;&#x7A0B;</h2>
+<h3 id="threading-&#x6A21;&#x5757;"><a name="threading-&#x6A21;&#x5757;" class="anchor-navigation-ex-anchor" href="#threading-&#x6A21;&#x5757;"><i class="fa fa-link" aria-hidden="true"></i></a>threading &#x6A21;&#x5757;</h3>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> threading
+<span class="token keyword">import</span> time
+
+<span class="token keyword">def</span> <span class="token function">worker</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f&quot;Worker </span><span class="token interpolation"><span class="token punctuation">{</span>name<span class="token punctuation">}</span></span><span class="token string"> started&quot;</span></span><span class="token punctuation">)</span>
+    time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f&quot;Worker </span><span class="token interpolation"><span class="token punctuation">{</span>name<span class="token punctuation">}</span></span><span class="token string"> finished&quot;</span></span><span class="token punctuation">)</span>
+
+<span class="token comment"># &#x521B;&#x5EFA;&#x7EBF;&#x7A0B;</span>
+threads <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    t <span class="token operator">=</span> threading<span class="token punctuation">.</span>Thread<span class="token punctuation">(</span>target<span class="token operator">=</span>worker<span class="token punctuation">,</span> args<span class="token operator">=</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f&quot;Thread-</span><span class="token interpolation"><span class="token punctuation">{</span>i<span class="token punctuation">}</span></span><span class="token string">&quot;</span></span><span class="token punctuation">,</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    threads<span class="token punctuation">.</span>append<span class="token punctuation">(</span>t<span class="token punctuation">)</span>
+    t<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment"># &#x7B49;&#x5F85;&#x6240;&#x6709;&#x7EBF;&#x7A0B;&#x5B8C;&#x6210;</span>
+<span class="token keyword">for</span> t <span class="token keyword">in</span> threads<span class="token punctuation">:</span>
+    t<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="&#x7EBF;&#x7A0B;&#x540C;&#x6B65;"><a name="&#x7EBF;&#x7A0B;&#x540C;&#x6B65;" class="anchor-navigation-ex-anchor" href="#&#x7EBF;&#x7A0B;&#x540C;&#x6B65;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7EBF;&#x7A0B;&#x540C;&#x6B65;</h3>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> threading
+
+counter <span class="token operator">=</span> <span class="token number">0</span>
+lock <span class="token operator">=</span> threading<span class="token punctuation">.</span>Lock<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">def</span> <span class="token function">increment</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">global</span> counter
+    <span class="token keyword">for</span> _ <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">100000</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">with</span> lock<span class="token punctuation">:</span>
+            counter <span class="token operator">+=</span> <span class="token number">1</span>
+
+t1 <span class="token operator">=</span> threading<span class="token punctuation">.</span>Thread<span class="token punctuation">(</span>target<span class="token operator">=</span>increment<span class="token punctuation">)</span>
+t2 <span class="token operator">=</span> threading<span class="token punctuation">.</span>Thread<span class="token punctuation">(</span>target<span class="token operator">=</span>increment<span class="token punctuation">)</span>
+t1<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token punctuation">)</span>
+t2<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token punctuation">)</span>
+t1<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>
+t2<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>counter<span class="token punctuation">)</span>  <span class="token comment"># 200000</span>
+</code></pre>
+<hr>
+<h2 id="2-&#x591A;&#x8FDB;&#x7A0B;"><a name="2-&#x591A;&#x8FDB;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#2-&#x591A;&#x8FDB;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x591A;&#x8FDB;&#x7A0B;</h2>
+<h3 id="multiprocessing-&#x6A21;&#x5757;"><a name="multiprocessing-&#x6A21;&#x5757;" class="anchor-navigation-ex-anchor" href="#multiprocessing-&#x6A21;&#x5757;"><i class="fa fa-link" aria-hidden="true"></i></a>multiprocessing &#x6A21;&#x5757;</h3>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> multiprocessing
+<span class="token keyword">import</span> os
+
+<span class="token keyword">def</span> <span class="token function">worker</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f&quot;Worker </span><span class="token interpolation"><span class="token punctuation">{</span>name<span class="token punctuation">}</span></span><span class="token string"> started, PID: </span><span class="token interpolation"><span class="token punctuation">{</span>os<span class="token punctuation">.</span>getpid<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token string">&quot;</span></span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token string-interpolation"><span class="token string">f&quot;Result from </span><span class="token interpolation"><span class="token punctuation">{</span>name<span class="token punctuation">}</span></span><span class="token string">&quot;</span></span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">&quot;__main__&quot;</span><span class="token punctuation">:</span>
+    processes <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        p <span class="token operator">=</span> multiprocessing<span class="token punctuation">.</span>Process<span class="token punctuation">(</span>target<span class="token operator">=</span>worker<span class="token punctuation">,</span> args<span class="token operator">=</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f&quot;Process-</span><span class="token interpolation"><span class="token punctuation">{</span>i<span class="token punctuation">}</span></span><span class="token string">&quot;</span></span><span class="token punctuation">,</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        processes<span class="token punctuation">.</span>append<span class="token punctuation">(</span>p<span class="token punctuation">)</span>
+        p<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">for</span> p <span class="token keyword">in</span> processes<span class="token punctuation">:</span>
+        p<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="&#x8FDB;&#x7A0B;&#x6C60;"><a name="&#x8FDB;&#x7A0B;&#x6C60;" class="anchor-navigation-ex-anchor" href="#&#x8FDB;&#x7A0B;&#x6C60;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FDB;&#x7A0B;&#x6C60;</h3>
+<pre class="language-"><code class="lang-python"><span class="token keyword">from</span> multiprocessing <span class="token keyword">import</span> Pool
+
+<span class="token keyword">def</span> <span class="token function">square</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> x <span class="token operator">**</span> <span class="token number">2</span>
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">&quot;__main__&quot;</span><span class="token punctuation">:</span>
+    <span class="token keyword">with</span> Pool<span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span> <span class="token keyword">as</span> pool<span class="token punctuation">:</span>
+        results <span class="token operator">=</span> pool<span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>square<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>results<span class="token punctuation">)</span>  <span class="token comment"># [1, 4, 9, 16, 25]</span>
+</code></pre>
+<hr>
+<h2 id="3-&#x534F;&#x7A0B;"><a name="3-&#x534F;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#3-&#x534F;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x534F;&#x7A0B;</h2>
+<h3 id="asyncio-&#x6A21;&#x5757;"><a name="asyncio-&#x6A21;&#x5757;" class="anchor-navigation-ex-anchor" href="#asyncio-&#x6A21;&#x5757;"><i class="fa fa-link" aria-hidden="true"></i></a>asyncio &#x6A21;&#x5757;</h3>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> asyncio
+
+<span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">say_hello</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f&quot;Hello, </span><span class="token interpolation"><span class="token punctuation">{</span>name<span class="token punctuation">}</span></span><span class="token string">&quot;</span></span><span class="token punctuation">)</span>
+    <span class="token keyword">await</span> asyncio<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f&quot;Goodbye, </span><span class="token interpolation"><span class="token punctuation">{</span>name<span class="token punctuation">}</span></span><span class="token string">&quot;</span></span><span class="token punctuation">)</span>
+
+<span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment"># &#x521B;&#x5EFA;&#x4EFB;&#x52A1;</span>
+    task1 <span class="token operator">=</span> asyncio<span class="token punctuation">.</span>create_task<span class="token punctuation">(</span>say_hello<span class="token punctuation">(</span><span class="token string">&quot;Alice&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    task2 <span class="token operator">=</span> asyncio<span class="token punctuation">.</span>create_task<span class="token punctuation">(</span>say_hello<span class="token punctuation">(</span><span class="token string">&quot;Bob&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># &#x7B49;&#x5F85;&#x4EFB;&#x52A1;&#x5B8C;&#x6210;</span>
+    <span class="token keyword">await</span> task1
+    <span class="token keyword">await</span> task2
+
+<span class="token comment"># &#x8FD0;&#x884C;&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;</span>
+asyncio<span class="token punctuation">.</span>run<span class="token punctuation">(</span>main<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="&#x5F02;&#x6B65;io"><a name="&#x5F02;&#x6B65;io" class="anchor-navigation-ex-anchor" href="#&#x5F02;&#x6B65;io"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5F02;&#x6B65;IO</h3>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> asyncio
+<span class="token keyword">import</span> aiohttp
+
+<span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">fetch</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">async</span> <span class="token keyword">with</span> aiohttp<span class="token punctuation">.</span>ClientSession<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">as</span> session<span class="token punctuation">:</span>
+        <span class="token keyword">async</span> <span class="token keyword">with</span> session<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token punctuation">)</span> <span class="token keyword">as</span> response<span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token keyword">await</span> response<span class="token punctuation">.</span>text<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">async</span> <span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    urls <span class="token operator">=</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;https://api.example.com/data1&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;https://api.example.com/data2&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;https://api.example.com/data3&quot;</span>
+    <span class="token punctuation">]</span>
+
+    tasks <span class="token operator">=</span> <span class="token punctuation">[</span>fetch<span class="token punctuation">(</span>url<span class="token punctuation">)</span> <span class="token keyword">for</span> url <span class="token keyword">in</span> urls<span class="token punctuation">]</span>
+    results <span class="token operator">=</span> <span class="token keyword">await</span> asyncio<span class="token punctuation">.</span>gather<span class="token punctuation">(</span><span class="token operator">*</span>tasks<span class="token punctuation">)</span>
+
+    <span class="token keyword">for</span> result <span class="token keyword">in</span> results<span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">100</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+asyncio<span class="token punctuation">.</span>run<span class="token punctuation">(</span>main<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<hr>
+<h2 id="4-gil-&#x5168;&#x5C40;&#x89E3;&#x91CA;&#x5668;&#x9501;"><a name="4-gil-&#x5168;&#x5C40;&#x89E3;&#x91CA;&#x5668;&#x9501;" class="anchor-navigation-ex-anchor" href="#4-gil-&#x5168;&#x5C40;&#x89E3;&#x91CA;&#x5668;&#x9501;"><i class="fa fa-link" aria-hidden="true"></i></a>4. GIL &#x5168;&#x5C40;&#x89E3;&#x91CA;&#x5668;&#x9501;</h2>
+<h3 id="gil-&#x7684;&#x5F71;&#x54CD;"><a name="gil-&#x7684;&#x5F71;&#x54CD;" class="anchor-navigation-ex-anchor" href="#gil-&#x7684;&#x5F71;&#x54CD;"><i class="fa fa-link" aria-hidden="true"></i></a>GIL &#x7684;&#x5F71;&#x54CD;</h3>
+<pre class="language-"><code class="lang-python"><span class="token comment"># CPU &#x5BC6;&#x96C6;&#x578B;&#x4EFB;&#x52A1;&#xFF1A;&#x591A;&#x7EBF;&#x7A0B;&#x4E0D;&#x63D0;&#x901F;</span>
+<span class="token keyword">import</span> threading
+
+<span class="token keyword">def</span> <span class="token function">cpu_bound</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    result <span class="token operator">=</span> <span class="token number">0</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token operator">**</span><span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        result <span class="token operator">+=</span> i
+    <span class="token keyword">return</span> result
+
+<span class="token comment"># &#x591A;&#x7EBF;&#x7A0B;&#x6267;&#x884C;</span>
+threads <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token keyword">for</span> _ <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    t <span class="token operator">=</span> threading<span class="token punctuation">.</span>Thread<span class="token punctuation">(</span>target<span class="token operator">=</span>cpu_bound<span class="token punctuation">)</span>
+    threads<span class="token punctuation">.</span>append<span class="token punctuation">(</span>t<span class="token punctuation">)</span>
+    t<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">for</span> t <span class="token keyword">in</span> threads<span class="token punctuation">:</span>
+    t<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="&#x4F7F;&#x7528;&#x591A;&#x8FDB;&#x7A0B;&#x7ED5;&#x8FC7;-gil"><a name="&#x4F7F;&#x7528;&#x591A;&#x8FDB;&#x7A0B;&#x7ED5;&#x8FC7;-gil" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;&#x591A;&#x8FDB;&#x7A0B;&#x7ED5;&#x8FC7;-gil"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;&#x591A;&#x8FDB;&#x7A0B;&#x7ED5;&#x8FC7; GIL</h3>
+<pre class="language-"><code class="lang-python"><span class="token keyword">from</span> multiprocessing <span class="token keyword">import</span> Pool
+
+<span class="token keyword">def</span> <span class="token function">cpu_bound</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    result <span class="token operator">=</span> <span class="token number">0</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token operator">**</span><span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        result <span class="token operator">+=</span> i
+    <span class="token keyword">return</span> result
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">&quot;__main__&quot;</span><span class="token punctuation">:</span>
+    <span class="token keyword">with</span> Pool<span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span> <span class="token keyword">as</span> pool<span class="token punctuation">:</span>
+        results <span class="token operator">=</span> pool<span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>cpu_bound<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+<hr>
+<h2 id="5-&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;"><a name="5-&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;" class="anchor-navigation-ex-anchor" href="#5-&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;"><i class="fa fa-link" aria-hidden="true"></i></a>5. &#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;</h2>
+<pre class="language-"><code class="lang-python"><span class="token keyword">from</span> collections <span class="token keyword">import</span> deque
+<span class="token keyword">import</span> threading
+
+<span class="token keyword">class</span> <span class="token class-name">ThreadSafeQueue</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>queue <span class="token operator">=</span> deque<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>lock <span class="token operator">=</span> threading<span class="token punctuation">.</span>Lock<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">enqueue</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> item<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">with</span> self<span class="token punctuation">.</span>lock<span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>queue<span class="token punctuation">.</span>append<span class="token punctuation">(</span>item<span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">dequeue</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">with</span> self<span class="token punctuation">.</span>lock<span class="token punctuation">:</span>
+            <span class="token keyword">if</span> self<span class="token punctuation">.</span>queue<span class="token punctuation">:</span>
+                <span class="token keyword">return</span> self<span class="token punctuation">.</span>queue<span class="token punctuation">.</span>popleft<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token keyword">return</span> <span class="token boolean">None</span>
+</code></pre>
+<hr>
+<h2 id="&#x5E38;&#x89C1;&#x9762;&#x8BD5;&#x9898;"><a name="&#x5E38;&#x89C1;&#x9762;&#x8BD5;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x89C1;&#x9762;&#x8BD5;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E38;&#x89C1;&#x9762;&#x8BD5;&#x9898;</h2>
+<h3 id="1-gil-&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><a name="1-gil-&#x662F;&#x4EC0;&#x4E48;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#1-gil-&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>1. GIL &#x662F;&#x4EC0;&#x4E48;&#xFF1F;</h3>
+<p><strong>&#x7B54;&#x6848;&#xFF1A;</strong>
+GIL&#xFF08;Global Interpreter Lock&#xFF09;&#x662F; Python &#x89E3;&#x91CA;&#x5668;&#x4E2D;&#x7684;&#x4E92;&#x65A5;&#x9501;&#xFF0C;&#x786E;&#x4FDD;&#x540C;&#x4E00;&#x65F6;&#x523B;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x6267;&#x884C; Python &#x5B57;&#x8282;&#x7801;&#x3002;</p>
+<h3 id="2-&#x591A;&#x7EBF;&#x7A0B;&#x548C;&#x591A;&#x8FDB;&#x7A0B;&#x7684;&#x533A;&#x522B;&#xFF1F;"><a name="2-&#x591A;&#x7EBF;&#x7A0B;&#x548C;&#x591A;&#x8FDB;&#x7A0B;&#x7684;&#x533A;&#x522B;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#2-&#x591A;&#x7EBF;&#x7A0B;&#x548C;&#x591A;&#x8FDB;&#x7A0B;&#x7684;&#x533A;&#x522B;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x591A;&#x7EBF;&#x7A0B;&#x548C;&#x591A;&#x8FDB;&#x7A0B;&#x7684;&#x533A;&#x522B;&#xFF1F;</h3>
+<p><strong>&#x7B54;&#x6848;&#xFF1A;</strong>
+| &#x7279;&#x6027; | &#x591A;&#x7EBF;&#x7A0B; | &#x591A;&#x8FDB;&#x7A0B; |
+|------|--------|--------|
+| &#x5185;&#x5B58;&#x5171;&#x4EAB; | &#x5171;&#x4EAB; | &#x4E0D;&#x5171;&#x4EAB; |
+| GIL &#x5F71;&#x54CD; | &#x53D7;&#x5F71;&#x54CD; | &#x4E0D;&#x53D7;&#x5F71;&#x54CD; |
+| &#x5F00;&#x9500; | &#x4F4E; | &#x9AD8; |
+| &#x9002;&#x7528;&#x573A;&#x666F; | IO &#x5BC6;&#x96C6;&#x578B; | CPU &#x5BC6;&#x96C6;&#x578B; |</p>
+<h3 id="3-&#x534F;&#x7A0B;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><a name="3-&#x534F;&#x7A0B;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#3-&#x534F;&#x7A0B;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x534F;&#x7A0B;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</h3>
+<p><strong>&#x7B54;&#x6848;&#xFF1A;</strong>
+&#x534F;&#x7A0B;&#x662F;&#x7528;&#x6237;&#x6001;&#x7684;&#x8F7B;&#x91CF;&#x7EA7;&#x7EBF;&#x7A0B;&#xFF0C;&#x7531;&#x7A0B;&#x5E8F;&#x5458;&#x63A7;&#x5236;&#x8C03;&#x5EA6;&#xFF0C;&#x652F;&#x6301;&#x5F02;&#x6B65;&#x7F16;&#x7A0B;&#x3002;</p>
+<h3 id="4-asyncawait-&#x7684;&#x4F5C;&#x7528;&#xFF1F;"><a name="4-asyncawait-&#x7684;&#x4F5C;&#x7528;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#4-asyncawait-&#x7684;&#x4F5C;&#x7528;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>4. async/await &#x7684;&#x4F5C;&#x7528;&#xFF1F;</h3>
+<p><strong>&#x7B54;&#x6848;&#xFF1A;</strong>
+async &#x5B9A;&#x4E49;&#x5F02;&#x6B65;&#x51FD;&#x6570;&#xFF0C;await &#x6682;&#x505C;&#x6267;&#x884C;&#x7B49;&#x5F85;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x5B8C;&#x6210;&#xFF0C;&#x5B9E;&#x73B0;&#x975E;&#x963B;&#x585E; IO&#x3002;</p>
+<h3 id="5-&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x4F7F;&#x7528;&#x591A;&#x8FDB;&#x7A0B;&#xFF1F;"><a name="5-&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x4F7F;&#x7528;&#x591A;&#x8FDB;&#x7A0B;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#5-&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x4F7F;&#x7528;&#x591A;&#x8FDB;&#x7A0B;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>5. &#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x4F7F;&#x7528;&#x591A;&#x8FDB;&#x7A0B;&#xFF1F;</h3>
+<p><strong>&#x7B54;&#x6848;&#xFF1A;</strong>
+&#x5F53;&#x4EFB;&#x52A1;&#x662F; CPU &#x5BC6;&#x96C6;&#x578B;&#x4E14;&#x9700;&#x8981;&#x5229;&#x7528;&#x591A;&#x6838; CPU &#x65F6;&#xFF0C;&#x4F7F;&#x7528;&#x591A;&#x8FDB;&#x7A0B;&#x3002;</p>
+<h2 id="&#x672A;&#x5B8C;&#x5F85;&#x7EED;"><a name="&#x672A;&#x5B8C;&#x5F85;&#x7EED;" class="anchor-navigation-ex-anchor" href="#&#x672A;&#x5B8C;&#x5F85;&#x7EED;"><i class="fa fa-link" aria-hidden="true"></i></a><center>...&#x672A;&#x5B8C;&#x5F85;&#x7EED;...</center></h2>
+<hr>
+<p><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"></p>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<div id="gitalk-container"></div>
+<script>
+  var gitalk = new Gitalk({
+    "clientID": "44d7c96f948be236a8c9",
+    "clientSecret": "fb9fb3178db6640131c4e3eb69f9449e42bba661",
+    "repo": "blog",
+    "owner": "Zhang-jie-jun",
+    "admin": ["Zhang-jie-jun"],
+    "id": location.pathname,      
+    "distractionFreeMode": false  
+  });
+  gitalk.render("gitalk-container");
+</script>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="basic.html" class="navigation navigation-prev " aria-label="Previous page: 基础语法">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="decorator.html" class="navigation navigation-next " aria-label="Next page: 装饰器">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"并发编程","level":"2.3.2","depth":2,"next":{"title":"装饰器","level":"2.3.3","depth":2,"path":"src/python/decorator.md","ref":"src/python/decorator.md","articles":[]},"previous":{"title":"基础语法","level":"2.3.1","depth":2,"path":"src/python/basic.md","ref":"src/python/basic.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-comscore","prism","-highlight","copy-code-button","search-pro","-search","-lunr","expandable-chapters","splitter","-sharing","github-buttons","donate","anchor-navigation-ex"],"styles":{"website":"./css/gitbook-configure.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"shell":"bash"}},"splitter":{},"search-pro":{},"donate":{"button":"赞赏支持","wechatText":"问题联系","alipayText":"打赏支持","wechat":"https://github.com/Zhang-jie-jun/blog/blob/main/src/image/QR_code.jpg?raw=true","alipay":"https://github.com/Zhang-jie-jun/blog/blob/main/src/image/wechat.jpg?raw=true","title":""},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":false,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true},"theme-comscore":{},"github-buttons":{"buttons":[{"user":"Zhang-jie-jun","repo":"blog","type":"star","count":true,"size":"small"},{"user":"Zhang-jie-jun","width":"160","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"勤劳的螺丝工","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Jack Zhang的博客","language":"zh-hans","gitbook":"*","description":"记录遇到的问题与解决方式，分享我的知识、经历和观点..."},"file":{"path":"src/python/concurrency.md","mtime":"2026-06-08T14:10:00.930Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2026-06-08T14:40:12.589Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+

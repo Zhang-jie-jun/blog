@@ -1,0 +1,2252 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>字符串算法 · Jack Zhang的博客</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        <meta name="author" content="勤劳的螺丝工">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../css/gitbook-configure.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../tools/" />
+    
+    
+    <link rel="prev" href="divide.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"Zhang-jie-jun","repo":"blog","type":"star","count":true,"size":"small"},{"user":"Zhang-jie-jun","width":"160","type":"follow","count":true,"size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">编程基础</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../golang/">
+            
+                <a href="../golang/">
+            
+                    
+                    golang
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../golang/slice.html">
+            
+                <a href="../golang/slice.html">
+            
+                    
+                    slice底层原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../golang/map.html">
+            
+                <a href="../golang/map.html">
+            
+                    
+                    map底层原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../golang/channel.html">
+            
+                <a href="../golang/channel.html">
+            
+                    
+                    并发与Channel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../golang/reflect.html">
+            
+                <a href="../golang/reflect.html">
+            
+                    
+                    反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../golang/context.html">
+            
+                <a href="../golang/context.html">
+            
+                    
+                    context详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../golang/gmp.html">
+            
+                <a href="../golang/gmp.html">
+            
+                    
+                    GMP模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../golang/gc.html">
+            
+                <a href="../golang/gc.html">
+            
+                    
+                    垃圾回收机制(GC)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../golang/module.html">
+            
+                <a href="../golang/module.html">
+            
+                    
+                    module管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../golang/ut.html">
+            
+                <a href="../golang/ut.html">
+            
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../c++/">
+            
+                <a href="../c++/">
+            
+                    
+                    C/C++
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../c++/boost.html">
+            
+                <a href="../c++/boost.html">
+            
+                    
+                    boost库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../c++/concurrency.html">
+            
+                <a href="../c++/concurrency.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../c++/design_pattern.html">
+            
+                <a href="../c++/design_pattern.html">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../c++/memory.html">
+            
+                <a href="../c++/memory.html">
+            
+                    
+                    内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../c++/oop.html">
+            
+                <a href="../c++/oop.html">
+            
+                    
+                    面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../c++/smart_ptr.html">
+            
+                <a href="../c++/smart_ptr.html">
+            
+                    
+                    智能指针
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../c++/stl.html">
+            
+                <a href="../c++/stl.html">
+            
+                    
+                    STL详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="../c++/template.html">
+            
+                <a href="../c++/template.html">
+            
+                    
+                    模板编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../python/">
+            
+                <a href="../python/">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../python/basic.html">
+            
+                <a href="../python/basic.html">
+            
+                    
+                    基础语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../python/concurrency.html">
+            
+                <a href="../python/concurrency.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../python/decorator.html">
+            
+                <a href="../python/decorator.html">
+            
+                    
+                    装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="../python/design_pattern.html">
+            
+                <a href="../python/design_pattern.html">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="../python/generator.html">
+            
+                <a href="../python/generator.html">
+            
+                    
+                    生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" data-path="../python/memory.html">
+            
+                <a href="../python/memory.html">
+            
+                    
+                    内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.7" data-path="../python/metaprogramming.html">
+            
+                <a href="../python/metaprogramming.html">
+            
+                    
+                    元编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.8" data-path="../python/oop.html">
+            
+                <a href="../python/oop.html">
+            
+                    
+                    面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.9" data-path="../python/stdlib.html">
+            
+                <a href="../python/stdlib.html">
+            
+                    
+                    标准库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.10" data-path="../python/thirdparty.html">
+            
+                <a href="../python/thirdparty.html">
+            
+                    
+                    第三方库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    常用算法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="stack.html">
+            
+                <a href="stack.html">
+            
+                    
+                    栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="queue.html">
+            
+                <a href="queue.html">
+            
+                    
+                    队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="linkedlist.html">
+            
+                <a href="linkedlist.html">
+            
+                    
+                    链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="hash.html">
+            
+                <a href="hash.html">
+            
+                    
+                    哈希表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.5" data-path="tree.html">
+            
+                <a href="tree.html">
+            
+                    
+                    树算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.6" data-path="graph.html">
+            
+                <a href="graph.html">
+            
+                    
+                    图算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.7" data-path="sort.html">
+            
+                <a href="sort.html">
+            
+                    
+                    排序算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8" data-path="search.html">
+            
+                <a href="search.html">
+            
+                    
+                    搜索算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.9" data-path="dp.html">
+            
+                <a href="dp.html">
+            
+                    
+                    动态规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.10" data-path="greedy.html">
+            
+                <a href="greedy.html">
+            
+                    
+                    贪心算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.11" data-path="backtracking.html">
+            
+                <a href="backtracking.html">
+            
+                    
+                    回溯算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.12" data-path="divide.html">
+            
+                <a href="divide.html">
+            
+                    
+                    分治算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.4.13" data-path="string.html">
+            
+                <a href="string.html">
+            
+                    
+                    字符串算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../tools/">
+            
+                <a href="../tools/">
+            
+                    
+                    开发工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../tools/git.html">
+            
+                <a href="../tools/git.html">
+            
+                    
+                    git的使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="../tools/svn.html">
+            
+                <a href="../tools/svn.html">
+            
+                    
+                    svn的使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3" data-path="../tools/makefile.html">
+            
+                <a href="../tools/makefile.html">
+            
+                    
+                    Makefile使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.4" data-path="../tools/cmake.html">
+            
+                <a href="../tools/cmake.html">
+            
+                    
+                    CMake使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.5" data-path="../tools/wireshark.html">
+            
+                <a href="../tools/wireshark.html">
+            
+                    
+                    Wireshark使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.6" data-path="../tools/postman.html">
+            
+                <a href="../tools/postman.html">
+            
+                    
+                    Postman使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.7" data-path="../tools/navicat.html">
+            
+                <a href="../tools/navicat.html">
+            
+                    
+                    Navicat使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.8" data-path="../tools/dbeaver.html">
+            
+                <a href="../tools/dbeaver.html">
+            
+                    
+                    DBeaver使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.9" data-path="../tools/npm.html">
+            
+                <a href="../tools/npm.html">
+            
+                    
+                    npm使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.10" data-path="../tools/pip.html">
+            
+                <a href="../tools/pip.html">
+            
+                    
+                    pip使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Linux基础</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../linux/">
+            
+                <a href="../linux/">
+            
+                    
+                    Linux常用命令
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../linux/grep.html">
+            
+                <a href="../linux/grep.html">
+            
+                    
+                    Linux三剑客
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../linux/iostat.html">
+            
+                <a href="../linux/iostat.html">
+            
+                    
+                    磁盘I/O统计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../linux/mount.html">
+            
+                <a href="../linux/mount.html">
+            
+                    
+                    挂载命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../linux/fstab.html">
+            
+                <a href="../linux/fstab.html">
+            
+                    
+                    fstab配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../linux/lsblk.html">
+            
+                <a href="../linux/lsblk.html">
+            
+                    
+                    磁盘分区信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="../linux/df.html">
+            
+                <a href="../linux/df.html">
+            
+                    
+                    磁盘空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7" data-path="../linux/du.html">
+            
+                <a href="../linux/du.html">
+            
+                    
+                    目录大小
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.8" data-path="../linux/free.html">
+            
+                <a href="../linux/free.html">
+            
+                    
+                    内存使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.9" data-path="../linux/top.html">
+            
+                <a href="../linux/top.html">
+            
+                    
+                    进程监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.10" data-path="../linux/netstat.html">
+            
+                <a href="../linux/netstat.html">
+            
+                    
+                    网络状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.11" data-path="../linux/ps.html">
+            
+                <a href="../linux/ps.html">
+            
+                    
+                    进程状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.12" data-path="../linux/kill.html">
+            
+                <a href="../linux/kill.html">
+            
+                    
+                    进程终止
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.13" data-path="../linux/tar.html">
+            
+                <a href="../linux/tar.html">
+            
+                    
+                    压缩解压
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.14" data-path="../linux/disk.html">
+            
+                <a href="../linux/disk.html">
+            
+                    
+                    磁盘管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.15" data-path="../linux/filehandle.html">
+            
+                <a href="../linux/filehandle.html">
+            
+                    
+                    文件句柄
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.16" data-path="../linux/dd.html">
+            
+                <a href="../linux/dd.html">
+            
+                    
+                    dd命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.17" data-path="../linux/packagemanage.html">
+            
+                <a href="../linux/packagemanage.html">
+            
+                    
+                    包管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.18" data-path="../linux/network.html">
+            
+                <a href="../linux/network.html">
+            
+                    
+                    网络管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.19" data-path="../linux/system.html">
+            
+                <a href="../linux/system.html">
+            
+                    
+                    系统管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.20" data-path="../linux/monitor.html">
+            
+                <a href="../linux/monitor.html">
+            
+                    
+                    系统监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.21" data-path="../linux/file.html">
+            
+                <a href="../linux/file.html">
+            
+                    
+                    文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.22" data-path="../linux/text.html">
+            
+                <a href="../linux/text.html">
+            
+                    
+                    文本处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.23" data-path="../linux/security.html">
+            
+                <a href="../linux/security.html">
+            
+                    
+                    安全相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">网络基础</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../network/model.html">
+            
+                <a href="../network/model.html">
+            
+                    
+                    网络模型详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../network/tcp.html">
+            
+                <a href="../network/tcp.html">
+            
+                    
+                    TCP协议原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../network/http.html">
+            
+                <a href="../network/http.html">
+            
+                    
+                    HTTP/HTTPS原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../network/cdn.html">
+            
+                <a href="../network/cdn.html">
+            
+                    
+                    CDN详细教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../network/rpc.html">
+            
+                <a href="../network/rpc.html">
+            
+                    
+                    RPC原理解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">中间件</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../middleware/mysql.html">
+            
+                <a href="../middleware/mysql.html">
+            
+                    
+                    mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../middleware/redis.html">
+            
+                <a href="../middleware/redis.html">
+            
+                    
+                    redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../middleware/consul.html">
+            
+                <a href="../middleware/consul.html">
+            
+                    
+                    consul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../middleware/etcd.html">
+            
+                <a href="../middleware/etcd.html">
+            
+                    
+                    etcd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../middleware/gin.html">
+            
+                <a href="../middleware/gin.html">
+            
+                    
+                    gin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../middleware/gorm.html">
+            
+                <a href="../middleware/gorm.html">
+            
+                    
+                    gorm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../middleware/grpc.html">
+            
+                <a href="../middleware/grpc.html">
+            
+                    
+                    grpc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="../middleware/thrift.html">
+            
+                <a href="../middleware/thrift.html">
+            
+                    
+                    thrift
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="../middleware/cassandra.html">
+            
+                <a href="../middleware/cassandra.html">
+            
+                    
+                    cassandra
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="../middleware/elasticsearch.html">
+            
+                <a href="../middleware/elasticsearch.html">
+            
+                    
+                    elasticsearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="../middleware/jwt.html">
+            
+                <a href="../middleware/jwt.html">
+            
+                    
+                    jwt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.12" data-path="../middleware/kafka.html">
+            
+                <a href="../middleware/kafka.html">
+            
+                    
+                    kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.13" data-path="../middleware/nats.html">
+            
+                <a href="../middleware/nats.html">
+            
+                    
+                    nats
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.14" data-path="../middleware/nginx.html">
+            
+                <a href="../middleware/nginx.html">
+            
+                    
+                    nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">云原生与虚拟化技术</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../cloudnative/docker.html">
+            
+                <a href="../cloudnative/docker.html">
+            
+                    
+                    docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../cloudnative/kubernetes.html">
+            
+                <a href="../cloudnative/kubernetes.html">
+            
+                    
+                    kubernetes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../cloudnative/ceph.html">
+            
+                <a href="../cloudnative/ceph.html">
+            
+                    
+                    ceph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../cloudnative/kvm.html">
+            
+                <a href="../cloudnative/kvm.html">
+            
+                    
+                    kvm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../cloudnative/libvirt.html">
+            
+                <a href="../cloudnative/libvirt.html">
+            
+                    
+                    libvirt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../cloudnative/qcow2.html">
+            
+                <a href="../cloudnative/qcow2.html">
+            
+                    
+                    qcow2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="../cloudnative/qemu.html">
+            
+                <a href="../cloudnative/qemu.html">
+            
+                    
+                    qemu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="../cloudnative/sanlock.html">
+            
+                <a href="../cloudnative/sanlock.html">
+            
+                    
+                    sanlock
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="../cloudnative/openstack.html">
+            
+                <a href="../cloudnative/openstack.html">
+            
+                    
+                    openstack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="../cloudnative/vmware.html">
+            
+                <a href="../cloudnative/vmware.html">
+            
+                    
+                    vmware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="../cloudnative/distributed-network.html">
+            
+                <a href="../cloudnative/distributed-network.html">
+            
+                    
+                    distributed-network
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">系统架构</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../framework/architecture-evolution.html">
+            
+                <a href="../framework/architecture-evolution.html">
+            
+                    
+                    架构演进
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../framework/cluster-architecture.html">
+            
+                <a href="../framework/cluster-architecture.html">
+            
+                    
+                    集群架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../framework/distributed-architecture.html">
+            
+                <a href="../framework/distributed-architecture.html">
+            
+                    
+                    分布式架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../framework/microservices-architecture.html">
+            
+                <a href="../framework/microservices-architecture.html">
+            
+                    
+                    微服务架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">闲聊杂谈</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../gossip/编程的智慧.html">
+            
+                <a href="../gossip/编程的智慧.html">
+            
+                    
+                    编程的智慧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../gossip/如何阅读别人的代码.html">
+            
+                <a href="../gossip/如何阅读别人的代码.html">
+            
+                    
+                    如何阅读别人的代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >字符串算法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;"><b></b>&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;&#x7B80;&#x4ECB;"><b></b>&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;&#x7B80;&#x4ECB;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4EC0;&#x4E48;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;&#xFF1F;"><b></b>&#x4EC0;&#x4E48;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#&#x5E38;&#x89C1;&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;&#x5206;&#x7C7B;"><b></b>&#x5E38;&#x89C1;&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;&#x5206;&#x7C7B;</a></li></ul><li><span class="title-icon "></span><a href="#1-kmp-&#x7B97;&#x6CD5;"><b></b>1. KMP &#x7B97;&#x6CD5;</a></li><ul><li><span class="title-icon "></span><a href="#&#x539F;&#x7406;"><b></b>&#x539F;&#x7406;</a></li><li><span class="title-icon "></span><a href="#&#x5B9E;&#x73B0;"><b></b>&#x5B9E;&#x73B0;</a></li><li><span class="title-icon "></span><a href="#&#x590D;&#x6742;&#x5EA6;"><b></b>&#x590D;&#x6742;&#x5EA6;</a></li></ul><li><span class="title-icon "></span><a href="#2-boyer-moore-&#x7B97;&#x6CD5;"><b></b>2. Boyer-Moore &#x7B97;&#x6CD5;</a></li><ul><li><span class="title-icon "></span><a href="#&#x539F;&#x7406;_1"><b></b>&#x539F;&#x7406;</a></li><li><span class="title-icon "></span><a href="#&#x5B9E;&#x73B0;_1"><b></b>&#x5B9E;&#x73B0;</a></li><li><span class="title-icon "></span><a href="#&#x590D;&#x6742;&#x5EA6;_1"><b></b>&#x590D;&#x6742;&#x5EA6;</a></li></ul><li><span class="title-icon "></span><a href="#3-rabin-karp-&#x7B97;&#x6CD5;"><b></b>3. Rabin-Karp &#x7B97;&#x6CD5;</a></li><ul><li><span class="title-icon "></span><a href="#&#x539F;&#x7406;_2"><b></b>&#x539F;&#x7406;</a></li><li><span class="title-icon "></span><a href="#&#x5B9E;&#x73B0;_2"><b></b>&#x5B9E;&#x73B0;</a></li><li><span class="title-icon "></span><a href="#&#x590D;&#x6742;&#x5EA6;_2"><b></b>&#x590D;&#x6742;&#x5EA6;</a></li></ul><li><span class="title-icon "></span><a href="#4-&#x6700;&#x957F;&#x56DE;&#x6587;&#x5B50;&#x4E32;"><b></b>4. &#x6700;&#x957F;&#x56DE;&#x6587;&#x5B50;&#x4E32;</a></li><ul><li><span class="title-icon "></span><a href="#&#x539F;&#x7406;_3"><b></b>&#x539F;&#x7406;</a></li><li><span class="title-icon "></span><a href="#&#x5B9E;&#x73B0;_3"><b></b>&#x5B9E;&#x73B0;</a></li><li><span class="title-icon "></span><a href="#&#x590D;&#x6742;&#x5EA6;_3"><b></b>&#x590D;&#x6742;&#x5EA6;</a></li></ul><li><span class="title-icon "></span><a href="#5-&#x5B57;&#x7B26;&#x4E32;&#x53CD;&#x8F6C;"><b></b>5. &#x5B57;&#x7B26;&#x4E32;&#x53CD;&#x8F6C;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5B9E;&#x73B0;_4"><b></b>&#x5B9E;&#x73B0;</a></li><li><span class="title-icon "></span><a href="#&#x590D;&#x6742;&#x5EA6;_4"><b></b>&#x590D;&#x6742;&#x5EA6;</a></li></ul><li><span class="title-icon "></span><a href="#6-&#x6700;&#x957F;&#x516C;&#x5171;&#x524D;&#x7F00;"><b></b>6. &#x6700;&#x957F;&#x516C;&#x5171;&#x524D;&#x7F00;</a></li><ul><li><span class="title-icon "></span><a href="#&#x539F;&#x7406;_4"><b></b>&#x539F;&#x7406;</a></li><li><span class="title-icon "></span><a href="#&#x5B9E;&#x73B0;_5"><b></b>&#x5B9E;&#x73B0;</a></li><li><span class="title-icon "></span><a href="#&#x590D;&#x6742;&#x5EA6;_5"><b></b>&#x590D;&#x6742;&#x5EA6;</a></li></ul><li><span class="title-icon "></span><a href="#7-&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x6574;&#x6570;-atoi"><b></b>7. &#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x6574;&#x6570; (atoi)</a></li><ul><li><span class="title-icon "></span><a href="#&#x539F;&#x7406;_5"><b></b>&#x539F;&#x7406;</a></li><li><span class="title-icon "></span><a href="#&#x5B9E;&#x73B0;_6"><b></b>&#x5B9E;&#x73B0;</a></li><li><span class="title-icon "></span><a href="#&#x590D;&#x6742;&#x5EA6;_6"><b></b>&#x590D;&#x6742;&#x5EA6;</a></li></ul><li><span class="title-icon "></span><a href="#&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;&#x5BF9;&#x6BD4;"><b></b>&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;&#x5BF9;&#x6BD4;</a></li><li><span class="title-icon "></span><a href="#&#x5E38;&#x89C1;&#x9762;&#x8BD5;&#x9898;"><b></b>&#x5E38;&#x89C1;&#x9762;&#x8BD5;&#x9898;</a></li><ul><li><span class="title-icon "></span><a href="#1-kmp-&#x7B97;&#x6CD5;&#x4E2D;&#x7684;-lps-&#x6570;&#x7EC4;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><b></b>1. KMP &#x7B97;&#x6CD5;&#x4E2D;&#x7684; LPS &#x6570;&#x7EC4;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#2-boyer-moore-&#x7B97;&#x6CD5;&#x4E3A;&#x4EC0;&#x4E48;&#x9AD8;&#x6548;&#xFF1F;"><b></b>2. Boyer-Moore &#x7B97;&#x6CD5;&#x4E3A;&#x4EC0;&#x4E48;&#x9AD8;&#x6548;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#3-rabin-karp-&#x7B97;&#x6CD5;&#x7684;&#x54C8;&#x5E0C;&#x51B2;&#x7A81;&#x5982;&#x4F55;&#x5904;&#x7406;&#xFF1F;"><b></b>3. Rabin-Karp &#x7B97;&#x6CD5;&#x7684;&#x54C8;&#x5E0C;&#x51B2;&#x7A81;&#x5982;&#x4F55;&#x5904;&#x7406;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#4-&#x5982;&#x4F55;&#x5224;&#x65AD;&#x5B57;&#x7B26;&#x4E32;&#x662F;&#x5426;&#x4E3A;&#x56DE;&#x6587;&#xFF1F;"><b></b>4. &#x5982;&#x4F55;&#x5224;&#x65AD;&#x5B57;&#x7B26;&#x4E32;&#x662F;&#x5426;&#x4E3A;&#x56DE;&#x6587;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#5-&#x5982;&#x4F55;&#x5904;&#x7406;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6574;&#x6570;&#x7684;&#x6EA2;&#x51FA;&#xFF1F;"><b></b>5. &#x5982;&#x4F55;&#x5904;&#x7406;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6574;&#x6570;&#x7684;&#x6EA2;&#x51FA;&#xFF1F;</a></li></ul><li><span class="title-icon "></span><a href="#&#x672A;&#x5B8C;&#x5F85;&#x7EED;"><b></b>...&#x672A;&#x5B8C;&#x5F85;&#x7EED;...</a></li></ul></ul></div><a href="#&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;"><a name="&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;</h1>
+<h2 id="&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;&#x7B80;&#x4ECB;"><a name="&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;&#x7B80;&#x4ECB;" class="anchor-navigation-ex-anchor" href="#&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;&#x7B80;&#x4ECB;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;&#x7B80;&#x4ECB;</h2>
+<h3 id="&#x4EC0;&#x4E48;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;&#xFF1F;"><a name="&#x4EC0;&#x4E48;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#&#x4EC0;&#x4E48;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4EC0;&#x4E48;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;&#xFF1F;</h3>
+<p>&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;&#x662F;&#x5904;&#x7406;&#x5B57;&#x7B26;&#x4E32;&#x6570;&#x636E;&#x7684;&#x7B97;&#x6CD5;&#xFF0C;&#x5305;&#x62EC;&#x5B57;&#x7B26;&#x4E32;&#x5339;&#x914D;&#x3001;&#x7F16;&#x8F91;&#x8DDD;&#x79BB;&#x3001;&#x6A21;&#x5F0F;&#x8BC6;&#x522B;&#x7B49;&#x3002;&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;&#x5E7F;&#x6CDB;&#x5E94;&#x7528;&#x4E8E;&#x6587;&#x672C;&#x5904;&#x7406;&#x3001;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x3001;&#x751F;&#x7269;&#x4FE1;&#x606F;&#x5B66;&#x7B49;&#x9886;&#x57DF;&#x3002;</p>
+<h3 id="&#x5E38;&#x89C1;&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;&#x5206;&#x7C7B;"><a name="&#x5E38;&#x89C1;&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;&#x5206;&#x7C7B;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x89C1;&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;&#x5206;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E38;&#x89C1;&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;&#x5206;&#x7C7B;</h3>
+<ul>
+<li><strong>&#x5B57;&#x7B26;&#x4E32;&#x5339;&#x914D;</strong>&#xFF1A;KMP&#x3001;Boyer-Moore&#x3001;Rabin-Karp</li>
+<li><strong>&#x5B57;&#x7B26;&#x4E32;&#x7F16;&#x8F91;</strong>&#xFF1A;&#x7F16;&#x8F91;&#x8DDD;&#x79BB;&#x3001;&#x6700;&#x957F;&#x516C;&#x5171;&#x5B50;&#x5E8F;&#x5217;</li>
+<li><strong>&#x5B57;&#x7B26;&#x4E32;&#x5904;&#x7406;</strong>&#xFF1A;&#x53CD;&#x8F6C;&#x3001;&#x66FF;&#x6362;&#x3001;&#x5206;&#x5272;</li>
+</ul>
+<hr>
+<h2 id="1-kmp-&#x7B97;&#x6CD5;"><a name="1-kmp-&#x7B97;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#1-kmp-&#x7B97;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1. KMP &#x7B97;&#x6CD5;</h2>
+<h3 id="&#x539F;&#x7406;"><a name="&#x539F;&#x7406;" class="anchor-navigation-ex-anchor" href="#&#x539F;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x539F;&#x7406;</h3>
+<p>&#x901A;&#x8FC7;&#x9884;&#x5904;&#x7406;&#x6A21;&#x5F0F;&#x4E32;&#x6784;&#x5EFA;&#x90E8;&#x5206;&#x5339;&#x914D;&#x8868;&#xFF08;LPS&#x6570;&#x7EC4;&#xFF09;&#xFF0C;&#x907F;&#x514D;&#x56DE;&#x6EAF;&#x3002;</p>
+<h3 id="&#x5B9E;&#x73B0;"><a name="&#x5B9E;&#x73B0;" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x73B0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B9E;&#x73B0;</h3>
+<pre class="language-"><code class="lang-go"><span class="token keyword">func</span> <span class="token function">KMP</span><span class="token punctuation">(</span>text<span class="token punctuation">,</span> pattern <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">int</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token function">len</span><span class="token punctuation">(</span>pattern<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">||</span> <span class="token function">len</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token function">len</span><span class="token punctuation">(</span>pattern<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">int</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    lps <span class="token operator">:=</span> <span class="token function">buildLPS</span><span class="token punctuation">(</span>pattern<span class="token punctuation">)</span>
+    result <span class="token operator">:=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">int</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+    i<span class="token punctuation">,</span> j <span class="token operator">:=</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span>
+    <span class="token keyword">for</span> i <span class="token operator">&lt;</span> <span class="token function">len</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> text<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> pattern<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token punctuation">{</span>
+            i<span class="token operator">++</span>
+            j<span class="token operator">++</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">if</span> j <span class="token operator">==</span> <span class="token function">len</span><span class="token punctuation">(</span>pattern<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            result <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span>result<span class="token punctuation">,</span> i<span class="token operator">-</span>j<span class="token punctuation">)</span>
+            j <span class="token operator">=</span> lps<span class="token punctuation">[</span>j<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> i <span class="token operator">&lt;</span> <span class="token function">len</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> text<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">!=</span> pattern<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> j <span class="token operator">!=</span> <span class="token number">0</span> <span class="token punctuation">{</span>
+                j <span class="token operator">=</span> lps<span class="token punctuation">[</span>j<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                i<span class="token operator">++</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> result
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">buildLPS</span><span class="token punctuation">(</span>pattern <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">int</span> <span class="token punctuation">{</span>
+    lps <span class="token operator">:=</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">int</span><span class="token punctuation">,</span> <span class="token function">len</span><span class="token punctuation">(</span>pattern<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    length <span class="token operator">:=</span> <span class="token number">0</span>
+
+    <span class="token keyword">for</span> i <span class="token operator">:=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token function">len</span><span class="token punctuation">(</span>pattern<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> pattern<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> pattern<span class="token punctuation">[</span>length<span class="token punctuation">]</span> <span class="token punctuation">{</span>
+            length<span class="token operator">++</span>
+            lps<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> length
+            i<span class="token operator">++</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> length <span class="token operator">!=</span> <span class="token number">0</span> <span class="token punctuation">{</span>
+                length <span class="token operator">=</span> lps<span class="token punctuation">[</span>length<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                lps<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span>
+                i<span class="token operator">++</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> lps
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="&#x590D;&#x6742;&#x5EA6;"><a name="&#x590D;&#x6742;&#x5EA6;" class="anchor-navigation-ex-anchor" href="#&#x590D;&#x6742;&#x5EA6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x590D;&#x6742;&#x5EA6;</h3>
+<ul>
+<li><strong>&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;</strong>&#xFF1A;O(n + m)</li>
+<li><strong>&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;</strong>&#xFF1A;O(m)</li>
+</ul>
+<hr>
+<h2 id="2-boyer-moore-&#x7B97;&#x6CD5;"><a name="2-boyer-moore-&#x7B97;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#2-boyer-moore-&#x7B97;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>2. Boyer-Moore &#x7B97;&#x6CD5;</h2>
+<h3 id="&#x539F;&#x7406;_1"><a name="&#x539F;&#x7406;_1" class="anchor-navigation-ex-anchor" href="#&#x539F;&#x7406;_1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x539F;&#x7406;</h3>
+<p>&#x4ECE;&#x53F3;&#x5411;&#x5DE6;&#x6BD4;&#x8F83;&#xFF0C;&#x5229;&#x7528;&#x574F;&#x5B57;&#x7B26;&#x89C4;&#x5219;&#x548C;&#x597D;&#x540E;&#x7F00;&#x89C4;&#x5219;&#x8DF3;&#x8FC7;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x6BD4;&#x8F83;&#x3002;</p>
+<h3 id="&#x5B9E;&#x73B0;_1"><a name="&#x5B9E;&#x73B0;_1" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x73B0;_1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B9E;&#x73B0;</h3>
+<pre class="language-"><code class="lang-go"><span class="token keyword">func</span> <span class="token function">BoyerMoore</span><span class="token punctuation">(</span>text<span class="token punctuation">,</span> pattern <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">int</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token function">len</span><span class="token punctuation">(</span>pattern<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">||</span> <span class="token function">len</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token function">len</span><span class="token punctuation">(</span>pattern<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">int</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    badChar <span class="token operator">:=</span> <span class="token function">buildBadCharTable</span><span class="token punctuation">(</span>pattern<span class="token punctuation">)</span>
+    result <span class="token operator">:=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">int</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+    i <span class="token operator">:=</span> <span class="token number">0</span>
+    <span class="token keyword">for</span> i <span class="token operator">&lt;=</span> <span class="token function">len</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span><span class="token operator">-</span><span class="token function">len</span><span class="token punctuation">(</span>pattern<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        j <span class="token operator">:=</span> <span class="token function">len</span><span class="token punctuation">(</span>pattern<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span>
+
+        <span class="token keyword">for</span> j <span class="token operator">&gt;=</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> text<span class="token punctuation">[</span>i<span class="token operator">+</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> pattern<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token punctuation">{</span>
+            j<span class="token operator">--</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">if</span> j <span class="token operator">&lt;</span> <span class="token number">0</span> <span class="token punctuation">{</span>
+            result <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span>result<span class="token punctuation">,</span> i<span class="token punctuation">)</span>
+            i<span class="token operator">++</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            shift <span class="token operator">:=</span> j <span class="token operator">-</span> badChar<span class="token punctuation">[</span>text<span class="token punctuation">[</span>i<span class="token operator">+</span>j<span class="token punctuation">]</span><span class="token punctuation">]</span>
+            <span class="token keyword">if</span> shift <span class="token operator">&lt;</span> <span class="token number">1</span> <span class="token punctuation">{</span>
+                shift <span class="token operator">=</span> <span class="token number">1</span>
+            <span class="token punctuation">}</span>
+            i <span class="token operator">+=</span> shift
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> result
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">buildBadCharTable</span><span class="token punctuation">(</span>pattern <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">byte</span><span class="token punctuation">]</span><span class="token builtin">int</span> <span class="token punctuation">{</span>
+    table <span class="token operator">:=</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">byte</span><span class="token punctuation">]</span><span class="token builtin">int</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">for</span> i <span class="token operator">:=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token function">len</span><span class="token punctuation">(</span>pattern<span class="token punctuation">)</span><span class="token punctuation">;</span> i<span class="token operator">++</span> <span class="token punctuation">{</span>
+        table<span class="token punctuation">[</span>pattern<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">=</span> i
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> table
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="&#x590D;&#x6742;&#x5EA6;_1"><a name="&#x590D;&#x6742;&#x5EA6;_1" class="anchor-navigation-ex-anchor" href="#&#x590D;&#x6742;&#x5EA6;_1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x590D;&#x6742;&#x5EA6;</h3>
+<ul>
+<li><strong>&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;</strong>&#xFF1A;O(n/m)&#xFF08;&#x5E73;&#x5747;&#xFF09;&#xFF0C;O(n*m)&#xFF08;&#x6700;&#x574F;&#xFF09;</li>
+<li><strong>&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;</strong>&#xFF1A;O(k)&#xFF08;k&#x4E3A;&#x5B57;&#x7B26;&#x96C6;&#x5927;&#x5C0F;&#xFF09;</li>
+</ul>
+<hr>
+<h2 id="3-rabin-karp-&#x7B97;&#x6CD5;"><a name="3-rabin-karp-&#x7B97;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#3-rabin-karp-&#x7B97;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>3. Rabin-Karp &#x7B97;&#x6CD5;</h2>
+<h3 id="&#x539F;&#x7406;_2"><a name="&#x539F;&#x7406;_2" class="anchor-navigation-ex-anchor" href="#&#x539F;&#x7406;_2"><i class="fa fa-link" aria-hidden="true"></i></a>&#x539F;&#x7406;</h3>
+<p>&#x5229;&#x7528;&#x54C8;&#x5E0C;&#x51FD;&#x6570;&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x6BD4;&#x8F83;&#x8F6C;&#x5316;&#x4E3A;&#x6574;&#x6570;&#x6BD4;&#x8F83;&#x3002;</p>
+<h3 id="&#x5B9E;&#x73B0;_2"><a name="&#x5B9E;&#x73B0;_2" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x73B0;_2"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B9E;&#x73B0;</h3>
+<pre class="language-"><code class="lang-go"><span class="token keyword">func</span> <span class="token function">RabinKarp</span><span class="token punctuation">(</span>text<span class="token punctuation">,</span> pattern <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">int</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token function">len</span><span class="token punctuation">(</span>pattern<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">||</span> <span class="token function">len</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token function">len</span><span class="token punctuation">(</span>pattern<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">int</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    base <span class="token operator">:=</span> <span class="token number">26</span>
+    mod <span class="token operator">:=</span> <span class="token number">1000000007</span>
+
+    result <span class="token operator">:=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">int</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+    <span class="token comment">// &#x8BA1;&#x7B97;&#x6A21;&#x5F0F;&#x4E32;&#x7684;&#x54C8;&#x5E0C;&#x503C;</span>
+    patternHash <span class="token operator">:=</span> <span class="token number">0</span>
+    textHash <span class="token operator">:=</span> <span class="token number">0</span>
+    power <span class="token operator">:=</span> <span class="token number">1</span>
+
+    <span class="token keyword">for</span> i <span class="token operator">:=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token function">len</span><span class="token punctuation">(</span>pattern<span class="token punctuation">)</span><span class="token punctuation">;</span> i<span class="token operator">++</span> <span class="token punctuation">{</span>
+        patternHash <span class="token operator">=</span> <span class="token punctuation">(</span>patternHash<span class="token operator">*</span>base <span class="token operator">+</span> <span class="token function">int</span><span class="token punctuation">(</span>pattern<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">%</span> mod
+        textHash <span class="token operator">=</span> <span class="token punctuation">(</span>textHash<span class="token operator">*</span>base <span class="token operator">+</span> <span class="token function">int</span><span class="token punctuation">(</span>text<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">%</span> mod
+        power <span class="token operator">=</span> <span class="token punctuation">(</span>power <span class="token operator">*</span> base<span class="token punctuation">)</span> <span class="token operator">%</span> mod
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">for</span> i <span class="token operator">:=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token function">len</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span><span class="token operator">-</span><span class="token function">len</span><span class="token punctuation">(</span>pattern<span class="token punctuation">)</span><span class="token punctuation">;</span> i<span class="token operator">++</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> patternHash <span class="token operator">==</span> textHash <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> text<span class="token punctuation">[</span>i<span class="token punctuation">:</span>i<span class="token operator">+</span><span class="token function">len</span><span class="token punctuation">(</span>pattern<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">==</span> pattern <span class="token punctuation">{</span>
+                result <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span>result<span class="token punctuation">,</span> i<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">if</span> i <span class="token operator">&lt;</span> <span class="token function">len</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span><span class="token operator">-</span><span class="token function">len</span><span class="token punctuation">(</span>pattern<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            textHash <span class="token operator">=</span> <span class="token punctuation">(</span>textHash<span class="token operator">*</span>base <span class="token operator">-</span> <span class="token function">int</span><span class="token punctuation">(</span>text<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">*</span>power <span class="token operator">+</span> <span class="token function">int</span><span class="token punctuation">(</span>text<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token function">len</span><span class="token punctuation">(</span>pattern<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">%</span> mod
+            <span class="token keyword">if</span> textHash <span class="token operator">&lt;</span> <span class="token number">0</span> <span class="token punctuation">{</span>
+                textHash <span class="token operator">+=</span> mod
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> result
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="&#x590D;&#x6742;&#x5EA6;_2"><a name="&#x590D;&#x6742;&#x5EA6;_2" class="anchor-navigation-ex-anchor" href="#&#x590D;&#x6742;&#x5EA6;_2"><i class="fa fa-link" aria-hidden="true"></i></a>&#x590D;&#x6742;&#x5EA6;</h3>
+<ul>
+<li><strong>&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;</strong>&#xFF1A;O(n + m)&#xFF08;&#x5E73;&#x5747;&#xFF09;&#xFF0C;O(n*m)&#xFF08;&#x6700;&#x574F;&#xFF09;</li>
+<li><strong>&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;</strong>&#xFF1A;O(1)</li>
+</ul>
+<hr>
+<h2 id="4-&#x6700;&#x957F;&#x56DE;&#x6587;&#x5B50;&#x4E32;"><a name="4-&#x6700;&#x957F;&#x56DE;&#x6587;&#x5B50;&#x4E32;" class="anchor-navigation-ex-anchor" href="#4-&#x6700;&#x957F;&#x56DE;&#x6587;&#x5B50;&#x4E32;"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x6700;&#x957F;&#x56DE;&#x6587;&#x5B50;&#x4E32;</h2>
+<h3 id="&#x539F;&#x7406;_3"><a name="&#x539F;&#x7406;_3" class="anchor-navigation-ex-anchor" href="#&#x539F;&#x7406;_3"><i class="fa fa-link" aria-hidden="true"></i></a>&#x539F;&#x7406;</h3>
+<p>&#x4E2D;&#x5FC3;&#x6269;&#x5C55;&#x6CD5;&#xFF1A;&#x4EE5;&#x6BCF;&#x4E2A;&#x5B57;&#x7B26;&#x4E3A;&#x4E2D;&#x5FC3;&#x5411;&#x4E24;&#x8FB9;&#x6269;&#x5C55;&#x3002;</p>
+<h3 id="&#x5B9E;&#x73B0;_3"><a name="&#x5B9E;&#x73B0;_3" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x73B0;_3"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B9E;&#x73B0;</h3>
+<pre class="language-"><code class="lang-go"><span class="token keyword">func</span> <span class="token function">LongestPalindrome</span><span class="token punctuation">(</span>s <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token builtin">string</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token function">len</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token string">&quot;&quot;</span>
+    <span class="token punctuation">}</span>
+
+    start<span class="token punctuation">,</span> end <span class="token operator">:=</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span>
+
+    <span class="token keyword">for</span> i <span class="token operator">:=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token function">len</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span> i<span class="token operator">++</span> <span class="token punctuation">{</span>
+        len1 <span class="token operator">:=</span> <span class="token function">expandAroundCenter</span><span class="token punctuation">(</span>s<span class="token punctuation">,</span> i<span class="token punctuation">,</span> i<span class="token punctuation">)</span>
+        len2 <span class="token operator">:=</span> <span class="token function">expandAroundCenter</span><span class="token punctuation">(</span>s<span class="token punctuation">,</span> i<span class="token punctuation">,</span> i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span>
+
+        maxLen <span class="token operator">:=</span> <span class="token function">max</span><span class="token punctuation">(</span>len1<span class="token punctuation">,</span> len2<span class="token punctuation">)</span>
+
+        <span class="token keyword">if</span> maxLen <span class="token operator">&gt;</span> end<span class="token operator">-</span>start <span class="token punctuation">{</span>
+            start <span class="token operator">=</span> i <span class="token operator">-</span> <span class="token punctuation">(</span>maxLen<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">2</span>
+            end <span class="token operator">=</span> i <span class="token operator">+</span> maxLen<span class="token operator">/</span><span class="token number">2</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> s<span class="token punctuation">[</span>start <span class="token punctuation">:</span> end<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">expandAroundCenter</span><span class="token punctuation">(</span>s <span class="token builtin">string</span><span class="token punctuation">,</span> left<span class="token punctuation">,</span> right <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token builtin">int</span> <span class="token punctuation">{</span>
+    <span class="token keyword">for</span> left <span class="token operator">&gt;=</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> right <span class="token operator">&lt;</span> <span class="token function">len</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> s<span class="token punctuation">[</span>left<span class="token punctuation">]</span> <span class="token operator">==</span> s<span class="token punctuation">[</span>right<span class="token punctuation">]</span> <span class="token punctuation">{</span>
+        left<span class="token operator">--</span>
+        right<span class="token operator">++</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> right <span class="token operator">-</span> left <span class="token operator">-</span> <span class="token number">1</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">max</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token builtin">int</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> a <span class="token operator">&gt;</span> b <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> a
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> b
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="&#x590D;&#x6742;&#x5EA6;_3"><a name="&#x590D;&#x6742;&#x5EA6;_3" class="anchor-navigation-ex-anchor" href="#&#x590D;&#x6742;&#x5EA6;_3"><i class="fa fa-link" aria-hidden="true"></i></a>&#x590D;&#x6742;&#x5EA6;</h3>
+<ul>
+<li><strong>&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;</strong>&#xFF1A;O(n&#xB2;)</li>
+<li><strong>&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;</strong>&#xFF1A;O(1)</li>
+</ul>
+<hr>
+<h2 id="5-&#x5B57;&#x7B26;&#x4E32;&#x53CD;&#x8F6C;"><a name="5-&#x5B57;&#x7B26;&#x4E32;&#x53CD;&#x8F6C;" class="anchor-navigation-ex-anchor" href="#5-&#x5B57;&#x7B26;&#x4E32;&#x53CD;&#x8F6C;"><i class="fa fa-link" aria-hidden="true"></i></a>5. &#x5B57;&#x7B26;&#x4E32;&#x53CD;&#x8F6C;</h2>
+<h3 id="&#x5B9E;&#x73B0;_4"><a name="&#x5B9E;&#x73B0;_4" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x73B0;_4"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B9E;&#x73B0;</h3>
+<pre class="language-"><code class="lang-go"><span class="token keyword">func</span> <span class="token function">ReverseString</span><span class="token punctuation">(</span>s <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">byte</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    left<span class="token punctuation">,</span> right <span class="token operator">:=</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token function">len</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token operator">-</span><span class="token number">1</span>
+
+    <span class="token keyword">for</span> left <span class="token operator">&lt;</span> right <span class="token punctuation">{</span>
+        s<span class="token punctuation">[</span>left<span class="token punctuation">]</span><span class="token punctuation">,</span> s<span class="token punctuation">[</span>right<span class="token punctuation">]</span> <span class="token operator">=</span> s<span class="token punctuation">[</span>right<span class="token punctuation">]</span><span class="token punctuation">,</span> s<span class="token punctuation">[</span>left<span class="token punctuation">]</span>
+        left<span class="token operator">++</span>
+        right<span class="token operator">--</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="&#x590D;&#x6742;&#x5EA6;_4"><a name="&#x590D;&#x6742;&#x5EA6;_4" class="anchor-navigation-ex-anchor" href="#&#x590D;&#x6742;&#x5EA6;_4"><i class="fa fa-link" aria-hidden="true"></i></a>&#x590D;&#x6742;&#x5EA6;</h3>
+<ul>
+<li><strong>&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;</strong>&#xFF1A;O(n)</li>
+<li><strong>&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;</strong>&#xFF1A;O(1)</li>
+</ul>
+<hr>
+<h2 id="6-&#x6700;&#x957F;&#x516C;&#x5171;&#x524D;&#x7F00;"><a name="6-&#x6700;&#x957F;&#x516C;&#x5171;&#x524D;&#x7F00;" class="anchor-navigation-ex-anchor" href="#6-&#x6700;&#x957F;&#x516C;&#x5171;&#x524D;&#x7F00;"><i class="fa fa-link" aria-hidden="true"></i></a>6. &#x6700;&#x957F;&#x516C;&#x5171;&#x524D;&#x7F00;</h2>
+<h3 id="&#x539F;&#x7406;_4"><a name="&#x539F;&#x7406;_4" class="anchor-navigation-ex-anchor" href="#&#x539F;&#x7406;_4"><i class="fa fa-link" aria-hidden="true"></i></a>&#x539F;&#x7406;</h3>
+<p>&#x9010;&#x4E2A;&#x5B57;&#x7B26;&#x6BD4;&#x8F83;&#x6240;&#x6709;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<h3 id="&#x5B9E;&#x73B0;_5"><a name="&#x5B9E;&#x73B0;_5" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x73B0;_5"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B9E;&#x73B0;</h3>
+<pre class="language-"><code class="lang-go"><span class="token keyword">func</span> <span class="token function">LongestCommonPrefix</span><span class="token punctuation">(</span>strs <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token builtin">string</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token function">len</span><span class="token punctuation">(</span>strs<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token string">&quot;&quot;</span>
+    <span class="token punctuation">}</span>
+
+    prefix <span class="token operator">:=</span> strs<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+
+    <span class="token keyword">for</span> i <span class="token operator">:=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token function">len</span><span class="token punctuation">(</span>strs<span class="token punctuation">)</span><span class="token punctuation">;</span> i<span class="token operator">++</span> <span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token function">len</span><span class="token punctuation">(</span>strs<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token function">len</span><span class="token punctuation">(</span>prefix<span class="token punctuation">)</span> <span class="token operator">||</span> strs<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token function">len</span><span class="token punctuation">(</span>prefix<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">!=</span> prefix <span class="token punctuation">{</span>
+            prefix <span class="token operator">=</span> prefix<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token function">len</span><span class="token punctuation">(</span>prefix<span class="token punctuation">)</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>
+            <span class="token keyword">if</span> prefix <span class="token operator">==</span> <span class="token string">&quot;&quot;</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token string">&quot;&quot;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> prefix
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="&#x590D;&#x6742;&#x5EA6;_5"><a name="&#x590D;&#x6742;&#x5EA6;_5" class="anchor-navigation-ex-anchor" href="#&#x590D;&#x6742;&#x5EA6;_5"><i class="fa fa-link" aria-hidden="true"></i></a>&#x590D;&#x6742;&#x5EA6;</h3>
+<ul>
+<li><strong>&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;</strong>&#xFF1A;O(n*m)</li>
+<li><strong>&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;</strong>&#xFF1A;O(1)</li>
+</ul>
+<hr>
+<h2 id="7-&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x6574;&#x6570;-atoi"><a name="7-&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x6574;&#x6570;-atoi" class="anchor-navigation-ex-anchor" href="#7-&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x6574;&#x6570;-atoi"><i class="fa fa-link" aria-hidden="true"></i></a>7. &#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x6574;&#x6570; (atoi)</h2>
+<h3 id="&#x539F;&#x7406;_5"><a name="&#x539F;&#x7406;_5" class="anchor-navigation-ex-anchor" href="#&#x539F;&#x7406;_5"><i class="fa fa-link" aria-hidden="true"></i></a>&#x539F;&#x7406;</h3>
+<p>&#x5904;&#x7406;&#x7B26;&#x53F7;&#x3001;&#x6570;&#x5B57;&#x8F6C;&#x6362;&#x3001;&#x6EA2;&#x51FA;&#x5224;&#x65AD;&#x3002;</p>
+<h3 id="&#x5B9E;&#x73B0;_6"><a name="&#x5B9E;&#x73B0;_6" class="anchor-navigation-ex-anchor" href="#&#x5B9E;&#x73B0;_6"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B9E;&#x73B0;</h3>
+<pre class="language-"><code class="lang-go"><span class="token keyword">func</span> <span class="token function">MyAtoi</span><span class="token punctuation">(</span>s <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token builtin">int</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token function">len</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token number">0</span>
+    <span class="token punctuation">}</span>
+
+    sign <span class="token operator">:=</span> <span class="token number">1</span>
+    result <span class="token operator">:=</span> <span class="token number">0</span>
+    i <span class="token operator">:=</span> <span class="token number">0</span>
+
+    <span class="token comment">// &#x8DF3;&#x8FC7;&#x7A7A;&#x683C;</span>
+    <span class="token keyword">for</span> i <span class="token operator">&lt;</span> <span class="token function">len</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> s<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token char">&apos; &apos;</span> <span class="token punctuation">{</span>
+        i<span class="token operator">++</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// &#x5904;&#x7406;&#x7B26;&#x53F7;</span>
+    <span class="token keyword">if</span> i <span class="token operator">&lt;</span> <span class="token function">len</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span>s<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token char">&apos;+&apos;</span> <span class="token operator">||</span> s<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token char">&apos;-&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> s<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token char">&apos;-&apos;</span> <span class="token punctuation">{</span>
+            sign <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span>
+        <span class="token punctuation">}</span>
+        i<span class="token operator">++</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// &#x8F6C;&#x6362;&#x6570;&#x5B57;</span>
+    <span class="token keyword">for</span> i <span class="token operator">&lt;</span> <span class="token function">len</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> s<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&gt;=</span> <span class="token char">&apos;0&apos;</span> <span class="token operator">&amp;&amp;</span> s<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&lt;=</span> <span class="token char">&apos;9&apos;</span> <span class="token punctuation">{</span>
+        digit <span class="token operator">:=</span> <span class="token function">int</span><span class="token punctuation">(</span>s<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">-</span> <span class="token char">&apos;0&apos;</span><span class="token punctuation">)</span>
+
+        <span class="token comment">// &#x6EA2;&#x51FA;&#x68C0;&#x67E5;</span>
+        <span class="token keyword">if</span> result <span class="token operator">&gt;</span> <span class="token punctuation">(</span><span class="token function">int</span><span class="token punctuation">(</span><span class="token operator">^</span><span class="token function">uint</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">&gt;&gt;</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">-</span>digit<span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">10</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> sign <span class="token operator">==</span> <span class="token number">1</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token function">int</span><span class="token punctuation">(</span><span class="token operator">^</span><span class="token function">uint</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">&gt;&gt;</span> <span class="token number">1</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">return</span> <span class="token function">int</span><span class="token punctuation">(</span><span class="token operator">^</span><span class="token function">uint</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">&gt;&gt;</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token operator">-</span> <span class="token number">1</span>
+        <span class="token punctuation">}</span>
+
+        result <span class="token operator">=</span> result<span class="token operator">*</span><span class="token number">10</span> <span class="token operator">+</span> digit
+        i<span class="token operator">++</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> result <span class="token operator">*</span> sign
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="&#x590D;&#x6742;&#x5EA6;_6"><a name="&#x590D;&#x6742;&#x5EA6;_6" class="anchor-navigation-ex-anchor" href="#&#x590D;&#x6742;&#x5EA6;_6"><i class="fa fa-link" aria-hidden="true"></i></a>&#x590D;&#x6742;&#x5EA6;</h3>
+<ul>
+<li><strong>&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;</strong>&#xFF1A;O(n)</li>
+<li><strong>&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;</strong>&#xFF1A;O(1)</li>
+</ul>
+<hr>
+<h2 id="&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;&#x5BF9;&#x6BD4;"><a name="&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;&#x5BF9;&#x6BD4;" class="anchor-navigation-ex-anchor" href="#&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;&#x5BF9;&#x6BD4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B57;&#x7B26;&#x4E32;&#x7B97;&#x6CD5;&#x5BF9;&#x6BD4;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x7B97;&#x6CD5;</th>
+<th>&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;</th>
+<th>&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;</th>
+<th>&#x9002;&#x7528;&#x573A;&#x666F;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KMP</td>
+<td>O(n+m)</td>
+<td>O(m)</td>
+<td>&#x5355;&#x6A21;&#x5F0F;&#x4E32;&#x5339;&#x914D;</td>
+</tr>
+<tr>
+<td>Boyer-Moore</td>
+<td>O(n/m)</td>
+<td>O(k)</td>
+<td>&#x957F;&#x6587;&#x672C;&#x641C;&#x7D22;</td>
+</tr>
+<tr>
+<td>Rabin-Karp</td>
+<td>O(n+m)</td>
+<td>O(1)</td>
+<td>&#x591A;&#x6A21;&#x5F0F;&#x4E32;&#x5339;&#x914D;</td>
+</tr>
+<tr>
+<td>&#x6700;&#x957F;&#x56DE;&#x6587;</td>
+<td>O(n&#xB2;)</td>
+<td>O(1)</td>
+<td>&#x56DE;&#x6587;&#x68C0;&#x6D4B;</td>
+</tr>
+<tr>
+<td>&#x5B57;&#x7B26;&#x4E32;&#x53CD;&#x8F6C;</td>
+<td>O(n)</td>
+<td>O(1)</td>
+<td>&#x7B80;&#x5355;&#x53CD;&#x8F6C;</td>
+</tr>
+<tr>
+<td>&#x6700;&#x957F;&#x516C;&#x5171;&#x524D;&#x7F00;</td>
+<td>O(nm)</td>
+<td>O(1)</td>
+<td>&#x524D;&#x7F00;&#x5339;&#x914D;</td>
+</tr>
+<tr>
+<td>atoi</td>
+<td>O(n)</td>
+<td>O(1)</td>
+<td>&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6574;&#x6570;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x5E38;&#x89C1;&#x9762;&#x8BD5;&#x9898;"><a name="&#x5E38;&#x89C1;&#x9762;&#x8BD5;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x89C1;&#x9762;&#x8BD5;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E38;&#x89C1;&#x9762;&#x8BD5;&#x9898;</h2>
+<h3 id="1-kmp-&#x7B97;&#x6CD5;&#x4E2D;&#x7684;-lps-&#x6570;&#x7EC4;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><a name="1-kmp-&#x7B97;&#x6CD5;&#x4E2D;&#x7684;-lps-&#x6570;&#x7EC4;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#1-kmp-&#x7B97;&#x6CD5;&#x4E2D;&#x7684;-lps-&#x6570;&#x7EC4;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>1. KMP &#x7B97;&#x6CD5;&#x4E2D;&#x7684; LPS &#x6570;&#x7EC4;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</h3>
+<p><strong>&#x7B54;&#x6848;&#xFF1A;</strong>
+LPS&#xFF08;Longest Prefix Suffix&#xFF09;&#x6570;&#x7EC4;&#x5B58;&#x50A8;&#x6A21;&#x5F0F;&#x4E32;&#x4E2D;&#x6BCF;&#x4E2A;&#x4F4D;&#x7F6E;&#x7684;&#x6700;&#x957F;&#x76F8;&#x7B49;&#x524D;&#x540E;&#x7F00;&#x957F;&#x5EA6;&#xFF0C;&#x7528;&#x4E8E;&#x8DF3;&#x8FC7;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x6BD4;&#x8F83;&#x3002;</p>
+<h3 id="2-boyer-moore-&#x7B97;&#x6CD5;&#x4E3A;&#x4EC0;&#x4E48;&#x9AD8;&#x6548;&#xFF1F;"><a name="2-boyer-moore-&#x7B97;&#x6CD5;&#x4E3A;&#x4EC0;&#x4E48;&#x9AD8;&#x6548;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#2-boyer-moore-&#x7B97;&#x6CD5;&#x4E3A;&#x4EC0;&#x4E48;&#x9AD8;&#x6548;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>2. Boyer-Moore &#x7B97;&#x6CD5;&#x4E3A;&#x4EC0;&#x4E48;&#x9AD8;&#x6548;&#xFF1F;</h3>
+<p><strong>&#x7B54;&#x6848;&#xFF1A;</strong>
+Boyer-Moore &#x7B97;&#x6CD5;&#x4ECE;&#x53F3;&#x5411;&#x5DE6;&#x6BD4;&#x8F83;&#xFF0C;&#x5229;&#x7528;&#x574F;&#x5B57;&#x7B26;&#x89C4;&#x5219;&#x548C;&#x597D;&#x540E;&#x7F00;&#x89C4;&#x5219;&#x53EF;&#x4EE5;&#x8DF3;&#x8FC7;&#x591A;&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x5E73;&#x5747;&#x60C5;&#x51B5;&#x4E0B;&#x6BD4;&#x5176;&#x4ED6;&#x7B97;&#x6CD5;&#x66F4;&#x5FEB;&#x3002;</p>
+<h3 id="3-rabin-karp-&#x7B97;&#x6CD5;&#x7684;&#x54C8;&#x5E0C;&#x51B2;&#x7A81;&#x5982;&#x4F55;&#x5904;&#x7406;&#xFF1F;"><a name="3-rabin-karp-&#x7B97;&#x6CD5;&#x7684;&#x54C8;&#x5E0C;&#x51B2;&#x7A81;&#x5982;&#x4F55;&#x5904;&#x7406;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#3-rabin-karp-&#x7B97;&#x6CD5;&#x7684;&#x54C8;&#x5E0C;&#x51B2;&#x7A81;&#x5982;&#x4F55;&#x5904;&#x7406;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>3. Rabin-Karp &#x7B97;&#x6CD5;&#x7684;&#x54C8;&#x5E0C;&#x51B2;&#x7A81;&#x5982;&#x4F55;&#x5904;&#x7406;&#xFF1F;</h3>
+<p><strong>&#x7B54;&#x6848;&#xFF1A;</strong>
+&#x5F53;&#x54C8;&#x5E0C;&#x503C;&#x76F8;&#x540C;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x5B57;&#x7B26;&#x4E32;&#x6BD4;&#x8F83;&#x6765;&#x786E;&#x8BA4;&#x662F;&#x5426;&#x771F;&#x6B63;&#x5339;&#x914D;&#xFF0C;&#x907F;&#x514D;&#x54C8;&#x5E0C;&#x51B2;&#x7A81;&#x5BFC;&#x81F4;&#x7684;&#x9519;&#x8BEF;&#x3002;</p>
+<h3 id="4-&#x5982;&#x4F55;&#x5224;&#x65AD;&#x5B57;&#x7B26;&#x4E32;&#x662F;&#x5426;&#x4E3A;&#x56DE;&#x6587;&#xFF1F;"><a name="4-&#x5982;&#x4F55;&#x5224;&#x65AD;&#x5B57;&#x7B26;&#x4E32;&#x662F;&#x5426;&#x4E3A;&#x56DE;&#x6587;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#4-&#x5982;&#x4F55;&#x5224;&#x65AD;&#x5B57;&#x7B26;&#x4E32;&#x662F;&#x5426;&#x4E3A;&#x56DE;&#x6587;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x5982;&#x4F55;&#x5224;&#x65AD;&#x5B57;&#x7B26;&#x4E32;&#x662F;&#x5426;&#x4E3A;&#x56DE;&#x6587;&#xFF1F;</h3>
+<p><strong>&#x7B54;&#x6848;&#xFF1A;</strong>
+&#x4F7F;&#x7528;&#x53CC;&#x6307;&#x9488;&#x6CD5;&#xFF0C;&#x4ECE;&#x4E24;&#x7AEF;&#x5411;&#x4E2D;&#x95F4;&#x6BD4;&#x8F83;&#x5B57;&#x7B26;&#x662F;&#x5426;&#x76F8;&#x7B49;&#x3002;</p>
+<h3 id="5-&#x5982;&#x4F55;&#x5904;&#x7406;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6574;&#x6570;&#x7684;&#x6EA2;&#x51FA;&#xFF1F;"><a name="5-&#x5982;&#x4F55;&#x5904;&#x7406;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6574;&#x6570;&#x7684;&#x6EA2;&#x51FA;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#5-&#x5982;&#x4F55;&#x5904;&#x7406;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6574;&#x6570;&#x7684;&#x6EA2;&#x51FA;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>5. &#x5982;&#x4F55;&#x5904;&#x7406;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6574;&#x6570;&#x7684;&#x6EA2;&#x51FA;&#xFF1F;</h3>
+<p><strong>&#x7B54;&#x6848;&#xFF1A;</strong>
+&#x5728;&#x6BCF;&#x6B21;&#x8BA1;&#x7B97;&#x524D;&#x68C0;&#x67E5;&#x662F;&#x5426;&#x4F1A;&#x6EA2;&#x51FA;&#xFF0C;&#x4F7F;&#x7528; INT_MAX &#x548C; INT_MIN &#x4F5C;&#x4E3A;&#x8FB9;&#x754C;&#x3002;</p>
+<h2 id="&#x672A;&#x5B8C;&#x5F85;&#x7EED;"><a name="&#x672A;&#x5B8C;&#x5F85;&#x7EED;" class="anchor-navigation-ex-anchor" href="#&#x672A;&#x5B8C;&#x5F85;&#x7EED;"><i class="fa fa-link" aria-hidden="true"></i></a><center>...&#x672A;&#x5B8C;&#x5F85;&#x7EED;...</center></h2>
+<hr>
+<p><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"></p>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<div id="gitalk-container"></div>
+<script>
+  var gitalk = new Gitalk({
+    "clientID": "44d7c96f948be236a8c9",
+    "clientSecret": "fb9fb3178db6640131c4e3eb69f9449e42bba661",
+    "repo": "blog",
+    "owner": "Zhang-jie-jun",
+    "admin": ["Zhang-jie-jun"],
+    "id": location.pathname,      
+    "distractionFreeMode": false  
+  });
+  gitalk.render("gitalk-container");
+</script>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="divide.html" class="navigation navigation-prev " aria-label="Previous page: 分治算法">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../tools/" class="navigation navigation-next " aria-label="Next page: 开发工具">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"字符串算法","level":"2.4.13","depth":2,"next":{"title":"开发工具","level":"2.5","depth":1,"path":"src/tools/README.md","ref":"src/tools/README.md","articles":[{"title":"git的使用方法","level":"2.5.1","depth":2,"path":"src/tools/git.md","ref":"src/tools/git.md","articles":[]},{"title":"svn的使用方法","level":"2.5.2","depth":2,"path":"src/tools/svn.md","ref":"src/tools/svn.md","articles":[]},{"title":"Makefile使用方法","level":"2.5.3","depth":2,"path":"src/tools/makefile.md","ref":"src/tools/makefile.md","articles":[]},{"title":"CMake使用方法","level":"2.5.4","depth":2,"path":"src/tools/cmake.md","ref":"src/tools/cmake.md","articles":[]},{"title":"Wireshark使用方法","level":"2.5.5","depth":2,"path":"src/tools/wireshark.md","ref":"src/tools/wireshark.md","articles":[]},{"title":"Postman使用方法","level":"2.5.6","depth":2,"path":"src/tools/postman.md","ref":"src/tools/postman.md","articles":[]},{"title":"Navicat使用方法","level":"2.5.7","depth":2,"path":"src/tools/navicat.md","ref":"src/tools/navicat.md","articles":[]},{"title":"DBeaver使用方法","level":"2.5.8","depth":2,"path":"src/tools/dbeaver.md","ref":"src/tools/dbeaver.md","articles":[]},{"title":"npm使用方法","level":"2.5.9","depth":2,"path":"src/tools/npm.md","ref":"src/tools/npm.md","articles":[]},{"title":"pip使用方法","level":"2.5.10","depth":2,"path":"src/tools/pip.md","ref":"src/tools/pip.md","articles":[]}]},"previous":{"title":"分治算法","level":"2.4.12","depth":2,"path":"src/algorithm/divide.md","ref":"src/algorithm/divide.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-comscore","prism","-highlight","copy-code-button","search-pro","-search","-lunr","expandable-chapters","splitter","-sharing","github-buttons","donate","anchor-navigation-ex"],"styles":{"website":"./css/gitbook-configure.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"],"lang":{"shell":"bash"}},"splitter":{},"search-pro":{},"donate":{"button":"赞赏支持","wechatText":"问题联系","alipayText":"打赏支持","wechat":"https://github.com/Zhang-jie-jun/blog/blob/main/src/image/QR_code.jpg?raw=true","alipay":"https://github.com/Zhang-jie-jun/blog/blob/main/src/image/wechat.jpg?raw=true","title":""},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":false,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true},"theme-comscore":{},"github-buttons":{"buttons":[{"user":"Zhang-jie-jun","repo":"blog","type":"star","count":true,"size":"small"},{"user":"Zhang-jie-jun","width":"160","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"勤劳的螺丝工","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Jack Zhang的博客","language":"zh-hans","gitbook":"*","description":"记录遇到的问题与解决方式，分享我的知识、经历和观点..."},"file":{"path":"src/algorithm/string.md","mtime":"2026-06-08T14:10:00.389Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2026-06-08T14:40:12.589Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+
